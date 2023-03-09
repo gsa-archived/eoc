@@ -1,6 +1,6 @@
 ---
 agency-name: Department of Agriculture
-agency-link: https://www.usda.gov/
+agency-link: https://www.usda.gov/ 
 agency-logo: assets/images/agency-seals/agriculture_department_seal.png
 layout: agency
 permalink: /agencies/department-of-agriculture/
