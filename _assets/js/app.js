@@ -12,3 +12,23 @@ $("a").each(function(index, element) {
             $(element).addClass("usa-link--external");
         }
 });
+
+jQuery(document).ready(function ($) {
+    // Agencies page.
+    // Slide toggle Annual Evaluation Plan.
+    $('a.eval-plan-link').on('click', function() {
+        $(this).toggleClass('expanded');
+        $('.eval-plan').slideToggle('fast');
+        return false;
+    });
+
+    // Hide Evaluation plan links on click.
+    $(document).on("click", function(event){
+        if(!$(event.target).closest(".eval-plan").length){
+            if($(".eval-plan").is(":visible")){
+                $(".eval-plan").slideUp('fast');
+                $('a.eval-plan-link').removeClass('expanded');
+            }
+        }
+    });
+});
