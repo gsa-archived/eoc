@@ -67,12 +67,21 @@ This is used for Agency pages.
               <div class="agency-link-banner margin-bottom-2">
                   <center><img src="{{ site.baseurl }}/assets/images/annual-evaluation-plan-circle-icon@2x.png" alt="Annual Evaluation Plan Image" width="120"></center>
               </div>
-              <div style="display: flex; margin: -1rem 0 -1.5rem; justify-content: center;">
+              <div style="display: flex; margin: -1rem 0 -1.5rem; justify-content: center; position:relative;">
                 {% if page.eval-plan %}
                 {% assign evaluation_plans = page.eval-plan | sort_natural: "name" | reverse %}
+                  <p class="card-tag card-tag-fy">
+                      <a class="pill-btn eval-plan-link" href="#">Select Fiscal Year</a></p>
+                  <p class="card-tag pill-btn eval-plan" style="margin-top:1rem;margin-bottom:30px;font-size:.7em;">
                 {% for bio in evaluation_plans limit:3 %}
-                <p class="card-tag" style="margin-top:1rem;margin-bottom:30px;font-size:.7em;"><a class="pill-btn" href="{{ bio.link }}" aria-label="{{ page.agency-name }} {{ bio.name }} Evaluation Plan (opens in a new window)" target="_blank">{{ bio.name }} &#10095;</a></p>
+                    {% assign fy = bio.name | slice: 3, 4 %}
+                    {% assign currentyear = "now" | date: "%Y" %}
+                    {% if forloop.index == 1 and fy != currentyear %}
+                  <a href="JavaScript:Void(0);" aria-label="FY {{ currentyear }} Coming Soon">FY {{ currentyear }} Coming Soon</a>
+                {% endif %}
+                    <a href="{{ bio.link }}" aria-label="{{ page.agency-name }} {{ bio.name }} Evaluation Plan (opens in a new window)" target="_blank">{{ bio.name }} &#10095;</a>
                 {% endfor %}
+                  </p>
                 {% else %}
                 <center><p class="card-tag" style="margin-top:1rem;margin-bottom:30px;font-size:.7em;"><a class="pill-btn-1" href="#">Coming Soon</a></p></center>
                 {% endif %}
