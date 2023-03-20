@@ -77,7 +77,7 @@ This is used for Agency pages.
                     {% assign fy = bio.name | slice: 3, 4 %}
                     {% assign currentyear = "now" | date: "%Y" %}
                     {% if forloop.index == 1 and fy != currentyear %}
-                  <a href="JavaScript:Void(0);" aria-label="FY {{ currentyear }} Coming Soon">FY {{ currentyear }} Coming Soon</a>
+                  <span>FY {{ currentyear }} Coming Soon</span>
                 {% endif %}
                     <a href="{{ bio.link }}" aria-label="{{ page.agency-name }} {{ bio.name }} Evaluation Plan (opens in a new window)" target="_blank">{{ bio.name }} &#10095;</a>
                 {% endfor %}
