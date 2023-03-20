@@ -71,7 +71,7 @@ This is used for Agency pages.
                 {% if page.eval-plan %}
                 {% assign evaluation_plans = page.eval-plan | sort_natural: "name" | reverse %}
                   <p class="card-tag card-tag-fy">
-                      <a class="pill-btn eval-plan-link" href="#">Select Fiscal Year</a></p>
+                      <a class="pill-btn eval-plan-link" aria-label="Select Fiscal Year controls element, collapsed" href="#">Select Fiscal Year</a></p>
                   <p class="card-tag pill-btn eval-plan" style="margin-top:1rem;margin-bottom:30px;font-size:.7em;">
                 {% for bio in evaluation_plans limit:3 %}
                     {% assign fy = bio.name | slice: 3, 4 %}
