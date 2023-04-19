@@ -74,10 +74,10 @@ This is used for Agency pages.
                       <a class="pill-btn eval-plan-link" aria-label="Select Fiscal Year controls element, collapsed" href="#">Select Fiscal Year</a></p>
                   <p class="card-tag pill-btn eval-plan" style="margin-top:1rem;margin-bottom:30px;font-size:.7em;">
                 {% for bio in evaluation_plans limit:3 %}
-                    {% assign fy = bio.name | slice: 3, 4 %}
-                    {% assign currentyear = "now" | date: "%Y" %}
-                    {% if forloop.index == 1 and fy != currentyear %}
-                  <a href="JavaScript:Void(0);" aria-label="FY {{ currentyear }} Coming Soon">FY {{ currentyear }} Coming Soon</a>
+                    {% assign fy = bio.name | slice: 3, 4 | to_i | minus: 0 %}
+                    {% assign currentyear = "now" | date: "%Y" | plus: 1 %}
+                    {% if forloop.index == 1 and fy < currentyear %}
+                    <span>FY {{ currentyear }} Coming Soon</span>
                 {% endif %}
                     <a href="{{ bio.link }}" aria-label="{{ page.agency-name }} {{ bio.name }} Evaluation Plan (opens in a new window)" target="_blank">{{ bio.name }} &#10095;</a>
                 {% endfor %}

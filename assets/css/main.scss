@@ -303,6 +303,7 @@ blockquote p {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top: none;
+  padding: 10px 5px;
   position: absolute;
   display: none;
   top: 24px;
@@ -677,4 +678,66 @@ blockquote p {
   border-left: 0.25rem solid #c2dde4;
   border-right: 0.25rem solid #c2dde4;
   padding-bottom: 1rem;
+}
+
+//Agency quote container in blogs
+.agency-quote-1 {
+  border-top: 1px solid #f2938c;
+  border-bottom: 1px solid #f2938c;
+  border-right: 1px solid #f2938c;
+  border-left: 10px solid #f2938c;
+  margin: 1em 10px;
+  padding: 1.3em;
+  padding-bottom: 1rem;
+  border-radius: 0.7rem;
+}
+.agency-quote-2 {
+  border-top: 1px solid #97d4ea;
+  border-bottom: 1px solid #97d4ea;
+  border-right: 1px solid #97d4ea;
+  border-left: 10px solid #97d4ea;
+  margin: 1em 10px;
+  padding: 1.3em;
+  padding-bottom: 1rem;
+  border-radius: 0.7rem;
+}
+.agency-quote-3 {
+  border-top: 1px solid #07648d;
+  border-bottom: 1px solid #07648d;
+  border-right: 1px solid #07648d;
+  border-left: 10px solid #07648d;
+  margin: 1em 10px;
+  padding: 1.3em;
+  padding-bottom: 1rem;
+  border-radius: 0.7rem;
+}
+.agency-quote-4 {
+  border-top: 1px solid #92d9bb;
+  border-bottom: 1px solid #92d9bb;
+  border-right: 1px solid #92d9bb;
+  border-left: 10px solid #92d9bb;
+  margin: 1em 10px;
+  padding: 1.3em;
+  padding-bottom: 1rem;
+  border-radius: 0.7rem;
+}
+.agency-quote-5 {
+  border-top: 1px solid #8889db;
+  border-bottom: 1px solid #8889db;
+  border-right: 1px solid #8889db;
+  border-left: 10px solid #8889db;
+  margin: 1em 10px;
+  padding: 1.3em;
+  padding-bottom: 1rem;
+  border-radius: 0.7rem;
+}
+.agency-quote-6 {
+  border-top: 1px solid #F79520;
+  border-bottom: 1px solid #F79520;
+  border-right: 1px solid #F79520;
+  border-left: 10px solid #F79520;
+  margin: 1em 10px;
+  padding: 1.3em;
+  padding-bottom: 1rem;
+  border-radius: 0.7rem;
 }

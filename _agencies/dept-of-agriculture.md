@@ -9,6 +9,8 @@ eval-plan:
       link: https://www.usda.gov/sites/default/files/documents/fy22-usda-evaluation-plan.pdf
     - name: FY 2023
       link: https://usda.gov/sites/default/files/documents/usda-fy-2023-evaluation-plan.pdf
+    - name: FY 2024
+      link: https://www.usda.gov/sites/default/files/documents/fy-2024-annual-evaluation-plan.pdf
 eval-policy: https://www.usda.gov/directives/dr-1230-001
 learning-agenda: https://usda.gov/sites/default/files/documents/usda-learning-agenda.pdf
 capacity-assesment: https://usda.gov/sites/default/files/documents/usda-capacity-assessment.pdf

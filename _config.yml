@@ -81,11 +81,11 @@ primary_navigation:
     url: /about-evaluation-officers/
     children:
       - name: Evaluation Officer Council
-        url: "/about-evaluation-officers"
+        url: "/about-evaluation-officers/"
       - name: Evaluation Officers
-        url: "/evaluation-officers"
+        url: "/evaluation-officers/"
       - name: Interagency Council on Evaluation Policy
-        url: "/interagency-council-on-evaluation-policy"
+        url: "/interagency-council-on-evaluation-policy/"
   - name: Agencies
     url: /document/
     ismegamenu: true
@@ -93,64 +93,64 @@ primary_navigation:
       - name: Cloumn1
         children:
           - name: Department of Agriculture
-            url: "/agencies/department-of-agriculture"      
+            url: "/agencies/department-of-agriculture/"      
           - name: Department of Commerce
-            url: "/agencies/department-of-commerce"
+            url: "/agencies/department-of-commerce/"
           - name: Department of Defense
-            url: "/agencies/department-of-defense"      
+            url: "/agencies/department-of-defense/"      
           - name: Department of Education
-            url: "/agencies/department-of-education"  
+            url: "/agencies/department-of-education/"  
           - name: Department of Energy
-            url: "/agencies/department-of-energy"
+            url: "/agencies/department-of-energy/"
           - name: Department of Health and Human Services
-            url: "/agencies/health-and-human-services"      
+            url: "/agencies/health-and-human-services/"      
           - name: Department of Homeland Security
-            url: "/agencies/department-of-homeland-security"
+            url: "/agencies/department-of-homeland-security/"
       - name: Cloumn2
         children:
           - name: Department of Housing and Urban Development
-            url: "/agencies/housing-and-urban-development"      
+            url: "/agencies/housing-and-urban-development/"      
           - name: Department of the Interior 
-            url: "/agencies/department-of-the-interior"
+            url: "/agencies/department-of-the-interior/"
           - name: Department of Justice
-            url: "/agencies/department-of-justice"      
+            url: "/agencies/department-of-justice/"      
           - name: Department of Labor
-            url: "/agencies/department-of-labor"  
+            url: "/agencies/department-of-labor/"  
           - name: Department of State
-            url: "/agencies/department-of-state"      
+            url: "/agencies/department-of-state/"      
           - name: Department of Transportation
-            url: "/agencies/department-of-transportation"  
+            url: "/agencies/department-of-transportation/"  
       - name: Cloumn3
         children:
           - name: Department of the Treasury
-            url: "/agencies/department-of-treasury"      
+            url: "/agencies/department-of-treasury/"      
           - name: Department of Veterans Affairs
-            url: "/agencies/department-of-veterans-affairs"
+            url: "/agencies/department-of-veterans-affairs/"
           - name: Environmental Protection Agency
-            url: "/agencies/environmental-protection-agency"      
+            url: "/agencies/environmental-protection-agency/"      
           - name: General Services Administration
-            url: "/agencies/general-services-administration"  
+            url: "/agencies/general-services-administration/"  
           - name: National Aeronautics and Space Administration
-            url: "/agencies/national-aeronautics-and-space-administration"  
+            url: "/agencies/national-aeronautics-and-space-administration/"  
       - name: Cloumn4
         children:
           - name: National Science Foundation
-            url: "/agencies/national-science-foundation"
+            url: "/agencies/national-science-foundation/"
           - name: Nuclear Regulatory Commission
-            url: "/agencies/nuclear-regulatory-commission"      
+            url: "/agencies/nuclear-regulatory-commission/"      
           - name: Office of Personnel Management
-            url: "/agencies/office-of-personnel-management"
+            url: "/agencies/office-of-personnel-management/"
           - name: Small Business Administration
-            url: "/agencies/small-business-administration"      
+            url: "/agencies/small-business-administration/"      
           - name: Social Security Administration
-            url: "/agencies/social-security-administration"  
+            url: "/agencies/social-security-administration/"  
           - name: United States Agency for International Development
-            url: "/agencies/agency-for-international-development"    
+            url: "/agencies/agency-for-international-development/"    
             hasSeperator: true  
           - name: Other Federal Agencies
-            url: "/agencies/other-agencies"
+            url: "/agencies/other-agencies/"
           - name: Cross-Government Plans
-            url: "/agencies/cross-government"
+            url: "/agencies/cross-government/"
   - name: Evidence Plans
     children:
       - name: Summary
@@ -163,17 +163,16 @@ primary_navigation:
         url: "/evidence-plans/annual-evaluation-plan/"
       - name: Evaluation Policies
         url: "/evidence-plans/evaluation-policies/"
+  - name: Explore
+    children:
+      - name: Learning Agenda Questions Dashboard
+        url: "/learning-agenda-questions-dashboard/"
   - name: Resources
     url: /resources/
   - name: News
     url: /news/
   - name: FAQs
     url: /faqs/
-  - name: Explore
-    children:
-      - name: Learning Agenda Questions Dashboard
-        url: "/learning-agenda-questions-dashboard/"
-
 
 # Search.gov configuration
 #

@@ -8,7 +8,9 @@ eval-plan:
     - name: FY 2022
       link: https://www.gsa.gov/cdnstatic/GSA%20FY%202022%20Annual%20Evaluation%20Plan.pdf
     - name: FY 2023
-      link:  https://www.gsa.gov/cdnstatic/GSA%20FY%202023%20Annual%20Evaluation%20Plan.pdf
+      link: https://www.gsa.gov/cdnstatic/GSA%20FY%202023%20Annual%20Evaluation%20Plan.pdf
+    - name: FY 2024
+      link: https://www.gsa.gov/cdnstatic/GSA%20FY%202024%20Annual%20Evaluation%20Plan.pdf
 eval-policy: https://www.gsa.gov/directive/gsa-evaluation-policy
 learning-agenda: https://www.gsa.gov/cdnstatic/GSA%20FY%2022-26%20Learning%20Agenda.pdf
 capacity-assesment: https://www.gsa.gov/cdnstatic/GSA%20Capacity%20Assessment%20for%20Evidence-Building%20and%20Evaluation.pdf

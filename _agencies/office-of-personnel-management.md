@@ -9,6 +9,8 @@ eval-plan:
       link: https://www.opm.gov/about-us/budget-performance/evidence/annual-evaluation-plan-fy2022.pdf
     - name: FY 2023
       link: https://www.opm.gov/about-us/budget-performance/evidence/annual-evaluation-plan-fy2023.pdf
+    - name: FY 2024
+      link: https://www.opm.gov/about-us/budget-performance/evidence-building/annual-evaluation-plan-fy2024.pdf
 eval-policy: https://www.opm.gov/policy-data-oversight/data-analysis-documentation/evaluation-standards/
 learning-agenda: https://www.opm.gov/about-us/strategic-plan/evidence-building/learning-agenda
 capacity-assesment: https://www.opm.gov/about-us/strategic-plan/evidence-building/capacity-assessment

@@ -1,7 +1,7 @@
 ---
 agency-name: PMA Learning Agenda
 agency-logo: assets/images/agency-seals/pma-seal-high-res.png
-alt: PMA Learning Agenda agency logo
+alt: President's Management Agenda Logo
 aria-label: PMA Learning Agenda
 learning-agenda: https://assets.performance.gov/PMA/PMA-Learning-Agenda.pdf
 agency-offices:
