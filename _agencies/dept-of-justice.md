@@ -8,7 +8,9 @@ eval-plan:
     - name: FY 2022
       link: https://www.justice.gov/file/1485851/download
     - name: FY 2023
-      link: https://www.justice.gov/evidence-and-evaluation
+      link: https://www.justice.gov/d9/fieldable-panel-panes/basic-panes/attachments/2022/09/22/fy23_annual_evaluation_plan.pdf
+    - name: FY 2024
+      link: https://www.justice.gov/d9/2023-04/DOJ%20Annual%20Evaluation%20Plan%20FY%202024.pdf
 eval-policy:
 learning-agenda: https://www.justice.gov/doj/doj-strategic-plan/learning-agenda
 capacity-assesment: https://www.justice.gov/doj/doj-strategic-plan/appendix-capacity-assessment-evaluation-statistics-research-and-analysis-fy2022
