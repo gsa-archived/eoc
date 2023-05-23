@@ -34,7 +34,7 @@ Harnessing the power of researchers, non-profit leaders, and policymakers, and c
 
 *The Evidence Forums*
 
-In April 2022, the Administration launched [The Evidence Forums](https://www.whitehouse.gov/ostp/events-webinars/year-of-evidence-for-action/){:target="_blank"}, a first-of-its-kind series co-hosted with non-profits and academic organizations across the nation. The series is designed to produce concrete strategies for mobilizing research-based evidence to make life healthier, safer, more equitable, and more prosperous for the American public.
+In April 2022, the Administration launched [The Evidence Forums](https://www.whitehouse.gov/ostp/news-updates/2022/12/30/progress-on-the-white-house-year-of-evidence-for-action/){:target="_blank"}, a first-of-its-kind series co-hosted with non-profits and academic organizations across the nation. The series is designed to produce concrete strategies for mobilizing research-based evidence to make life healthier, safer, more equitable, and more prosperous for the American public.
 
 Spanning cross-cutting topics such as leading practices in community-engaged evidence building, as well as specific policy areas like improving air quality and advancing equity in higher education, each Evidence Forum has been built to elevate leading practices in evidence-informed policy, lay the foundation for new, innovative thinking around evidence and evaluation inside the Federal Government, and generate rich dialogue and exchange among researchers and policymakers inside and outside of the Federal Government.
 
