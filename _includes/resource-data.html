@@ -36,6 +36,9 @@
                                         {% if resource.filters contains 'quick-reference' %}
                                         <div class="shadow-1 quick-reference-border ">
                                             {% endif %}
+                                        {% if resource.filters contains 'opportunity' %}
+                                        <div class="shadow-1 opportunity-border ">
+                                            {% endif %}
         
                                             <div class="text-container">
                                                  {% if resource.filters contains 'legislation' %}
@@ -55,6 +58,9 @@
                                                 {% endif %}
                                                 {% if resource.filters contains 'report' %}
                                                 <span class="card-tag">Report</span>
+                                                {% endif %}
+                                                {% if resource.filters contains 'opportunity' %}
+                                                <span class="card-tag">Opportunity</span>
                                                 {% endif %}
                                          
                                                 {% if resource.external_url %}
