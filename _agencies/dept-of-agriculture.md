@@ -15,10 +15,12 @@ eval-policy: https://www.usda.gov/directives/dr-1230-001
 learning-agenda: https://usda.gov/sites/default/files/documents/usda-learning-agenda.pdf
 capacity-assesment: https://usda.gov/sites/default/files/documents/usda-capacity-assessment.pdf
 agency-offices:
-    - name: Office of Policy Support (Food and Nutrition Service)
-      link: https://www.fns.usda.gov/research-analysis
+    - name: Food and Nutrition Service Office of Policy Support
+      link: https://fns-prod.azureedge.us/sites/default/files/resource-files/fns-learning-agenda-2023.pdf
       eval-plan: Study & Evaluation Plans
       eval-plan-link: https://www.fns.usda.gov/ops/study-evaluation-plans
+      eval-learning: Food and Nutrition Service Learning Agenda
+      eval-learning-link: https://fns-prod.azureedge.us/sites/default/files/resource-files/fns-learning-agenda-2023.pdf
     - name: National Institute of Food and Agriculture, Research & Evaluation
       link: https://nifa.usda.gov/research-evaluation 
     - name: Office of Budget & Program Analysis
