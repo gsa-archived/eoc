@@ -16,7 +16,7 @@ learning-agenda: https://usda.gov/sites/default/files/documents/usda-learning-ag
 capacity-assesment: https://usda.gov/sites/default/files/documents/usda-capacity-assessment.pdf
 agency-offices:
     - name: Food and Nutrition Service Office of Policy Support
-      link: https://fns-prod.azureedge.us/sites/default/files/resource-files/fns-learning-agenda-2023.pdf
+      link: https://www.fns.usda.gov/research-analysis
       eval-plan: Study & Evaluation Plans
       eval-plan-link: https://www.fns.usda.gov/ops/study-evaluation-plans
       eval-learning: Food and Nutrition Service Learning Agenda
