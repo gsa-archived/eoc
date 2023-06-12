@@ -16,38 +16,40 @@ permalink: /evaluation-toolkit/
   <div class="grid-container margin-0 padding-0">
     <div class="usa-graphic-list__row grid-row grid-gap margin-bottom-4 display-flex">
         <div class="usa-media-block grid-col-6 tablet:grid-col-6">
-             <h3 class="margin-bottom-0 text-green">GET STARTED WITH THE TOOLKIT</h3>
+             <h3 class="margin-bottom-0 text-primary">GET STARTED WITH THE TOOLKIT</h3>
         </div>
     </div>
     <div class="usa-graphic-list__row grid-row grid-gap">
         <div class="usa-media-block tablet:grid-col-4 text-center">
-            <img class="usa-media-block__img circle-card" alt="Evaluation 101" src="{{site.baseurl}}/assets/images/evaluation-toolkit.png">
+            <img class="usa-media-block__img circle-evaluation-card" alt="Evaluation 101" src="{{site.baseurl}}/assets/images/evaluation.png">
             <div class="usa-media-block__body">  
-              <p class="text-base"><a class="eoc-link text-no-underline border-0" href="{{site.baseurl}}/evaluation-toolkit/evaluation-101">Evaluation 101</a></p>
+              <p><a class="eoc-link text-no-underline border-0" href="{{site.baseurl}}/evaluation-toolkit/evaluation-101">Evaluation 101</a></p>
             </div>
         </div>
         <div class="usa-media-block tablet:grid-col-4 text-center">
-            <img class="usa-media-block__img circle-card" alt="Why Evaluate?" src="{{site.baseurl}}/assets/images/evaluation-toolkit.png">
+            <img class="usa-media-block__img circle-evaluation-card" alt="Why Evaluate?" src="{{site.baseurl}}/assets/images/evaluation.png">
             <div class="usa-media-block__body">  
-              <p class="text-base"><a class="eoc-link text-no-underline border-0" href="{{site.baseurl}}/evaluation-toolkit/why-evaluate">Why Evaluate?</a></p>
+              <p><a class="eoc-link text-no-underline border-0" href="{{site.baseurl}}/evaluation-toolkit/why-evaluate">Why Evaluate?</a></p>
             </div>
         </div>
         <div class="usa-media-block tablet:grid-col-4 text-center">
-            <img class="usa-media-block__img circle-card" alt="Getting Started as a Non-Evaluator" src="{{site.baseurl}}/assets/images/evaluation-toolkit.png">
+            <img class="usa-media-block__img circle-evaluation-card" alt="Getting Started as a Non-Evaluator" src="{{site.baseurl}}/assets/images/evaluation.png">
             <div class="usa-media-block__body">  
-              <p class="utext-base"><a class="eoc-link text-no-underline border-0" href="{{site.baseurl}}/evaluation-toolkit/non-evaluator">Getting Started as a Non-Evaluator</a></p>
+              <p><a class="eoc-link text-no-underline border-0" href="{{site.baseurl}}/evaluation-toolkit/non-evaluator">Getting Started as a Non-Evaluator</a></p>
+            </div>
+        </div>
+        <div class="usa-media-block tablet:grid-col-2 text-center">
+        </div>
+        <div class="usa-media-block tablet:grid-col-4 text-center">
+            <img class="usa-media-block__img circle-evaluation-card" alt="Using Evaluation" src="{{site.baseurl}}/assets/images/evaluation.png">
+            <div class="usa-media-block__body">  
+              <p><a class="eoc-link text-no-underline border-0" href="{{site.baseurl}}/evaluation-toolkit/evaluation">Using Evaluation</a></p>
             </div>
         </div>
         <div class="usa-media-block tablet:grid-col-4 text-center">
-            <img class="usa-media-block__img circle-card" alt="Using Evaluation" src="{{site.baseurl}}/assets/images/evaluation-toolkit.png">
+            <img class="usa-media-block__img circle-evaluation-card" alt="Promoting Evaluation Use" src="{{site.baseurl}}/assets/images/evaluation.png">
             <div class="usa-media-block__body">  
-              <p class="text-base"><a class="eoc-link text-no-underline border-0" href="{{site.baseurl}}/evaluation-toolkit/evaluation">Using Evaluation</a></p>
-            </div>
-        </div>
-        <div class="usa-media-block tablet:grid-col-4 text-center">
-            <img class="usa-media-block__img circle-card" alt="Promoting Evaluation Use" src="{{site.baseurl}}/assets/images/evaluation-toolkit.png">
-            <div class="usa-media-block__body">  
-              <p class="text-base"><a class="eoc-link text-no-underline border-0" href="{{site.baseurl}}/evaluation-toolkit/promoting-evaluation">Promoting Evaluation Use</a></p>
+              <p><a class="eoc-link text-no-underline border-0" href="{{site.baseurl}}/evaluation-toolkit/promoting-evaluation">Promoting Evaluation Use</a></p>
             </div>
         </div>
     </div>
