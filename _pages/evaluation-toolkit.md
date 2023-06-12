@@ -16,7 +16,7 @@ permalink: /evaluation-toolkit/
   <div class="grid-container margin-0 padding-0">
     <div class="usa-graphic-list__row grid-row grid-gap margin-bottom-4 display-flex">
         <div class="usa-media-block grid-col-6 tablet:grid-col-6">
-             <h3 class="margin-bottom-0 text-primary">GET STARTED WITH THE TOOLKIT</h3>
+             <h2 class="margin-bottom-0 text-primary">GET STARTED WITH THE TOOLKIT</h2>
         </div>
     </div>
     <div class="usa-graphic-list__row grid-row grid-gap">
