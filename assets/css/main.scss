@@ -742,7 +742,6 @@ blockquote p {
   border-radius: 0.7rem;
 }
 .circle-evaluation-card {
-    height: 10rem;
     width: 10rem;
     border-radius: 50%;
 }
@@ -750,4 +749,8 @@ blockquote p {
     .title {
         margin-top: 1.1rem;
     }
+}
+.evaluation-width{
+    width:180px;
+    margin:auto;
 }
