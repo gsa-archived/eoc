@@ -746,3 +746,8 @@ blockquote p {
     width: 10rem;
     border-radius: 50%;
 }
+@media only screen and (max-width: 639px) {
+    .title {
+        margin-top: 1.1rem;
+    }
+}
