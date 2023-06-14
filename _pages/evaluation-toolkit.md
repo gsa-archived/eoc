@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: evaluation-toolkit-home
 title: The Federal Evaluator Toolkit
 permalink: /evaluation-toolkit/
 ---
