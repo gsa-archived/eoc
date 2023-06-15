@@ -5,17 +5,17 @@ title: Using Evaluation
 ---
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
 <div class="grid-row grid-gap">
-	<div class="grid-col-3 tablet:grid-col-3">
-		<a class="usa-button btn-primary border-0 padding-left-6 padding-right-6" href="{{site.baseurl}}/about/" aria-label="keyword">keyword</a>
+	<div class="mobile-lg:grid-col padding-2">
+		<a class="usa-button btn-primary border-0 padding-x-4" href="{{site.baseurl}}/about/" aria-label="keyword">keyword</a>
 	</div>
-	<div class="grid-col-3 tablet:grid-col-3">
-		<a class="usa-button btn-primary border-0 padding-left-6 padding-right-6" href="{{site.baseurl}}/about/" aria-label="keyword">keyword</a>
+	<div class="mobile-lg:grid-col padding-2">
+		<a class="usa-button btn-primary border-0 padding-x-4" href="{{site.baseurl}}/about/" aria-label="keyword">keyword</a>
 	</div>
-	<div class="grid-col-3 tablet:grid-col-3">
-		<a class="usa-button btn-primary border-0 padding-left-6 padding-right-6" href="{{site.baseurl}}/about/" aria-label="keyword">keyword</a>
+	<div class="mobile-lg:grid-col padding-2">
+		<a class="usa-button btn-primary border-0 padding-x-4" href="{{site.baseurl}}/about/" aria-label="keyword">keyword</a>
 	</div>
-	<div class="grid-col-3 tablet:grid-col-3">
-		<a class="usa-button btn-primary border-0 padding-left-6 padding-right-6" href="{{site.baseurl}}/about/" aria-label="keyword">keyword</a>
+	<div class="mobile-lg:grid-col padding-2">
+		<a class="usa-button btn-primary border-0 padding-x-4" href="{{site.baseurl}}/about/" aria-label="keyword">keyword</a>
 	</div>
 </div>
 <br>

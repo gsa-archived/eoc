@@ -14,7 +14,7 @@ permalink: /evaluation-toolkit/
 
 <section class="usa-graphic-list">
   <div class="grid-container margin-0 padding-0">
-    <div class="usa-graphic-list__row grid-row grid-gap margin-bottom-4 display-flex">
+    <div class="usa-graphic-list__row grid-row grid-gap display-flex">
         <div class="usa-media-block">
              <h2 class="margin-bottom-0 text-primary">GET STARTED WITH THE TOOLKIT</h2>
         </div>
