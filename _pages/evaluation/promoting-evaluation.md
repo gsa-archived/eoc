@@ -6,19 +6,18 @@ title: Promoting Evaluation Use
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
 <div class="grid-row grid-gap">
 	<div class="mobile-lg:grid-col padding-2">
-		<a class="usa-button btn-primary border-0 padding-x-4" href="{{site.baseurl}}/about/" aria-label="keyword">keyword</a>
+		<a class="usa-button btn-primary border-0 padding-keyword" href="{{site.baseurl}}/about/" aria-label="keyword">keyword</a>
 	</div>
 	<div class="mobile-lg:grid-col padding-2">
-		<a class="usa-button btn-primary border-0 padding-x-4" href="{{site.baseurl}}/about/" aria-label="keyword">keyword</a>
+		<a class="usa-button btn-primary border-0 padding-keyword" href="{{site.baseurl}}/about/" aria-label="keyword">keyword</a>
 	</div>
 	<div class="mobile-lg:grid-col padding-2">
-		<a class="usa-button btn-primary border-0 padding-x-4" href="{{site.baseurl}}/about/" aria-label="keyword">keyword</a>
+		<a class="usa-button btn-primary border-0 padding-keyword" href="{{site.baseurl}}/about/" aria-label="keyword">keyword</a>
 	</div>
 	<div class="mobile-lg:grid-col padding-2">
-		<a class="usa-button btn-primary border-0 padding-x-4" href="{{site.baseurl}}/about/" aria-label="keyword">keyword</a>
+		<a class="usa-button btn-primary border-0 padding-keyword" href="{{site.baseurl}}/about/" aria-label="keyword">keyword</a>
 	</div>
 </div>
-<br>
 {% assign resources = site.data.evaluation-101 %}
 {% for resource in resources%}
 <div class="event-card padding-bottom-3 margin-top-1">
