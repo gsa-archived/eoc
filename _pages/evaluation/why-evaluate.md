@@ -17,7 +17,7 @@ title: Why Evaluate?
 	<div class="mobile-lg:grid-col padding-2">
 		<a class="usa-button btn-primary border-0 padding-keyword" href="{{site.baseurl}}/about/" aria-label="keyword">keyword</a>
 	</div>
-</div>s
+</div>
 {% assign resources = site.data.evaluation-101 %}
 {% for resource in resources%}
 <div class="event-card padding-bottom-3 margin-top-1">
