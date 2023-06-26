@@ -21,19 +21,19 @@ permalink: /evaluation-toolkit/
     </div>
     <div class="usa-graphic-list__row grid-row grid-gap">
         <div class="usa-media-block tablet:grid-col-4 text-center">
-            <img class="circle-evaluation-card" alt="Evaluation 101" src="{{site.baseurl}}/assets/images/blog/budget-report.jpg">
+            <a href="{{site.baseurl}}/evaluation-toolkit/evaluation-101"><img class="circle-evaluation-card" alt="Evaluation 101" src="{{site.baseurl}}/assets/images/blog/budget-report.jpg"></a>
             <div class="usa-media-block__body evaluation-width">  
               <p><a class="eoc-link text-no-underline border-0" href="{{site.baseurl}}/evaluation-toolkit/evaluation-101">Evaluation 101</a></p>
             </div>
         </div>
         <div class="usa-media-block tablet:grid-col-4 text-center">
-            <img class="circle-evaluation-card" alt="Why Evaluate?" src="{{site.baseurl}}/assets/images/blog/notebook.jpg">
+            <a href="{{site.baseurl}}/evaluation-toolkit/why-evaluate"><img class="circle-evaluation-card" alt="Why Evaluate?" src="{{site.baseurl}}/assets/images/blog/notebook.jpg"></a>
             <div class="usa-media-block__body evaluation-width">  
               <p><a class="eoc-link text-no-underline border-0" href="{{site.baseurl}}/evaluation-toolkit/why-evaluate">Why Evaluate?</a></p>
             </div>
         </div>
         <div class="usa-media-block tablet:grid-col-4 text-center">
-            <img class="circle-evaluation-card" alt="Getting Started as a Non-Evaluator" src="{{site.baseurl}}/assets/images/blog/learning-agenda-thumbnail.jpg">
+            <a href="{{site.baseurl}}/evaluation-toolkit/non-evaluator"><img class="circle-evaluation-card" alt="Getting Started as a Non-Evaluator" src="{{site.baseurl}}/assets/images/blog/learning-agenda-thumbnail.jpg"></a>
             <div class="usa-media-block__body evaluation-width">  
               <p><a class="eoc-link text-no-underline border-0" href="{{site.baseurl}}/evaluation-toolkit/non-evaluator">Getting Started as a Non-Evaluator</a></p>
             </div>
@@ -41,13 +41,13 @@ permalink: /evaluation-toolkit/
         <div class="usa-media-block tablet:grid-col-2 text-center">
         </div>
         <div class="usa-media-block tablet:grid-col-4 text-center">
-            <img class="circle-evaluation-card" alt="Using Evaluation" src="{{site.baseurl}}/assets/images/blog/lightbulb-stickers.jpg">
+            <a href="{{site.baseurl}}/evaluation-toolkit/evaluation"><img class="circle-evaluation-card" alt="Using Evaluation" src="{{site.baseurl}}/assets/images/blog/lightbulb-stickers.jpg"></a>
             <div class="usa-media-block__body evaluation-width">  
               <p><a class="eoc-link text-no-underline border-0" href="{{site.baseurl}}/evaluation-toolkit/evaluation">Using Evaluation</a></p>
             </div>
         </div>
         <div class="usa-media-block tablet:grid-col-4 text-center">
-            <img class="circle-evaluation-card" alt="Promoting Evaluation Use" src="{{site.baseurl}}/assets/images/blog/trophy-stars-thumbnail.png">
+            <a href="{{site.baseurl}}/evaluation-toolkit/promoting-evaluation"><img class="circle-evaluation-card" alt="Promoting Evaluation Use" src="{{site.baseurl}}/assets/images/blog/trophy-stars-thumbnail.png"></a>
             <div class="usa-media-block__body evaluation-width">  
               <p><a class="eoc-link text-no-underline border-0" href="{{site.baseurl}}/evaluation-toolkit/promoting-evaluation">Promoting Evaluation Use</a></p>
             </div>
