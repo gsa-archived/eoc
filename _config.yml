@@ -174,8 +174,12 @@ primary_navigation:
       - name: Evaluation Toolkit
         url: "/evaluation-toolkit/"
     url: /news/
-  - name: FAQs
-    url: /faqs/
+  - name: About
+    children:
+      - name: About the Site
+        url: "/about/"
+      - name: FAQs
+        url: "/faqs/"
 
 # Search.gov configuration
 #
