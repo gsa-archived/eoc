@@ -39,13 +39,13 @@ title: Why Evaluate?
 			<strong>Format</strong>
 			<p class="margin-top-0">{{resource.format}}</p>
 			</div>
-			{% if resource contains source %}
+			{% if resource contains "source" %}
 			<div class="grid-col-3 tablet:grid-col-3">
 			<strong>Source</strong>
 			<p class="margin-top-0">{{resource.source}}</p>
 			</div>
 			{% endif %}
-			{% if resource contains coverSheet %}
+			{% if resource contains "coverSheet" %}
 			<div class="grid-col-3 tablet:grid-col-3">
 			<strong>Cover Sheet</strong>
 			<p class="margin-top-0">{{resource.coverSheet}}</p>
