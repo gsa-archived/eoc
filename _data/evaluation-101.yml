@@ -7,10 +7,10 @@
   source: Source
   keywords: keyword tags
   format: PDF (24 pages)
+  coverSheet: PDF (24 pages)
 
 - name: Resource Name 2
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus interdum pellentesque. Integer eu vehicula elit. Sed cursus magna in dui suscipit rhoncus. 
-  source: Source
   keywords: keyword tags
   format: PDF (24 pages)
 
@@ -22,6 +22,6 @@
 
 - name: Resource Name 4
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus interdum pellentesque. Integer eu vehicula elit. Sed cursus magna in dui suscipit rhoncus. 
-  source: Source
   keywords: keyword tags
   format: PDF (24 pages)
+  coverSheet: PDF (24 pages)
