@@ -317,7 +317,8 @@ html {
 
 .bg-evaluation {
     background-image: url(../assets/images/eoc.png);
-    height:200px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .padding-keyword{
