@@ -4,42 +4,6 @@
       <a href="#" class="usa-button usa-button--outline border-0">Return to top</a>
     </div>
   </div>
-  <div class="usa-footer__primary-section bg-base-lightest">
-    <div class="usa-footer__primary-container">
-      <div class="tablet:grid-col-12">
-        <nav class="usa-footer__nav" aria-label="Footer navigation top">
-          <div class="grid-row grid-gap-12">
-            <div class="mobile-lg:grid-col-4 desktop:grid-col-4">
-              <ul class="usa-list--unstyled">
-                <li class="usa-footer__primary-content usa-footer__primary-link">
-                  <a href="{{site.baseurl}}/about/" style="color:#000000">About the Site</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="mobile-lg:grid-col-4 desktop:grid-col-4">
-              <ul class="usa-list--unstyled">
-                <li class="usa-footer__primary-content usa-footer__primary-link">
-                  <a href="{{site.baseurl}}/faqs/" style="color:#000000">FAQs</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="mobile-lg:grid-col-4 desktop:grid-col-4">
-              <ul class="usa-list--unstyled">
-                <li class="usa-footer__primary-content">
-                  <div class="usa-footer__primary-link">Contact Us:
-                    <br>
-                    <a class="custom-link-color" href="mailto:evidence@omb.eop.gov">evidence@omb.eop.gov</a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </div>
-  </div>
   <div class="usa-footer__secondary-section">
     <div class="usa-footer__primary-container">
         <div class="tablet:grid-col-12">
@@ -84,8 +48,24 @@
                       <a class="usa-button btn-primary margin-top-1 usa-link--external-white" style="font-weight:600;" target="_blank" href="https://public.govdelivery.com/accounts/USGSA/subscriber/new?topic_id=USGSA_1068">Subscribe to Updates</a>
                       <div class="grid-row margin-top-1">
                         <div class="grid-col-fill txt-align-footer">
-                            <span class="font-ui-3xs">Last updated on July 11, 2023</span>
+                            <span class="font-ui-3xs" id="date"></span>
                         </div>
+                      </div>
+                      <div class="grid-row margin-top-1">
+                          <div class="grid-col-3 txt-align-footer">
+                              <a class="usa-social-link" href="mailto:evidence@omb.eop.gov" target="_blank" title="Mail"><img src="{{site.baseurl}}/assets/images/mail.svg" alt="Mail Icon" class="img-align" /></a>
+                          </div>
+                          <div class="grid-col-3 txt-align-footer">
+                              <a class="usa-social-link" href="https://www.linkedin.com/company/evaluation-gov/" target="_blank" title="Linkedin"><img src="{{site.baseurl}}/assets/images/linkedin.svg" alt="LinkedIn Icon" class="img-align" /></a>
+                          </div>
+                      </div>
+                      <div class="grid-row margin-top-1">
+                          <div class="grid-col-3 txt-align-footer">
+                              <a class="usa-social-link usa-social-link--mail-eoc" href="mailto:evidence@omb.eop.gov" target="_blank" title="Mail"></a>
+                          </div>
+                          <div class="grid-col-3 txt-align-footer">
+                              <a class="usa-social-link usa-social-link--linkedin-eoc" href="https://www.linkedin.com/company/evaluation-gov/" target="_blank" title="Linkedin"></a>
+                          </div>
                       </div>
                     </div>
                 </section>
@@ -97,6 +77,12 @@
   </div>
   <script src="{{site.baseurl}}/assets/js/isotope.pkgd.min.js"></script>
   <script src="{{site.baseurl}}/assets/js/isotope.settings.js"></script>
+  <script>
+      let date = new Date();
+      const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+      let month = months[date.getMonth()];
+      document.getElementById("date").innerHTML = "Last updated on " + month + " " + date.getDate() + ", " + date.getFullYear();
+    </script>
 </footer>
 
 <div id="ogp-identifier" class="usa-identifier">
