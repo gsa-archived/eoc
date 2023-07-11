@@ -17,18 +17,26 @@ title: Why Evaluate?
 			</div>
 		</div>
 		<div class="grid-row tablet:grid-col-12">
-			<div class="mobile-lg:grid-col-4">
-			<strong>Source</strong>
-			<p class="margin-top-0">{{resource.source}}</p>
-			</div>
-			<div class="mobile-lg:grid-col-4">
-			<strong>Keywords</strong>
-			<p class="margin-top-0">{{resource.keywords}}</p>
-			</div>
-			<div class="mobile-lg:grid-col-4">
+			<div class="mobile-lg:grid-col-3">
 			<strong>Format</strong>
 			<p class="margin-top-0">{{resource.format}}</p>
 			</div>
+			<div class="mobile-lg:grid-col-3">
+			<strong>Keywords</strong>
+			<p class="margin-top-0">{{resource.keywords}}</p>
+			</div>
+			{% if resource contains "source" %}
+			<div class="mobile-lg:grid-col-3">
+			<strong>Source</strong>
+			<p class="margin-top-0">{{resource.source}}</p>
+			</div>
+			{% endif %}
+			{% if resource contains "coverSheet" %}
+			<div class="mobile-lg:grid-col-3">
+			<strong>Cover Sheet</strong>
+			<p class="margin-top-0">{{resource.coverSheet}}</p>
+			</div>
+			{% endif %}
 		</div>
 	</div>
 </div>
