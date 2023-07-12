@@ -146,13 +146,16 @@ This is used for Agency pages.
                     <p style="font-weight: bold; font-size: 18px; margin-top: 5px;">{{ office.name }}</p>
                     {% endif %}
                     <ul class="rel-offices">
-                    {% if office.eval-policy %}
-                    <li><a style="text-decoration: none;" href="{{ office.eval-policy }}" aria-label="{{ office.name }} Evaluation Policy (opens in a new window)" target="_blank">Evaluation Policy</a></li>
-                    {% endif %}
-                    {% if office.eval-plan-link %}
-                    <li><a style="text-decoration: none;" href="{{ office.eval-plan-link }}" aria-label="{{ office.name }} Evaluation Plan (opens in a new window)" target="_blank">{{ office.eval-plan }}</a></li>
-                    {% endif %}
-                    <!--<li>Link 3</li>-->
+                        {% if office.eval-policy %}
+                        <li><a style="text-decoration: none;" href="{{ office.eval-policy }}" aria-label="{{ office.name }} Evaluation Policy (opens in a new window)" target="_blank">Evaluation Policy</a></li>
+                        {% endif %}
+                        {% if office.eval-plan-link %}
+                        <li><a style="text-decoration: none;" href="{{ office.eval-plan-link }}" aria-label="{{ office.name }} Evaluation Plan (opens in a new window)" target="_blank">{{ office.eval-plan }}</a></li>
+                        {% endif %}
+                        {% if office.eval-learning-link %}
+                        <li><a style="text-decoration: none;" href="{{ office.eval-learning-link }}" aria-label="{{ office.name }} Evaluation Learning Agenda (opens in a new window)" target="_blank">{{ office.eval-learning }}</a></li>
+                        {% endif %}
+                        <!--<li>Link 3</li>-->
                     </ul>
                 </div>
                 {% if office.logo %}

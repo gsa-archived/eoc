@@ -38,7 +38,7 @@ layout: wide
                         <p class="eval-pol-agcy-link"><a href="{{ document.plan-link }}" aria-label="{{ document.agency-name }} Agency Evaluation Plan" target="_blank">Evaluation Policy</a></p>
                         {% endif %}
                         {% for agency-office in document.agency-offices %}
-                        <p class="eval-pol-agcy-link"><a href="{{ agency-office.link }}" aria-label="{{ agency-office.name }} (opens in a new window)" target="_blank">{{ agency-office.name }}</a></p>
+                        <p class="eval-pol-agcy-link"><a href="{{ agency-office.link }}" aria-label="{{ agency-office.aria-label }} (opens in a new window)" target="_blank">{{ agency-office.name }}</a></p>
                         {% endfor %}
                      </div>
                 </div>

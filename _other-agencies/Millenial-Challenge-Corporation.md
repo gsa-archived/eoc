@@ -7,6 +7,7 @@ aria-label: Millennium Challenge Corporation Agency Evaluation Plan
 agency-offices:
     - name: Evaluation Office
       link: https://www.mcc.gov/our-impact
+      aria-label: Millennium Challenge Corporation Evaluation Office
 ---
 
 
