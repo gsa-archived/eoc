@@ -741,6 +741,21 @@ blockquote p {
   padding-bottom: 1rem;
   border-radius: 0.7rem;
 }
+
+.usa-social-link {
+    background-repeat: no-repeat;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.img-align{
+    width:35px;
+    height:35px;
+    margin:8px;
+    max-width:none !important;
+    vertical-align:middle;
+}
+
 .circle-evaluation-card {
     width: 10rem;
     border-radius: 50%;
