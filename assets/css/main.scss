@@ -748,17 +748,10 @@ blockquote p {
     border-radius: 50%;
 }
 
-.usa-social-link--mail-eoc {
-    background-image: url("../assets/images/mail.svg");
-}
-
-.usa-social-link--linkedin-eoc {
-    background-image: url("../assets/images/linkedin.svg");
-}
-
 .img-align{
     width:35px;
     height:35px;
     margin:8px;
     max-width:none !important;
+    vertical-align:middle;
 }
