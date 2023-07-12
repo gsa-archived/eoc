@@ -10,14 +10,14 @@
   box-shadow: 2px 2px 3px #3d4551;
 }
 .usa-hero {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-image: url(../assets/images/line_graph_v2-1.png);
-  background-position: center;
-  background-size: cover;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-image: url(../assets/images/Website_Banner.jpg);
+    background-position: center;
+    background-size: cover;
 } 
 .usa-hero-content {
-    max-width: 30rem;
+    max-width: 25rem;
     background: rgba(255, 255, 255, 0.8);
     border-radius: 0.7rem;
 }
@@ -754,4 +754,18 @@ blockquote p {
     margin:8px;
     max-width:none !important;
     vertical-align:middle;
+}
+
+.circle-evaluation-card {
+    width: 10rem;
+    border-radius: 50%;
+}
+@media only screen and (max-width: 639px) {
+    .title {
+        margin-top: 1.1rem;
+    }
+}
+.evaluation-width{
+    width:180px;
+    margin:auto;
 }
