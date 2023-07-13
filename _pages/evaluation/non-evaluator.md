@@ -17,22 +17,22 @@ title: Getting Started as a Non-Evaluator
 			</div>
 		</div>
 		<div class="grid-row tablet:grid-col-12">
-			<div class="mobile-lg:grid-col-3">
+			<div class="mobile-lg:grid-col">
 			<strong>Format</strong>
 			<p class="margin-top-0">{{resource.format}}</p>
 			</div>
-			<div class="mobile-lg:grid-col-3">
+			<div class="mobile-lg:grid-col">
 			<strong>Keywords</strong>
 			<p class="margin-top-0">{{resource.keywords}}</p>
 			</div>
 			{% if resource contains "source" %}
-			<div class="mobile-lg:grid-col-3">
+			<div class="mobile-lg:grid-col">
 			<strong>Source</strong>
 			<p class="margin-top-0">{{resource.source}}</p>
 			</div>
 			{% endif %}
 			{% if resource contains "coverSheet" %}
-			<div class="mobile-lg:grid-col-3">
+			<div class="mobile-lg:grid-col">
 			<strong>Cover Sheet</strong>
 			<p class="margin-top-0">{{resource.coverSheet}}</p>
 			</div>
