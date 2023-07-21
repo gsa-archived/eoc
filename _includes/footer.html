@@ -1,8 +1,12 @@
 <footer class="usa-footer usa-footer--big">
   <div class="grid-container margin-top-2 margin-bottom-2">
-    <div class="grid-row flex-align-start flex-justify">
-      <a href="#" class="usa-button usa-button--outline border-0">Return to top</a>
-    </div>
+      <div class="grid-row flex-align-start flex-justify">
+          {% if include.page_type == 'evaluation-toolkit' %}
+          <a class="usa-button usa-button--outline border-0" href="{{site.baseurl}}/evaluation-toolkit/about-toolkit" title="About the Toolkit">About the Toolkit</a>
+          {% else %}
+          <a href="#" class="usa-button usa-button--outline border-0">Return to top</a>
+          {% endif %}
+      </div>
   </div>
   <div class="usa-footer__primary-section bg-base-lighter">
     <div class="usa-footer__primary-container">
