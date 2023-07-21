@@ -744,8 +744,12 @@ blockquote p {
 .circle-evaluation-card {
     width: 10rem;
     border-radius: 50%;
+
+    @media only screen and (max-width: 640px) {
+        width:40rem;
+    }
 }
-@media only screen and (max-width: 639px) {
+@media screen and (max-width: 639px) {
     .title {
         margin-top: 1.1rem;
     }
