@@ -1,6 +1,6 @@
 ---
 layout: evaluation-toolkit-home-content
-title: The Federal Evaluator Toolkit
+title: The Federal Evaluation Toolkit
 permalink: /evaluation-toolkit/
 type : evaluation-toolkit
 ---
