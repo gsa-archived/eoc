@@ -742,16 +742,9 @@ blockquote p {
   border-radius: 0.7rem;
 }
 
-.usa-social-link {
-    background-repeat: no-repeat;
-    background-color: #fff;
-    border-radius: 50%;
-}
-
 .img-align{
-    width:35px;
-    height:35px;
-    margin:8px;
+    width:40px;
+    height:40px;
     max-width:none !important;
     vertical-align:middle;
 }
@@ -768,4 +761,16 @@ blockquote p {
 .evaluation-width{
     width:180px;
     margin:auto;
+}
+
+.fa-envelope {
+    background: #0079D5;
+    color: white;
+}
+
+.fa {
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10%;
 }
