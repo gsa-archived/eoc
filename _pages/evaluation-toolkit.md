@@ -1,7 +1,8 @@
 ---
-layout: evaluation-toolkit-home
-title: The Federal Evaluator Toolkit
+layout: evaluation-toolkit-home-content
+title: The Federal Evaluation Toolkit
 permalink: /evaluation-toolkit/
+type : evaluation-toolkit
 ---
 
 <section class="usa-graphic-list">
@@ -20,37 +21,41 @@ permalink: /evaluation-toolkit/
         </div>
     </div>
     <div class="usa-graphic-list__row grid-row grid-gap">
-        <div class="usa-media-block tablet:grid-col-4 text-center">
-            <a href="{{site.baseurl}}/evaluation-toolkit/evaluation-101"><img class="circle-evaluation-card" alt="Evaluation 101" src="{{site.baseurl}}/assets/images/blog/budget-report.jpg"></a>
-            <div class="usa-media-block__body evaluation-width">  
-              <p><a class="eoc-link text-no-underline border-0" href="{{site.baseurl}}/evaluation-toolkit/evaluation-101">Evaluation 101</a></p>
-            </div>
+        <div class="usa-media-block tablet:grid-col-4 text-center padding-bottom-205">
+            <a href="{{site.baseurl}}/evaluation-toolkit/about-toolkit" class="eoc-link text-no-underline display-inline-block">        
+            <img class="circle-evaluation-card" alt="" src="{{site.baseurl}}/assets/images/evaluation/about-toolkit.png">
+              <p class="usa-media-block__body evaluation-width"><b>About the Toolkit</b></p>
+            </a>
         </div>
-        <div class="usa-media-block tablet:grid-col-4 text-center">
-            <a href="{{site.baseurl}}/evaluation-toolkit/why-evaluate"><img class="circle-evaluation-card" alt="Why Evaluate?" src="{{site.baseurl}}/assets/images/blog/notebook.jpg"></a>
-            <div class="usa-media-block__body evaluation-width">  
-              <p><a class="eoc-link text-no-underline border-0" href="{{site.baseurl}}/evaluation-toolkit/why-evaluate">Why Evaluate?</a></p>
-            </div>
+        <div class="usa-media-block tablet:grid-col-4 text-center padding-bottom-205">
+            <a href="{{site.baseurl}}/evaluation-toolkit/evaluation-101" class="eoc-link text-no-underline display-inline-block">
+            <img class="circle-evaluation-card" alt="" src="{{site.baseurl}}/assets/images/evaluation/evaluation-101.png">
+              <p class="usa-media-block__body evaluation-width"><b>Evaluation 101</b></p>
+            </a>
         </div>
-        <div class="usa-media-block tablet:grid-col-4 text-center">
-            <a href="{{site.baseurl}}/evaluation-toolkit/non-evaluator"><img class="circle-evaluation-card" alt="Getting Started as a Non-Evaluator" src="{{site.baseurl}}/assets/images/blog/learning-agenda-thumbnail.jpg"></a>
-            <div class="usa-media-block__body evaluation-width">  
-              <p><a class="eoc-link text-no-underline border-0" href="{{site.baseurl}}/evaluation-toolkit/non-evaluator">Getting Started as a Non-Evaluator</a></p>
-            </div>
+        <div class="usa-media-block tablet:grid-col-4 text-center padding-bottom-205">
+            <a href="{{site.baseurl}}/evaluation-toolkit/why-evaluate" class="eoc-link text-no-underline display-inline-block">
+            <img class="circle-evaluation-card" alt="" src="{{site.baseurl}}/assets/images/evaluation/why-evaluate.png">
+              <p class="usa-media-block__body evaluation-width"><b>Why Evaluate?</b></p>
+            </a> 
         </div>
-        <div class="usa-media-block tablet:grid-col-2 text-center">
+        <div class="usa-media-block tablet:grid-col-4 text-center padding-bottom-205">
+            <a href="{{site.baseurl}}/evaluation-toolkit/non-evaluator" class="eoc-link text-no-underline display-inline-block">
+            <img class="circle-evaluation-card" alt="" src="{{site.baseurl}}/assets/images/evaluation/non-evaluator.png">
+              <p class="usa-media-block__body evaluation-width"><b>Getting Started as a Non-Evaluator</b></p>
+            </a>
         </div>
-        <div class="usa-media-block tablet:grid-col-4 text-center">
-            <a href="{{site.baseurl}}/evaluation-toolkit/evaluation"><img class="circle-evaluation-card" alt="Using Evaluation" src="{{site.baseurl}}/assets/images/blog/lightbulb-stickers.jpg"></a>
-            <div class="usa-media-block__body evaluation-width">  
-              <p><a class="eoc-link text-no-underline border-0" href="{{site.baseurl}}/evaluation-toolkit/evaluation">Using Evaluation</a></p>
-            </div>
+        <div class="usa-media-block tablet:grid-col-4 text-center padding-bottom-205">
+            <a href="{{site.baseurl}}/evaluation-toolkit/evaluation" class="eoc-link text-no-underline display-inline-block">
+            <img class="circle-evaluation-card" alt="" src="{{site.baseurl}}/assets/images/evaluation/using-evaluation.png">
+              <p class="usa-media-block__body evaluation-width"><b>Using Evaluation</b></p>
+            </a>
         </div>
-        <div class="usa-media-block tablet:grid-col-4 text-center">
-            <a href="{{site.baseurl}}/evaluation-toolkit/promoting-evaluation"><img class="circle-evaluation-card" alt="Promoting Evaluation Use" src="{{site.baseurl}}/assets/images/blog/trophy-stars-thumbnail.png"></a>
-            <div class="usa-media-block__body evaluation-width">  
-              <p><a class="eoc-link text-no-underline border-0" href="{{site.baseurl}}/evaluation-toolkit/promoting-evaluation">Promoting Evaluation Use</a></p>
-            </div>
+        <div class="usa-media-block tablet:grid-col-4 text-center padding-bottom-205">
+            <a href="{{site.baseurl}}/evaluation-toolkit/promoting-evaluation" class="eoc-link text-no-underline display-inline-block">
+            <img class="circle-evaluation-card" alt="" src="{{site.baseurl}}/assets/images/evaluation/promoting-evaluation.png">
+              <p class="usa-media-block__body evaluation-width"><b>Promoting Evaluation Use</b></p>
+            </a>
         </div>
     </div>
   </div>
