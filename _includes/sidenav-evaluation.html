@@ -5,10 +5,7 @@ This appears at the top of the page letting the user know it's an official gover
 <nav aria-label="Secondary navigation">
     <ul class="usa-sidenav">
         <li class="usa-sidenav__item">
-            <a href="{{site.baseurl}}/evaluation-toolkit/" class="{% if page.title == 'The Federal Evaluator Toolkit' %} usa-current{% endif %}">Evaluation Toolkit</a>
-        </li>
-        <li class="usa-sidenav__item">
-            <a href="{{site.baseurl}}/evaluation-toolkit/about-toolkit/" class="{% if page.title == 'About the Toolkit' %} usa-current {% endif %} margin-left-3">About the Toolkit</a>
+            <a href="{{site.baseurl}}/evaluation-toolkit/" class="{% if page.title == 'The Federal Evaluator Toolkit' %} usa-current{% endif %}">Toolkit Homepage</a>
         </li>
         <li class="usa-sidenav__item">
             <a href="{{site.baseurl}}/evaluation-toolkit/evaluation-101/" class="{% if page.title == 'Evaluation 101' %} usa-current {% endif %} margin-left-3">Evaluation 101</a>
@@ -19,11 +16,28 @@ This appears at the top of the page letting the user know it's an official gover
         <li class="usa-sidenav__item">
             <a href="{{site.baseurl}}/evaluation-toolkit/non-evaluator/" class="{% if page.title == 'Getting Started as a Non-Evaluator' %} usa-current {% endif %} margin-left-3">Getting Started as a Non-Evaluator</a>
         </li>
+        {% if page.title == 'Getting Started as a Non-Evaluator' %}
+        <li class="usa-sidenav__item">
+            <a href="{{site.baseurl}}/evaluation-toolkit/non-evaluator/#subSection1" class="{% if page.title == 'Getting Started as a Non-Evaluator' %} usa-current {% endif %} margin-left-6">Sub Section 1</a>
+        </li>
+        <li class="usa-sidenav__item">
+            <a href="{{site.baseurl}}/evaluation-toolkit/non-evaluator/#subSection2" class="{% if page.title == 'Getting Started as a Non-Evaluator' %} usa-current {% endif %} margin-left-6">Sub Section 2</a>
+        </li>
+        <li class="usa-sidenav__item">
+            <a href="{{site.baseurl}}/evaluation-toolkit/non-evaluator/#subSection3" class="{% if page.title == 'Getting Started as a Non-Evaluator' %} usa-current {% endif %} margin-left-6">Sub Section 3</a>
+        </li>
+        <li class="usa-sidenav__item">
+            <a href="{{site.baseurl}}/evaluation-toolkit/non-evaluator/#subSection4" class="{% if page.title == 'Getting Started as a Non-Evaluator' %} usa-current {% endif %} margin-left-6">Sub Section 4</a>
+        </li>
+        {% endif %}
         <li class="usa-sidenav__item">
             <a href="{{site.baseurl}}/evaluation-toolkit/evaluation/" class="{% if page.title == 'Using Evaluation' %} usa-current {% endif %} margin-left-3">Using Evaluation</a>
         </li>
         <li class="usa-sidenav__item">
             <a href="{{site.baseurl}}/evaluation-toolkit/promoting-evaluation/" class="{% if page.title == 'Promoting Evaluation Use' %} usa-current {% endif %} margin-left-3">Promoting Evaluation Use</a>
+        </li>
+        <li class="usa-sidenav__item">
+            <a href="{{site.baseurl}}/evaluation-toolkit/about-toolkit/" class="{% if page.title == 'About the Toolkit' %} usa-current {% endif %} margin-left-3">About the Toolkit</a>
         </li>
     </ul>
 </nav>
