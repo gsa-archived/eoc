@@ -18,16 +18,16 @@ This appears at the top of the page letting the user know it's an official gover
         </li>
         {% if page.title == 'Getting Started as a Non-Evaluator' %}
         <li class="usa-sidenav__item">
-            <a href="{{site.baseurl}}/evaluation-toolkit/non-evaluator/#Sub-Section-1" class="{% if page.id == 'Sub-Section-1' %} usa-current {% endif %} margin-left-6">Sub Section 1</a>
+            <a href="{{site.baseurl}}/evaluation-toolkit/non-evaluator/#Sub-Section-1" class="margin-left-6" id="s1">Sub Section 1</a>
         </li>
         <li class="usa-sidenav__item">
-            <a href="{{site.baseurl}}/evaluation-toolkit/non-evaluator/#Sub-Section-2" class="{% if page.id == 'Sub-Section-2' %} usa-current {% endif %} margin-left-6">Sub Section 2</a>
+            <a href="{{site.baseurl}}/evaluation-toolkit/non-evaluator/#Sub-Section-2" class="margin-left-6" id="s2">Sub Section 2</a>
         </li>
         <li class="usa-sidenav__item">
-            <a href="{{site.baseurl}}/evaluation-toolkit/non-evaluator/#Sub-Section-3" class="{% if page.id == 'Sub-Section-3' %} usa-current {% endif %} margin-left-6">Sub Section 3</a>
+            <a href="{{site.baseurl}}/evaluation-toolkit/non-evaluator/#Sub-Section-3" class="margin-left-6" id="s3">Sub Section 3</a>
         </li>
         <li class="usa-sidenav__item">
-            <a href="{{site.baseurl}}/evaluation-toolkit/non-evaluator/#Sub-Section-4" class="{% if page.id == 'Sub-Section-4' %} usa-current {% endif %} margin-left-6">Sub Section 4</a>
+            <a href="{{site.baseurl}}/evaluation-toolkit/non-evaluator/#Sub-Section-4" class="margin-left-6" id="s4">Sub Section 4</a>
         </li>
         {% endif %}
         <li class="usa-sidenav__item">
@@ -41,3 +41,29 @@ This appears at the top of the page letting the user know it's an official gover
         </li>
     </ul>
 </nav>
+<script>
+    $("#s1").on("click", function () {
+        $("#s1").addClass('usa-current');
+        $("#s2").removeClass('usa-current');
+        $("#s3").removeClass('usa-current');
+        $("#s4").removeClass('usa-current');
+    });
+    $("#s2").on("click", function () {
+        $("#s2").addClass('usa-current');
+        $("#s1").removeClass('usa-current');
+        $("#s3").removeClass('usa-current');
+        $("#s4").removeClass('usa-current');
+    });
+    $("#s3").on("click", function () {
+        $("#s3").addClass('usa-current');
+        $("#s2").removeClass('usa-current');
+        $("#s1").removeClass('usa-current');
+        $("#s4").removeClass('usa-current');
+    });
+    $("#s4").on("click", function () {
+        $("#s4").addClass('usa-current');
+        $("#s2").removeClass('usa-current');
+        $("#s3").removeClass('usa-current');
+        $("#s1").removeClass('usa-current');
+    });
+</script>
