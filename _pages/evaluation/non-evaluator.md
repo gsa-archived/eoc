@@ -8,7 +8,7 @@ title: Getting Started as a Non-Evaluator
 {% assign size = resources| size %}
 {% for i in (0..size) %}
 {% assign resourcesList = resources[i].items %}
-<div id="{{resourcesList[i].name| replace: ' ', '-'}}">
+<div id="{{resourcesList[0].name| replace: ' ', '-'}}">
 <h2 class="title margin-top-0 margin-bottom-0">{{resourcesList[0].name}}</h2>
 {% for resource in resourcesList[0].resources %}
 <div class="event-card padding-bottom-3 margin-top-1">
