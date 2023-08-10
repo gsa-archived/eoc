@@ -740,3 +740,22 @@ blockquote p {
   padding-bottom: 1rem;
   border-radius: 0.7rem;
 }
+
+.img-align {
+    width: 30px;
+    height: 30px;
+    max-width: none !important;
+    vertical-align: middle;
+}
+
+.fa-envelope {
+    background: #0d7ea2;
+    color: white;
+}
+
+.fa {
+    padding: 6px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10%;
+}
