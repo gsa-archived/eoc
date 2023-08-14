@@ -1,0 +1,73 @@
+- name: 'Evaluation 101'
+  path: '/evaluation-toolkit/evaluation-101/'
+  domain: 'Evaluation 101'
+  description: >
+    What is evaluation? How can it help me do my job better? Evaluation 101  provides resources to help you answer those questions and more. You will learn about program evaluation and why it is needed, along with some helpful frameworks that place evaluation in the broader evidence context. Other resources provide helpful overviews of specific types of evaluation you may encounter or be considering, including implementation, outcome, and impact evaluations, and rapid cycle approaches.
+  subsections:
+    - name: 'What is Evaluation?'
+      path: '/evaluation-toolkit/evaluation-101#what-is-evaluation'
+      domain: 'Evaluation 101: What is Evaluation?'
+      description: >
+        Heard the term "evaluation," but are still not quite sure what that means? These resources help you answer the question, "what is evaluation?," and learn more about how evaluation fits into a broader evidence-building framework.
+    - name: 'Types of Evaluation'
+      path: '/evaluation-toolkit/evaluation-101#types-of-evaluation'
+      domain: 'Evaluation 101: Types of Evaluation'
+      description: >
+        What's the difference between an impact evaluation and an implementation evaluation? What does each type of evaluation tell us? Use these resources to learn more about the different types of evaluation, what they are, how they are used, and what types of evaluation questions they answer.
+- name: 'Why Evaluate?'
+  path: '/evaluation-toolkit/why-evaluate/'
+  domain: 'Why Evaluate?'
+  description: >
+    Evaluation is a powerful tool that agencies can use to understand what works, under what circumstances, and for whom. Yet, many agency staff and leaders may be unfamiliar with evaluation, and may not fully appreciate what is evaluation is, why it is important, and how it can help them in their roles. These resources will help you talk to others about the value of evaluation and give you the tools you need to make the case to evaluate your agency's programs, policies, and/or operations.
+- name: 'Getting Started as a Non-Evaluator'
+  path: '/evaluation-toolkit/non-evaluator/'
+  domain: 'Getting Started as a Non-Evaluator'
+  description: >
+    You're convinced of the value that evaluation has to offer for your program, policy, or operation and are ready to champion pursuing this approach to building evidence. Now what?  Where do you begin? Who do you talk to? These resources will help you move forward, knowing what questions to ask, what to look for when reviewing evaluation plans, and more.
+  subsections:
+    - name: 'Identifying Resources'
+      path: '/evaluation-toolkit/non-evaluator#identifying-resources'
+      domain: 'Getting Started (as a Non-Evaluator): Identifying Resources'
+      description: >
+        Resources are an important part of any evaluation, but knowing how to identify resources or figure out the level of resources needed can be a challenge. These tools help you figure out what resources are needed and offer ideas about how to identify potential resources.
+    - name: 'Identifying Evaluation Questions'
+      path: '/evaluation-toolkit/non-evaluator#identifying-evaluation-questions'
+      domain: 'Getting Started (as a Non-Evaluator): Identifying Evaluation Questions'
+      description: >
+        Behind every rigorous evaluation is a clear, well-written empirical question(s) that drives the evaluation design and execution. Yet, writing a strong evaluation question is not so simple. These resources and tools will help you develop and refine your evaluation questions, providing a critical foundation for your evaluation.
+    - name: 'Assessing Readiness'
+      path: '/evaluation-toolkit/non-evaluator#assessing-readiness'
+      domain: 'Getting Started (as a Non-Evaluator): Assessing Readiness'
+      description: >
+        An important, but often overlooked component of any high-quality evaluation, is a program's readiness to be evaluated. How do you know if your program, policy, or operation is ready for evaluation? These resources will help you assess your program, policy, or operation's readiness for evaluation.
+    - name: 'Initiating an Evaluation'
+      path: '/evaluation-toolkit/non-evaluator#initiating-an-evaluation'
+      domain: 'Getting Started (as a Non-Evaluator): Initiating an Evaluation'
+      description: >
+        Planning an evaluation requires careful consideration of factors like who to engage in your agency, what evaluation designs might be possible, and who might conduct the evaluation. These resources can improve evaluation planning, and provide useful tools for selecting an external evaluator (if needed).
+- name: 'Using Evaluation'
+  path: '/evaluation-toolkit/evaluation/'
+  domain: 'Using Evaluation'
+  description: >
+    It is not enough to conduct evaluation; we have to use and apply those findings to programs, policies, and operations. Figuring out how to use evaluation findings and apply them to your work can be challenging. The existing evidence might not be a perfect match for your context or the evaluation(s) may have mixed results. Regardless, we can always find ways to learn from evaluation activities, and these resources provide the tools you need to think about applying evaluation findings in your work.
+- name: 'Promoting Evaluation Use'
+  path: '/evaluation-toolkit/promoting-evaluation/'
+  domain: 'Promoting Evaluation Use'
+  description: >
+    Evaluation use is a critical step in the evidence lifecyle. Building evidence without using it is a missed opportunity. Yet, too often, we see evaluation reports that sit collecting dust on bookshelves instead of being used to improve programs, policies, and operations. How do you ensure that an evaluation's findings get used? Doing this well requires strategic thinking while planning an evaluation, and a thoughtful approach to dissemination. These resources will help you plan for and anticipate how the findings from an evaluation can be used to make sure that the evaluation produces findings that are useful as well as dissemination strategies that get the findings in front of those who can use them. 
+- name: 'About the Toolkit'
+  path: '/evaluation-toolkit/about-toolkit/'
+  domain: 'About the Toolkit'
+  description: >
+    <p>
+        The Federal Evaluation Toolkit provides a curated set of resources to help Federal agency staff at all levels better understand evaluation - what it is, why it is important, and how it can help them execute on their missions more effectively. Recent legislative, executive actions, and OMB guidance have elevated program evaluation as a critical agency function, including the <a target="_blank" rel="noopener noreferrer" href="https://www.congress.gov/115/plaws/publ435/PLAW-115publ435.pdf"><span style="color:#0563c1;"><u>Foundations for Evidence-Based Policymaking Act of 2018 (Evidence Act)</u></span></a>, the <a target="_blank" rel="noopener noreferrer" href="https://www.whitehouse.gov/briefing-room/presidential-actions/2021/01/27/memorandum-on-restoring-trust-in-government-through-scientific-integrity-and-evidence-based-policymaking/"><span style="color:#0563c1;"><u>Presidential Memorandum on Restoring Trust in Government through Scientific Integrity and Evidence-Based Policymaking</u></span></a>, and <a target="_blank" rel="noopener noreferrer" href="https://www.whitehouse.gov/wp-content/uploads/2019/07/M-19-23.pdf"><span style="color:#0563c1;"><u>OMB Memorandum M-21-27: Evidence-Based Policymaking: Learning Agendas and Annual Evaluation Plans</u></span></a>. However, even in agencies with strong evaluation capacity, it is critical for all Federal staff (i.e., program staff, managers, and leaders) to develop their ability to understand, use, and apply evaluation findings in their work: their “Evaluation IQ.” Leaders and program managers want to make better use of evaluation, but may not know where to start or may be unsure about how to interpret, assess, or apply the evaluation findings available. This toolkit aims to meet this need; it is not intended as means to become a qualified program evaluator, but rather to support those across the Government in making better use of the evidence generated through program evaluations.
+    </p>
+    <p>
+        There are many high-quality tools and resources available that provide guidance on all aspects of evaluation from planning to execution to dissemination and use. For someone who is new to, curious about, or needs to learn more on evaluation, it can be difficult to know how to get started, where to go, which sources to trust, and what resources will be most helpful. By pulling together a single set of curated, high-quality resources from across Federal agencies and external entities, the Federal Evaluation Toolkit attempts to make this easier for Federal staff. Its resources include a range of formats and types, all with the goal of being clear, easy to use, and relevant to staff who need to understand, use, and apply evaluation findings. Importantly, the Federal Evaluation Toolkit is a living resource, and we plan to update and revise it as needed. If you have suggestions for items to include in the Toolkit, please let us know at <a href="mailto:evidence@omb.eop.gov"><span style="color:#0563c1;"><u>evidence@omb.eop.gov</u></span></a>.
+    </p>
+    <p>
+        The Federal Evaluation Toolkit includes resources developed exclusively for this purpose, existing resources adapted to meet the Toolkit's goals, and tools posted in their original format from their original authors. Pre-existing materials come from various sources, including Federal agencies, like the Institute for Education Sciences; the Office of Planning, Research and Evaluation (OPRE) in the Administration for Children and Families (ACF); and AmeriCorps. Many of these resources were developed by external entities under contract with Federal agencies. The Toolkit also includes resources from external entities engaged in program evaluation work. Finally, it includes a set of materials developed by the National Opinion Research Center (NORC) under contract to the Office of the Assistant Secretary for Planning and Evaluation (ASPE) in the U.S. Department of Health and Human Services (HHS).
+    </p>
+    <p>
+        We would like to acknowledge the efforts of the many individuals and institutions that contributed to the Federal Evaluation Toolkit, beginning with Susan Jenkins, Dan Kim, Oluwarantimi Adetunji, and colleagues in ASPE. We would also like to recognize the Office of Management and Budget (OMB) Evidence Team - Diana Epstein, Danielle Berman, Erika Liliedahl, and Erica Zielewski - and former Evidence Team detailees, Jenny Heintz (Millennium Challenge Corporation) and Lauren Deutsch Stanton (OPRE/ACF). Together, OMB and ASPE provided critical direction to NORC to develop the Toolkit. At NORC, we want to acknowledge the team that developed the Toolkit. A cross-agency Steering Committee provided strategic direction and insights throughout the development of the Federal Evaluation Toolkit, and we would like to thank Kelly Bidwell (Office of Evaluation Sciences at the General Services Administration [GSA]), Dan Kidder (Centers for Disease Control [HHS]), Rebecca Kruse (U.S. Department of Homeland Security), Kriti Jain (formerly with OPRE/ACF [HHS]), and Paula Daneri (OPRE/ACF [HHS]) for their participation. Finally, we would like to thank Sarah Yue in the Office of Shared Solutions and Performance Improvement at GSA for her support to bring the Toolkit to life on Evaluation.gov.
+    </p>
