@@ -9,12 +9,12 @@ This appears at the top of the page letting the user know it's an official gover
         </li>
         {% for domain in site.data.evaluation-domains %}
             <li class="usa-sidenav__item">
-                <a href="{{site.baseurl}}{{ domain.path }}" class="{% if page.title == domain.name %} usa-current {% endif %} margin-left-2">{{ domain.name }}</a>
+                <a href="{{site.baseurl}}{{ domain.path }}" class="{% if page.title == domain.name %} usa-current {% endif %} margin-left-3">{{ domain.name }}</a>
             </li>
             {% if domain.subsections %}
                 {% for subsection in domain.subsections %}
-                    <li class="usa-sidenav__item font-sans-xs">
-                        <a href="{{site.baseurl}}{{ subsection.path }}" class="{% if page.title == subsection.name %} usa-current {% endif %}sub-section margin-left-4 {{ subsection.name | slugify }}">{{ subsection.name }}</a>
+                    <li class="usa-sidenav__item">
+                        <a href="{{site.baseurl}}{{ subsection.path }}" class="{% if page.title == subsection.name %} usa-current {% endif %}sub-section margin-left-6 {{ subsection.name | slugify }}">{{ subsection.name }}</a>
                     </li>
                 {% endfor %}
             {% endif %}
