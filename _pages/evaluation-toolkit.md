@@ -22,6 +22,12 @@ type : evaluation-toolkit
     </div>
     <div class="usa-graphic-list__row grid-row grid-gap">
         <div class="usa-media-block tablet:grid-col-4 text-center padding-bottom-205">
+            <a href="{{site.baseurl}}/evaluation-toolkit/about-toolkit" class="eoc-link text-no-underline display-inline-block">        
+            <img class="circle-evaluation-card" alt="" src="{{site.baseurl}}/assets/images/evaluation/about-toolkit.png">
+              <p class="usa-media-block__body evaluation-width"><b>About the Toolkit</b></p>
+            </a>
+        </div>
+        <div class="usa-media-block tablet:grid-col-4 text-center padding-bottom-205">
             <a href="{{site.baseurl}}/evaluation-toolkit/evaluation-101" class="eoc-link text-no-underline display-inline-block">
             <img class="circle-evaluation-card" alt="" src="{{site.baseurl}}/assets/images/evaluation/evaluation-101.png">
               <p class="usa-media-block__body evaluation-width"><b>Evaluation 101</b></p>
@@ -49,12 +55,6 @@ type : evaluation-toolkit
             <a href="{{site.baseurl}}/evaluation-toolkit/promoting-evaluation" class="eoc-link text-no-underline display-inline-block">
             <img class="circle-evaluation-card" alt="" src="{{site.baseurl}}/assets/images/evaluation/promoting-evaluation.png">
               <p class="usa-media-block__body evaluation-width"><b>Promoting Evaluation Use</b></p>
-            </a>
-        </div>
-        <div class="usa-media-block tablet:grid-col-4 text-center padding-bottom-205">
-            <a href="{{site.baseurl}}/evaluation-toolkit/about-toolkit" class="eoc-link text-no-underline display-inline-block">        
-            <img class="circle-evaluation-card" alt="" src="{{site.baseurl}}/assets/images/evaluation/about-toolkit.png">
-              <p class="usa-media-block__body evaluation-width"><b>About the Toolkit</b></p>
             </a>
         </div>
     </div>
