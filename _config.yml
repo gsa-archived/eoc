@@ -171,8 +171,12 @@ primary_navigation:
     url: /resources/
   - name: News
     url: /news/
-  - name: FAQs
-    url: /faqs/
+  - name: About
+    children:
+      - name: About the Site
+        url: "/about/"
+      - name: FAQs
+        url: "/faqs/"
 
 # Search.gov configuration
 #
