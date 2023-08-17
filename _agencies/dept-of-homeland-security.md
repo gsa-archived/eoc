@@ -11,7 +11,7 @@ eval-plan:
       link: https://www.dhs.gov/sites/default/files/2022-03/DHS%20FY2023%20Annual%20Evaluation%20Plan_508c%20%28003%29.pdf
     - name: FY 2024
       link: https://www.dhs.gov/sites/default/files/2023-03/DHS_FY2024_Annual_Evaluation_Plan_508c.pdf
-eval-policy: https://www.dhs.gov/sites/default/files/2022-01/Directive%20069-03%2C%20Revision%2000%20Program%2C%20Policy%2C%20and%20Organizational%20Evaluations.pdf
+eval-policy: https://www.dhs.gov/sites/default/files/2023-07/Program%2C%20Policy%2C%20and%20Organizational%20Evaluations%20DHS%20Directives.pdf
 learning-agenda: https://www.dhs.gov/sites/default/files/2022-03/DHS%20FY2022-26%20Learning%20Agenda_508c.pdf
 capacity-assesment: https://www.dhs.gov/sites/default/files/2022-03/DHS%20FY2021%20Capacity%20Assessment_508c_0.pdf
 agency-offices:
