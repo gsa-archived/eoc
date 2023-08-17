@@ -29,8 +29,9 @@ This is used in blog posts. The index page can be found at blog/index.html
             <div class="tablet:grid-col-9 ">
                 {% include toolkit_resources.html target_item=target_item %}
 
-                {% if target_item.subsections %}
-                  {% for subsection in target_item.subsections %}
+                {% assign subsections = site.data.evaluation-domains | where: 'parent', target_item.domain %}
+                {% if subsections %}
+                  {% for subsection in subsections %}
                     {% include toolkit_resources.html target_item=subsection %}
                   {% endfor %}
                 {% endif %}

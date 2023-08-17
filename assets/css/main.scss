@@ -3,6 +3,9 @@
 @import "../../_sass/_news";
 @import "../../_sass/_arrow";
 /*-------------------------------------*/
+html {
+  scroll-behavior: smooth;
+}
 .eoc-logo-size {
   width: 60%;
 }
@@ -758,4 +761,12 @@ blockquote p {
 .evaluation-width{
     width:180px;
     margin:auto;
+}
+.resource-category {
+  color: #5b616b;
+  border-top: 0.15rem solid #5b616b;
+  padding-top: 0.25rem;
+  font-family: Public Sans Web,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  font-size: 1.13rem;
+  font-weight: 600;
 }
