@@ -2,7 +2,7 @@
 bio-image: commerce_department_seal.png
 bio-image-alt-text: U.S. Department of Commerce
 layout: bio
-name: Christine Heflin
+name: Shawn Klimek
 department: Department of Commerce
-job-title: Director of Performance Excellence
+job-title: Evaluation Officer
 ---

@@ -64,7 +64,7 @@ pagination:
               {% if post.image %}
               <img class="tablet:float-left width-15 padding-right-2 padding-top-1 padding-bottom-2 post-img" src="{{ site.baseurl }}/assets/images/blog/{{ post.image }}" alt="{{ post.img-alt }}" />
               {% endif %}
-              <p class="font-sans-sm text-ink">{{ post.excerpt }} <a href="{{site.baseurl}}{{post.permalink}}" aria-label="{{post.aria}}">Continue Reading</a></p>
+              <p class="font-sans-sm text-ink">{{ post.excerpt }} <a href="{{site.baseurl}}{{post.permalink}}" aria-label="{{post.aria}}">Read more</a></p>
               {% comment %}
                 We default to using post.content, but you can also use post.excerpt.
                 If you use excerpt then you have to make sure the content is on each
