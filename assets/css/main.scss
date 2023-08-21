@@ -740,7 +740,24 @@ blockquote p {
   padding-bottom: 1rem;
   border-radius: 0.7rem;
 }
+.circle-evaluation-card {
+    width: 10rem;
+    border-radius: 50%;
+    background: linear-gradient(52deg, #162e51 25%, #28a0cb 100%);
 
+    @media only screen and (max-width: 640px) {
+        width: 40rem;
+    }
+}
+@media only screen and (max-width: 639px) {
+    .title {
+        margin-top: 1.1rem;
+    }
+}
+.evaluation-width {
+  width: 180px;
+  margin: auto;
+}
 .img-align {
     width: 30px;
     height: 30px;

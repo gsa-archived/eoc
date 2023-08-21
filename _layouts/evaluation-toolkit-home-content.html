@@ -1,0 +1,29 @@
+---
+layout: evaluation-toolkit-home
+---
+
+{% comment %}
+This template is for a single page that does not have a date associated with it. For example, an about page.
+{% endcomment %}
+
+<div class="usa-graphic-list usa-section sml-margin bg-evaluation">
+    <div class="grid-container">
+        <div class="grid-row grid-gap">
+            <div class="priority-tag-line"><h1 class="text-white margin-0 font-ui-2xl">{{ page.title }}</h1></div>
+        </div>
+    </div>
+</div>
+<div class="usa-graphic-list grid-container margin-bottom-3 padding-left-0 padding-right-0">
+    <div class="grid-container">
+        <div class="grid-row grid-gap">
+            {% if page.sidenav == true %}
+            {% include sidenav.html %}
+            {% endif %}
+
+            <div class="usa-layout-docs__main desktop:grid-col-12 usa-prose">
+                {{ content }}
+            </div>
+
+        </div>
+    </div>
+</div>
