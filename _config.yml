@@ -229,6 +229,7 @@ plugins:
   - jekyll-redirect-from
   - jekyll-sitemap # See additional instructions for url parameter above.
   - jekyll-seo-tag
+  - jekyll-liquify
 
 ############################################################
 # Site configuration for the Jekyll 3 Pagination Gem

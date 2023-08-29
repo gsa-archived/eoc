@@ -10,7 +10,8 @@
     - Dissemination
   year: 2017
   format: PDF
-  has_cover_sheet:
+  link: Resource_What is Program Evaluation - A Beginners Guide.pdf
+  cover_sheet:
 -
   domain: "Evaluation 101: Types of Evaluation"
   title: The Administration for Children & Families Common Framework for Research and Evaluation
@@ -23,7 +24,8 @@
     - Evaluation Types
   year: 2016
   format: PDF
-  has_cover_sheet:
+  link: Resource_The Administration for Children and Families Common Framework for Research and Evaluation.pdf
+  cover_sheet:
 -
   domain: "Evaluation 101: Types of Evaluation"
   title: Formative Evaluation Toolkit
@@ -36,7 +38,8 @@
   Key Word 3:
   year: 2018
   format: PDF
-  has_cover_sheet: Yes
+  link: Resource_Formative Evaluation Toolkit.pdf
+  cover_sheet: CS_Formative Evaluation Toolkit.pdf
 -
   domain: "Evaluation 101: Types of Evaluation"
   title: Introduction to Randomized Evaluations
@@ -49,7 +52,8 @@
   Key Word 3:
   year: 2021
   format: Website
-  has_cover_sheet:
+  link: https://www.povertyactionlab.org/resource/introduction-randomized-evaluations
+  cover_sheet:
 -
   domain: "Evaluation 101: Types of Evaluation"
   title: Rapid Cycle Evaluation at a Glance
@@ -62,12 +66,13 @@
   Key Word 3:
   year: 2020
   format: PDF
-  has_cover_sheet:
+  link: Resource_Rapid Cycle Evaluation at a Glance.pdf
+  cover_sheet:
 -
   domain: Why Evaluate?
   title: Evidence for Action Pitch Decks
   description: >
-    You may find yourself needing to make the case for evaluation to others in your agency. These PowerPoint "pitch decks" bring together several resources you can use and tailor to your own needs and agency context. Knowing that your audience(s) may vary, there are three different pitch decks that vary in length and level of detail: (1) 5-Minute Quick Pitch [Hyperlink to 5-minute PPT Deck]; (2) 10-Minute Presentation [hyperlink to 10-minute PPT Deck]; and (3) 20-Minute Discussion [Hyperlink to 20-minute PPT Deck]. Each slide deck speaks to the value of evalaution and explains how it can improve decision-making. Check out the cover sheet to learn more about each deck and see which one may be most helpful for you.
+    You may find yourself needing to make the case for evaluation to others in your agency. These PowerPoint "pitch decks" bring together several resources you can use and tailor to your own needs and agency context. Knowing that your audience(s) may vary, there are three different pitch decks that vary in length and level of detail: (1) <a href="{{site.baseurl}}/assets/resources/Resource_Evidence for Action - 5 minutes.pptx">5-Minute Quick Pitch</a>; (2) <a href="{{site.baseurl}}/assets/resources/Resource_Evidence for Action - 10 minutes.pptx">10-Minute Presentation</a>; and (3) <a href="{{site.baseurl}}/assets/resources/Resource_Evidence for Action - 20 minutes.pptx">20-Minute Discussion</a>. Each slide deck speaks to the value of evaluation and explains how it can improve decision-making. Check out the cover sheet to learn more about each deck and see which one may be most helpful for you.
   source:
   type: Slide Deck; Guide
   keywords:
@@ -76,7 +81,7 @@
   Key Word 3:
   year: 2022
   format: PowerPoint
-  has_cover_sheet: Yes
+  cover_sheet: CS_Evidence for Action Pitch Decks.pdf
 -
   domain: "Getting Started (as a Non-Evaluator): Identifying Resources"
   title: Identifying Resources for Evaluation
@@ -89,7 +94,8 @@
   Key Word 3:
   year: 2023
   format: PDF
-  has_cover_sheet:
+  link: Resource_Identifying Resources for Evaluation.pdf
+  cover_sheet:
 -
   domain: "Getting Started (as a Non-Evaluator): Identifying Resources"
   title: Budgeting for Evaluation
@@ -102,7 +108,8 @@
   Key Word 3:
   year: 2014
   format: PDF
-  has_cover_sheet:
+  link: Resource_Budgeting for Evaluation.pdf
+  cover_sheet:
 -
   domain: "Getting Started (as a Non-Evaluator): Identifying Evaluation Questions"
   title: Evaluation Questions Checklist for Program Evaluation
@@ -115,7 +122,8 @@
     - Evaluation Questions
   year: 2016
   format: PDF
-  has_cover_sheet:
+  link: Resource_Evaluation Questions Checklist for Program Evaluation.pdf
+  cover_sheet:
 -
   domain: "Getting Started (as a Non-Evaluator): Identifying Evaluation Questions"
   title: How to Develop the Right Research Questions for Program Evaluation
@@ -129,12 +137,12 @@
     - Methods
   year: 2015
   format: PDF
-  has_cover_sheet:
+  cover_sheet:
 -
   domain: "Getting Started (as a Non-Evaluator): Identifying Evaluation Questions"
   title: Quick Guide to Writing a Strong Evidence-Building Question
   description: >
-    Use this worksheet  to plan, draft, and finalize a strong evidence-building question. Broadly consider how the question relates to the purpose and relevance of the effort, types of evidence, methodology, and resources.
+    Use this worksheet to plan, draft, and finalize a strong evidence-building question. Broadly consider how the question relates to the purpose and relevance of the effort, types of evidence, methodology, and resources.
   source:
   type: Worksheet
   keywords:
@@ -143,7 +151,8 @@
     - Evaluation Questions
   year: 2021
   format: PDF
-  has_cover_sheet:
+  link: Resource_Quick Guide to Writing a Strong Evidence-Building Question.pdf
+  cover_sheet:
 -
   domain: "Getting Started (as a Non-Evaluator): Assessing Readiness"
   title: How to Develop a Program Logic Model
@@ -156,7 +165,7 @@
     - Evaluation Questions
   year: 2014
   format: PDF
-  has_cover_sheet:
+  cover_sheet:
 -
   domain: "Getting Started (as a Non-Evaluator): Assessing Readiness"
   title: "Research and Evaluation Capacity: Self-Assessment Tool and Discussion Guide for CCDF Lead Agencies"
@@ -168,7 +177,7 @@
     - Planning
   year: 2017
   format: PDF
-  has_cover_sheet: Yes
+  cover_sheet: CS_Research and Evaluation Capacity Self Assessment Tool.pdf
 -
   domain: "Getting Started (as a Non-Evaluator): Assessing Readiness"
   title: Introducing the Impact Evaluability Assessment Tool
@@ -181,7 +190,7 @@
     - Methods
   year: 2014
   format: PDF
-  has_cover_sheet:
+  cover_sheet:
 -
   domain: "Getting Started (as a Non-Evaluator): Initiating an Evaluation"
   title: Initiating an Evaluation Tip Sheet
@@ -193,7 +202,8 @@
     - Design
   year: 2022
   format: PDF
-  has_cover_sheet:
+  link: Resource_Initiating an Evaluation Tip Sheet.pdf
+  cover_sheet:
 -
   domain: "Getting Started (as a Non-Evaluator): Initiating an Evaluation"
   title: How to Manage an External Evaluation
@@ -205,7 +215,7 @@
     - External Evaluation
   year: 2015
   format: PDF
-  has_cover_sheet:
+  cover_sheet:
 -
   domain: "Getting Started (as a Non-Evaluator): Initiating an Evaluation"
   title: Evaluator Screening Tips
@@ -217,7 +227,7 @@
     - External Evaluation
   year: 2012
   format: PDF
-  has_cover_sheet: Yes
+  cover_sheet: CS_Evaluator Screening Tips.pdf
 -
   domain: Using Evaluation
   title: How to Apply Available Evidence
@@ -229,7 +239,7 @@
     - Evaluation Use
   year: 2021
   format: PDF
-  has_cover_sheet:
+  cover_sheet:
 -
   domain: Promoting Evaluation Use
   title: "Communication Guide for TTCW Grantees: What to Consider When Sharing Program Accomplishments"
@@ -243,7 +253,7 @@
     - Evaluation Use
   year: 2020
   format: PDF
-  has_cover_sheet:
+  cover_sheet:
 -
   domain: Promoting Evaluation Use
   title: "Program Evaluation Toolkit - Module 8: Dissemination Approaches"
@@ -257,4 +267,4 @@
     - Evaluation Use
   year: 2021
   format: PDF
-  has_cover_sheet: Yes
+  cover_sheet: CS_Program Evaluation Toolkit - Module 8 Dissemination Approaches.pdf
