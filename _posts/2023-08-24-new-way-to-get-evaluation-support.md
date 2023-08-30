@@ -1,7 +1,7 @@
 ---
 title: Introducing a New Way for Federal Agencies to Get the Evaluation Support They Need!
 layout: post
-date: August 29, 2023
+date: August 30, 2023
 author: Sarah Yue, GSA
 excerpt: High quality program evaluations require connecting agencies’ evidence questions with the expertise to answer them...
 aria: 
