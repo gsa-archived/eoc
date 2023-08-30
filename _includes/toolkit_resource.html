@@ -12,7 +12,7 @@
     <div class="tablet:grid-col-12">
       <h3 class="title margin-top-0">
         {% if titleLink %}
-          <a class="text-no-underline hover:text-underline" href="{{ titleLink }}">{{ resource.title }}</a>
+          <a class="text-no-underline hover:text-underline" href="{{ titleLink }}" target="_blank">{{ resource.title }}</a>
         {% else %}
           {{ resource.title }}
         {% endif %}
@@ -51,7 +51,9 @@
       {% if resource.cover_sheet %}
       <div class="mobile-lg:grid-col-3">
         <strong>Cover Sheet</strong>
-        <p class="margin-top-0"><a href="{{ site.baseurl }}/assets/resources/{{ resource.cover_sheet }}">Cover Sheet</a></p>
+        <p class="margin-top-0"><a href="{{ site.baseurl }}/assets/resources/{{ resource.cover_sheet }}"
+                                   aria-label="{{ resource.title }} Cover Sheet"
+                                   target="_blank">Cover Sheet</a></p>
       </div>
       {% endif %}
     </div>
