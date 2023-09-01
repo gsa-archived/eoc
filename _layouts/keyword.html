@@ -1,0 +1,45 @@
+---
+layout: default
+---
+{% assign all_resources = site.data.toolkit_resources | where: "keywords", page.title | group_by: "domain" %}
+
+
+<div class="usa-graphic-list usa-section sml-margin bg-evaluation">
+  <div class="grid-container">
+    <div class="grid-row grid-gap">
+      <div class="priority-tag-line">
+        <h1 class="text-white margin-0 font-ui-2xl">Keyword Filter Page</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="usa-graphic_list clearfix ">
+  <div class="clearfix grid-container grey-back padding-top-3 padding-bottom-2">
+    <div class="grid-row grid-gap">
+      <div class="tablet:grid-col-3">
+        {% include sidenav-keywords.html keyword = page.title %}
+      </div>
+      <div class="tablet:grid-col-9 ">
+        <h2>Results for '{{ page.title }}'</h2>
+
+        {% for resources in all_resources %}
+          {% assign target_item = site.data.evaluation-domains | where: 'domain', resources.name | first %}
+          <h3 id="{{ resources.name | slugify }}" class="resource-category margin-top-0 text-uppercase">{{ resources.name }}</h3>
+          {% assign sorted_resources = resources.items | sort: 'year' %}
+          {% assign sorted_resources = sorted_resources | reverse %}
+          {% for resource in sorted_resources %}
+            <div class="no_toc_section border-bottom border-base">
+              {% include toolkit_resource.html resource=resource %}
+            </div>
+          {% endfor %}
+          <p class="padding-bottom-4">
+            <a href="{{ site.baseurl }}{{ target_item.path }}">See all resources in
+              <strong>{{ resources.name }}</strong>
+              >
+            </a>
+          </p>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
