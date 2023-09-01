@@ -6,6 +6,12 @@ layout: default
 This is used in blog posts. The index page can be found at blog/index.html
 {% endcomment %}
 
+{% for domain in site.data.evaluation-domains %}
+    {% if domain.name == page.title %}
+        {% assign target_item = domain %}
+        {% break %}
+    {% endif %}
+{% endfor %}
 
 <div class="usa-graphic-list usa-section sml-margin bg-evaluation">
     <div class="grid-container">
