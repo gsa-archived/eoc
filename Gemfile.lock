@@ -61,6 +61,9 @@ GEM
       sprockets (>= 3.3, < 4.1.beta)
     jekyll-feed (0.15.1)
       jekyll (>= 3.7, < 5.0)
+    jekyll-liquify (0.0.2)
+      liquid (>= 2.5, < 5.0)
+      redcarpet (~> 3.1)
     jekyll-paginate-v2 (3.0.0)
       jekyll (>= 3.0, < 5.0)
     jekyll-redirect-from (0.16.0)
@@ -107,6 +110,7 @@ GEM
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
+    redcarpet (3.6.0)
     rexml (3.2.4)
     rouge (3.26.0)
     safe_yaml (1.0.5)
@@ -136,6 +140,7 @@ DEPENDENCIES
   jekyll (~> 3.9)
   jekyll-assets (~> 3.0)
   jekyll-feed (~> 0.15)
+  jekyll-liquify
   jekyll-paginate-v2 (= 3.0.0)
   jekyll-redirect-from
   jekyll-seo-tag

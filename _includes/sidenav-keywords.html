@@ -1,0 +1,33 @@
+{% comment %}
+This appears at the left side nav on keywords page.
+{% endcomment %}
+{% assign evaluation_domains = site.data.evaluation-domains | where: 'parent', '' %}
+
+{% assign all_resources = site.data.toolkit_resources | where: "keywords", page.title | group_by: "domain" %}
+
+<a class="usa-button usa-button--outline border-0 margin-bottom-2 margin-top-3" href="{{ site.baseurl }}/evaluation-toolkit/">Back to Toolkit</a>
+
+<nav aria-label="Secondary navigation" class="position-sticky top-2">
+  <strong>Browse "{{ page.title }}" resources by category:</strong>
+  <ul class="usa-sidenav">
+
+    {% for res in all_resources %}
+      {% assign domain = site.data.evaluation-domains | where: 'domain', res.name | first %}
+      <li class="usa-sidenav__item">
+        <a href="#{{ domain.domain | slugify }}" class="sub-section {{ domain.domain | slugify }}">{{ domain.domain }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
+<script>
+  $(document).ready(function() {
+    var subSection = location.hash.substring(1);
+    if (subSection && $(".sub-section." + subSection).length) {
+      $(".sub-section." + subSection).addClass('usa-current');
+    }
+    $(".sub-section").on("click", function() {
+      $(".sub-section.usa-current").removeClass('usa-current');
+      $(this).addClass('usa-current');
+    });
+  });
+</script>

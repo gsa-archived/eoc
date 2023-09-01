@@ -1,29 +1,39 @@
 {% comment %}
 This appears at the top of the page letting the user know it's an official government website
 {% endcomment %}
+{% assign evaluation_domains = site.data.evaluation-domains | where: 'parent', '' %}
 
-<nav aria-label="Secondary navigation">
-    <ul class="usa-sidenav">
-        <li class="usa-sidenav__item">
-            <a href="{{site.baseurl}}/evaluation-toolkit/" class="{% if page.title == 'The Federal Evaluator Toolkit' %} usa-current{% endif %}">Evaluation Toolkit</a>
-        </li>
-        <li class="usa-sidenav__item">
-            <a href="{{site.baseurl}}/evaluation-toolkit/about-toolkit/" class="{% if page.title == 'About the Toolkit' %} usa-current {% endif %} margin-left-3">About the Toolkit</a>
-        </li>
-        <li class="usa-sidenav__item">
-            <a href="{{site.baseurl}}/evaluation-toolkit/evaluation-101/" class="{% if page.title == 'Evaluation 101' %} usa-current {% endif %} margin-left-3">Evaluation 101</a>
-        </li>
-        <li class="usa-sidenav__item">
-            <a href="{{site.baseurl}}/evaluation-toolkit/why-evaluate/" class="{% if page.title == 'Why Evaluate?' %} usa-current {% endif %} margin-left-3">Why Evaluate?</a>
-        </li>
-        <li class="usa-sidenav__item">
-            <a href="{{site.baseurl}}/evaluation-toolkit/non-evaluator/" class="{% if page.title == 'Getting Started as a Non-Evaluator' %} usa-current {% endif %} margin-left-3">Getting Started as a Non-Evaluator</a>
-        </li>
-        <li class="usa-sidenav__item">
-            <a href="{{site.baseurl}}/evaluation-toolkit/evaluation/" class="{% if page.title == 'Using Evaluation' %} usa-current {% endif %} margin-left-3">Using Evaluation</a>
-        </li>
-        <li class="usa-sidenav__item">
-            <a href="{{site.baseurl}}/evaluation-toolkit/promoting-evaluation/" class="{% if page.title == 'Promoting Evaluation Use' %} usa-current {% endif %} margin-left-3">Promoting Evaluation Use</a>
-        </li>
-    </ul>
+<nav aria-label="Secondary navigation" class="position-sticky top-2">
+  <ul class="usa-sidenav">
+    <li class="usa-sidenav__item">
+      <a href="{{ site.baseurl }}/evaluation-toolkit/" class="">Toolkit Homepage</a>
+    </li>
+    {% for domain in evaluation_domains %}
+      <li class="usa-sidenav__item">
+        <a href="{{site.baseurl}}{{ domain.path }}" class="{% if page.title == domain.name %} usa-current {% endif %} margin-left-2">{{ domain.name }}</a>
+      </li>
+      {% if page.title == domain.name %}
+        {% assign subsections = site.data.evaluation-domains | where: 'parent', domain.domain %}
+        {% if subsections %}
+          {% for subsection in subsections %}
+            <li class="usa-sidenav__item font-sans-xs">
+              <a href="#{{ subsection.name | slugify }}" class="{% if page.title == subsection.name %} usa-current {% endif %}sub-section margin-left-4 {{ subsection.name | slugify }}">{{ subsection.name }}</a>
+            </li>
+          {% endfor %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </ul>
 </nav>
+<script>
+  $(document).ready(function() {
+    var subSection = location.hash.substring(1);
+    if (subSection && $(".sub-section." + subSection).length) {
+      $(".sub-section." + subSection).addClass('usa-current');
+    }
+    $(".sub-section").on("click", function() {
+      $(".sub-section.usa-current").removeClass('usa-current');
+      $(this).addClass('usa-current');
+    });
+  });
+</script>
