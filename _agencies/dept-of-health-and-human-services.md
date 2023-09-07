@@ -21,6 +21,8 @@ agency-offices:
       eval-policy: https://www.acf.hhs.gov/opre/report/acf-evaluation-policy
       eval-plan: ACF Research and Evaluation Agenda
       eval-plan-link: https://www.acf.hhs.gov/opre/research-evaluation-agenda
+      eval-learning: Welfare and Family Self-Sufficiency Learning Agenda
+      eval-learning-link: https://www.acf.hhs.gov/opre/report/welfare-and-family-self-sufficiency-learning-agenda
     - name: Center for Policy and Evaluation (ACL)
       link: https://acl.gov/about-acl/center-policy-and-evaluation
       eval-policy: https://acl.gov/sites/default/files/programs/2018-07/ACL%20evaluation%20policy%20FINAL%207-2-2018_0.docx
