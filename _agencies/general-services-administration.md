@@ -11,9 +11,9 @@ eval-plan:
       link: https://www.gsa.gov/cdnstatic/GSA%20FY%202023%20Annual%20Evaluation%20Plan.pdf
     - name: FY 2024
       link: https://www.gsa.gov/cdnstatic/GSA%20FY%202024%20Annual%20Evaluation%20Plan.pdf
-eval-policy: https://www.gsa.gov/directive/gsa-evaluation-policy
+eval-policy: https://www.gsa.gov/reference/reports/evidence-and-evaluation/evaluation-policy
 learning-agenda: https://www.gsa.gov/cdnstatic/GSA%20FY%2022-26%20Learning%20Agenda.pdf
-capacity-assesment: https://www.gsa.gov/cdnstatic/GSA%20Capacity%20Assessment%20for%20Evidence-Building%20and%20Evaluation.pdf
+capacity-assesment: https://www.gsa.gov/system/files/GSA%20Capacity%20Assessment%20for%20Evidence-Building%20and%20Evaluation%28update%29.pdf
 agency-offices:
     - name: Office of Evaluation Sciences
       link: https://oes.gsa.gov/
