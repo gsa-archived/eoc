@@ -9,6 +9,6 @@ agency-offices:
       link: https://ustda.gov/about/program-monitoring-and-evaluation/
       aria-label: U.S.Trade and Development Agency Evaluation Office
     - name: Learning Agenda
-      link: https://ustda.gov/wp-content/uploads/USTDA-Learning-Agenda.pdf
+      link: https://ustda.gov/wp-content/uploads/USTDA-Learning-Agenda-March-2023.pdf
       aria-label: U.S.Trade and Development Agency Learning Agenda
 ---
