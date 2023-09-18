@@ -16,7 +16,7 @@ This is used in blog posts. The index page can be found at blog/index.html
 <div class="usa-graphic-list usa-section sml-margin bg-evaluation">
     <div class="grid-container">
         <div class="grid-row grid-gap">
-            <div class="priority-tag-line"><h1 class="text-white margin-0 font-ui-2xl">{{ page.title }}</h1></div>
+            <div class="priority-tag-line"><h1 class="text-white margin-0 font-ui-2xl">The Federal Evaluation Toolkit</h1></div>
         </div>
     </div>
 </div>
@@ -27,12 +27,12 @@ This is used in blog posts. The index page can be found at blog/index.html
                 {% include sidenav-evaluation.html %}
             </div>
             <div class="tablet:grid-col-9 ">
-                {% include toolkit_resources.html target_item=target_item %}
+                {% include toolkit_resources.html target_item=target_item titletag='h1' %}
 
                 {% assign subsections = site.data.evaluation-domains | where: 'parent', target_item.domain %}
                 {% if subsections %}
                   {% for subsection in subsections %}
-                    {% include toolkit_resources.html target_item=subsection %}
+                    {% include toolkit_resources.html target_item=subsection titletag='h2' %}
                   {% endfor %}
                 {% endif %}
             </div>
