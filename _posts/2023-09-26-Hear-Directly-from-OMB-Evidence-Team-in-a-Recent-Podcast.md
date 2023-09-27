@@ -1,7 +1,7 @@
 ---
 title: Hear Directly from OMB’s Evidence Team in a Recent Podcast
 layout: post
-date: September 26, 2023
+date: September 27, 2023
 author: The Evidence Team, OMB
 excerpt: What have been some successes and challenges in implementing the Evidence Act? How have agencies responded to this paradigm shift in evidence-based policymaking...
 aria: 
