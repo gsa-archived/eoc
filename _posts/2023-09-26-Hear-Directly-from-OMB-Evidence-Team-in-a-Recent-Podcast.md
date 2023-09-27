@@ -1,0 +1,19 @@
+---
+title: Hear Directly from OMB’s Evidence Team in a Recent Podcast
+layout: post
+date: September 27, 2023
+author: The Evidence Team, OMB
+excerpt: What have been some successes and challenges in implementing the Evidence Act? How have agencies responded to this paradigm shift in evidence-based policymaking...
+aria: 
+tags: Evaluation Evidence-Act
+filters: evaluation evidence-act
+permalink: /2023-09-26-hear-from-omb-evidence-team-in-a-recent-podcast/
+image: podcast-mic.jpg
+img-alt: podcast microphone
+---
+
+What have been some successes and challenges in implementing the Evidence Act? How have agencies responded to this paradigm shift in evidence-based policymaking? How does the OMB Evidence Team support this and other work to elevate program evaluation across the Government? OMB's Evidence Team discussed these questions and more in a recent episode of the *On the Evidence* Podcast. In this wide-ranging discussion, the Team spoke about their role and progress to date in Evidence Act implementation, as well as the importance of promoting a culture of evidence across the Federal Government. The conversation started with the ways in which the Team does "anything and everything to help make sure that government uses the best possible evidence to make decisions." From supporting Federal agencies in building their capacity to use evidence in decision-making to helping agencies meet the strategic evidence-building requirements of the Evidence Act (i.e., Learning Agendas, Annual Evaluation Plans, and Capacity Assessments), the podcast highlights how the Team approaches this work and describes the ways in which the Evidence Act has brought a "more strategic focus to how agencies think about the big questions they have, and the evidence they need to build to answer those questions."
+
+Beyond the Evidence Act, the conversation underscored how the Evidence Team fosters interagency collaboration through their leadership of a number of efforts. They discussed chairing the Evaluation Officer Council (EOC) that serves as a forum for peer learning, information exchange, and community building. The Team also contributes to critical government-wide priorities like leading the interagency working group that developed the first-ever Federal Evidence Agenda on LGBTQI+ Equity and guiding novel evaluation initiatives, like the American Rescue Plan National Evaluation, which, "looks across programs that are administered by different agencies, ... to address questions about how they interact on the ground to contribute to shared outcomes, to test common approaches and strategies, or to reach overlapping recipient communities."
+
+In the podcast, the Evidence Team not only reflected on progress to date, but also shared what they're most looking forward to in the evidence and evaluation space, calling out exciting projects in the pipeline to uplift evaluation efforts across the Federal Government and improve connections between the Federal evaluation community and external researchers. Some examples include sharing important and compelling stories that capture the contributions of Evaluation Officers and the Federal evaluation workforce, the soon-to-be-announced recipients of the 2023 Federal Evaluation Community Awards program, and the creation of a project portal to make it easier for folks in government to connect with external members of the research and evaluation community to build evidence. These are just some of the highlights from the podcast; there is much more great content in the recording [here](https://www.mathematica.org/blogs/the-omb-evidence-team-on-evidence-based-policymaking-and-federal-evaluation){:target="_blank"}!
