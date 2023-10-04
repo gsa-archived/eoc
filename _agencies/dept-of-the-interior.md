@@ -7,7 +7,7 @@ permalink: /agencies/department-of-the-interior/
 eval-plan:
     - name: FY 2023
       link: https://www.doi.gov/sites/doi.gov/files/doi-fy-2023-annual-evaluation-plan.pdf
-eval-policy:
+eval-policy: https://www.doi.gov/sites/doi.gov/files/elips/documents/309-dm-04.pdf
 learning-agenda: https://www.doi.gov/sites/doi.gov/files/doi-fy-2022-2026-learning-agenda.pdf
 capacity-assesment: https://www.doi.gov/sites/doi.gov/files/doi-fy-2022-2026-capacity-assessment.pdf
 agency-offices:
