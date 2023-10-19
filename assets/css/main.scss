@@ -6,6 +6,13 @@
 .eoc-logo-size {
   width: 60%;
 }
+
+@media screen and (min-width:768px) and (max-width: 1024px) {
+  .eoc-logo-size {
+    max-width: 25%;
+  }
+}
+
 .usa-nav {
   box-shadow: 2px 2px 3px #3d4551;
 }
@@ -224,7 +231,7 @@ blockquote {
   border-bottom: 1px solid #0d7ea2;
   border-right: 1px solid #0d7ea2;
   border-left: 10px solid #0d7ea2;
-  margin: 1em 10px;
+  margin: 1em 0;
   padding: 1.3em;
   padding-bottom: 0.3rem;
   quotes: "\201C""\201D""\2018""\2019";
@@ -268,6 +275,27 @@ blockquote p {
   font-weight: 500;
   font-size: .9rem;
 }
+
+.quote-arrow-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.quote-arrow-list li::before {
+  content: "\27A2";
+  display: inline-block;
+  margin-right: 10px;  
+}
+
+.adward-post-img {
+  float:left;
+  width:36%;
+  height:35%;
+  margin-right:1rem;
+  margin-top:0.4rem;
+}
+
+
 .post-img {
   width: 200px;
   height: 134px;
