@@ -2,7 +2,7 @@
 title: 'Development Experience Clearinghouse: U.S. Agency for International Development'
 year: 
 description: 
-external_url: dec.usaid.gov/dec/content/search.aspx
+external_url: dec.usaid.gov
 aria-label: 'Development Experience Clearinghouse: U.S. Agency for International Development'
 content_tags: 'Development Experience Clearinghouse: U.S. Agency for International Development'
 type: link
