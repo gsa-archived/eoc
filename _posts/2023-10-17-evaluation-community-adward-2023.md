@@ -1,9 +1,9 @@
 ---
-title: Announcing the Recipients of the 2023 Evaluation Community Awards
+title: Announcing the 2023 Evaluation Community Awards Winners
 layout: post
-date: October 17, 2023
+date: October 23, 2023
 author: The Evidence Team, OMB
-excerpt: Once again, we are thrilled to share the winners of the Annual Evaluation Community Awards Program...
+excerpt: We are thrilled to share the winners of the Annual Evaluation Community Awards Program...
 aria: EOC Awards 2023 Blog Post
 tags: Evaluation-Officer-Council Evaluation
 filters: evaluation-officer-council evaluation
@@ -13,7 +13,7 @@ img-alt: Golden trophy
 ---
 
 <img src="{{site.baseurl}}/assets/images/blog/golden-trophy.png" alt="Golden trophy with stars" class="adward-post-img">
-Once again, we are thrilled to share the winners of the Annual Evaluation Community Awards Program, on behalf of the Evaluation Officer Council! These awards celebrate Federal civil service leaders committed to uplifting evaluation and evidence-based policymaking across the Federal Government whose work far too often goes unrecognized. Individuals from across the Federal evaluation community, as well as those who work alongside Federal evaluators, nominated 26 individuals and team, representing 15 different agencies. A cross-functional panel reviewed the submissions to provide recommendations for recipients in each category. OMB presented the awards at the October 2023 Evaluation Officer Council (EOC) meeting.
+We are thrilled to share the winners of the Annual Evaluation Community Awards Program, on behalf of the Evaluation Officer Council! These awards celebrate Federal civil service leaders committed to uplifting evaluation and evidence-based policymaking across the Federal Government whose work far too often goes unrecognized. Individuals from across the Federal evaluation community, as well as those who work alongside Federal evaluators, nominated 26 individuals and team, representing 15 different agencies. A cross-functional panel reviewed the submissions to provide recommendations for recipients in each category. OMB presented the awards at the October 2023 Evaluation Officer Council (EOC) meeting.
 
 The winners of the 2023 Evaluation Community Awards profiled below reflect the commitment and ingenuity of the Federal evaluation community. The below excerpts from their nominations share compelling stories of how Federal evaluators develop high-quality evidence that program and policy leaders rely on, contributing to positive change across Government. The profiles of each recipient serve to showcase their excellent work, which we hope inspires others to connect with and celebrate the Federal evaluation community in all they do to improve Federal programs and enable evidence-based policymaking and decision-making!
 
@@ -149,7 +149,7 @@ The winners of the 2023 Evaluation Community Awards profiled below reflect the c
         <img src="{{site.baseurl}}/assets/images/blog/paul-leary.png" alt="Paul O’Leary Headshot" class="adward-bio-img">
     </div>
     <div class="tablet:grid-col-10">
-        <p class="margin-0"><strong>Paul O’Leary</strong>, PhD Senior Economist<br />
+        <p class="margin-0"><strong>Paul O’Leary</strong>, Senior Economist<br />
         Office of Retirement and Disability Policy, Office of Research, Demonstration, and Employment Support<br />
         US Social Security Administration</p>
         <p>Paul leads SSA’s development of data products to support disability and return-to-work analyses. These data products transform complex administrative data into easy-to-use research files that allow SSA to answer complex research questions quickly and efficiently. Paul supports a cadre of analysts in using this data and conducts rapid cycle analyses to support policy development and program evaluation.</p>
