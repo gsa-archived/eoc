@@ -12,7 +12,7 @@ image: trophy-stars-thumbnail.png
 img-alt: Golden trophy with stars
 ---
 
-<img src="{{site.baseurl}}/assets/images/blog/trophy-stars.png" alt="Golden trophy with stars" style="float:left; width:36%; height:35%; margin-right:1rem; margin-top:0.4rem">
+<img src="{{site.baseurl}}/assets/images/blog/trophy-stars.png" alt="Golden trophy with stars" class="adward-post-img">
 It is our honor to announce the winners of the Second Annual Evaluation Community Awards Program on behalf of the Evaluation Officer Council! These awards honor Federal civil service leaders committed to advancing evaluation and evidence-based policymaking across the Federal Government. We solicited nominations from across the Federal evaluation community, as well as those who work with Federal evaluators. We received over 30 strong nominations representing 16 different agencies. A cross-functional panel reviewed the submissions to provide recommendations and OMB presented the awards at the October Evaluation Officer Council meeting.
 
 The winners of the 2022 Evaluation Community Awards profiled below reflect the dedication and ingenuity of the Federal evaluation community. The profiles include excerpts from their nominations (kept anonymous), which tell the story of how Federal evaluators generate high-quality evidence that informs program and policy leaders and contributes to positive change across Government. In sharing these profiles, we aim to recognize the exemplary work of the awardees and inspire others to engage with and support the Federal evaluation community in all they do to improve Federal programs and decision-making!
@@ -34,10 +34,10 @@ The winners of the 2022 Evaluation Community Awards profiled below reflect the d
 <h3 class="awrd-title" id="distinguished">Evaluation Officer Council Distinguished Contribution Award<br/><span class="awrd-sub-title"><i>For Evaluation Officer Council members who make exceptional contributions to the Federal evaluation community.</i></span></h3>
 <div class="grid-row grid-gap">
     <div class="tablet:grid-col-2">
-        <img src="{{site.baseurl}}/assets/images/blog/russ-burnett.png" alt="Russ Burnett Headshot" style="float:left; margin-right:1rem; margin-top:0.4rem">
+        <img src="{{site.baseurl}}/assets/images/blog/russ-burnett.png" alt="Russ Burnett Headshot" class="adward-bio-img">
     </div>
     <div class="tablet:grid-col-10">
-        <p><strong>Russ Burnett</strong>, Senior Advisor for Evaluation<br />
+        <p class="margin-0"><strong>Russ Burnett</strong>, Senior Advisor for Evaluation<br />
         Strategic Planning & Performance Staff<br />
         Department of Justice</p>
         <p>Russ helps to lead and coordinate the Justice Department’s new initiatives around evaluation and evidence building under Title I of the Foundations for Evidence-Based Policymaking Act. This includes coordinating research efforts to implement the Department’s first-ever learning agenda, as well as building capacity for ongoing and future research and analysis to support decisions about DOJ programs and policies.</p>
@@ -55,10 +55,10 @@ The winners of the 2022 Evaluation Community Awards profiled below reflect the d
 <h3 class="awrd-title" id="team-of-year">Evaluation and Evidence Team of the Year Award<br/><span class="awrd-sub-title"><i>For Federal teams who collaborate across disciplines and silos to conduct evaluation(s) that generate critical evidence for decision-making in or across agencies.</i></span></h3>
 <div class="grid-row grid-gap">
     <div class="tablet:grid-col-6">
-        <img src="{{site.baseurl}}/assets/images/blog/prIDE-local-evaluation-team.png" alt="prIDE local evaluation team" style="float:left; margin-right:1rem; margin-top:0.4rem; max-width: 100%;">
+        <img src="{{site.baseurl}}/assets/images/blog/prIDE-local-evaluation-team.png" alt="prIDE local evaluation team" class="adward-bio-img">
     </div>
     <div class="tablet:grid-col-6">
-        <p><strong><a href="https://www.cdc.gov/hiv/research/demonstration/projectpride.html" target="_blank">PrIDE</a> Local Evaluation (LE) Team</strong><br />
+        <p class="margin-0"><strong><a href="https://www.cdc.gov/hiv/research/demonstration/projectpride.html" target="_blank">PrIDE</a> Local Evaluation (LE) Team</strong><br />
         Centers for Disease Control and Prevention<br />
         Department of Health and Human Services</p>
     </div>
@@ -91,10 +91,10 @@ The winners of the 2022 Evaluation Community Awards profiled below reflect the d
 <h3 class="awrd-title" id="action-award">Evaluation in Action Award<br/><span class="awrd-sub-title"><i>For Federal executives or program leaders who use evaluation results to drive program improvement.</i></span></h3>
 <div class="grid-row grid-gap">
     <div class="tablet:grid-col-2">
-        <img src="{{site.baseurl}}/assets/images/blog/alan-gorowitz.png" alt="Alan Gorowitz Headshot" style="float:left; margin-right:1rem; margin-top:0.4rem">
+        <img src="{{site.baseurl}}/assets/images/blog/alan-gorowitz.png" alt="Alan Gorowitz Headshot" class="adward-bio-img">
     </div>
     <div class="tablet:grid-col-10">
-        <p><strong>Alan Gorowitz</strong>, Assistant Director for Strategy, Plans, and Policy<br />
+        <p class="margin-0"><strong>Alan Gorowitz</strong>, Assistant Director for Strategy, Plans, and Policy<br />
             Defense Security Cooperation Agency<br />
             Department of Defense</p>
         <p>Alan facilitates strategic planning and implementation policy for DoD security cooperation activities, integrating foreign military sales, DoD activities, and State Department grant assistance. <br/></p>
@@ -112,10 +112,10 @@ The winners of the 2022 Evaluation Community Awards profiled below reflect the d
 <h3 class="awrd-title" id="excellence">Excellence in Program Evaluation Award<br/><span class="awrd-sub-title"><i>For evaluation leaders or staff who keep initiatives on track and deliver high quality evaluations that uphold the standards of relevance and utility; independence and objectivity; rigor, transparency, and ethics.</i></span></h3>
 <div class="grid-row grid-gap">
     <div class="tablet:grid-col-2">
-        <img src="{{site.baseurl}}/assets/images/blog/kelley-scanlon.png" alt="Kelley Scanlon Headshot" style="float:left; margin-right:1rem; margin-top:0.4rem">
+        <img src="{{site.baseurl}}/assets/images/blog/kelley-scanlon.png" alt="Kelley Scanlon Headshot" class="adward-bio-img">
     </div>
     <div class="tablet:grid-col-10">
-        <p><strong>Kelley Scanlon</strong>, Senior Analytical Advisor<br />
+        <p class="margin-0"><strong>Kelley Scanlon</strong>, Senior Analytical Advisor<br />
         Center for Nutrition Policy and Promotion<br />
         Food and Nutrition Service, US Department of Agriculture</p>
         <p>Kelley joined the Food and Nutrition Service, USDA, in 2016 as Director of the Special Nutrition Research and Analysis Division in the Office of Policy Support. The division was responsible for the research and analysis to inform and evaluate fourteen of the Federal nutrition assistance programs, producing the body of research acknowledged by this award. In August 2022, she joined the Center for Nutrition Policy and Promotion (CNPP) as a Senior Analytical Advisor to work on scientific priorities across the Center. </p>
@@ -131,10 +131,10 @@ The winners of the 2022 Evaluation Community Awards profiled below reflect the d
 
 <div class="grid-row grid-gap">
     <div class="tablet:grid-col-2">
-        <img src="{{site.baseurl}}/assets/images/blog/patricia-moore-shaffer.png" alt="Patricia Moore Shaffer Headshot" style="float:left; margin-right:1rem; margin-top:0.4rem">
+        <img src="{{site.baseurl}}/assets/images/blog/patricia-moore-shaffer.png" alt="Patricia Moore Shaffer Headshot" class="adward-bio-img">
     </div>
     <div class="tablet:grid-col-10">
-        <p><strong>Patricia Moore Shaffer</strong>, Deputy Director, Research & Analysis<br />
+        <p class="margin-0"><strong>Patricia Moore Shaffer</strong>, Deputy Director, Research & Analysis<br />
         Office of Research & Analysis<br />
         National Endowment for the Arts</p>
         <p>Patricia serves as deputy director of the agency’s Office of Research & Analysis and is responsible for supervising the office’s analyst team, day-to-day operations, workflow, and performance.  Patricia also serves as the lead for agency program evaluation and performance measurement.</p>
@@ -150,10 +150,10 @@ The winners of the 2022 Evaluation Community Awards profiled below reflect the d
 <h3 class="awrd-title" id="innovator">Federal Evaluation Innovator Award<br/><span class="awrd-sub-title"><i>For evaluation mavericks who think up creative and outside-the-box evaluation ideas, help design them, and see them through to execution.</i></span></h3>
 <div class="grid-row grid-gap">
     <div class="tablet:grid-col-2">
-        <img src="{{site.baseurl}}/assets/images/blog/brian-scholl.png" alt="Brian Scholl Headshot" style="float:left; margin-right:1rem; margin-top:0.4rem">
+        <img src="{{site.baseurl}}/assets/images/blog/brian-scholl.png" alt="Brian Scholl Headshot" class="adward-bio-img">
     </div>
     <div class="tablet:grid-col-10">
-        <p><strong>Brian Scholl</strong>, Chief Economist<br />
+        <p class="margin-0"><strong>Brian Scholl</strong>, Chief Economist<br />
         The Office of the Investor Advocate<br />
         US Securities and Exchange Commission (SEC)</p>
         <p>Brian is the founder and manager of the SEC’s POSITIER, a unique research lab in which an interdisciplinary team of researchers access best-in-class data collection tools for investor outreach and rapid cycle research generation in support of policymaking.  He advises the Commission and Investor Advocate on investor issues.</p>
@@ -171,10 +171,10 @@ The winners of the 2022 Evaluation Community Awards profiled below reflect the d
 <h3 class="awrd-title" id="mentor">Outstanding Evaluation Mentor Award<br/><span class="awrd-sub-title"><i>For evaluation leaders or staff who go above and beyond to provide mentorship, support, and guidance to others in the Federal evaluation community.</i></span></h3>
 <div class="grid-row grid-gap">
     <div class="tablet:grid-col-2">
-        <img src="{{site.baseurl}}/assets/images/blog/anne-fletcher.png" alt="Anne Fletcher Headshot" style="float:left; margin-right:1rem; margin-top:0.4rem">
+        <img src="{{site.baseurl}}/assets/images/blog/anne-fletcher.png" alt="Anne Fletcher Headshot" class="adward-bio-img">
     </div>
     <div class="tablet:grid-col-10">
-        <p><strong>Anne Fletcher</strong>, Supervisory Social Science Analyst<br />
+        <p class="margin-0"><strong>Anne Fletcher</strong>, Supervisory Social Science Analyst<br />
         Office of Policy Development and Research, Office of Research, Evaluation & Monitoring, Program Evaluation Division<br />
         U.S. Department of Housing and Urban Development</p>
         <p>Anne is currently a Supervisory Social Science Analyst within the Office of Research, Evaluation & Monitoring of the U.S. Department of Housing and Urban Development, Office of Policy Development and Research.  She has twenty years of research and evaluation experience working across various Federal agencies, including a detail to serve as staff to the Commission on Evidence-Based Policymaking, and in each position has had a special focus on program evaluation and research related to the issues of housing and homelessness.</p>
