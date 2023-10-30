@@ -1,7 +1,7 @@
 ---
 title: Connecting Government Agencies with Strategies and Tools for Sustainable Data Use
 layout: post
-date: October 23, 2023
+date: October 30, 2023
 author: Siri Warkentien and Nicole Deterding
 excerpt: Many federal agencies are striving to increase their capacity to collect and use data in line with the <a href="https://www.whitehouse.gov/wp-content/uploads/2023/03/ap_12_evidence_fy2024.pdf" target="_blank">Foundations for Evidence-based Policymaking Act of 2018</a>...
 aria: 
