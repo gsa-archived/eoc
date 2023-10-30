@@ -40,6 +40,7 @@ pagination:
                       <li><a aria-label="Filter by Type: In the Spotlight" role="checkbox" href="javascript:void(0)" data-filter=".in-the-spotlight">In the Spotlight</a></li>
                       <li><a aria-label="Filter by Type: Year of Evidence" role="checkbox" href="javascript:void(0)" data-filter=".year-of-evidence">Year of Evidence</a></li>
                       <li><a aria-label="Filter by Type: Equity" role="checkbox" href="javascript:void(0)" data-filter=".equity">Equity</a></li>
+                      <li><a aria-label="Filter by Type: Evidence Use" role="checkbox" href="javascript:void(0)" data-filter=".evidence-use">Evidence Use</a></li>
                 </ul>
               </nav>
           </div>
@@ -64,7 +65,7 @@ pagination:
               {% if post.image %}
               <img class="tablet:float-left width-15 padding-right-2 padding-top-1 padding-bottom-2 post-img" src="{{ site.baseurl }}/assets/images/blog/{{ post.image }}" alt="{{ post.img-alt }}" />
               {% endif %}
-              <p class="font-sans-sm text-ink">{{ post.excerpt }} <a href="{{site.baseurl}}{{post.permalink}}" aria-label="{{post.aria}}">Read more</a></p>
+              <p class="font-sans-sm text-ink">{{ post.excerpt }} <a href="{{site.baseurl}}{{post.permalink}}" aria-label="Read more about {{ post.title }}">Read more</a></p>
               {% comment %}
                 We default to using post.content, but you can also use post.excerpt.
                 If you use excerpt then you have to make sure the content is on each
