@@ -1,7 +1,8 @@
-//custom scss files
-@import "../../_sass/_resources";
-@import "../../_sass/_news";
-@import "../../_sass/_arrow";
+---
+---
+@import "../_sass/resources.scss";
+@import "../_sass/news.scss";
+@import "../_sass/arrow.scss";
 /*-------------------------------------*/
 .eoc-logo-size {
   width: 60%;
@@ -19,7 +20,7 @@
 .usa-hero {
     padding-top: 20px;
     padding-bottom: 20px;
-    background-image: url(../assets/images/Website_Banner.jpg);
+    background-image: url(../images/Website_Banner.jpg);
     background-position: center;
     background-size: cover;
 } 
@@ -31,7 +32,7 @@
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background: url(../assets/images/vision_image.png);
+  background: url(../images/vision_image.png);
   background-size: cover;
 }
 .slick-dots {

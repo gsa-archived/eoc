@@ -1,17 +1,13 @@
-/*
-  Customize US Web Design System SASS
-  See all at designsystem.digital.gov/documentation/settings
-*/
-
-// Example - Override the background image in the hero component using SASS:
-// $theme-hero-image: asset_path("whatever-the-default-is.png");
-
-@import "uswds";
+---
+---
+// https://jekyllrb.com/docs/assets/
+$theme-show-notifications: false;
+@import "../node_modules/uswds/dist/scss/uswds";
 // Example - Override the background image in the hero component using CSS:
 .usa-hero {
-  background-image: url(asset_path("welcome_image.jpg"));
-  background-size: cover;
-  background-repeat: no-repeat;
+    background-image: url("../images/welcome_image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .usa-hero-content {
@@ -93,7 +89,7 @@ html {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background: url(asset_path("vision_image.jpg"));
+  background: url("../images/vision_image.jpg");
   background-size: cover;
 }
 
