@@ -269,10 +269,10 @@ pagination:
     after: 2
   # Optional, the default file extension for generated pages (e.g html, json, xml).
   # Internally this is set to html by default
-  extension: html
+  extension: "html"
   # Optional, the default name of the index file for generated pages (e.g. 'index.html')
   # Without file extension
-  indexpage: "index.html"
+  indexpage: "index"
 
 exclude:
   - package.json
