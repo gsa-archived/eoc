@@ -8,62 +8,64 @@ where we provide an easy way to manage your navigation system
     <button class="usa-menu-btn">Menu</button>
   </div>
   <nav role="navigation" class="usa-nav">
-    <div class="usa-nav__inner">
-      <button class="usa-nav__close">{% asset close.svg alt="close" %}</button>
-      <ul class="usa-nav__primary usa-accordion">
-        {% for nav_item in include.primary_navigation %}
-        {% unless nav_item.children %}
-        {% assign basedir = page.url | remove_first: '/' | split: '/' | first | lstrip %}
-        {% assign linkdir = nav_item.url |  replace: "/", ""  | lstrip %}
-        <li class="usa-nav__primary-item">
-          <a class="usa-nav__link{% if basedir == linkdir %} usa-current{% endif %}"
-            href="{{ nav_item.url | prepend: site.baseurl}}"><span>{{ nav_item.name | escape }}</span></a>
-        </li>
-        {% else %}
-        {% assign nav_id = 'primary-nav-' | append: forloop.index %}     
-        <li class="usa-nav__primary-item">
-        <button class="usa-accordion__button usa-nav__link" aria-expanded="false"
-            aria-controls="{{ nav_id }}"><span>{{ nav_item.name | escape }}</span></button>
-
-          {% unless nav_item.ismegamenu == true %}           
-            <ul id="{{ nav_id }}" class="usa-nav__submenu">
-              {% for subnav_item in nav_item.children %}
-              <li class="usa-nav__submenu-item">
-                <a href="{{ subnav_item.url | prepend: site.baseurl }}">{{ subnav_item.name | escape }}</a>
+      <div class="usa-nav__inner">
+          <button class="usa-nav__close"><img alt="close" src="{{ site.baseurl }}/assets/img/close.svg"></button>
+          <ul class="usa-nav__primary usa-accordion">
+              {% for nav_item in include.primary_navigation %}
+              {% unless nav_item.children %}
+              {% assign basedir = page.url | remove_first: '/' | split: '/' | first | lstrip %}
+              {% assign linkdir = nav_item.url |  replace: "/", ""  | lstrip %}
+              <li class="usa-nav__primary-item">
+                  <a class="usa-nav__link{% if basedir == linkdir %} usa-current{% endif %}"
+                     href="{{ nav_item.url | prepend: site.baseurl}}"><span>{{ nav_item.name | escape }}</span></a>
               </li>
-              {% endfor %}
-            </ul>
-          {% else %}
-          <div id="{{ nav_id }}" class="usa-nav__submenu usa-megamenu">            
-            <div class="grid-row grid-gap-6 padding-left-1 padding-right-4">
-              {% for subnav_item in nav_item.children %}
-                <div class="usa-col">
-                  <ul class="usa-nav__submenu-list">
-                    {% for subnav_item_1 in subnav_item.children %}
-                      <li class="usa-nav__submenu-item{% if subnav_item_1.hasSeperator == true %} border-bottom-05 border-accent-cool padding-bottom-1{% endif %}">
-                        <a href="{{ subnav_item_1.url | prepend: site.baseurl }}">{{ subnav_item_1.name | escape }}</a>
+              {% else %}
+              {% assign nav_id = 'primary-nav-' | append: forloop.index %}
+              <li class="usa-nav__primary-item">
+                  <button class="usa-accordion__button usa-nav__link" aria-expanded="false"
+                          aria-controls="{{ nav_id }}">
+                      <span>{{ nav_item.name | escape }}</span>
+                  </button>
+
+                  {% unless nav_item.ismegamenu == true %}
+                  <ul id="{{ nav_id }}" class="usa-nav__submenu">
+                      {% for subnav_item in nav_item.children %}
+                      <li class="usa-nav__submenu-item">
+                          <a href="{{ subnav_item.url | prepend: site.baseurl }}">{{ subnav_item.name | escape }}</a>
                       </li>
-                    {% endfor %}
+                      {% endfor %}
                   </ul>
-                </div>
+                  {% else %}
+                  <div id="{{ nav_id }}" class="usa-nav__submenu usa-megamenu">
+                      <div class="grid-row grid-gap-6 padding-left-1 padding-right-4">
+                          {% for subnav_item in nav_item.children %}
+                          <div class="usa-col">
+                              <ul class="usa-nav__submenu-list">
+                                  {% for subnav_item_1 in subnav_item.children %}
+                                  <li class="usa-nav__submenu-item{% if subnav_item_1.hasSeperator == true %} border-bottom-05 border-accent-cool padding-bottom-1{% endif %}">
+                                      <a href="{{ subnav_item_1.url | prepend: site.baseurl }}">{{ subnav_item_1.name | escape }}</a>
+                                  </li>
+                                  {% endfor %}
+                              </ul>
+                          </div>
+                          {% endfor %}
+                      </div>
+                  </div>
+              </li>
+              {% endunless %}
+              {% endunless %}
               {% endfor %}
-            </div>
+          </ul>
+          <div class="usa-nav__secondary">
+              <ul class="usa-nav__secondary-links">
+                  {% for nav_item in include.secondary_navigation %}
+                  <li class="usa-nav__secondary-item">
+                      <a href="{{ nav_item.url | prepend: site.baseurl }}">{{ nav_item.name | escape }}</a>
+                  </li>
+                  {% endfor %}
+              </ul>
+              {% include searchgov/form.html searchgov=site.searchgov %}
           </div>
-          </li>
-          {% endunless %}
-        {% endunless %}
-        {% endfor %}
-      </ul>
-      <div class="usa-nav__secondary">
-        <ul class="usa-nav__secondary-links">
-          {% for nav_item in include.secondary_navigation %}
-          <li class="usa-nav__secondary-item">
-            <a href="{{ nav_item.url | prepend: site.baseurl }}">{{ nav_item.name | escape }}</a>
-          </li>
-          {% endfor %}
-        </ul>
-        {% include searchgov/form.html searchgov=site.searchgov %}
       </div>
-    </div>
   </nav>
 </header>
