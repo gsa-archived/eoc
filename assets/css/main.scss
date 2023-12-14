@@ -4,6 +4,9 @@
 @import "../_sass/news.scss";
 @import "../_sass/arrow.scss";
 /*-------------------------------------*/
+html {
+  scroll-behavior: smooth;
+}
 .eoc-logo-size {
   width: 60%;
 }
@@ -769,6 +772,32 @@ blockquote p {
   padding: 1.3em;
   padding-bottom: 1rem;
   border-radius: 0.7rem;
+}
+.circle-evaluation-card {
+    width: 10rem;
+    border-radius: 50%;
+    background: linear-gradient(52deg, #162e51 25%, #28a0cb 100%);
+
+    @media only screen and (max-width: 640px) {
+        width: 40rem;
+    }
+}
+@media only screen and (max-width: 639px) {
+    .title {
+        margin-top: 1.1rem;
+    }
+}
+.evaluation-width{
+    width:180px;
+    margin:auto;
+}
+.resource-category {
+  color: #5b616b;
+  border-top: 0.15rem solid #5b616b;
+  padding-top: 0.25rem;
+  font-family: Public Sans Web,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  font-size: 1.13rem;
+  font-weight: 600;
 }
 
 .img-align {
