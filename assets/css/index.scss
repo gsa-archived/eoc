@@ -316,7 +316,7 @@ html {
 }
 
 .bg-evaluation {
-    background-image: url(../assets/images/eoc.png);
+    background-image: url(../images/eoc.png);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -326,7 +326,16 @@ html {
     }
 }
 
-    .padding-keyword {
-        padding-left: 35px;
-        padding-right: 35px;
-    }
+.padding-keyword {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.beta-tag {
+  padding: 0px 10px; 
+  font-size: 25px;
+  vertical-align: super; 
+  font-weight: normal;
+}
+
+
