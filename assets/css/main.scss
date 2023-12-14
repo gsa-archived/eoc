@@ -752,6 +752,14 @@ blockquote p {
         width: 40rem;
     }
 }
+
+.beta-tag {
+  padding: 0px 10px; 
+  font-size: 25px;
+  vertical-align: super; 
+  font-weight: normal;
+}
+
 @media only screen and (max-width: 639px) {
     .title {
         margin-top: 1.1rem;
