@@ -39,7 +39,7 @@ type : evaluation-toolkit
                 <img class="circle-evaluation-card" alt="Getting Started icon" src="{{site.baseurl}}/assets/images/evaluation/getting-started.png">
               </div>
               <div class="tablet:grid-col-8 text-primary toolkit-text">
-                 <h3 class="usa-media-block__body evaluation-width margin-0"><a href="{{site.baseurl}}/evaluation-toolkit/non-evaluator" class="text-no-underline display-inline-block"><b>Getting Started</b></a></h3>
+                 <h3 class="usa-media-block__body evaluation-width margin-0"><a href="{{site.baseurl}}/evaluation-toolkit/non-evaluator" class="text-no-underline display-inline-block text-primary"><b>Getting Started</b></a></h3>
                 <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
               </div>
             </div>
@@ -50,7 +50,7 @@ type : evaluation-toolkit
                 <img class="circle-evaluation-card" alt="Using evaluation icon" src="{{site.baseurl}}/assets/images/evaluation/using-evaluation.png">
               </div>
               <div class="tablet:grid-col-8 text-primary toolkit-text">
-                 <h3 class="usa-media-block__body evaluation-width margin-0"><a href="{{site.baseurl}}/evaluation-toolkit/evaluation" class="text-no-underline display-inline-block"><b>Using Evaluation</b></a></h3>
+                 <h3 class="usa-media-block__body evaluation-width margin-0"><a href="{{site.baseurl}}/evaluation-toolkit/evaluation" class="text-no-underline display-inline-block text-primary"><b>Using Evaluation</b></a></h3>
                 <p>Tools to help you be a savvy user of evaluation findings</p>
               </div>
             </div>
@@ -61,7 +61,7 @@ type : evaluation-toolkit
                 <img class="circle-evaluation-card" alt="Promoting evaluation use icon" src="{{site.baseurl}}/assets/images/evaluation/promoting-evaluation.png">
               </div>
               <div class="tablet:grid-col-8 text-primary toolkit-text">
-                 <h3 class="usa-media-block__body evaluation-width margin-0"><a href="{{site.baseurl}}/evaluation-toolkit/promoting-evaluation" class="text-no-underline display-inline-block"><b>Promoting Evaluation Use</b></a></h3>
+                 <h3 class="usa-media-block__body evaluation-width margin-0"><a href="{{site.baseurl}}/evaluation-toolkit/promoting-evaluation" class="text-no-underline display-inline-block text-primary"><b>Promoting Evaluation Use</b></a></h3>
                 <p>Learn ways to ensure that evaluation findings reach the right audience and are put into action</p>
               </div>
             </div>
@@ -72,7 +72,7 @@ type : evaluation-toolkit
                 <img class="circle-evaluation-card" alt="Why evaluate icon" src="{{site.baseurl}}/assets/images/evaluation/why-evaluate.png">
               </div>
               <div class="tablet:grid-col-8 text-primary toolkit-text">
-                 <h3 class="usa-media-block__body evaluation-width margin-0"><a href="{{site.baseurl}}/evaluation-toolkit/why-evaluate" class="text-no-underline display-inline-block"><b>Why Evaluate?</b></a></h3>
+                 <h3 class="usa-media-block__body evaluation-width margin-0"><a href="{{site.baseurl}}/evaluation-toolkit/why-evaluate" class="text-no-underline display-inline-block text-primary"><b>Why Evaluate?</b></a></h3>
                 <p>Understand the value-add of evaluation and why it is so important</p>
               </div>
             </div>
