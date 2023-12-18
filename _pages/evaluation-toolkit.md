@@ -36,7 +36,7 @@ type : evaluation-toolkit
           <div class="usa-media-block tablet:grid-col-6 text-center padding-bottom-205">
             <div class="grid-row grid-gap">
               <div class="tablet:grid-col-4">
-                <img class="circle-evaluation-card" alt="Getting Started icon" src="{{site.baseurl}}/assets/images/evaluation/getting-started.png">
+                <img class="circle-evaluation-card" alt="Working with Evaluators icon" src="{{site.baseurl}}/assets/images/evaluation/getting-started.png">
               </div>
               <div class="tablet:grid-col-8 text-primary toolkit-text">
                  <h3 class="usa-media-block__body evaluation-width margin-0"><a href="{{site.baseurl}}/evaluation-toolkit/non-evaluator" class="text-no-underline display-inline-block text-primary"><b>Working with Evaluators</b></a></h3>
