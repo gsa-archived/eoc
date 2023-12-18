@@ -316,8 +316,9 @@ html {
 }
 
 .bg-evaluation {
-  background: #082644 url(../assets/images/eoc.png) no-repeat;
-  background-size: cover;
+    background-image: url(../images/eoc.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 
     @media screen and (max-width: 1200px) {
         background: linear-gradient(52deg, #162e51 25%, #28a0cb 100%);
