@@ -39,8 +39,8 @@ type : evaluation-toolkit
                 <img class="circle-evaluation-card" alt="Getting Started icon" src="{{site.baseurl}}/assets/images/evaluation/getting-started.png">
               </div>
               <div class="tablet:grid-col-8 text-primary toolkit-text">
-                 <h3 class="usa-media-block__body evaluation-width margin-0"><a href="{{site.baseurl}}/evaluation-toolkit/non-evaluator" class="text-no-underline display-inline-block text-primary"><b>Getting Started</b></a></h3>
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                 <h3 class="usa-media-block__body evaluation-width margin-0"><a href="{{site.baseurl}}/evaluation-toolkit/non-evaluator" class="text-no-underline display-inline-block text-primary"><b>Working with Evaluators</b></a></h3>
+                <p>Learn how to hire and work with evaluators to refine evaluation questions, assess readiness, and start an evaluation</p>
               </div>
             </div>
         </div>

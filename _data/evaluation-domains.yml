@@ -22,34 +22,34 @@
   parent: ''
   description: >
     Evaluation is a powerful tool that agencies can use to understand what works, under what circumstances, and for whom. Yet, many agency staff and leaders may be unfamiliar with evaluation, and may not fully appreciate what is evaluation is, why it is important, and how it can help them in their roles. These resources will help you talk to others about the value of evaluation and give you the tools you need to make the case to evaluate your agency's programs, policies, and/or operations.
-- name: 'Getting Started as a Non-Evaluator'
+- name: 'Working with Evaluators'
   path: '/evaluation-toolkit/non-evaluator/'
-  domain: 'Getting Started as a Non-Evaluator'
+  domain: 'Working with Evaluators'
   parent: ''
   description: >
     You're convinced of the value that evaluation has to offer for your program, policy, or operation and are ready to champion pursuing this approach to building evidence. Now what?  Where do you begin? Who do you talk to? These resources will help you move forward, knowing what questions to ask, what to look for when reviewing evaluation plans, and more.
 - name: 'Identifying Resources'
   path: '/evaluation-toolkit/non-evaluator#identifying-resources'
   domain: 'Getting Started (as a Non-Evaluator): Identifying Resources'
-  parent: 'Getting Started as a Non-Evaluator'
+  parent: 'Working with Evaluators'
   description: >
     Resources are an important part of any evaluation, but knowing how to identify resources or figure out the level of resources needed can be a challenge. These tools help you figure out what resources are needed and offer ideas about how to identify potential resources.
 - name: 'Identifying Evaluation Questions'
   path: '/evaluation-toolkit/non-evaluator#identifying-evaluation-questions'
   domain: 'Getting Started (as a Non-Evaluator): Identifying Evaluation Questions'
-  parent: 'Getting Started as a Non-Evaluator'
+  parent: 'Working with Evaluators'
   description: >
     Behind every rigorous evaluation is a clear, well-written empirical question(s) that drives the evaluation design and execution. Yet, writing a strong evaluation question is not so simple. These resources and tools will help you develop and refine your evaluation questions, providing a critical foundation for your evaluation.
 - name: 'Assessing Readiness'
   path: '/evaluation-toolkit/non-evaluator#assessing-readiness'
   domain: 'Getting Started (as a Non-Evaluator): Assessing Readiness'
-  parent: 'Getting Started as a Non-Evaluator'
+  parent: 'Working with Evaluators'
   description: >
     An important, but often overlooked component of any high-quality evaluation, is a program's readiness to be evaluated. How do you know if your program, policy, or operation is ready for evaluation? These resources will help you assess your program, policy, or operation's readiness for evaluation.
 - name: 'Initiating an Evaluation'
   path: '/evaluation-toolkit/non-evaluator#initiating-an-evaluation'
   domain: 'Getting Started (as a Non-Evaluator): Initiating an Evaluation'
-  parent: 'Getting Started as a Non-Evaluator'
+  parent: 'Working with Evaluators'
   description: >
     Planning an evaluation requires careful consideration of factors like who to engage in your agency, what evaluation designs might be possible, and who might conduct the evaluation. These resources can improve evaluation planning, and provide useful tools for selecting an external evaluator (if needed).
 - name: 'Using Evaluation'
