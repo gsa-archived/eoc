@@ -14,7 +14,7 @@ type : evaluation-toolkit
   </div>
 </section>
 
-<section class="usa-graphic-list toolkit-hero-margin">
+<section class="usa-graphic-list margin-y-205 toolkit-hero-margin">
     <div class="grid-row grid-gap toolkit-hero shadow-5 margin-x-0">
       <div class="tablet:grid-col-2">
         <img class="circle-evaluation-card" alt="Evaluation 101 icon" src="{{site.baseurl}}/assets/images/evaluation/evaluation-101.png">
@@ -79,7 +79,7 @@ type : evaluation-toolkit
         </div>
     </div>
   </div>
-  <div class="text-center"><a class="usa-button usa-button--outline border-0"
+  <div class="text-center"><a class="usa-button usa-button--outline border-0 margin-right-0"
     href="{{site.baseurl}}/evaluation-toolkit/about-toolkit">About the Toolkit</a>
   </div>
 </section>
