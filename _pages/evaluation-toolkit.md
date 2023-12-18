@@ -21,7 +21,7 @@ type : evaluation-toolkit
       </div>
       <div class="tablet:grid-col-10">
         <h2 class="margin-0 text-white">Evaluation 101</h2>
-        <p class="margin-0 text-white">Learn the basics of evaluation – what it is, why it’s important, and different types</p>
+        <p class="text-white">Learn the basics of evaluation – what it is, why it’s important, and different types</p>
         <div class="mobile-lg:grid-col padding-top-1">
           <a class="text-no-underline usa-button bg-white border-0 padding-x-4 text-primary toolkit-button"
             href="{{site.baseurl}}/evaluation-toolkit/evaluation-101" aria-label="Get started with Evaluation 101">Get Started</a>
@@ -79,7 +79,7 @@ type : evaluation-toolkit
         </div>
     </div>
   </div>
-  <div class="text-center"><a class="usa-button usa-button--outline border-0 padding-x-6"
+  <div class="text-center"><a class="usa-button usa-button--outline border-0"
     href="{{site.baseurl}}/evaluation-toolkit/about-toolkit">About the Toolkit</a>
   </div>
 </section>
