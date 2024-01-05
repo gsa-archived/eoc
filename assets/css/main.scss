@@ -783,6 +783,16 @@ blockquote p {
   border-radius: 50%;
   background: linear-gradient(52deg, #162e51 25%, #28a0cb 100%);
 }
+
+.toolkit-title {
+  margin: 0;
+
+  @media only screen and (max-width: 639px) {
+    margin-top: 1.1rem;
+  }
+
+}
+
 @media only screen and (max-width: 639px) {
   .title {
       margin-top: 1.1rem;
@@ -830,14 +840,12 @@ blockquote p {
   margin-left: 0.5em;
 }
 
-.toolkit-content h2 {
+h2.toolkit-title {
   font-size: 27px;
-  margin: 0;
 }
 
-.toolkit-content h3 {
+h3.toolkit-title {
   font-size: 23px;
-  margin: 0;
 }
 
 .resource-category {

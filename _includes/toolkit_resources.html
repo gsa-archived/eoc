@@ -1,7 +1,7 @@
 {% assign target_item = include.target_item %}
 {% assign resources = site.data.toolkit_resources | where: 'domain', target_item.domain %}
 
-<{{ include.titletag }} class="title margin-top-neg-1 margin-bottom-1" id="{{ target_item.name | slugify }}">{{ target_item.name }}</{{ include.titletag }}>
+<{{ include.titletag }} class="toolkit-title" id="{{ target_item.name | slugify }}">{{ target_item.name }}</{{ include.titletag }}>
 {% if target_item %}
 <p class="font-sans-sm">{{ target_item.description }}</p>
 {% for resource in resources %}
