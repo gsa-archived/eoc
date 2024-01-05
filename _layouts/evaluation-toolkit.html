@@ -26,7 +26,7 @@ This is used in blog posts. The index page can be found at blog/index.html
             <div class="tablet:grid-col-3">
                 {% include sidenav-evaluation.html %}
             </div>
-            <div class="tablet:grid-col-9 ">
+            <div class="tablet:grid-col-9 toolkit-content">
                 {% include toolkit_resources.html target_item=target_item titletag='h2' %}
 
                 {% assign subsections = site.data.evaluation-domains | where: 'parent', target_item.domain %}
