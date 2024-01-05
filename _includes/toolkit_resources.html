@@ -3,11 +3,11 @@
 
 <{{ include.titletag }} class="title margin-top-neg-1 margin-bottom-1" id="{{ target_item.name | slugify }}">{{ target_item.name }}</{{ include.titletag }}>
 {% if target_item %}
-<p>{{ target_item.description }}</p>
+<p class="font-sans-sm">{{ target_item.description }}</p>
 {% for resource in resources %}
   {% include toolkit_resource.html resource=resource %}
 {% endfor %}
 {% else %}
 <!-- Handle case when the desired item is not found -->
-<p>Desired item not found.</p>
+<p class="font-sans-sm">Desired item not found.</p>
 {% endif %}

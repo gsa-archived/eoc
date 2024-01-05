@@ -8,7 +8,7 @@ type : evaluation-toolkit
 <section class="usa-graphic-list">
   <div class="grid-container margin-0 padding-0">
     <div class="usa-graphic-list__row grid-row grid-gap">
-    <p class="margin-bottom-0">The Federal Evaluation Toolkit is set of curated resources to build understanding of evaluation - what it is, why it is important, and how it can help Federal agencies execute their missions more effectively - among Federal agency staff at all levels. Importantly, this Toolkit is not a "how to" on conducting evaluation. Instead, it offers curated tools, reports, and templates to help Federal staff who work with evaluators, see the need for evaluation but don't know where to start, or want to use evaluation findings to inform their decisions. 
+    <p class="margin-bottom-0">The Federal Evaluation Toolkit is a set of curated resources to build understanding of evaluation - what it is, why it is important, and how it can help Federal agencies execute their missions more effectively - among Federal agency staff at all levels. Importantly, this Toolkit is not a "how to" on conducting evaluation. Instead, it offers curated tools, reports, and templates to help Federal staff who work with evaluators, see the need for evaluation but don't know where to start, or want to use evaluation findings to inform their decisions. 
 </p>  
     </div>
   </div>
@@ -40,7 +40,7 @@ type : evaluation-toolkit
               </div>
               <div class="tablet:grid-col-8 text-primary toolkit-text">
                  <h3 class="usa-media-block__body evaluation-width margin-0"><a href="{{site.baseurl}}/evaluation-toolkit/non-evaluator" class="text-no-underline display-inline-block text-primary"><b>Working with Evaluators</b></a></h3>
-                <p>Learn how to hire and work with evaluators to refine evaluation questions, assess readiness, and start an evaluation</p>
+                <p>Learn how to hire and work with evaluators, refine evaluation questions, assess readiness, and start an evaluation</p>
               </div>
             </div>
         </div>

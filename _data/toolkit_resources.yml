@@ -15,7 +15,7 @@
 -
   domain: "Evaluation 101: Types of Evaluation"
   title: The Administration for Children & Families Common Framework for Research and Evaluation
-  description: Building evidence is not one-size-fits all, and different questions require different methods and approaches. This Framework describes, in detail, six different types of research and evaluation approaches -- foundational descriptive studies, exploratory descriptive studies, design and development studies, efficacy studies, effectiveness studies, and scale-up studies -- and can help you understand which type of evaluation might be most useful for you and your information needs.
+  description: Building evidence is not one-size-fits all, and different questions require different methods and approaches. This Framework describes, in detail, six different types of research and evaluation approaches — foundational descriptive studies, exploratory descriptive studies, design and development studies, efficacy studies, effectiveness studies, and scale-up studies — and can help you understand which type of evaluation might be most useful for you and your information needs.
   source: Office of Planning, Research and Evaluation; Administration for Children and Families; Department of Health and Human Services
   type: Report
   keywords:
@@ -83,7 +83,7 @@
   format: PowerPoint
   cover_sheet: CS_Evidence for Action Pitch Decks.pdf
 -
-  domain: "Getting Started (as a Non-Evaluator): Identifying Resources"
+  domain: "Working with Evaluators: Identifying Resources"
   title: Identifying Resources for Evaluation
   description: Conducting evaluation requires resources. This Q&A explains how to identify resource needs for an evaluation, describes resources that may be available, and discusses how to engage external experts to build staff capacity.
   source:
@@ -97,7 +97,7 @@
   link: Resource_Identifying Resources for Evaluation.pdf
   cover_sheet:
 -
-  domain: "Getting Started (as a Non-Evaluator): Identifying Resources"
+  domain: "Working with Evaluators: Identifying Resources"
   title: Budgeting for Evaluation
   description: To create a realistic and appropriate program evaluation budget, it is important to think through key factors that drive evaluation costs. This guide presents five factors to consider, including program features, the evaluation’s goals, who will conduct it, how it will be carried out, and how findings will be shared, and includes a sample template that itemizes key costs to consider at both the team and staff levels. 
   source: AmeriCorps
@@ -111,7 +111,7 @@
   link: Resource_Budgeting for Evaluation.pdf
   cover_sheet:
 -
-  domain: "Getting Started (as a Non-Evaluator): Identifying Evaluation Questions"
+  domain: "Working with Evaluators: Identifying Evaluation Questions"
   title: Evaluation Questions Checklist for Program Evaluation
   description: Evaluation questions guide the selection of your evaluation method, data collection tools, and data analyses. Use this checklist to convert your information needs into effective and appropriate evaluation questions and to assess their quality.
   source: Lori Wingate & Daniela Shroeter
@@ -125,7 +125,7 @@
   link: Resource_Evaluation Questions Checklist for Program Evaluation.pdf
   cover_sheet:
 -
-  domain: "Getting Started (as a Non-Evaluator): Identifying Evaluation Questions"
+  domain: "Working with Evaluators: Identifying Evaluation Questions"
   title: How to Develop the Right Research Questions for Program Evaluation
   description: >
     This slide show describes four steps to develop evaluation questions: create a logic model, define the evaluation purpose and scope, select the evaluation type, and produce evaluation questions. It includes exercises and templates for developing research questions for process, outcome, and impact evaluations.
@@ -139,7 +139,7 @@
   format: PDF
   cover_sheet:
 -
-  domain: "Getting Started (as a Non-Evaluator): Identifying Evaluation Questions"
+  domain: "Working with Evaluators: Identifying Evaluation Questions"
   title: Quick Guide to Writing a Strong Evidence-Building Question
   description: >
     Use this worksheet to plan, draft, and finalize a strong evidence-building question. Broadly consider how the question relates to the purpose and relevance of the effort, types of evidence, methodology, and resources.
@@ -154,7 +154,7 @@
   link: Resource_Quick Guide to Writing a Strong Evidence-Building Question.pdf
   cover_sheet:
 -
-  domain: "Getting Started (as a Non-Evaluator): Assessing Readiness"
+  domain: "Working with Evaluators: Assessing Readiness"
   title: How to Develop a Program Logic Model
   description: >
     Logic models are effective tools to assist in program planning, implementation, management, evaluation, and reporting. View this presentation to learn the key components of a logic model, how to develop a logic model and use it in the context of evaluation planning.
@@ -168,7 +168,7 @@
   link: Resource_How to Develop a Program Logic Model.pdf
   cover_sheet:
 -
-  domain: "Getting Started (as a Non-Evaluator): Assessing Readiness"
+  domain: "Working with Evaluators: Assessing Readiness"
   title: "Research and Evaluation Capacity: Self-Assessment Tool and Discussion Guide for CCDF Lead Agencies"
   description: >
     Use this tool and discussion guide to identify strengths and gaps in your organization’s capacity to conduct research and evaluation, and set priorities to build capacity where needed. It includes self-assessment scales, a checklist, and questions to guide next steps. Check out the cover page to learn more about how this resource can help you.
@@ -181,7 +181,7 @@
   link: Resource_Research and Evaluation Capacity - Self Assessment Tool and Discussion Guide for CCDF Agencies.pdf
   cover_sheet: CS_Research and Evaluation Capacity Self Assessment Tool.pdf
 -
-  domain: "Getting Started (as a Non-Evaluator): Assessing Readiness"
+  domain: "Working with Evaluators: Assessing Readiness"
   title: Introducing the Impact Evaluability Assessment Tool
   description: >
     Use this checklist to assess your program’s readiness for a rigorous evaluation to measure impacts. It highlights elements that are needed to evaluate the impacts of a program, and helps the user consider organizational, program, and evaluation readiness. It may also be helpful for evaluation planning and communication.
@@ -195,7 +195,7 @@
   link: Resource_Introducing the Impact Evaluability Assessment Tool.pdf
   cover_sheet:
 -
-  domain: "Getting Started (as a Non-Evaluator): Initiating an Evaluation"
+  domain: "Working with Evaluators: Initiating an Evaluation"
   title: Initiating an Evaluation Tip Sheet
   description: Initiating an evaluation requires several key decisions. This resource lays out critical questions you have to answer around evaluation purpose and scope, stakeholder relationships, connecting evaluation activities and outcomes, evaluation goals, and evaluation plan and timeline to optimize front-end decision-making, and includes a sample evaluator information worksheet.  
   source:
@@ -208,7 +208,7 @@
   link: Resource_Initiating an Evaluation Tip Sheet.pdf
   cover_sheet:
 -
-  domain: "Getting Started (as a Non-Evaluator): Initiating an Evaluation"
+  domain: "Working with Evaluators: Initiating an Evaluation"
   title: How to Manage an External Evaluation
   description: >
     Program evaluations may be executed by agency staff or by an external entity not directly involved with the program (e.g., research organization, university, etc.). This presentation describes the key tasks involved in overseeing an external evaluation: 1) deciding who will manage the external evaluator; 2) defining the evaluation purpose, scope, and timing; 3) setting a budget and obtaining resources; 4) seeking and selecting an external evaluator; 5) establishing a contract or consulting agreement; and 6) managing the evaluator.
@@ -221,10 +221,10 @@
   link: Resource_How to Manage an External Evaluation.pdf
   cover_sheet:
 -
-  domain: "Getting Started (as a Non-Evaluator): Initiating an Evaluation"
+  domain: "Working with Evaluators: Initiating an Evaluation"
   title: Evaluator Screening Tips
   description: >
-    Finding an external evaluator who can effectively to execute your evaluation takes strategy and careful planning. Use this tip sheet to understand what kinds of experience and expertise to target, how to confirm an evaluator’s background and publications online, and how to assess technical knowledge through reference and conflict of interest checks, reviews of reports, and responses to a statement of work. Check out the cover page to learn more about how this resource can help you.
+    Finding an external evaluator who can effectively execute your evaluation takes strategy and careful planning. Use this tip sheet to understand what kinds of experience and expertise to target, how to confirm an evaluator’s background and publications online, and how to assess technical knowledge through reference and conflict of interest checks, reviews of reports, and responses to a statement of work. Check out the cover page to learn more about how this resource can help you.
   source: AmeriCorps
   type: Guide
   keywords:

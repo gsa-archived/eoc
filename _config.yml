@@ -167,12 +167,11 @@ primary_navigation:
     children:
       - name: Learning Agenda Questions Dashboard
         url: "/learning-agenda-questions-dashboard/"
-  - name: Resources
-    children:
-      - name: Evaluation Resources
-        url: "/resources/"
       - name: Evaluation Toolkit
         url: "/evaluation-toolkit/"
+  - name: Resources
+    url: /resources/
+  - name: News
     url: /news/
   - name: About
     children:
