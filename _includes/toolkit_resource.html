@@ -16,12 +16,25 @@
                    title="{% if resource.source %} {{ resource.source }}, {% endif %}{% if resource.year %}{{ resource.year }}{% endif %}"></i>
             </h3>
             <div class="grid-row">
-                <div class="desktop:grid-col-3 text-base margin-bottom-1 display-flex">
+                <div class="desktop:grid-col-9 text-base margin-bottom-1 display-flex">
                     <img src="{{site.baseurl}}/assets/images/{{ resource.image }}" class="margin-top-neg-3"alt="{{ resource.image }} for {{resource.title}}"/>
                     <strong><p class="margin-top-neg-1 margin-left-1">{{ resource.type }}</p></strong>
                 </div>
-                <div class="desktop:grid-col-9 text-base margin-bottom-1">
-                    <div class="margin-top-neg-2">
+                <div class="desktop:grid-col-3 text-base margin-bottom-1 margin-top-neg-2">
+                    {% if titleLink %}
+                    <a class="usa-button usa-button--outline border-0 margin-right-0 padding-1" href="{{ titleLink }}" target="_blank">Open in New Tab</a>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="text-base margin-bottom-1">
+                <div class="margin-top-neg-2">
+                    <p>{{ resource.description | liquify }}</p>
+                </div>
+            </div>
+            <div class="grid-row">
+                
+                <div class="desktop:grid-col-10 text-base margin-bottom-1">
+                    <div class="margin-top-neg-05">
                         <strong>
                             Keywords
                         </strong>
@@ -33,21 +46,8 @@
                         {% endfor %}
                     </div>
                 </div>
-            </div>
-            <div class="text-base margin-bottom-1">
-                <div class="margin-top-neg-2">
-                    <p>{{ resource.description | liquify }}</p>
-                </div>
-            </div>
-            <div class="grid-row">
-                <div class="desktop:grid-col-8 text-base margin-bottom-1">
-                    {% if titleLink %}
-                    <a class="usa-button usa-button--outline border-0 margin-right-0" href="{{ titleLink }}" target="_blank">Open in New Tab</a>
-                    {% endif %}
-                </div>
-                <div class="desktop:grid-col-4 text-base margin-bottom-1">
+                <div class="desktop:grid-col-2 text-base margin-bottom-1">
                     {% if resource.cover_sheet %}
-                    <strong>Cover Sheet</strong>
                     <a href="{{ site.baseurl }}/assets/resources/{{ resource.cover_sheet }}"
                        aria-label="{{ resource.title }} Cover Sheet"
                        target="_blank" class="margin-05">Cover Sheet</a>
