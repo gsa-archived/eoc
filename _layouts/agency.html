@@ -75,7 +75,7 @@ This is used for Agency pages.
                   <p class="card-tag pill-btn eval-plan" style="margin-top:1rem;margin-bottom:30px;font-size:.7em;">
                 {% for bio in evaluation_plans limit:3 %}
                     {% assign fy = bio.name | slice: 3, 4 | to_i | minus: 0 %}
-                    {% assign currentyear = "now" | date: "%Y" | plus: 1 %}
+                    {% assign currentyear = 2024 %}
                     {% if forloop.index == 1 and fy < currentyear %}
                     <span>FY {{ currentyear }} Coming Soon</span>
                 {% endif %}
