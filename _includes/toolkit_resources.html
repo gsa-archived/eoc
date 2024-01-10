@@ -1,0 +1,13 @@
+{% assign target_item = include.target_item %}
+{% assign resources = site.data.toolkit_resources | where: 'domain', target_item.domain %}
+
+<{{ include.titletag }} class="toolkit-title" id="{{ target_item.name | slugify }}">{{ target_item.name }}</{{ include.titletag }}>
+{% if target_item %}
+<p class="font-sans-sm">{{ target_item.description }}</p>
+{% for resource in resources %}
+  {% include toolkit_resource.html resource=resource %}
+{% endfor %}
+{% else %}
+<!-- Handle case when the desired item is not found -->
+<p class="font-sans-sm">Desired item not found.</p>
+{% endif %}

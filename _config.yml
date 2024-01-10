@@ -167,6 +167,8 @@ primary_navigation:
     children:
       - name: Learning Agenda Questions Dashboard
         url: "/learning-agenda-questions-dashboard/"
+      - name: Evaluation Toolkit
+        url: "/evaluation-toolkit/"
   - name: Resources
     url: /resources/
   - name: News
@@ -230,6 +232,7 @@ plugins:
   - jekyll-redirect-from
   - jekyll-sitemap # See additional instructions for url parameter above.
   - jekyll-seo-tag
+  - jekyll-liquify
 
 ############################################################
 # Site configuration for the Jekyll 3 Pagination Gem
