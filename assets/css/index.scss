@@ -335,3 +335,9 @@ html {
 }
 
 
+@media screen and (max-width: 768px) {
+    .usa-banner__header-flag {
+        max-width: fit-content;
+        float: initial;
+    }
+}
