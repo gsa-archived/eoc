@@ -1,0 +1,61 @@
+{% assign resource = include.resource %}
+{% assign titleLink = nil %}
+{% if resource.link %}
+  {% if resource.link contains "://" %}
+    {% assign titleLink = resource.link %}
+  {% else %}
+    {% assign titleLink = resource.link | prepend: '/assets/resources/' | prepend: site.baseurl %}
+  {% endif %}
+{% endif %}
+<div class="event-card padding-bottom-3 margin-top-1">
+  <div class="grid-row clearfix shadow-5 radius-lg bg-white padding-2 flex-align-center">
+    <div class="tablet:grid-col-12">
+      <h3 class="font-sans-md margin-top-0">
+        {% if titleLink %}
+          <a class="text-no-underline hover:text-underline" href="{{ titleLink }}" target="_blank">{{ resource.title }}</a>
+        {% else %}
+          {{ resource.title }}
+        {% endif %}
+        </h3>
+      <div class="text-base margin-bottom-1">
+        <div class="margin-top-neg-105">
+          <p>{{ resource.description | liquify }}</p>
+          {% if resource.source %}
+            <p><strong class="bg-white">Source:</strong> {{ resource.source }}</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    <div class="grid-row tablet:grid-col-12">
+      <div class="mobile-lg:grid-col-3">
+        <strong>Resource Type</strong>
+        <p class="margin-top-0">{{ resource.type }}</p>
+      </div>
+      <div class="mobile-lg:grid-col-4">
+        <strong>Keywords</strong>
+        <p class="margin-top-0">
+          {% for tag in resource.keywords %}
+          {% assign slug_tag = tag | slugify %}
+          <a href="{{ '/keywords/' | append: slug_tag | relative_url }}" aria-label="Keyword: {{tag}}">{{ tag }}</a>{% if forloop.last == false %},{% endif %}
+          {% else %}
+          This resource has no keywords.
+          {% endfor %}
+          </p>
+      </div>
+      {% if resource.year %}
+      <div class="mobile-lg:grid-col-2">
+        <strong>Year</strong>
+        <p class="margin-top-0">{{ resource.year }}</p>
+      </div>
+      {% endif %}
+      {% if resource.cover_sheet %}
+      <div class="mobile-lg:grid-col-3">
+        <strong>Cover Sheet</strong>
+        <p class="margin-top-0"><a href="{{ site.baseurl }}/assets/resources/{{ resource.cover_sheet }}"
+                                   aria-label="{{ resource.title }} Cover Sheet"
+                                   target="_blank">Cover Sheet</a></p>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
