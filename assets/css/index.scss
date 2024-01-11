@@ -226,9 +226,6 @@ html {
   }
 }
 @media screen and (max-width: 768px) {
-  img {
-    max-width: 33%;
-  }
 
   img.adward-bio-img {
     max-width: 100%;
@@ -314,6 +311,29 @@ html {
         background-color: transparent !important;
     }
 }
+
+.bg-evaluation {
+  background: #082644 url(../images/eoc.png) no-repeat;
+  background-size: cover;
+
+    @media screen and (max-width: 1200px) {
+        background: linear-gradient(52deg, #162e51 25%, #28a0cb 100%);
+        color: #fff;
+    }
+}
+
+.padding-keyword {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.beta-tag {
+  padding: 0px 10px; 
+  font-size: 25px;
+  vertical-align: super; 
+  font-weight: normal;
+}
+
 
 @media screen and (max-width: 768px) {
     .usa-banner__header-flag {
