@@ -11,7 +11,7 @@ permalink: /resources/
     <div class="margin-left-3 margin-bottom-4">
         <ul>
             <li><a href="{{site.baseurl}}/resources/#resource=*&role=.year-of-evidence&content=*&year=*">Year of Evidence for Action Event Summaries</a></li>
-            <li><a href="{{site.baseurl}}/resources/#resource=.portal-opportunities&role=*&content=*&year=*">Research Portal Opportunities</a></li>
+            <li><a href="{{site.baseurl}}/resources/#resource=.portal-opportunities&role=*&content=*&year=*">Evidence Project Portal Opportunities</a></li>
         </ul>    
      </div>   
      </div>
