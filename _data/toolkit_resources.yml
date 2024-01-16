@@ -147,6 +147,7 @@
     - Methods
   year: 2015
   format: PDF
+  link: Resource_How to Develop the Right Research Questions for Program Evaluation.pdf
   cover_sheet:
 -
   domain: "Working with Evaluators: Identifying Evaluation Questions"
@@ -260,8 +261,9 @@
   image: video-solid.svg
   keywords:
     - Evaluation Use
-  year: 2021
+  year: 2023
   format: PDF
+  link: Resource_How to Apply Available Evidence.pdf
   cover_sheet:
 -
   domain: Promoting Evaluation Use
@@ -283,7 +285,7 @@
   domain: Promoting Evaluation Use
   title: "Program Evaluation Toolkit - Module 8: Dissemination Approaches"
   description: >
-    Use this tool [hyperlink to the PDF] to help choose effective dissemination strategies for your evaluation findings and products. It walks through defining the focus of your initiative and the evaluation, your intended audiences for the evaluation findings, the audiences’ intended use of findings, dissemination strategies, and next steps. Use this blank, fillable form [Hyperlink to the DOCX Worksheet] to optimize the dissemination of your work products by identifying the intended audience(s) of your work and how your audience(s) will use your findings and/or work products. Check out the cover page to learn more about how these resources may apply to your work.
+    Use this resource to help choose effective dissemination strategies for your evaluation findings and products. It walks through defining the focus of your initiative and the evaluation, your intended audiences for the evaluation findings, the audiences’ intended use of findings, dissemination strategies, and next steps.
   source: Institute for Education Sciences, Regional Educational Laboratory Program
   type: Slide Deck; Worksheet
   image: video-solid.svg
@@ -293,4 +295,5 @@
     - Evaluation Use
   year: 2021
   format: PDF
+  link: Resource_Program Evaluation Toolkit - Module 8 Dissemination Approaches.pdf
   cover_sheet: CS_Program Evaluation Toolkit - Module 8 Dissemination Approaches.pdf
