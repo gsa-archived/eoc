@@ -16,9 +16,17 @@
                    title="{% if resource.source %} {{ resource.source }}, {% endif %}{% if resource.year %}{{ resource.year }}{% endif %}"></i>
             </h3>
             <div class="grid-row">
-                <div class="desktop:grid-col-9 text-base margin-bottom-1 display-flex">
-                    <img src="{{site.baseurl}}/assets/images/{{ resource.image }}" class="margin-top-neg-3"alt="{{ resource.image }} for {{resource.title}}"/>
-                    <strong><p class="margin-top-neg-1 margin-left-1">{{ resource.type }}</p></strong>
+                <div class="desktop:grid-col-9 text-base margin-bottom-1">
+                    <div class="display-flex">
+                        {{ resource.image }}
+                        <strong><p class="margin-top-neg-1 margin-left-05">{{ resource.type }}</p></strong>
+                    </div>
+                    <div class="display-flex">
+                        {% if resource.another_type %}
+                        {{ resource.another_image }}
+                        <strong><p class="margin-top-neg-1 margin-left-05">{{ resource.another_type }}</p></strong>
+                        {% endif %}
+                    </div>
                 </div>
                 <div class="desktop:grid-col-3 text-base margin-bottom-1 margin-top-neg-2">
                     {% if titleLink %}
@@ -32,7 +40,7 @@
                 </div>
             </div>
             <div class="grid-row">
-                
+
                 <div class="desktop:grid-col-10 text-base margin-bottom-1">
                     <div class="margin-top-neg-05">
                         <strong>
@@ -56,3 +64,4 @@
             </div>
         </div>
     </div>
+</div>
