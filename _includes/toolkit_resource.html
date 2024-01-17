@@ -16,17 +16,13 @@
                    title="{% if resource.source %} {{ resource.source }}, {% endif %}{% if resource.year %}{{ resource.year }}{% endif %}"></i>
             </h3>
             <div class="grid-row">
-                <div class="desktop:grid-col-9 text-base margin-bottom-1">
-                    <div class="display-flex">
-                        {{ resource.image }}
-                        <strong><p class="margin-top-0 margin-left-05">{{ resource.type }}</p></strong>
-                    </div>
-                    <div class="display-flex">
-                        {% if resource.another_type %}
-                        {{ resource.another_image }}
-                        <strong><p class="margin-top-0 margin-left-05">{{ resource.another_type }}</p></strong>
-                        {% endif %}
-                    </div>
+                <div class="desktop:grid-col-9 text-base margin-bottom-1 display-flex">
+                    {{ resource.image }}
+                    <strong><p class="margin-top-0 margin-left-05 margin-right-105">{{ resource.type }}</p></strong>
+                    {% if resource.another_type %}
+                    {{ resource.another_image }}
+                    <strong><p class="margin-top-0 margin-left-05">{{ resource.another_type }}</p></strong>
+                    {% endif %}
                 </div>
                 <div class="desktop:grid-col-3 text-base margin-bottom-1 margin-top-neg-1">
                     {% if titleLink %}
