@@ -8,25 +8,25 @@
   {% endif %}
 {% endif %}
 <div class="event-card padding-bottom-3 margin-top-1">
-    <div class="grid-row clearfix shadow-5 radius-lg bg-white padding-2 flex-align-center">
-        <div class="tablet:grid-col-12">
+    <div class="grid-row clearfix shadow-5 radius-card bg-white padding-2 flex-align-center">
+        <div class="tablet:grid-col-12 margin-105">
             <h3 class="font-sans-md margin-top-0">
                 {{ resource.title }}
                 <i class="fa fa-info-circle usa-tooltip text-base" data-position="right"
                    title="{% if resource.source %} {{ resource.source }}, {% endif %}{% if resource.year %}{{ resource.year }}{% endif %}"></i>
             </h3>
             <div class="grid-row">
-                <div class="desktop:grid-col-9 text-base margin-bottom-1 display-flex">
+                <div class="desktop:grid-col-9 text-base margin-bottom-1 display-flex margin-top-neg-1">
                     {{ resource.image }}
-                    <strong><p class="margin-top-0 margin-left-05 margin-right-105">{{ resource.type }}</p></strong>
+                    <strong><p class="margin-top-0 margin-left-05 margin-right-105 margin-top-5">{{ resource.type }}</p></strong>
                     {% if resource.another_type %}
                     {{ resource.another_image }}
-                    <strong><p class="margin-top-0 margin-left-05">{{ resource.another_type }}</p></strong>
+                    <strong><p class="margin-top-0 margin-left-05 margin-top-5">{{ resource.another_type }}</p></strong>
                     {% endif %}
                 </div>
                 <div class="desktop:grid-col-3 text-base margin-bottom-1 margin-top-neg-1">
                     {% if titleLink %}
-                    <a class="usa-button usa-button--outline border-0 margin-right-0 padding-1" href="{{ titleLink }}" target="_blank">Open in New Tab</a>
+                    <a class="usa-button usa-button--outline border-0 margin-right-0 padding-1" href="{{ titleLink }}" target="_blank" aria-label="Open in New Tab for {{ resource.title }}">Open in New Tab</a>
                     {% endif %}
                 </div>
             </div>
@@ -37,24 +37,30 @@
             </div>
             <div class="grid-row">
 
-                <div class="desktop:grid-col-10 text-base margin-bottom-1">
+                <div class="desktop:grid-col-12 text-base margin-bottom-1">
                     <div class="margin-top-neg-05">
                         <strong>
                             Keywords
                         </strong>
                         {% for tag in resource.keywords %}
                         {% assign slug_tag = tag | slugify %}
-                        <a href="{{ '/keywords/' | append: slug_tag | relative_url }}" class="usa-button btn-primary margin-05 radius-lg padding-1 font-sans-3xs">{{ tag }}</a>
+                        <a href="{{ '/keywords/' | append: slug_tag | relative_url }}" class="usa-button btn-primary margin-05 radius-pill padding-y-1 font-sans-3xs margin-top-card">{{ tag }}</a>
                         {% else %}
                         This resource has no keywords.
                         {% endfor %}
                     </div>
                 </div>
-                <div class="desktop:grid-col-2 text-base margin-bottom-1">
+               
+            </div>
+            <div class="grid-row">
+                <div class="desktop:grid-col-5 text-base margin-bottom-1">
                     {% if resource.cover_sheet %}
+                    <strong>
+                        Cover Sheet
+                    </strong>
                     <a href="{{ site.baseurl }}/assets/resources/{{ resource.cover_sheet }}"
                        aria-label="{{ resource.title }} Cover Sheet"
-                       target="_blank" class="margin-05">Cover Sheet</a>
+                       target="_blank" class="usa-button usa-button--outline margin-05 radius-pill padding-y-1 font-sans-3xs">Cover Sheet</a>
                     {% endif %}
                 </div>
             </div>
