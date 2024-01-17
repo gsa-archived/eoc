@@ -19,16 +19,16 @@
                 <div class="desktop:grid-col-9 text-base margin-bottom-1">
                     <div class="display-flex">
                         {{ resource.image }}
-                        <strong><p class="margin-top-neg-1 margin-left-05">{{ resource.type }}</p></strong>
+                        <strong><p class="margin-top-0 margin-left-05">{{ resource.type }}</p></strong>
                     </div>
                     <div class="display-flex">
                         {% if resource.another_type %}
                         {{ resource.another_image }}
-                        <strong><p class="margin-top-neg-1 margin-left-05">{{ resource.another_type }}</p></strong>
+                        <strong><p class="margin-top-0 margin-left-05">{{ resource.another_type }}</p></strong>
                         {% endif %}
                     </div>
                 </div>
-                <div class="desktop:grid-col-3 text-base margin-bottom-1 margin-top-neg-2">
+                <div class="desktop:grid-col-3 text-base margin-bottom-1 margin-top-neg-1">
                     {% if titleLink %}
                     <a class="usa-button usa-button--outline border-0 margin-right-0 padding-1" href="{{ titleLink }}" target="_blank">Open in New Tab</a>
                     {% endif %}
