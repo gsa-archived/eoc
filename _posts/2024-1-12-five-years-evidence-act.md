@@ -1,7 +1,7 @@
 ---
 title: Celebrating Five Years of the Evidence Act
 layout: post
-date: January 16, 2024
+date: January 17, 2024
 author: The Evidence Team, OMB
 excerpt: January 2024 marks five years since passage of the Foundations for Evidence-Based Policymaking Act, or Evidence Act...
 aria: 
@@ -18,7 +18,7 @@ January 2024 marks five years since passage of the Foundations for Evidence-Base
 
 Much has been accomplished in a short period, and the Evidence Act's five-year anniversary is an opportune time to celebrate progress to date. OMB's Evidence Team is proud of the advancements being made across the Federal Government to bring the vision of the Evidence Act into reality. In addition to those efforts led by the Evidence Team, this progress depends on the strong support of GSA's Office of Shared Solutions and Performance Improvement (OSSPI) as well as the dedication of Evaluation Officers, their "plus ones," and evaluation leaders and staff across the Government who do the hard, often unseen work each and every day.
 
-Since Evaluation.gov is the home for the Act's evaluation activities, we highlight ten Evidence Act evaluation accomplishments:
+Since Evaluation.gov is the home for the Act’s evaluation activities, below we highlight ten evaluation-specific accomplishments from the Evidence Act:
 
 1. Agencies designated [Evaluation Officers]({{site.baseurl}}/evaluation-officers/) to coordinate and oversee their evaluation activities.
 2. The [Evaluation Officer Council]({{site.baseurl}}/about-evaluation-officers/) has met monthly since 2019, providing a venue for collaboration and knowledge sharing, and the [Interagency Council on Evaluation Policy]({{site.baseurl}}/interagency-council-on-evaluation-policy/) brings evaluation experts from across the Federal government together to provide support, tools, and professional development opportunities for Federal evaluators.
