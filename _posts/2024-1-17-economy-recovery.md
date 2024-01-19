@@ -33,14 +33,11 @@ Advancing equity is a [major emphasis](https://www.whitehouse.gov/wp-content/upl
 ## *Engaging Stakeholders to Refine Evaluation Priorities*
 
 This updated [Economic Recovery Learning Agenda](https://home.treasury.gov/system/files/136/ORP-Learning-Agenda-Final.pdf){:target="_blank"} incorporates changes based on extensive stakeholder engagement that Treasury conducted to receive feedback on a draft version released in spring 2023. To solicit this feedback, which was intended to make sure research priorities were informed and actionable by people outside of the federal government, we conducted approximately a dozen listening sessions, including both in-person and virtual. These sessions garnered a wide range of feedback from over 100 individuals and organizations, including state, local, and Tribal governments that received award funds, program beneficiaries, researchers, philanthropy, academics, think tanks, community organizations, government associations, members of the public, and other federal agencies.
-<div class="grid-row grid-gap">
-    <div class="tablet:grid-col-4">
-        <p>In response to this feedback, the updated learning agenda contains more details on specific programs' evaluation priorities, more information on the data available to conduct research, broader recognition of key stakeholders, and a greater emphasis on equity.</p>
-    </div>
-    <div class="tablet:grid-col-8">
-        <img src="{{site.baseurl}}/assets/images/blog/econ-recovery-img-3.png" alt="Chart showing that Treasury used stakeholder feedback to make the learning agenda more focused on equity, include more specific evaluation details, and provide information on available data. ">
-    </div>
-</div>
+
+In response to this feedback, the updated learning agenda contains more details on specific programs' evaluation priorities, more information on the data available to conduct research, broader recognition of key stakeholders, and a greater emphasis on equity.
+
+<img src="{{site.baseurl}}/assets/images/blog/econ-recovery-img-3.png" alt="Chart showing that Treasury used stakeholder feedback to make the learning agenda more focused on equity, include more specific evaluation details, and provide information on available data." class="margin-left-auto margin-right-auto display-block">
+
 For example, the context and stories that we heard from people who have received assistance through these programs helped us to refine the evaluation questions in the learning agenda. As a result, we created a new section for each evaluation question (highlighted below) to capture more specific and actionable areas for research that would provide valuable information toward answering the overarching research questions.
 
 <img src="{{site.baseurl}}/assets/images/blog/econ-recovery-img-4.png" alt="Screenshot from the learning agenda illustrating how Treasury added more evaluation details to the learning agenda in response to stakeholder feedback." class="margin-left-auto margin-right-auto display-block">
