@@ -1,7 +1,7 @@
 ---
 title: Actionable Learning about Economic Recovery
 layout: post
-date: January 17, 2024
+date: January 22, 2024
 author: Jed Herrmann, U.S. Department of the Treasury
 excerpt: Treasury is using evidence to inform program implementation and is looking for opportunities to collaborate with researchers on evaluations (who can express interest by emailing <a href="mailto:OSPPI@Treasury.gov">OSPPI@Treasury.gov</a>)...
 aria: 
@@ -20,7 +20,7 @@ The U.S. Department of the Treasury recently released an [updated Economic Recov
 
 This economic recovery line of inquiry focuses on Treasury's efforts to administer an efficient, effective, and equitable economic recovery for the country in the aftermath of the COVID-19 pandemic. As part of the Biden-Harris Administration's response to the pandemic, Treasury's Office of Capital Access (formerly known as the Office of Recovery Programs) is managing approximately $600 billion in programs aimed at helping state/local governments and communities respond to and recover from the pandemic. Many of these programs are completely new and thus present a great opportunity for research and learning to help with program implementation and consider how to design future programs. They also include large funding streams to support housing, broadband infrastructure, and small businesses.
 
-## *Learning and Equity*
+<h3><i>Learning and Equity</i></h3>
 
 The Economic Recovery Learning Agenda is focused on continuous improvement in the implementation of federal economic programs and stems from Treasury's first ever [enterprise Learning Agenda](https://home.treasury.gov/system/files/266/Treasury-FY2022-2026-LearningAgenda.pdf){:target="_blank"}, which was issued in 2022 and outlines learning priorities across five goals and 19 strategic objectives, including two high-level questions related to economic recovery that serve as the basis for the more in-depth Economic Recovery Learning Agenda. The Economic Recovery Learning Agenda aims to spur evidence building to help us **learn** about the effectiveness and equity of the programs, **highlight** the results we have seen, and **share** lessons learned that can be applied in the future.
 
@@ -30,7 +30,7 @@ Advancing equity is a [major emphasis](https://www.whitehouse.gov/wp-content/upl
 
 <img src="{{site.baseurl}}/assets/images/blog/econ-recovery-img-2.png" alt="Graphic showing that equity and outcomes are intertwined with the goal of achieving equitable outcomes. " class="margin-left-auto margin-right-auto display-block">
 
-## *Engaging Stakeholders to Refine Evaluation Priorities*
+<h3><i>Engaging Stakeholders to Refine Evaluation Priorities</i></h3>
 
 This updated [Economic Recovery Learning Agenda](https://home.treasury.gov/system/files/136/ORP-Learning-Agenda-Final.pdf){:target="_blank"} incorporates changes based on extensive stakeholder engagement that Treasury conducted to receive feedback on a draft version released in spring 2023. To solicit this feedback, which was intended to make sure research priorities were informed and actionable by people outside of the federal government, we conducted approximately a dozen listening sessions, including both in-person and virtual. These sessions garnered a wide range of feedback from over 100 individuals and organizations, including state, local, and Tribal governments that received award funds, program beneficiaries, researchers, philanthropy, academics, think tanks, community organizations, government associations, members of the public, and other federal agencies.
 
@@ -50,7 +50,7 @@ This learning agenda is designed to be relevant for immediate program implementa
 
 In fact, Treasury has already used descriptive and process evaluations to make adjustments to a number of programs. For example, in the context of the <a href="https://home.treasury.gov/policy-issues/coronavirus/assistance-for-state-local-and-tribal-governments/state-and-local-fiscal-recovery-funds" target="_blank" aria-label="State and Local Fiscal Recovery Funds">State and Local Fiscal Recovery Funds</a> program, we used a process [evaluation](https://oes.gsa.gov/projects/slfrf-tribal-govs-neus/){:target="_blank"} to collect and analyze information about barriers facing very small localities and Tribal governments that received these funds, aimed at improving our efforts to help them comply with program requirements.
 
-## *Collaboration to Build Evidence*
+<h3><i>Collaboration to Build Evidence</i></h3>
 
 A key part of Treasury's approach to evaluation is engagement with external researchers. We have [highlighted a dozen areas](https://home.treasury.gov/system/files/136/ORP-Learning-Agenda-Final.pdf#page=5){:target="_blank"} where we would be particularly interested in this engagement. In this regard, Treasury has posted two evidence portal opportunities for external collaboration here, on Evaluation.gov, for the [Homeowner Assistance Fund]({{site.baseurl}}/assets/resources/Portal%20-%20Treasury%20-%20HAF.pdf) program (question number 2 in the graphic below) and <a href="{{site.baseurl}}/assets/resources/Portal%20-%20Treasury%20-%20SLFRF.pdf" aria-label="Evidence project portal resource - SLFRF">State and Local Fiscal Recovery Funds</a> program (question number 3 in the graphic below).
 
@@ -62,7 +62,7 @@ As an example of collaboration, Treasury has had a robust partnership with the O
 
 By collaborating with outside experts, Treasury can learn lessons that will be valuable for future programs. These collaborations could consist of a variety of models, including program briefings and matchmaking between researchers and federal financial assistance recipients. As highlighted in the learning agenda, Treasury is already making an [extensive amount](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fhome.treasury.gov%2Fsystem%2Ffiles%2F136%2FQ2-2021-Q2-2023-ERA2-Reporting-Data.xlsx&wdOrigin=BROWSELINK){:target="_blank"} of [data publicly available](https://app.high.powerbigov.us/view?r=eyJrIjoiZWYyMjgyZTMtNDc0NS00NTJiLTk5N2UtYzU3M2UwMDA0Y2VjIiwidCI6IjU4ZjFlM2ZhLTU4Y2ItNGNiNi04OGNjLWM5MWNhYzIwN2YxOCJ9){:target="_blank"} but research collaborations could also potentially include additional data sharing. Researchers interested in collaborating with Treasury should send an email to us at <OSPPI@Treasury.gov>{:target="_blank"}.
 
-## *Applying Evidence to Inform Policy*
+<h3><i>Applying Evidence to Inform Policy</i></h3>
 
 As an example of putting evidence into action, Treasury and the Office of Evaluation Sciences partnered to [evaluate](https://oes.gsa.gov/projects/era-equity/){:target="_blank"} the equity of the Emergency Rental Assistance programs by examining how the demographics of renter households that received ERA assistance compare to the demographics of those renter households that are eligible to receive ERA assistance. Research conducted prior to the COVID-19 pandemic showed that Black renters and women renters represented a disproportionate share of those served with eviction filings. As such, Treasury focused on targeting outreach to these populations and working with ERA grantees to streamline the application process for ERA assistance to ensure that rental assistance reached those tenants most in need.
 
@@ -72,7 +72,7 @@ The evaluation found that Black renters and women renters were overrepresented a
 
 In this case, the study illuminated that Treasury's efforts had generally been successful in reaching target populations that were most at risk of eviction. While the evaluation also found underrepresentation of White and Latinx renters, this was only at the higher end of the eligible income spectrum---extremely low-income White and Latinx renters were overrepresented among beneficiaries of ERA assistance, which reinforced the success of the program outreach efforts. However, Asian renters were moderately underrepresented at all income levels, which is consistent with their participation in other government benefit programs. Nonetheless, these findings led us to do subsequent outreach work to identify barriers for Asian tenants and make updates to better reach these populations. 
 
-## *A Virtuous Cycle*
+<h3><i>A Virtuous Cycle</i></h3>
 
 As illustrated above, Treasury is engaged across the full spectrum of evaluation from outlining priorities and conducting evaluations to using findings to inform program implementation. This virtuous cycle of applying evidence to practice is key to Treasury's economic recovery work. Treasury's approach is focused on using evaluation as a learning tool for improving program implementation and the design of future economic recovery programs. 
 
