@@ -24,11 +24,11 @@ This economic recovery line of inquiry focuses on Treasury's efforts to administ
 
 The Economic Recovery Learning Agenda is focused on continuous improvement in the implementation of federal economic programs and stems from Treasury's first ever [enterprise Learning Agenda](https://home.treasury.gov/system/files/266/Treasury-FY2022-2026-LearningAgenda.pdf){:target="_blank"}, which was issued in 2022 and outlines learning priorities across five goals and 19 strategic objectives, including two high-level questions related to economic recovery that serve as the basis for the more in-depth Economic Recovery Learning Agenda. The Economic Recovery Learning Agenda aims to spur evidence building to help us **learn** about the effectiveness and equity of the programs, **highlight** the results we have seen, and **share** lessons learned that can be applied in the future.
 
-<img src="{{site.baseurl}}/assets/images/blog/econ-recovery-img-1.png" alt="Graphic showing that Treasury's learning agenda is designed to learn about effective programs, highlight outcomes, and share lessons learned. " class="margin-left-auto margin-right-auto display-block">
+<img src="{{site.baseurl}}/assets/images/blog/econ-recovery-img-1.png" alt="Graphic showing that Treasury's learning agenda is designed to learn about effective programs, highlight outcomes, and share lessons learned. " class="margin-left-auto margin-right-auto display-block blog-img-width">
 
 Advancing equity is a [major emphasis](https://www.whitehouse.gov/wp-content/uploads/2022/05/ADVANCING-EQUITY-THROUGH-THE-AMERICAN-RESCUE-PLAN.pdf){:target="_blank"} of the Administration's economic policies with a focus on serving those households and communities that are most in need of assistance. Treasury's evidence activities and the learning agenda are centrally focused on equity as an organizing principle.<a href="#ftn1" class="text-no-underline" aria-label="footnote 1"><sup>1</sup></a> As such, the Economic Recovery Learning Agenda is premised on the idea that equity and outcomes are not mutually exclusive but rather inextricably linked---programs will not reach their true goals unless they are advancing more equitable outcomes.
 
-<img src="{{site.baseurl}}/assets/images/blog/econ-recovery-img-2.png" alt="Graphic showing that equity and outcomes are intertwined with the goal of achieving equitable outcomes. " class="margin-left-auto margin-right-auto display-block">
+<img src="{{site.baseurl}}/assets/images/blog/econ-recovery-img-2.png" alt="Graphic showing that equity and outcomes are intertwined with the goal of achieving equitable outcomes. " class="margin-left-auto margin-right-auto display-block blog-img-width">
 
 <h3><i>Engaging Stakeholders to Refine Evaluation Priorities</i></h3>
 
@@ -36,7 +36,7 @@ This updated [Economic Recovery Learning Agenda](https://home.treasury.gov/syste
 
 In response to this feedback, the updated learning agenda contains more details on specific programs' evaluation priorities, more information on the data available to conduct research, broader recognition of key stakeholders, and a greater emphasis on equity.
 
-<img src="{{site.baseurl}}/assets/images/blog/econ-recovery-img-3.png" alt="Chart showing that Treasury used stakeholder feedback to make the learning agenda more focused on equity, include more specific evaluation details, and provide information on available data." class="margin-left-auto margin-right-auto display-block">
+<img src="{{site.baseurl}}/assets/images/blog/econ-recovery-img-3.png" alt="Chart showing that Treasury used stakeholder feedback to make the learning agenda more focused on equity, include more specific evaluation details, and provide information on available data." class="margin-left-auto margin-right-auto display-block blog-img-width">
 
 For example, the context and stories that we heard from people who have received assistance through these programs helped us to refine the evaluation questions in the learning agenda. As a result, we created a new section for each evaluation question (highlighted below) to capture more specific and actionable areas for research that would provide valuable information toward answering the overarching research questions.
 
@@ -46,7 +46,7 @@ We received many detailed responses that helped us refine the specific research 
 
 This learning agenda is designed to be relevant for immediate program implementation as well as the longer-term view. The focus on both short-term implementation and long-term lessons means that we are interested in a variety of study designs, including:
 
-<img src="{{site.baseurl}}/assets/images/blog/econ-recovery-img-5.png" alt="Graphic illustrating that Treasury interested in descriptive evaluations, impact evaluations, process evaluations, and other evaluation tools." class="margin-left-auto margin-right-auto display-block">
+<img src="{{site.baseurl}}/assets/images/blog/econ-recovery-img-5.png" alt="Graphic illustrating that Treasury interested in descriptive evaluations, impact evaluations, process evaluations, and other evaluation tools." class="margin-left-auto margin-right-auto display-block blog-img-width">
 
 In fact, Treasury has already used descriptive and process evaluations to make adjustments to a number of programs. For example, in the context of the <a href="https://home.treasury.gov/policy-issues/coronavirus/assistance-for-state-local-and-tribal-governments/state-and-local-fiscal-recovery-funds" target="_blank" aria-label="State and Local Fiscal Recovery Funds">State and Local Fiscal Recovery Funds</a> program, we used a process [evaluation](https://oes.gsa.gov/projects/slfrf-tribal-govs-neus/){:target="_blank"} to collect and analyze information about barriers facing very small localities and Tribal governments that received these funds, aimed at improving our efforts to help them comply with program requirements.
 
@@ -56,7 +56,7 @@ A key part of Treasury's approach to evaluation is engagement with external rese
 
 <p class="blog-text-box"><i>A sampling of questions from the learning agenda, highlighted in bold, where Treasury is interested in collaborating with researchers.</i></p>
 
-<img src="{{site.baseurl}}/assets/images/blog/econ-recovery-img-6.png" alt="Screenshot from learning agenda listing evaluation questions for HAF and SLFRF. " class="margin-left-auto margin-right-auto display-block">
+<img src="{{site.baseurl}}/assets/images/blog/econ-recovery-img-6.png" alt="Screenshot from learning agenda listing evaluation questions for HAF and SLFRF. " class="margin-left-auto margin-right-auto display-block blog-img-width">
 
 As an example of collaboration, Treasury has had a robust partnership with the Office of Evaluation Sciences on [over 10 evaluations](https://oes.gsa.gov/american-rescue-plan/){:target="_blank"} with a significant focus on using the results to inform program implementation. In addition, we are [engaged](https://www.hud.gov/press/press_releases_media_advisories/hud_no_22_226){:target="_blank"} with four research organizations to study the impact of the Emergency Rental Assistance program in coordination with the U.S. Department of Housing and Urban Development. As part of this collaboration, Treasury has shared detailed household-level data for these evaluations and is providing assistance to help researchers answer evaluation questions that are [highlighted in our learning agenda](https://home.treasury.gov/system/files/136/ORP-Learning-Agenda-Final.pdf#page=20){:target="_blank"}. 
 
@@ -68,7 +68,7 @@ As an example of putting evidence into action, Treasury and the Office of Evalua
 
 The evaluation found that Black renters and women renters were overrepresented among households that received rental assistance, across all regions of the U.S., and that funds were much more likely to reach "extremely low income" renters, or those whose households earn less than 30% of the area's median income.
 
-<img src="{{site.baseurl}}/assets/images/blog/econ-recovery-img-7.png" alt="Graphic showing the results of an ERA  study demonstrating the equitable implementation of the program. " class="margin-left-auto margin-right-auto display-block">
+<img src="{{site.baseurl}}/assets/images/blog/econ-recovery-img-7.png" alt="Graphic showing the results of an ERA  study demonstrating the equitable implementation of the program. " class="margin-left-auto margin-right-auto display-block blog-img-width">
 
 In this case, the study illuminated that Treasury's efforts had generally been successful in reaching target populations that were most at risk of eviction. While the evaluation also found underrepresentation of White and Latinx renters, this was only at the higher end of the eligible income spectrum---extremely low-income White and Latinx renters were overrepresented among beneficiaries of ERA assistance, which reinforced the success of the program outreach efforts. However, Asian renters were moderately underrepresented at all income levels, which is consistent with their participation in other government benefit programs. Nonetheless, these findings led us to do subsequent outreach work to identify barriers for Asian tenants and make updates to better reach these populations. 
 
