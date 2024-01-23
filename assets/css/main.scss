@@ -875,3 +875,18 @@ h3.toolkit-title {
     text-decoration: none;
     border-radius: 10%;
 }
+
+.blog-text-box {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black; 
+  max-width: 45rem;
+  padding: 13px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .blog-img-width {
+    max-width: 60%;
+  }
+}
