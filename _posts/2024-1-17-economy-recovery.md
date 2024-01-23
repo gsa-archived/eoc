@@ -1,7 +1,7 @@
 ---
 title: Actionable Learning about Economic Recovery
 layout: post
-date: January 22, 2024
+date: January 23, 2024
 author: Jed Herrmann, U.S. Department of the Treasury
 excerpt: Treasury is using evidence to inform program implementation and is looking for opportunities to collaborate with researchers on evaluations (who can express interest by emailing <a href="mailto:OSPPI@Treasury.gov">OSPPI@Treasury.gov</a>)...
 aria: 
