@@ -25,7 +25,7 @@ page_title: The Council
               <p>ICEP membership is by application only. If you are interested in applying to serve or would like to learn more, please contact 
                 <a href="mailto:evidence@omb.eop.gov" aria-label="Email Address (opens your default email application)">evidence@omb.eop.gov</a>
               .</p>
-              <p> Federal employees can learn about upcoming ICEP events by visiting 
+              <p> Federal employees can learn about upcoming ICEP events, including monthly evaluation office hours on the second Friday, by visiting 
                 <a 
                   href="https://community.max.gov/x/wVkCgg" 
                   aria-label="Internal website (opens in a new window)"
