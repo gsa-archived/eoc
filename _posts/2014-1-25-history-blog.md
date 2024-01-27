@@ -10,7 +10,7 @@ filters: evaluation evidence-use evidence-act
 permalink: /build-a-foundation/
 image: evidence-capacity.png
 img-alt: Evidence capacity thumbnail
-thumbnail: evidence-capacity.png
+thumbnail: evidence-capacity-thumbnail.png
 thumbnail-alt: Evidence capacity thumbnail
 ---
 
