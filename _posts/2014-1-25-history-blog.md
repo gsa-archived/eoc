@@ -1,7 +1,7 @@
 ---
 title: Building the Foundation Needed to Achieve the Evidence Act’s Potential for Transforming Federal Policymaking
 layout: post
-date: January 25, 2024
+date: January 29, 2024
 author: Kelly Bidwell (GSA), Joseph Clift (USDA/FNS), Mary Hyde (AmeriCorps), and Lauren Supplee (HHS/ACF/OPRE)
 excerpt: The five-year anniversary of the Foundations for Evidence-Based Policymaking Act of 2018 (the Evidence Act) provides a point of reflection on the journey to ensure the Federal government centers its work in evidence building and use...
 aria: 
@@ -16,7 +16,7 @@ thumbnail-alt: Evidence capacity thumbnail
 
 The five-year anniversary of the Foundations for Evidence-Based Policymaking Act of 2018 (the Evidence Act) provides a point of reflection on the journey to ensure the Federal government centers its work in evidence building and use. Transforming Federal policymaking and practice by embedding evidence into agency operations does not happen overnight, but the Evidence Act, and subsequent guidance, provides a roadmap to guide Federal action.
 
-We are the Chief Evaluation Officers of four well-established federal evaluation offices situated within different agencies across the government. All of our evaluation offices predate passage of the Evidence Act, and many have existed for 20 to 30 years. Our collective experience demonstrates that to build evidence and reach a steady state of integrating evidence into decision making takes time and sustained investment in financial and human capital. Below, we offer insights to share key enablers of success for building and strengthening evaluation offices across the Federal government.
+Though our titles vary, each of us serves as the lead for well-established federal evaluation offices situated within different agencies across the government. All of our evaluation offices predate passage of the Evidence Act, and many have existed for 20 to 30 years. Our collective experience demonstrates that to build evidence and reach a steady state of integrating evidence into decision making takes time and sustained investment in financial and human capital. Below, we offer insights to share key enablers of success for building and strengthening evaluation offices across the Federal government.
 
 **A Quick Overview of Our Organizational Histories**
 
@@ -28,7 +28,7 @@ Some of our evaluation offices go back almost 30 years.
 
 - The [research and evaluation function](https://www.fns.usda.gov/research-analysis){:target="_blank"} at the U.S. Department of Agriculture's (USDA) Food and Nutrition Service (FNS) supported evaluation research in the [1980s](https://www.fns.usda.gov/evaluation-food-distribution-program-indian-reservations-3){:target="_blank"} and, as early as 20 years ago in support of transparency for its research and evaluation efforts, began publishing its annual Research and Evaluation Plans on its website.
 
-- Finally, the youngest of our offices, the General Services Administration's [Office of Evaluation Services](https://oes.gsa.gov/){:target="_blank"} (OES) began in 2015 with a goal to help Federal agencies answer priority questions with rigorous evaluation methods and administrative data. OES has completed over 135 evaluations since 2015.
+- Finally, the youngest of our offices, the General Services Administration's [Office of Evaluation Sciences](https://oes.gsa.gov/){:target="_blank"} (OES) began in 2015 with a goal to help Federal agencies answer priority questions with rigorous evaluation methods and administrative data. OES has completed over 135 evaluations since 2015.
 
 **Enablers of Success**
 
