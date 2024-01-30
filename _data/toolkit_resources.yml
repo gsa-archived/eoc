@@ -3,8 +3,8 @@
   title: "What is Program Evaluation?: A Beginners Guide"
   description: Program evaluation uses systematic data collection to help us understand whether programs, policies, or organizations are effective. This guide explains how program evaluation can contribute to improving program services. It provides a high-level, easy-to-read overview of program evaluation from start (planning and evaluation design) to finish (dissemination), and includes links to additional resources.
   source: Gene Shackman, Ph.D.
-  type: Guide
-  image: <i class="fa fa-book font-size-logo"></i>
+  type: Slide Deck
+  image: <i class="fa fa-file-powerpoint-o font-size-logo"></i>
   another_type:
   another_image:
   keywords:
@@ -14,11 +14,12 @@
   year: 2017
   format: PDF
   link: Resource_What is Program Evaluation - A Beginners Guide.pdf
-  cover_sheet:
+  cover_sheet: 
+  citation: Shackman, Gene. (2020). <i>What is program evaluation? A Beginners Guide</i> [Presentation slides]. The Global Social Change Research Project. http://dx.doi.org/10.2139/ssrn.3060080
 -
   domain: "Evaluation 101: Types of Evaluation"
-  title: The Administration for Children & Families Common Framework for Research and Evaluation
-  description: Building evidence is not one-size-fits all, and different questions require different methods and approaches. This Framework describes, in detail, six different types of research and evaluation approaches — foundational descriptive studies, exploratory descriptive studies, design and development studies, efficacy studies, effectiveness studies, and scale-up studies — and can help you understand which type of evaluation might be most useful for you and your information needs.
+  title: Common Framework for Research and Evaluation
+  description: Building evidence is not one-size-fits all, and different questions require different methods and approaches. <i>The Administration for Children & Families Common Framework for Research and Evaluation</i> describes, in detail, six different types of research and evaluation approaches – foundational descriptive studies, exploratory descriptive studies, design and development studies, efficacy studies, effectiveness studies, and scale-up studies – and can help you understand which type of evaluation might be most useful for you and your information needs.
   source: Office of Planning, Research and Evaluation; Administration for Children and Families; Department of Health and Human Services
   type: Report
   image: <i class="fa fa-bar-chart-o font-size-logo"></i>
@@ -35,7 +36,7 @@
 -
   domain: "Evaluation 101: Types of Evaluation"
   title: Formative Evaluation Toolkit
-  description: Formative evaluation can help determine whether an intervention or program is being implemented as intended and producing the expected outputs and short-term outcomes. This toolkit outlines the steps involved in conducting a formative evaluation and includes multiple planning tools, references, and a glossary. Check out the cover page to learn more about how this resource can help you.
+  description: Formative evaluation can help determine whether an intervention or program is being implemented as intended and producing the expected outputs and short-term outcomes. This toolkit outlines the steps involved in conducting a formative evaluation and includes multiple planning tools, references, and a glossary. Check out the <a href="{{ site.baseurl }}/assets/resources/{{ resource.cover_sheet }}" aria-label="{{ resource.title }} Cover Sheet" target="_blank">overview</a> to learn more about how this resource can help you.
   source: James Bell Associates
   type: Guide
   image: <i class="fa fa-book font-size-logo"></i>
@@ -91,8 +92,8 @@
   source:
   type: Slide Deck
   image: <i class="fa fa-file-powerpoint-o font-size-logo"></i>
-  another_type: Guide
-  another_image: <i class="fa fa-book font-size-logo"></i>
+  another_type: 
+  another_image: 
   keywords:
     - Planning
     - Evaluation Use
@@ -176,7 +177,7 @@
     Use this worksheet to plan, draft, and finalize a strong evidence-building question. Broadly consider how the question relates to the purpose and relevance of the effort, types of evidence, methodology, and resources.
   source:
   type: Worksheet
-  image: <i class="fa fa-file-excel-o font-size-logo"></i>
+  image: <i class="fa fa-sticky-note-o font-size-logo"></i>
   another_type:
   another_image:
   keywords:
@@ -208,7 +209,7 @@
   domain: "Working with Evaluators: Assessing Readiness"
   title: "Research and Evaluation Capacity: Self-Assessment Tool and Discussion Guide for CCDF Lead Agencies"
   description: >
-    Use this tool and discussion guide to identify strengths and gaps in your organization’s capacity to conduct research and evaluation, and set priorities to build capacity where needed. It includes self-assessment scales, a checklist, and questions to guide next steps. Check out the cover page to learn more about how this resource can help you.
+    Use this tool and discussion guide to identify strengths and gaps in your organization’s capacity to conduct research and evaluation, and set priorities to build capacity where needed. It includes self-assessment scales, a checklist, and questions to guide next steps. Check out the <a href="{{ site.baseurl }}/assets/resources/{{ resource.cover_sheet }}" aria-label="{{ resource.title }} Cover Sheet" target="_blank">overview</a> to learn more about how this resource can help you.
   source: Urban Institute
   type: Report
   image: <i class="fa fa-bar-chart-o font-size-logo"></i>
@@ -245,7 +246,7 @@
   type: Guide
   image: <i class="fa fa-book font-size-logo"></i>
   another_type: Worksheet
-  another_image: <i class="fa fa-file-excel-o font-size-logo"></i>
+  another_image: <i class="fa fa-sticky-note-o font-size-logo"></i>
   keywords:
     - Planning
     - Design
@@ -273,7 +274,7 @@
   domain: "Working with Evaluators: Initiating an Evaluation"
   title: Evaluator Screening Tips
   description: >
-    Finding an external evaluator who can effectively execute your evaluation takes strategy and careful planning. Use this tip sheet to understand what kinds of experience and expertise to target, how to confirm an evaluator’s background and publications online, and how to assess technical knowledge through reference and conflict of interest checks, reviews of reports, and responses to a statement of work. Check out the cover page to learn more about how this resource can help you.
+    Finding an external evaluator who can effectively execute your evaluation takes strategy and careful planning. Use this tip sheet to understand what kinds of experience and expertise to target, how to confirm an evaluator’s background and publications online, and how to assess technical knowledge through reference and conflict of interest checks, reviews of reports, and responses to a statement of work. Check out the <a href="{{ site.baseurl }}/assets/resources/{{ resource.cover_sheet }}" aria-label="{{ resource.title }} Cover Sheet" target="_blank">overview</a> to learn more about how this resource can help you.
   source: AmeriCorps
   type: Guide
   image: <i class="fa fa-book font-size-logo"></i>
@@ -303,9 +304,9 @@
   cover_sheet:
 -
   domain: Promoting Evaluation Use
-  title: "Communication Guide for TTCW Grantees: What to Consider When Sharing Program Accomplishments"
+  title: How to Communicate Findings from a Program Evaluation
   description: >
-    Communicating findings from a program evaluation is critical to support their use. This communication guide—provides strategies for sharing program outcomes with target audiences. Created for Tribal TANF – Child Welfare Coordination grantees, its contents, tools, and templates are applicable for many programs and policy areas.
+    Communicating findings from a program evaluation is critical to support their use. This communication guide, <i>Communication Guide for TTCW Grantees: What to Consider When Sharing Program Accomplishments</i>, provides strategies for sharing program outcomes with target audiences. Created for Tribal TANF – Child Welfare Coordination grantees, its contents, tools, and templates are applicable for many programs and policy areas.
   source: James Bell Associates
   type: Report
   image: <i class="fa fa-bar-chart-o font-size-logo"></i>
@@ -321,14 +322,14 @@
   cover_sheet:
 -
   domain: Promoting Evaluation Use
-  title: "Program Evaluation Toolkit - Module 8: Dissemination Approaches"
+  title: Disseminating Findings from Program Evaluation
   description: >
-    Use this resource to help choose effective dissemination strategies for your evaluation findings and products. It walks through defining the focus of your initiative and the evaluation, your intended audiences for the evaluation findings, the audiences’ intended use of findings, dissemination strategies, and next steps.
+    Use this slide deck to help choose effective dissemination strategies for your evaluation findings and products. This slide deck, <i>Program Evaluation Toolkit - Module 8: Dissemination Approaches</i>, walks through defining the focus of your initiative and the evaluation, your intended audiences for the evaluation findings, the audiences’ intended use of findings, dissemination strategies, and next steps.
   source: Institute for Education Sciences, Regional Educational Laboratory Program
   type: Slide Deck
   image: <i class="fa fa-file-powerpoint-o font-size-logo"></i>
   another_type: Worksheet
-  another_image: <i class="fa fa-file-excel-o font-size-logo"></i>
+  another_image: <i class="fa fa-sticky-note-o font-size-logo"></i>
   keywords:
     - Dissemination
     - Community Engagement
@@ -337,3 +338,21 @@
   format: PDF
   link: Resource_Program Evaluation Toolkit - Module 8 Dissemination Approaches.pdf
   cover_sheet: CS_Program Evaluation Toolkit - Module 8 Dissemination Approaches.pdf
+-
+  domain: Promoting Evaluation Use
+  title: Dissemination Matrix Template
+  description: >
+   Use this matrix template and <a href="{{site.baseurl}}/assets/resources/Resource_Dissemination Matrix Template Word.docx">worksheet</a> to help you think through dissemination of your evaluation findings. <i>The Dissemination Matrix Template: How to Share Important Aspects of your ATE Project with Others</i> is designed to walk you through the what, who, how, where, and when of dissemination to ensure that you can maximize your dissemination efforts.
+  source: Lopez, Megan and Wilson Becho, Lyssa
+  type: Guide
+  image: <i class="fa fa-book font-size-logo"></i>
+  another_type: Worksheet
+  another_image: <i class="fa fa-sticky-note-o font-size-logo"></i>
+  keywords:
+    - Dissemination
+    - Community Engagement
+    - Evaluation Use
+  year: 2022
+  format: PDF
+  link: Resource_Dissemination Matrix Template.pdf
+  citation: "Lopez, M. & Wilson Becho, L. (2022). Dissemination Matrix Template: How to Share Important Aspects of your ATE Project with Others. EvaluATE. https://evalu-ate.org/template/dissemination-matrix/"

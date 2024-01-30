@@ -13,7 +13,7 @@
             <h3 class="font-sans-md margin-top-0">
                 {{ resource.title }}
                 <i class="fa fa-info-circle usa-tooltip text-base" data-position="right"
-                   title="{% if resource.source %} {{ resource.source }}, {% endif %}{% if resource.year %}{{ resource.year }}{% endif %}" aria-label="Info for {{ resource.title }}"></i>
+                   title="{% if resource.citation %} {{ resource.citation }}, {% endif %}{% if resource.year %}{{ resource.year }}{% endif %}" aria-label="Info for {{ resource.title }}"></i>
             </h3>
             <div class="grid-row">
                 <div class="desktop:grid-col-9 text-base margin-bottom-1 display-flex margin-top-neg-1">
@@ -26,11 +26,11 @@
                 </div>
                 <div class="desktop:grid-col-3 text-base margin-bottom-1 margin-top-neg-1">
                     {% if titleLink %}
-                    <a class="usa-button usa-button--outline border-0 margin-right-0 padding-1" href="{{ titleLink }}" target="_blank" aria-label="Open in New Tab for {{ resource.title }}">Open in New Tab</a>
+                    <a class="usa-button margin-05 radius-pill padding-y-1 font-sans-3xs margin-top-card" href="{{ titleLink }}" target="_blank" aria-label="Open in New Tab for {{ resource.title }}">open resource</a>
                     {% endif %}
                 </div>
             </div>
-            <div class="text-base margin-bottom-1">
+            <div class="text-base-darker margin-bottom-1">
                 <div class="margin-top-neg-2">
                     <p>{{ resource.description | liquify }}</p>
                 </div>
@@ -40,7 +40,7 @@
                 <div class="desktop:grid-col-12 text-base margin-bottom-1">
                     <div class="margin-top-neg-05">
                         <strong>
-                            Keywords
+                            Related Resources
                         </strong>
                         {% for tag in resource.keywords %}
                         {% assign slug_tag = tag | slugify %}
@@ -51,18 +51,6 @@
                     </div>
                 </div>
                
-            </div>
-            <div class="grid-row">
-                <div class="desktop:grid-col-5 text-base margin-bottom-1">
-                    {% if resource.cover_sheet %}
-                    <strong>
-                        Cover Sheet
-                    </strong>
-                    <a href="{{ site.baseurl }}/assets/resources/{{ resource.cover_sheet }}"
-                       aria-label="{{ resource.title }} Cover Sheet"
-                       target="_blank" class="usa-button usa-button--outline margin-05 radius-pill padding-y-1 font-sans-3xs">Cover Sheet</a>
-                    {% endif %}
-                </div>
             </div>
         </div>
     </div>
