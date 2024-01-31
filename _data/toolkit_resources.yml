@@ -33,6 +33,7 @@
   format: PDF
   link: Resource_The Administration for Children and Families Common Framework for Research and Evaluation.pdf
   cover_sheet:
+  citation: "Office of Planning, Research and Evaluation. (2016). <i>The Administration for Children & Families Common Framework for Research and Evaluation</i> (OPRE Report #2016-14). Office of Planning, Research, and Evaluation, U.S. Department of Health and Human Services. https://www.acf.hhs.gov/sites/default/files/documents/opre/acf_common_framework_for_research_and_evaluation_v02_a.pdf"
 -
   domain: "Evaluation 101: Types of Evaluation"
   title: Formative Evaluation Toolkit
@@ -50,6 +51,7 @@
   format: PDF
   link: Resource_Formative Evaluation Toolkit.pdf
   cover_sheet: CS_Formative Evaluation Toolkit.pdf
+  citation: "James Bell Associates. (2018). <i>Formative evaluation toolkit: A step-by-step guide and resources for evaluating program implementation and early outcomes</i>. Washington, DC: Children’s Bureau, Administration for Children and Families, U.S. Department of Health and Human Services."
 -
   domain: "Evaluation 101: Types of Evaluation"
   title: Introduction to Randomized Evaluations
@@ -67,6 +69,7 @@
   format: Website
   link: https://www.povertyactionlab.org/resource/introduction-randomized-evaluations
   cover_sheet:
+  citation: Gibson, M, & Sautmann, A. (2021). <i>Introduction to randomized evaluations</i>. Abdul Latif Jameel Poverty Action Lab (J-PAL). https://www.povertyactionlab.org/resource/introduction-randomized-evaluations
 -
   domain: "Evaluation 101: Types of Evaluation"
   title: Rapid Cycle Evaluation at a Glance
@@ -84,6 +87,7 @@
   format: PDF
   link: Resource_Rapid Cycle Evaluation at a Glance.pdf
   cover_sheet:
+  citation: "Atukpawu-Tipton, G., & Poes, M. (2020). <i>Rapid Cycle Evaluation at a Glance</i> (OPRE #2020-152).  Office of Planning, Research, and Evaluation, U.S. Department of Health and Human Services. https://www.acf.hhs.gov/opre/report/rapid-cycle-evaluation-glance"
 -
   domain: Why Evaluate?
   title: Evidence for Action Pitch Decks
@@ -101,6 +105,7 @@
   year: 2022
   format: PowerPoint
   cover_sheet: CS_Evidence for Action Pitch Decks.pdf
+  citation: The Federal Evaluation Toolkit. (2022). <i>Evidence for Action Pitch Decks</i> [Presentation slides]. 
 -
   domain: "Working with Evaluators: Identifying Resources"
   title: Identifying Resources for Evaluation
@@ -118,6 +123,7 @@
   format: PDF
   link: Resource_Identifying Resources for Evaluation.pdf
   cover_sheet:
+  citation: The Federal Evaluation Toolkit. (2023). <i>Identifying Resources for Evaluation.</i>
 -
   domain: "Working with Evaluators: Identifying Resources"
   title: Budgeting for Evaluation
@@ -135,6 +141,7 @@
   format: PDF
   link: Resource_Budgeting for Evaluation.pdf
   cover_sheet:
+  citation: AmeriCorps. (2014). <i>Budgeting for Evaluation</i>. [Presentation slides]. https://americorps.gov/sites/default/files/document/2014_11_12_BudgetingforEvaluationPresentation_ORE.pdf 
 -
   domain: "Working with Evaluators: Identifying Evaluation Questions"
   title: Evaluation Questions Checklist for Program Evaluation
@@ -152,6 +159,7 @@
   format: PDF
   link: Resource_Evaluation Questions Checklist for Program Evaluation.pdf
   cover_sheet:
+  citation: Wingate, L., & Schroeter, D. (2016). <i>Evaluation Questions Checklist for Program Evaluation</i>. The Evaluation Center, Western Michigan University. https://wmich.edu/sites/default/files/attachments/u350/2018/eval-questions-wingate%26schroeter.pdf
 -
   domain: "Working with Evaluators: Identifying Evaluation Questions"
   title: How to Develop the Right Research Questions for Program Evaluation
@@ -170,6 +178,7 @@
   format: PDF
   link: Resource_How to Develop the Right Research Questions for Program Evaluation.pdf
   cover_sheet:
+  citation: AmeriCorps. (2015). How to Develop the Right Research Questions for Program Evaluation [Presentation slides]. https://americorps.gov/sites/default/files/document/2015_04_16_AskingtheRightResearchQuestionsSlides_ORE.pdf
 -
   domain: "Working with Evaluators: Identifying Evaluation Questions"
   title: Quick Guide to Writing a Strong Evidence-Building Question
@@ -188,6 +197,7 @@
   format: PDF
   link: Resource_Quick Guide to Writing a Strong Evidence-Building Question.pdf
   cover_sheet:
+  citation: The Federal Evaluation Toolkit. (2021). <i>Writing a Strong Evidence-Building Question</i>. 
 -
   domain: "Working with Evaluators: Assessing Readiness"
   title: How to Develop a Program Logic Model
@@ -205,6 +215,7 @@
   format: PDF
   link: Resource_How to Develop a Program Logic Model.pdf
   cover_sheet:
+  citation: AmeriCorps. (2014). <i>How to Develop a Program Logic Model</i> [Presentation slides]. https://americorps.gov/sites/default/files/document/2014_10_23_LogicModelSlides_ORE.pdf
 -
   domain: "Working with Evaluators: Assessing Readiness"
   title: "Research and Evaluation Capacity: Self-Assessment Tool and Discussion Guide for CCDF Lead Agencies"
@@ -221,6 +232,7 @@
   format: PDF
   link: Resource_Research and Evaluation Capacity - Self Assessment Tool and Discussion Guide for CCDF Agencies.pdf
   cover_sheet: CS_Research and Evaluation Capacity Self Assessment Tool.pdf
+  citation: "Rohacek, M. (2017). Research and Evaluation Capacity: Self-Assessment Tool and Discussion Guide for CCDF Lead Agencies (OPRE Report #2017-63). Office of Planning, Research, and Evaluation, Administration for Children and Families, U.S. Department of Health and Human Services. https://www.acf.hhs.gov/sites/default/files/documents/opre/research_and_evaluation_capacity_self_assessment_tool_finalcleanv3.pdf"
 -
   domain: "Working with Evaluators: Assessing Readiness"
   title: Introducing the Impact Evaluability Assessment Tool
@@ -238,6 +250,7 @@
   format: PDF
   link: Resource_Introducing the Impact Evaluability Assessment Tool.pdf
   cover_sheet:
+  citation: AmeriCorps. (2014). <i>Introducing the Impact Evaluability Assessment Tool</i>. https://www.americorps.gov/sites/default/files/document/2015_09_03_ImpactEvaluabilityAssessmentTool_ORE.pdf
 -
   domain: "Working with Evaluators: Initiating an Evaluation"
   title: Initiating an Evaluation Tip Sheet
@@ -254,6 +267,7 @@
   format: PDF
   link: Resource_Initiating an Evaluation Tip Sheet.pdf
   cover_sheet:
+  citation: The Federal Evaluation Toolkit. (2022). <i>Initiating an Evaluation</i>. 
 -
   domain: "Working with Evaluators: Initiating an Evaluation"
   title: How to Manage an External Evaluation
@@ -270,6 +284,7 @@
   format: PDF
   link: Resource_How to Manage an External Evaluation.pdf
   cover_sheet:
+  citation: AmeriCorps. (2015). <i>How to Manage an External Evaluation</i> [Presentation slides]. https://americorps.gov/sites/default/files/document/2015_03_19_ManaginganExternalEvaluationSlides_ORE.pdf
 -
   domain: "Working with Evaluators: Initiating an Evaluation"
   title: Evaluator Screening Tips
@@ -286,6 +301,7 @@
   format: PDF
   link: Resource_Evaluator Screening Tips.pdf
   cover_sheet: CS_Evaluator Screening Tips.pdf
+  citation: AmeriCorps. (2012). <i>Evaluator Screening Tips</i>. https://americorps.gov/sites/default/files/document/2017_02_16_SIFEvaluatorScreeningTips_ORE.pdf
 -
   domain: Using Evaluation
   title: How to Apply Available Evidence
@@ -302,6 +318,7 @@
   format: PDF
   link: Resource_How to Apply Available Evidence.pdf
   cover_sheet:
+  citation: The Federal Evaluation Toolkit. (2021). <i>How to Use Available Evidence to Inform Decision-Making</i>. 
 -
   domain: Promoting Evaluation Use
   title: How to Communicate Findings from a Program Evaluation
@@ -320,6 +337,7 @@
   format: PDF
   link: Resource_Communication Guide for TTCW Grantees - What to Consider When Sharing Program Accomplishments.pdf
   cover_sheet:
+  citation: "Pirkko Ahonen, Kirsten Keene, and Erin Geary. (2020). <i>Communication Guide for TTCW Grantees: What to Consider When Sharing Program Accomplishments</i>, (OPRE Report #2021-14). Office of Planning, Research, and Evaluation, U.S. Department of Health and Human Services. https://www.acf.hhs.gov/sites/default/files/documents/opre/comm-guide-ttcw-grantees-dec-2020.pdf"
 -
   domain: Promoting Evaluation Use
   title: Disseminating Findings from Program Evaluation
@@ -338,6 +356,7 @@
   format: PDF
   link: Resource_Program Evaluation Toolkit - Module 8 Dissemination Approaches.pdf
   cover_sheet: CS_Program Evaluation Toolkit - Module 8 Dissemination Approaches.pdf
+  citation: "Yanoski, D., Joyce, J., Boven, J., Germeroth, C., & Luke, K. (2021). <i>Module 8: Dissemination Approaches</i> [Presentation slides]. Regional Educational Laboratory Central, Institute of Education Sciences, U.S. Department of Education. https://ies.ed.gov/ncee/edlabs/regions/central/resources/pemtoolkit/pdf/module-8/CE5.3.2-Module8-Chapter1.pdf"
 -
   domain: Promoting Evaluation Use
   title: Dissemination Matrix Template
