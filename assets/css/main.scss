@@ -899,6 +899,7 @@ blockquote p {
 }
 
 .usa-tooltip__body--wrap {
-    min-width: 70vw;
+    min-width: 60vw;
     text-align: center;
+    overflow: auto;
 }
