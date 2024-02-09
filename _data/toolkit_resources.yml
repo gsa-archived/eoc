@@ -15,7 +15,7 @@
   format: PDF
   link: Resource_What is Program Evaluation - A Beginners Guide.pdf
   cover_sheet: 
-  citation: Shackman, Gene. (2020). <i>What is program evaluation? A Beginners Guide</i> [Presentation slides]. The Global Social Change Research Project. http://dx.doi.org/10.2139/ssrn.3060080
+  citation: Shackman, G. (2020). What is program evaluation? A Beginners Guide [Presentation slides]. The Global Social Change Research Project. http://dx.doi.org/10.2139/ssrn.3060080
 -
   domain: "Evaluation 101: Types of Evaluation"
   title: Common Framework for Research and Evaluation
@@ -69,7 +69,7 @@
   format: Website
   link: https://www.povertyactionlab.org/resource/introduction-randomized-evaluations
   cover_sheet:
-  citation: Gibson, M, & Sautmann, A. (2021). <i>Introduction to randomized evaluations</i>. Abdul Latif Jameel Poverty Action Lab (J-PAL). https://www.povertyactionlab.org/resource/introduction-randomized-evaluations
+  citation: Gibson, M., & Sautmann, A. (2021). Introduction to randomized evaluations. Abdul Latif Jameel Poverty Action Lab (J-PAL). https://www.povertyactionlab.org/resource/introduction-randomized-evaluations
 -
   domain: "Evaluation 101: Types of Evaluation"
   title: Rapid Cycle Evaluation at a Glance
@@ -258,8 +258,6 @@
   source:
   type: Guide
   image: <i class="fa fa-book font-size-logo"></i>
-  another_type: Worksheet
-  another_image: <i class="fa fa-sticky-note-o font-size-logo"></i>
   keywords:
     - Planning
     - Design
@@ -337,7 +335,7 @@
   format: PDF
   link: Resource_Communication Guide for TTCW Grantees - What to Consider When Sharing Program Accomplishments.pdf
   cover_sheet:
-  citation: "Pirkko Ahonen, Kirsten Keene, and Erin Geary. (2020). <i>Communication Guide for TTCW Grantees: What to Consider When Sharing Program Accomplishments</i>, (OPRE Report #2021-14). Office of Planning, Research, and Evaluation, U.S. Department of Health and Human Services. https://www.acf.hhs.gov/sites/default/files/documents/opre/comm-guide-ttcw-grantees-dec-2020.pdf"
+  citation: "Ahonen, P., Keene, K., & Geary, E. (2020). Communication Guide for TTCW Grantees: What to Consider When Sharing Program Accomplishments, (OPRE Report #2021-14). Office of Planning, Research, and Evaluation, U.S. Department of Health and Human Services. https://www.acf.hhs.gov/sites/default/files/documents/opre/comm-guide-ttcw-grantees-dec-2020.pdf"
 -
   domain: Promoting Evaluation Use
   title: Disseminating Findings from Program Evaluation
@@ -346,8 +344,6 @@
   source: Institute for Education Sciences, Regional Educational Laboratory Program
   type: Slide Deck
   image: <i class="fa fa-file-powerpoint-o font-size-logo"></i>
-  another_type: Worksheet
-  another_image: <i class="fa fa-sticky-note-o font-size-logo"></i>
   keywords:
     - Dissemination
     - Community Engagement
