@@ -44,7 +44,7 @@
                         </strong>
                         {% for tag in resource.keywords %}
                         {% assign slug_tag = tag | slugify %}
-                        <a href="{{ '/keywords/' | append: slug_tag | relative_url }}" class="usa-button btn-primary margin-05 radius-pill padding-y-1 font-sans-3xs margin-top-card">{{ tag }}</a>
+                        <a href="{{ '/keywords/' | append: slug_tag | relative_url }}" aria-label="{{ tag }} tag" class="usa-button btn-primary margin-05 radius-pill padding-y-1 font-sans-3xs margin-top-card">{{ tag }}</a>
                         {% else %}
                         This resource has no keywords.
                         {% endfor %}
