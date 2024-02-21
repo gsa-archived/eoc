@@ -340,7 +340,7 @@
   domain: Promoting Evaluation Use
   title: Disseminating Findings from Program Evaluation
   description: >
-    Use this slide deck to help choose effective dissemination strategies for your evaluation findings and products. This slide deck, <i>Program Evaluation Toolkit - Module 8: Dissemination Approaches</i>, walks through defining the focus of your initiative and the evaluation, your intended audiences for the evaluation findings, the audiences’ intended use of findings, dissemination strategies, and next steps.
+    Use this slide deck to help choose effective dissemination strategies for your evaluation findings and products. This slide deck, <i>Program Evaluation Toolkit - Module 8: Dissemination Approaches</i>, walks through defining the focus of your initiative and the evaluation, your intended audiences for the evaluation findings, the audiences’ intended use of findings, dissemination strategies, and next steps. Check out the <a href="{{ site.baseurl }}/assets/resources/{{ resource.cover_sheet }}" aria-label="{{ resource.title }} Cover Sheet" target="_blank">overview</a> to learn more about how this resource can help you.
   source: Institute for Education Sciences, Regional Educational Laboratory Program
   type: Slide Deck
   image: <i class="fa fa-file-powerpoint-o font-size-logo"></i>
