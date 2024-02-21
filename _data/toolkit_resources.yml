@@ -3,7 +3,10 @@
   title: "What is Program Evaluation?: A Beginners Guide"
   description: Program evaluation uses systematic data collection to help us understand whether programs, policies, or organizations are effective. This guide explains how program evaluation can contribute to improving program services. It provides a high-level, easy-to-read overview of program evaluation from start (planning and evaluation design) to finish (dissemination), and includes links to additional resources.
   source: Gene Shackman, Ph.D.
-  type: Guide
+  type: Slide Deck
+  image: <i class="fa fa-file-powerpoint-o font-size-logo"></i>
+  another_type:
+  another_image:
   keywords:
     - Planning
     - Design
@@ -11,13 +14,17 @@
   year: 2017
   format: PDF
   link: Resource_What is Program Evaluation - A Beginners Guide.pdf
-  cover_sheet:
+  cover_sheet: 
+  citation: Shackman, G. (2020). What is program evaluation? A Beginners Guide [Presentation slides]. The Global Social Change Research Project. http://dx.doi.org/10.2139/ssrn.3060080
 -
   domain: "Evaluation 101: Types of Evaluation"
-  title: The Administration for Children & Families Common Framework for Research and Evaluation
-  description: Building evidence is not one-size-fits all, and different questions require different methods and approaches. This Framework describes, in detail, six different types of research and evaluation approaches — foundational descriptive studies, exploratory descriptive studies, design and development studies, efficacy studies, effectiveness studies, and scale-up studies — and can help you understand which type of evaluation might be most useful for you and your information needs.
+  title: Common Framework for Research and Evaluation
+  description: Building evidence is not one-size-fits all, and different questions require different methods and approaches. <i>The Administration for Children & Families Common Framework for Research and Evaluation</i> describes, in detail, six different types of research and evaluation approaches – foundational descriptive studies, exploratory descriptive studies, design and development studies, efficacy studies, effectiveness studies, and scale-up studies – and can help you understand which type of evaluation might be most useful for you and your information needs.
   source: Office of Planning, Research and Evaluation; Administration for Children and Families; Department of Health and Human Services
   type: Report
+  image: <i class="fa fa-bar-chart-o font-size-logo"></i>
+  another_type:
+  another_image:
   keywords:
     - Methods
     - Design
@@ -26,12 +33,16 @@
   format: PDF
   link: Resource_The Administration for Children and Families Common Framework for Research and Evaluation.pdf
   cover_sheet:
+  citation: "Office of Planning, Research and Evaluation. (2016). <i>The Administration for Children & Families Common Framework for Research and Evaluation</i> (OPRE Report #2016-14). Office of Planning, Research, and Evaluation, U.S. Department of Health and Human Services. https://www.acf.hhs.gov/sites/default/files/documents/opre/acf_common_framework_for_research_and_evaluation_v02_a.pdf"
 -
   domain: "Evaluation 101: Types of Evaluation"
   title: Formative Evaluation Toolkit
-  description: Formative evaluation can help determine whether an intervention or program is being implemented as intended and producing the expected outputs and short-term outcomes. This toolkit outlines the steps involved in conducting a formative evaluation and includes multiple planning tools, references, and a glossary. Check out the cover page to learn more about how this resource can help you.
+  description: Formative evaluation can help determine whether an intervention or program is being implemented as intended and producing the expected outputs and short-term outcomes. This toolkit outlines the steps involved in conducting a formative evaluation and includes multiple planning tools, references, and a glossary. Check out the <a href="{{ site.baseurl }}/assets/resources/{{ resource.cover_sheet }}" aria-label="{{ resource.title }} Cover Sheet" target="_blank">overview</a> to learn more about how this resource can help you.
   source: James Bell Associates
   type: Guide
+  image: <i class="fa fa-book font-size-logo"></i>
+  another_type:
+  another_image:
   keywords:
     - Methods
     - Evaluation Types
@@ -40,12 +51,16 @@
   format: PDF
   link: Resource_Formative Evaluation Toolkit.pdf
   cover_sheet: CS_Formative Evaluation Toolkit.pdf
+  citation: "James Bell Associates. (2018). <i>Formative evaluation toolkit: A step-by-step guide and resources for evaluating program implementation and early outcomes</i>. Washington, DC: Children’s Bureau, Administration for Children and Families, U.S. Department of Health and Human Services."
 -
   domain: "Evaluation 101: Types of Evaluation"
   title: Introduction to Randomized Evaluations
   description: Randomized evaluations, also known as randomized controlled trials (RCTs), are one of the most rigorous evaluation methods used to conduct impact evaluations to determine the extent to which your program, policy, or initiative caused the outcomes you see. They use random assignment of people/organizations/communities affected by the program or policy to rule out other factors that might have caused the changes your program or policy was designed to achieve. This in-depth resource introduces randomized evaluations in a non-technical way, provides examples of RCTs in practice, describes when RCTs might be the right approach, and offers a thorough FAQ about RCTs.
   source: Abdul Latif Jameel Poverty Action Lab
   type: Website
+  image: <i class="fa fa-globe font-size-logo"></i>
+  another_type:
+  another_image:
   keywords:
     - Methods
     - Evaluation Types
@@ -54,12 +69,16 @@
   format: Website
   link: https://www.povertyactionlab.org/resource/introduction-randomized-evaluations
   cover_sheet:
+  citation: Gibson, M., & Sautmann, A. (2021). Introduction to randomized evaluations. Abdul Latif Jameel Poverty Action Lab (J-PAL). https://www.povertyactionlab.org/resource/introduction-randomized-evaluations
 -
   domain: "Evaluation 101: Types of Evaluation"
   title: Rapid Cycle Evaluation at a Glance
   description: Rapid Cycle Evaluation (RCE) can be used to efficiently assess implementation and inform program improvement. This brief provides an introduction to RCE, describing what it is, how it compares to other methods, when and how to use it, and includes more in-depth resources. Use this brief to help you figure out whether RCE makes sense for your program.
   source: James Bell Associates
   type: Report
+  image: <i class="fa fa-bar-chart-o font-size-logo"></i>
+  another_type:
+  another_image:
   keywords:
     - Methods
     - Evaluation Types
@@ -68,13 +87,17 @@
   format: PDF
   link: Resource_Rapid Cycle Evaluation at a Glance.pdf
   cover_sheet:
+  citation: "Atukpawu-Tipton, G., & Poes, M. (2020). <i>Rapid Cycle Evaluation at a Glance</i> (OPRE #2020-152).  Office of Planning, Research, and Evaluation, U.S. Department of Health and Human Services. https://www.acf.hhs.gov/opre/report/rapid-cycle-evaluation-glance"
 -
   domain: Why Evaluate?
   title: Evidence for Action Pitch Decks
   description: >
-    You may find yourself needing to make the case for evaluation to others in your agency. These PowerPoint "pitch decks" bring together several resources you can use and tailor to your own needs and agency context. Knowing that your audience(s) may vary, there are three different pitch decks that vary in length and level of detail: (1) <a href="{{site.baseurl}}/assets/resources/Resource_Evidence for Action - 5 minutes.pptx">5-Minute Quick Pitch</a>; (2) <a href="{{site.baseurl}}/assets/resources/Resource_Evidence for Action - 10 minutes.pptx">10-Minute Presentation</a>; and (3) <a href="{{site.baseurl}}/assets/resources/Resource_Evidence for Action - 20 minutes.pptx">20-Minute Discussion</a>. Each slide deck speaks to the value of evaluation and explains how it can improve decision-making. Check out the cover sheet to learn more about each deck and see which one may be most helpful for you.
+    You may find yourself needing to make the case for evaluation to others in your agency. These PowerPoint "pitch decks" bring together several resources you can use and tailor to your own needs and agency context. Knowing that your audience(s) may vary, there are three different pitch decks that vary in length and level of detail: (1) <a href="{{site.baseurl}}/assets/resources/Resource_Evidence for Action - 5 minutes.pptx">5-Minute Quick Pitch</a>; (2) <a href="{{site.baseurl}}/assets/resources/Resource_Evidence for Action - 10 minutes.pptx">10-Minute Presentation</a>; and (3) <a href="{{site.baseurl}}/assets/resources/Resource_Evidence for Action - 20 minutes.pptx">20-Minute Discussion</a>. Each slide deck speaks to the value of evaluation and explains how it can improve decision-making. Check out the <a href="{{ site.baseurl }}/assets/resources/{{ resource.cover_sheet }}" aria-label="{{ resource.title }} Cover Sheet" target="_blank">overview</a> to learn more about how this resource can help you.
   source:
-  type: Slide Deck; Guide
+  type: Slide Deck
+  image: <i class="fa fa-file-powerpoint-o font-size-logo"></i>
+  another_type: 
+  another_image: 
   keywords:
     - Planning
     - Evaluation Use
@@ -82,12 +105,16 @@
   year: 2022
   format: PowerPoint
   cover_sheet: CS_Evidence for Action Pitch Decks.pdf
+  citation: The Federal Evaluation Toolkit. (2022). <i>Evidence for Action Pitch Decks</i> [Presentation slides]. 
 -
   domain: "Working with Evaluators: Identifying Resources"
   title: Identifying Resources for Evaluation
   description: Conducting evaluation requires resources. This Q&A explains how to identify resource needs for an evaluation, describes resources that may be available, and discusses how to engage external experts to build staff capacity.
   source:
   type: Guide
+  image: <i class="fa fa-book font-size-logo"></i>
+  another_type:
+  another_image:
   keywords:
     - Resources
     - Planning
@@ -96,12 +123,16 @@
   format: PDF
   link: Resource_Identifying Resources for Evaluation.pdf
   cover_sheet:
+  citation: The Federal Evaluation Toolkit. (2023). <i>Identifying Resources for Evaluation.</i>
 -
   domain: "Working with Evaluators: Identifying Resources"
   title: Budgeting for Evaluation
   description: To create a realistic and appropriate program evaluation budget, it is important to think through key factors that drive evaluation costs. This guide presents five factors to consider, including program features, the evaluation’s goals, who will conduct it, how it will be carried out, and how findings will be shared, and includes a sample template that itemizes key costs to consider at both the team and staff levels. 
   source: AmeriCorps
   type: Guide
+  image: <i class="fa fa-book font-size-logo"></i>
+  another_type:
+  another_image:
   keywords:
     - Resources
     - Planning
@@ -110,12 +141,16 @@
   format: PDF
   link: Resource_Budgeting for Evaluation.pdf
   cover_sheet:
+  citation: AmeriCorps. (2014). <i>Budgeting for Evaluation</i>. [Presentation slides]. https://americorps.gov/sites/default/files/document/2014_11_12_BudgetingforEvaluationPresentation_ORE.pdf 
 -
   domain: "Working with Evaluators: Identifying Evaluation Questions"
   title: Evaluation Questions Checklist for Program Evaluation
   description: Evaluation questions guide the selection of your evaluation method, data collection tools, and data analyses. Use this checklist to convert your information needs into effective and appropriate evaluation questions and to assess their quality.
   source: Lori Wingate & Daniela Shroeter
   type: Checklist
+  image: <i class="fa fa-list font-size-logo"></i>
+  another_type:
+  another_image:
   keywords:
     - Planning
     - Design
@@ -124,6 +159,7 @@
   format: PDF
   link: Resource_Evaluation Questions Checklist for Program Evaluation.pdf
   cover_sheet:
+  citation: Wingate, L., & Schroeter, D. (2016). <i>Evaluation Questions Checklist for Program Evaluation</i>. The Evaluation Center, Western Michigan University. https://wmich.edu/sites/default/files/attachments/u350/2018/eval-questions-wingate%26schroeter.pdf
 -
   domain: "Working with Evaluators: Identifying Evaluation Questions"
   title: How to Develop the Right Research Questions for Program Evaluation
@@ -131,6 +167,9 @@
     This slide show describes four steps to develop evaluation questions: create a logic model, define the evaluation purpose and scope, select the evaluation type, and produce evaluation questions. It includes exercises and templates for developing research questions for process, outcome, and impact evaluations.
   source: AmeriCorps
   type: Slide Deck
+  image: <i class="fa fa-file-powerpoint-o font-size-logo"></i>
+  another_type:
+  another_image:
   keywords:
     - Planning
     - Design
@@ -139,6 +178,7 @@
   format: PDF
   link: Resource_How to Develop the Right Research Questions for Program Evaluation.pdf
   cover_sheet:
+  citation: AmeriCorps. (2015). How to Develop the Right Research Questions for Program Evaluation [Presentation slides]. https://americorps.gov/sites/default/files/document/2015_04_16_AskingtheRightResearchQuestionsSlides_ORE.pdf
 -
   domain: "Working with Evaluators: Identifying Evaluation Questions"
   title: Quick Guide to Writing a Strong Evidence-Building Question
@@ -146,6 +186,9 @@
     Use this worksheet to plan, draft, and finalize a strong evidence-building question. Broadly consider how the question relates to the purpose and relevance of the effort, types of evidence, methodology, and resources.
   source:
   type: Worksheet
+  image: <i class="fa fa-sticky-note-o font-size-logo"></i>
+  another_type:
+  another_image:
   keywords:
     - Planning
     - Design
@@ -154,6 +197,7 @@
   format: PDF
   link: Resource_Quick Guide to Writing a Strong Evidence-Building Question.pdf
   cover_sheet:
+  citation: The Federal Evaluation Toolkit. (2021). <i>Writing a Strong Evidence-Building Question</i>. 
 -
   domain: "Working with Evaluators: Assessing Readiness"
   title: How to Develop a Program Logic Model
@@ -161,6 +205,9 @@
     Logic models are effective tools to assist in program planning, implementation, management, evaluation, and reporting. View this presentation to learn the key components of a logic model, how to develop a logic model and use it in the context of evaluation planning.
   source: AmeriCorps
   type: Slide Deck
+  image: <i class="fa fa-file-powerpoint-o font-size-logo"></i>
+  another_type:
+  another_image:
   keywords:
     - Planning
     - Evaluation Questions
@@ -168,19 +215,24 @@
   format: PDF
   link: Resource_How to Develop a Program Logic Model.pdf
   cover_sheet:
+  citation: AmeriCorps. (2014). <i>How to Develop a Program Logic Model</i> [Presentation slides]. https://americorps.gov/sites/default/files/document/2014_10_23_LogicModelSlides_ORE.pdf
 -
   domain: "Working with Evaluators: Assessing Readiness"
   title: "Research and Evaluation Capacity: Self-Assessment Tool and Discussion Guide for CCDF Lead Agencies"
   description: >
-    Use this tool and discussion guide to identify strengths and gaps in your organization’s capacity to conduct research and evaluation, and set priorities to build capacity where needed. It includes self-assessment scales, a checklist, and questions to guide next steps. Check out the cover page to learn more about how this resource can help you.
+    Use this tool and discussion guide to identify strengths and gaps in your organization’s capacity to conduct research and evaluation, and set priorities to build capacity where needed. It includes self-assessment scales, a checklist, and questions to guide next steps. Check out the <a href="{{ site.baseurl }}/assets/resources/{{ resource.cover_sheet }}" aria-label="{{ resource.title }} Cover Sheet" target="_blank">overview</a> to learn more about how this resource can help you.
   source: Urban Institute
   type: Report
+  image: <i class="fa fa-bar-chart-o font-size-logo"></i>
+  another_type:
+  another_image:
   keywords:
     - Planning
   year: 2017
   format: PDF
   link: Resource_Research and Evaluation Capacity - Self Assessment Tool and Discussion Guide for CCDF Agencies.pdf
   cover_sheet: CS_Research and Evaluation Capacity Self Assessment Tool.pdf
+  citation: "Rohacek, M. (2017). Research and Evaluation Capacity: Self-Assessment Tool and Discussion Guide for CCDF Lead Agencies (OPRE Report #2017-63). Office of Planning, Research, and Evaluation, Administration for Children and Families, U.S. Department of Health and Human Services. https://www.acf.hhs.gov/sites/default/files/documents/opre/research_and_evaluation_capacity_self_assessment_tool_finalcleanv3.pdf"
 -
   domain: "Working with Evaluators: Assessing Readiness"
   title: Introducing the Impact Evaluability Assessment Tool
@@ -188,6 +240,9 @@
     Use this checklist to assess your program’s readiness for a rigorous evaluation to measure impacts. It highlights elements that are needed to evaluate the impacts of a program, and helps the user consider organizational, program, and evaluation readiness. It may also be helpful for evaluation planning and communication.
   source: AmeriCorps
   type: Checklist
+  image: <i class="fa fa-list font-size-logo"></i>
+  another_type:
+  another_image:
   keywords:
     - Planning
     - Methods
@@ -195,12 +250,14 @@
   format: PDF
   link: Resource_Introducing the Impact Evaluability Assessment Tool.pdf
   cover_sheet:
+  citation: AmeriCorps. (2014). <i>Introducing the Impact Evaluability Assessment Tool</i>. https://www.americorps.gov/sites/default/files/document/2015_09_03_ImpactEvaluabilityAssessmentTool_ORE.pdf
 -
   domain: "Working with Evaluators: Initiating an Evaluation"
   title: Initiating an Evaluation Tip Sheet
   description: Initiating an evaluation requires several key decisions. This resource lays out critical questions you have to answer around evaluation purpose and scope, stakeholder relationships, connecting evaluation activities and outcomes, evaluation goals, and evaluation plan and timeline to optimize front-end decision-making, and includes a sample evaluator information worksheet.  
   source:
-  type: Guide; Worksheet
+  type: Guide
+  image: <i class="fa fa-book font-size-logo"></i>
   keywords:
     - Planning
     - Design
@@ -208,6 +265,7 @@
   format: PDF
   link: Resource_Initiating an Evaluation Tip Sheet.pdf
   cover_sheet:
+  citation: The Federal Evaluation Toolkit. (2022). <i>Initiating an Evaluation</i>. 
 -
   domain: "Working with Evaluators: Initiating an Evaluation"
   title: How to Manage an External Evaluation
@@ -215,25 +273,33 @@
     Program evaluations may be executed by agency staff or by an external entity not directly involved with the program (e.g., research organization, university, etc.). This presentation describes the key tasks involved in overseeing an external evaluation: 1) deciding who will manage the external evaluator; 2) defining the evaluation purpose, scope, and timing; 3) setting a budget and obtaining resources; 4) seeking and selecting an external evaluator; 5) establishing a contract or consulting agreement; and 6) managing the evaluator.
   source: AmeriCorps
   type: Slide Deck
+  image: <i class="fa fa-file-powerpoint-o font-size-logo"></i>
+  another_type:
+  another_image:
   keywords:
     - External Evaluation
   year: 2015
   format: PDF
   link: Resource_How to Manage an External Evaluation.pdf
   cover_sheet:
+  citation: AmeriCorps. (2015). <i>How to Manage an External Evaluation</i> [Presentation slides]. https://americorps.gov/sites/default/files/document/2015_03_19_ManaginganExternalEvaluationSlides_ORE.pdf
 -
   domain: "Working with Evaluators: Initiating an Evaluation"
   title: Evaluator Screening Tips
   description: >
-    Finding an external evaluator who can effectively execute your evaluation takes strategy and careful planning. Use this tip sheet to understand what kinds of experience and expertise to target, how to confirm an evaluator’s background and publications online, and how to assess technical knowledge through reference and conflict of interest checks, reviews of reports, and responses to a statement of work. Check out the cover page to learn more about how this resource can help you.
+    Finding an external evaluator who can effectively execute your evaluation takes strategy and careful planning. Use this tip sheet to understand what kinds of experience and expertise to target, how to confirm an evaluator’s background and publications online, and how to assess technical knowledge through reference and conflict of interest checks, reviews of reports, and responses to a statement of work. Check out the <a href="{{ site.baseurl }}/assets/resources/{{ resource.cover_sheet }}" aria-label="{{ resource.title }} Cover Sheet" target="_blank">overview</a> to learn more about how this resource can help you.
   source: AmeriCorps
   type: Guide
+  image: <i class="fa fa-book font-size-logo"></i>
+  another_type:
+  another_image:
   keywords:
     - External Evaluation
   year: 2012
   format: PDF
   link: Resource_Evaluator Screening Tips.pdf
   cover_sheet: CS_Evaluator Screening Tips.pdf
+  citation: AmeriCorps. (2012). <i>Evaluator Screening Tips</i>. https://americorps.gov/sites/default/files/document/2017_02_16_SIFEvaluatorScreeningTips_ORE.pdf
 -
   domain: Using Evaluation
   title: How to Apply Available Evidence
@@ -241,19 +307,26 @@
     We frequently have a range of information and evidence about our programs, policies, or regulations. Yet, existing evidence is often imperfect for helping decision makers as they design or change those programs, policies, or regulations. This guide walks through five key steps to define the information need, gather the best available evidence, assess its rigor and whether it meets the need, and apply the evidence to inform decision-making.
   source:
   type: Guide
+  image: <i class="fa fa-book font-size-logo"></i>
+  another_type:
+  another_image:
   keywords:
     - Evaluation Use
   year: 2023
   format: PDF
   link: Resource_How to Apply Available Evidence.pdf
   cover_sheet:
+  citation: The Federal Evaluation Toolkit. (2021). <i>How to Use Available Evidence to Inform Decision-Making</i>. 
 -
   domain: Promoting Evaluation Use
-  title: "Communication Guide for TTCW Grantees: What to Consider When Sharing Program Accomplishments"
+  title: How to Communicate Findings from a Program Evaluation
   description: >
-    Communicating findings from a program evaluation is critical to support their use. This communication guide—provides strategies for sharing program outcomes with target audiences. Created for Tribal TANF – Child Welfare Coordination grantees, its contents, tools, and templates are applicable for many programs and policy areas.
+    Communicating findings from a program evaluation is critical to support their use. This communication guide, <i>Communication Guide for TTCW Grantees: What to Consider When Sharing Program Accomplishments</i>, provides strategies for sharing program outcomes with target audiences. Created for Tribal TANF – Child Welfare Coordination grantees, its contents, tools, and templates are applicable for many programs and policy areas.
   source: James Bell Associates
   type: Report
+  image: <i class="fa fa-bar-chart-o font-size-logo"></i>
+  another_type:
+  another_image:
   keywords:
     - Dissemination
     - Community Engagement
@@ -262,13 +335,15 @@
   format: PDF
   link: Resource_Communication Guide for TTCW Grantees - What to Consider When Sharing Program Accomplishments.pdf
   cover_sheet:
+  citation: "Ahonen, P., Keene, K., & Geary, E. (2020). Communication Guide for TTCW Grantees: What to Consider When Sharing Program Accomplishments, (OPRE Report #2021-14). Office of Planning, Research, and Evaluation, U.S. Department of Health and Human Services. https://www.acf.hhs.gov/sites/default/files/documents/opre/comm-guide-ttcw-grantees-dec-2020.pdf"
 -
   domain: Promoting Evaluation Use
-  title: "Program Evaluation Toolkit - Module 8: Dissemination Approaches"
+  title: Disseminating Findings from Program Evaluation
   description: >
-    Use this resource to help choose effective dissemination strategies for your evaluation findings and products. It walks through defining the focus of your initiative and the evaluation, your intended audiences for the evaluation findings, the audiences’ intended use of findings, dissemination strategies, and next steps.
+    Use this slide deck to help choose effective dissemination strategies for your evaluation findings and products. This slide deck, <i>Program Evaluation Toolkit - Module 8: Dissemination Approaches</i>, walks through defining the focus of your initiative and the evaluation, your intended audiences for the evaluation findings, the audiences’ intended use of findings, dissemination strategies, and next steps. Check out the <a href="{{ site.baseurl }}/assets/resources/{{ resource.cover_sheet }}" aria-label="{{ resource.title }} Cover Sheet" target="_blank">overview</a> to learn more about how this resource can help you.
   source: Institute for Education Sciences, Regional Educational Laboratory Program
   type: Slide Deck
+  image: <i class="fa fa-file-powerpoint-o font-size-logo"></i>
   keywords:
     - Dissemination
     - Community Engagement
@@ -277,3 +352,22 @@
   format: PDF
   link: Resource_Program Evaluation Toolkit - Module 8 Dissemination Approaches.pdf
   cover_sheet: CS_Program Evaluation Toolkit - Module 8 Dissemination Approaches.pdf
+  citation: "Yanoski, D., Joyce, J., Boven, J., Germeroth, C., & Luke, K. (2021). <i>Module 8: Dissemination Approaches</i> [Presentation slides]. Regional Educational Laboratory Central, Institute of Education Sciences, U.S. Department of Education. https://ies.ed.gov/ncee/edlabs/regions/central/resources/pemtoolkit/pdf/module-8/CE5.3.2-Module8-Chapter1.pdf"
+-
+  domain: Promoting Evaluation Use
+  title: Dissemination Matrix Template
+  description: >
+   Use this matrix template and <a href="{{site.baseurl}}/assets/resources/Resource_Dissemination Matrix Template Word.docx">worksheet</a> to help you think through dissemination of your evaluation findings. <i>The Dissemination Matrix Template: How to Share Important Aspects of your ATE Project with Others</i> is designed to walk you through the what, who, how, where, and when of dissemination to ensure that you can maximize your dissemination efforts.
+  source: Lopez, Megan and Wilson Becho, Lyssa
+  type: Guide
+  image: <i class="fa fa-book font-size-logo"></i>
+  another_type: Worksheet
+  another_image: <i class="fa fa-sticky-note-o font-size-logo"></i>
+  keywords:
+    - Dissemination
+    - Community Engagement
+    - Evaluation Use
+  year: 2022
+  format: PDF
+  link: Resource_Dissemination Matrix Template.pdf
+  citation: "Lopez, M. & Wilson Becho, L. (2022). Dissemination Matrix Template: How to Share Important Aspects of your ATE Project with Others. EvaluATE. https://evalu-ate.org/template/dissemination-matrix/"
