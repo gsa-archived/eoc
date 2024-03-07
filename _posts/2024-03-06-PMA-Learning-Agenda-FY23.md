@@ -42,8 +42,8 @@ By sparking engagement beyond the federal space, the PMA Learning Agenda is driv
 
 To get involved:
 
-- Explore the [PMA Learning Agenda]({{site.baseurl}}/agencies/cross-government/) and [Federal Agency Learning Agenda Questions]({{site.baseurl}}/learning-agenda-questions-dashboard/) on Evaluation.gov
+- Explore the <a href="{{site.baseurl}}/agencies/cross-government/" aria-label="PMA Leaning Agenda on Evaluation.gov ">PMA Learning Agenda</a> and [Federal Agency Learning Agenda Questions]({{site.baseurl}}/learning-agenda-questions-dashboard/) on Evaluation.gov
 - View agency [Annual Evaluation Plans]({{site.baseurl}}/evidence-plans/annual-evaluation-plan/)
 - [Sign up](https://public.govdelivery.com/accounts/USGSA/subscriber/new?topic_id=USGSA_916){:target="_blank"} for updates
-- Submit research, questions, comments or feedback to [PMALearningAgenda@omb.eop.gov](https://www.performance.gov/blog/2024-PMA-LA-EOY-report/PMALearningAgenda@omb.eop.gov){:target="_blank"}
+- Submit research, questions, comments or feedback to <a href="mailto:PMALearningAgenda@omb.eop.gov" target="_blank">PMALearningAgenda@omb.eop.gov</a>
 
