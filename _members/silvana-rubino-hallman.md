@@ -4,5 +4,5 @@ bio-image-alt-text: U.S. Department of Defense
 layout: bio
 name: Silvana Rubino-Hallman
 department: Department of Defense
-job-title: Principal Deputy Director, Cost Assessment & Program Evaluation
+job-title: Deputy Performance Improvement Officer and Evaluation Officer
 ---
