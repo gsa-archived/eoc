@@ -1,7 +1,7 @@
 ---
 title: 'Building Evidence for Better Management: Inside the PMA Learning Agenda End of Year Report'
 layout: post
-date: March 6, 2024
+date: March 8, 2024
 author: The Performance.gov and Evidence Teams
 excerpt: Today, the Office of Management and Budget (OMB) released the President’s Management Agenda (PMA) <a href="/assets/resources/Learning-Agenda-End-of-Year-Doc-508-Final.pdf" target="_blank">Learning Agenda Fiscal Year 2023 Year End Report</a> on Performance.gov and Evaluation.gov....
 aria: 
