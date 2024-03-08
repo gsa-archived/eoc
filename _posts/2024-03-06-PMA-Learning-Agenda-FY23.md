@@ -14,7 +14,7 @@ thumbnail: collaboration.png
 thumbnail-alt: Group of people collaborating around a table
 ---
 
-Today, the Office of Management and Budget (OMB) released the President's Management Agenda (PMA) [Learning Agenda Fiscal Year 2023 Year End Report]({{site.baseurl}}/assets/resources/Learning-Agenda-End-of-Year-Doc-508-Final.pdf){:target="_blank"} on Performance.gov and Evaluation.gov.
+On March 4, the Office of Management and Budget (OMB) released the President's Management Agenda (PMA) [Learning Agenda Fiscal Year 2023 Year End Report]({{site.baseurl}}/assets/resources/Learning-Agenda-End-of-Year-Doc-508-Final.pdf){:target="_blank"} on Performance.gov and Evaluation.gov.
 
 The year-end report details select studies related to the learning agenda. These were conducted in the federal space, as a part of a wider effort for researchers and policymakers to work together in implementing the President's Management Agenda (PMA). By creating a clear roadmap with key evidence-building questions, the agenda invites diverse partners to collaborate, ultimately leading to enhanced government experiences for all.
 
