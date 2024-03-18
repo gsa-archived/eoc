@@ -1,6 +1,6 @@
 ---
 title: 'YEA Evidence Forum: Reducing Racial Wealth Gaps through Effective Support for Public Higher Education'
-year: 2023
+year: 2022
 description: 
 doc-link: assets/resources/YEA Evidence Forum on Reducing Racial Wealth Gaps through Effective Support for Public Higher Education.pdf
 aria-label: 'YEA Evidence Forum: Reducing Racial Wealth Gaps through Effective Support for Public Higher Education'
