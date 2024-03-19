@@ -1,7 +1,7 @@
 ---
 title: 'President’s Budget Sustains Investments in Evidence and Evaluation across the Federal Government'
 layout: post
-date: March 14, 2024
+date: March 19, 2024
 author: The Evidence Team
 excerpt: The President’s <a href="https://www.whitehouse.gov/wp-content/uploads/2024/03/budget_fy2025.pdf" target="_blank">Budget</a> demonstrates the Administration’s commitment to support evidence-based programs and strengthen evidence-building capacity across Federal agencies...
 aria: 
@@ -19,4 +19,4 @@ The President's [Budget](https://www.whitehouse.gov/wp-content/uploads/2024/03/b
 For more information, explore:
 
 - [The Analytical Perspectives Chapter: Building and Using Evidence to Improve Government Effectiveness](https://www.whitehouse.gov/wp-content/uploads/2024/03/ap_13_evidence_fy2025.pdf){:target="_blank"}
-- [Highlights]({{site.baseurl}}/assets/resources/Evaluation.gov - FY 25 Highlights - Formatted.pdf) from the FY 25 Analytical Perspective Evidence Chapter
+- [Highlights from the FY 25 Analytical Perspective Evidence Chapter]({{site.baseurl}}/assets/resources/Evaluation.gov - FY 25 Highlights - Formatted.pdf)
