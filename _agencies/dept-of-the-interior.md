@@ -8,7 +8,7 @@ eval-plan:
     - name: FY 2023
       link: https://www.doi.gov/sites/doi.gov/files/doi-fy-2023-annual-evaluation-plan.pdf
 eval-policy: https://www.doi.gov/sites/doi.gov/files/elips/documents/309-dm-04.pdf
-learning-agenda: https://www.doi.gov/sites/doi.gov/files/doi-fy-2022-2026-learning-agenda.pdf
+learning-agenda: https://www.doi.gov/sites/default/files/documents/2024-03/fy-2023-annual-update-interior-fy-2022-2026-learning-agenda.pdf
 capacity-assesment: https://www.doi.gov/sites/doi.gov/files/doi-fy-2022-2026-capacity-assessment.pdf
 agency-offices:
 landing-page: https://www.doi.gov/performance/evidence-doi
