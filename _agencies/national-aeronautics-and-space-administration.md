@@ -11,6 +11,8 @@ eval-plan:
       link: https://www.nasa.gov/wp-content/uploads/2023/10/nasa-fy-2023-volume-of-integrated-performance.pdf#page=131
     - name: FY 2024
       link: https://www.nasa.gov/sites/default/files/atoms/files/fiscal_year_2024_volume_of_integrated_perfomance.pdf
+    - name: FY 2025
+      link: https://www.nasa.gov/ocfo/performance-report/
 eval-policy: https://nodis3.gsfc.nasa.gov/displayDir.cfm?t=NPD&c=1210&s=7
 learning-agenda: https://www.nasa.gov/wp-content/uploads/2023/09/fy-22-strategic-plan-1.pdf#page=76
 capacity-assesment: https://www.nasa.gov/wp-content/uploads/2023/09/fy-22-strategic-plan-1.pdf#page=100

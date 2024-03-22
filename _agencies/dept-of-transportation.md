@@ -9,6 +9,8 @@ eval-plan:
       link: https://www.transportation.gov/mission/budget/fy-2023-evaluation-plan
     - name: FY 2024
       link: https://www.transportation.gov/sites/dot.gov/files/2023-03/FY_2024_Evaluation_Plan-508-Compliant.pdf
+    - name: FY 2025
+      link: https://www.transportation.gov/mission/budget/fy-2025-evaluation-plan
 eval-policy: https://www.transportation.gov/sites/dot.gov/files/2022-03/Evaluation_Framework.pdf
 learning-agenda: https://www.transportation.gov/mission/budget/learning-agenda
 capacity-assesment: https://www.transportation.gov/mission/budget/capacity-assessment
