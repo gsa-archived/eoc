@@ -11,6 +11,8 @@ eval-plan:
       link: https://www.dol.gov/sites/dolgov/files/evidence/eval-plan-fy2022-2023.pdf 
     - name: FY 2024
       link: https://www.dol.gov/sites/dolgov/files/evidence/DOL-CEO-FY-2023-2024-Evaluation-Plan.pdf
+    - name: FY 2025
+      link: https://www.dol.gov/sites/dolgov/files/OASP/evaluation/pdf/DOL-CEO-FY-2024-2025-Evaluation-Plan.pdf
 eval-policy: https://www.dol.gov/evidence/evaluation-policy
 learning-agenda: https://www.dol.gov/sites/dolgov/files/evidence/evidence-building-plan-fy2022-2026.pdf
 capacity-assesment: https://www.dol.gov/sites/dolgov/files/evidence/evidence-capacity-assessment.pdf

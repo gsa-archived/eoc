@@ -11,6 +11,8 @@ eval-plan:
       link: https://www.nrc.gov/docs/ML2206/ML22066B059.pdf
     - name: FY 2024
       link: https://www.nrc.gov/docs/ML2307/ML23073A062.pdf
+    - name: FY 2025
+      link: https://www.nrc.gov/about-nrc/plans-performance/evidence-building-and-evaluation/annual-evaluation-plan.html
 name: NRC's Evidence-Building and Evaluation Policy Statement      
 eval-policy: https://www.govinfo.gov/content/pkg/FR-2021-06-03/pdf/2021-11637.pdf
 learning-agenda: https://www.nrc.gov/about-nrc/plans-performance/evidence-building-and-evaluation/learning-agenda.html

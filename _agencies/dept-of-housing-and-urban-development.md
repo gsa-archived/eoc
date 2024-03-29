@@ -11,6 +11,8 @@ eval-plan:
       link: https://www.huduser.gov/portal/sites/default/files/pdf/HUD-Annual-Evaluation-Plan-FY2023.pdf
     - name: FY 2024
       link: https://www.huduser.gov/portal/sites/default/files/pdf/HUD-Annual-Evaluation-Plan-FY2024.pdf
+    - name: FY 2025
+      link: https://www.huduser.gov/portal/sites/default/files/pdf/HUD-Annual-Evaluation-Plan-FY2025.pdf
 eval-policy: https://www.govinfo.gov/content/pkg/FR-2021-08-13/pdf/2021-17339.pdf
 learning-agenda: https://www.huduser.gov/portal/sites/default/files/pdf/HUD-Learning-Agenda.pdf
 capacity-assesment: https://www.huduser.gov/portal/sites/default/files/pdf/HUD-Capacity-Assessment.pdf
