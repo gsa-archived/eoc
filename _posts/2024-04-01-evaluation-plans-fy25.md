@@ -27,7 +27,7 @@ A few highlights from the FY 2025 plans are below:
 </div>
 
 <div class="agency-quote-3">
-    The <strong>Economic Development Administration (EDA)</strong> at the <strong>Department of Commerce</strong> will assess how EDA-sponsored activities funded through the American Rescue Plan Act (ARPA) improve the capacities of the communities they served. Areas for exploration may include measuring how EDA investments in a regional cluster helped organizations conduct technical assistance and how that assistance supported the creation of new businesses. This evaluation builds on previous years’ work in measuring the outputs that have resulted from ARPA investments and the findings can inform future program design. 
+    The <strong>Economic Development Administration (EDA)</strong> at the <strong>Department of Commerce</strong> will assess how EDA-sponsored activities funded through the American Rescue Plan Act (ARPA) improved the capacities of the communities they served. Areas for exploration may include measuring how EDA investments in a regional cluster helped organizations conduct technical assistance and how that assistance supported the creation of new businesses. This evaluation builds on previous years’ work in measuring the outputs that have resulted from ARPA investments and the findings can inform future program design. 
 </div>
 
 <div class="agency-quote-4">
@@ -39,7 +39,7 @@ A few highlights from the FY 2025 plans are below:
 </div>
 
 <div class="agency-quote-6">
-    The <strong>Small Business Administration (SBA)</strong> will study how effective the Small Business Innovation Research and Small Business Technology Transfer programs are in stimulating technological innovation in the US. These programs invest Federal research and development funds into high-tech small businesses. The evaluation will assess the outcomes of these programs, including the number of jobs created or retained, business survival, sales, exits, and spin-offs, revenue, patents, and business obtainment of additional R&D funding. This evaluation presents an opportunity to understand the program outcomes as they are considered for reauthorization in 2025.
+    The <strong>Small Business Administration (SBA)</strong> will study how effective the Small Business Innovation Research and Small Business Technology Transfer programs are in stimulating technological innovation in the US. These programs provide opportunities for small businesses to engage in Federal research and development with the potential for commercialization. The evaluation will assess the outcomes of these programs, including the number of jobs created or retained, business survival, sales, exits, and spin-offs, revenue, patents, and business obtainment of additional R&D funding. This evaluation presents an opportunity to understand the program outcomes as they are considered for reauthorization in 2025.
 </div>
 
 <div class="agency-quote-3">
