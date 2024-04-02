@@ -1,7 +1,7 @@
 ---
 title: Agencies Publish Their FY25 Annual Evaluation Plans
 layout: post
-date: April 1, 2024
+date: April 2, 2024
 author: The Evidence Team, OMB
 excerpt: Agencies recently published their latest Annual Evaluation Plans, describing the significant evaluation activities they will undertake during fiscal year 2025...
 aria: Agencies Publish Their FY25 Annual Evaluation Plans
@@ -14,7 +14,7 @@ thumbnail: evaluation-thumbnail.jpeg
 thumbnail-alt: Evaluation thumbnail image
 ---
 
-Agencies recently published their latest Annual Evaluation Plans, describing the significant evaluation activities they will undertake during fiscal year 2025. The plans demonstrate the continued advancement of agency evaluation capacity and the shift toward a culture of evidence across the Federa</strong>l Government. Agency evaluation plans include studies covering a wide range of programs as well as operational practices that will generate evidence on processes, outcomes, and impacts, and reflect the full suite of evaluation methodologies. We encourage you to explore the documents linked here or from the agency pages.
+Agencies recently published their latest Annual Evaluation Plans, describing the significant evaluation activities they will undertake during fiscal year 2025. The plans demonstrate the continued advancement of agency evaluation capacity and the shift toward a culture of evidence across the Federal Government. Agency evaluation plans include studies covering a wide range of programs as well as operational practices that will generate evidence on processes, outcomes, and impacts, and reflect the full suite of evaluation methodologies. We encourage you to explore the documents linked here or from the agency pages.
 
 A few highlights from the FY 2025 plans are below:
 
