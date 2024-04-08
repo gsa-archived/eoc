@@ -1,7 +1,7 @@
 ---
 title: 'Announcing the President’s Management Agenda Learning Agenda: Public Participation and Community Engagement Evidence Challenge'
 layout: post
-date: April 5, 2024
+date: April 8, 2024
 author: The Evidence Team
 excerpt: 'On April 8, the Office of Management and Budget (OMB) and the U.S. General Services Administration (GSA) announced the launch of the <a href="https://www.challenge.gov/?challenge=pmala" target="_blank">President’s Management Agenda (PMA) Learning Agenda: Public Participation and Community Engagement Evidence Challenge</a>...'
 aria: 
