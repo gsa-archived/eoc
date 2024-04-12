@@ -8,10 +8,10 @@ aria: Calling Evidence Experts for a Year-long IPA with the Evidence Team
 tags: Evaluation Evidence-Act
 filters: evaluation evidence-act
 permalink: /calling-evidence-experts-for-a-year-long-ipa/
-image: evaluation-circle-thumbnail.png
-img-alt: Evaluation circle thumbnail image
-thumbnail: evaluation-thumbnail.jpeg
-thumbnail-alt: Evaluation thumbnail image
+image: IPA-circle-thumbnail.png
+img-alt: IPA circle thumbnail image
+thumbnail: IPA-blog-thumbnail.png
+thumbnail-alt: IPA thumbnail image
 ---
 
 Are you a mid- to senior-level professional passionate about using evidence and evaluations to inform programs and policies? Are you interested in working with leaders across the Federal Government to further develop the Federal ecosystem for evidence-based policymaking? Do you have experience translating evidence and research findings to policy and program design?
