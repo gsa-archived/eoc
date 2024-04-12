@@ -8,10 +8,10 @@ aria:
 tags: Evidence-Use
 filters: evidence-use
 permalink: /application-for-summer-fall-2024-leadership-academy/
-image: evaluation-gov-challenge-circle.png
-img-alt: cicle thumbnail image challenge.gov blog
-thumbnail: evaluation-gov-challenge-thumbnail.png
-thumbnail-alt: thumbnail image challenge.gov blog
+image: Evaluation-Leadership Academy-circle.png
+img-alt: Leadership Academy circle thumbnail
+thumbnail: Evaluation-Leadership Academy-thumbnail.png
+thumbnail-alt: Leadership Academy blog landing thumbnail
 ---
 
 Creating an evidence-based Government means that staff at all levels -- from program operators to Senior Executives -- embrace the use of evidence to make decisions. But what does "evidence-based" really mean?  How can senior leaders across the Federal Government build a culture of evidence? What do Senior Executives need to understand in order to demand and use evidence in their roles?
