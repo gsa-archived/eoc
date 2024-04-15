@@ -1,7 +1,7 @@
 ---
 title: 'Applications for the Summer/Fall 2024 Evidence-Based Decision-Making Leadership Academy are Now Open!'
 layout: post
-date: April 10, 2024
+date: April 15, 2024
 author: The Evidence Team, OMB
 excerpt: 'Creating an evidence-based Government means that staff at all levels – from program operators to Senior Executives – embrace the use of evidence to make decisions...'
 aria: 
@@ -35,4 +35,4 @@ Launched in November 2023, the Academy's first cohort included Executives from n
 
 We are thrilled to announce that we are currently accepting applications for the second cohort of the Academy! It includes five sessions between June and September 2024. The first session is all-day and will be held in-person on June 25, 2024 in Washington, D.C. The remaining four sessions will be held virtually. Accepted participants are expected to attend all five sessions. Note that the Academy is not designed for evaluation or technical experts, but instead for Senior Executives in other roles interested in making decisions using the best available evidence while also building a culture of learning within their agencies.
 
-Applications are open through May 3, 2024. Interested Senior Executives can apply [here](https://touchpoints.app.cloud.gov/touchpoints/893e3f21/submit). If you have any questions about the Academy, email us at <evidence@omb.eop.gov>.
+Applications are open through May 3, 2024. Interested Senior Executives can apply <a href="https://touchpoints.app.cloud.gov/touchpoints/893e3f21/submit" aria-label="SES Evidence-Based Leadership Academy Application (Summer/Fall 2024)" target="_blank">here</a>. If you have any questions about the Academy, email us at <evidence@omb.eop.gov>.
