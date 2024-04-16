@@ -1,10 +1,10 @@
 ---
-title: Calling Evidence Experts for a Year-long IPA with the Evidence Team 
+title: Calling Evidence Experts for a Year-Long IPA with the Evidence Team 
 layout: post
 date: April 16, 2024
 author: The Evidence Team, OMB
 excerpt: Are you a mid-career to senior-level professional passionate about using evidence and evaluations to inform programs and policies...
-aria: Calling Evidence Experts for a Year-long IPA with the Evidence Team 
+aria: Calling Evidence Experts for a Year-Long IPA with the Evidence Team 
 tags: Evaluation Evidence-Act
 filters: evaluation evidence-act
 permalink: /calling-evidence-experts-for-a-year-long-ipa/
