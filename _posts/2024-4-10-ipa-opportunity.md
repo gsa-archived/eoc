@@ -1,7 +1,7 @@
 ---
-title: Calling Mid- to Senior-level Evidence Experts for a Year-long IPA on the OMB’s Evidence Team 
+title: Calling Mid to Senior-level Evidence Experts for a Year-long IPA on the OMB’s Evidence Team 
 layout: post
-date: April 10, 2024
+date: April 16, 2024
 author: The Evidence Team, OMB
 excerpt: Are you a mid- to senior-level professional passionate about using evidence and evaluations to inform programs and policies...
 aria: Calling Mid- to Senior-level Evidence Experts for a Year-long IPA on the OMB’s Evidence Team 
@@ -14,7 +14,7 @@ thumbnail: IPA-blog-thumbnail.png
 thumbnail-alt: IPA thumbnail image
 ---
 
-Are you a mid- to senior-level professional passionate about using evidence and evaluations to inform programs and policies? Are you interested in working with leaders across the Federal Government to further develop the Federal ecosystem for evidence-based policymaking? Do you have experience translating evidence and research findings to policy and program design?
+Are you a mid to senior-level professional passionate about using evidence and evaluations to inform programs and policies? Are you interested in working with leaders across the Federal Government to further develop the Federal ecosystem for evidence-based policymaking? Do you have experience translating evidence and research findings to policy and program design?
 
 The Office of Management and Budget (OMB) is [opening applications]({{site.baseurl}}/assets/resources/OMB Evidence Team IPA Opportunity.pdf){:target="_blank"} for an evidence expert to serve as a temporary Senior Evidence Advisor within the Evidence Team through the Intergovernmental Personnel Act (IPA). We welcome applications from faculty at institutions of higher education, employees of State, local, and tribal governments, and employees of other qualifying institutions under 5 C.F.R. § 334.102.  This assignment will provide a unique opportunity to acquire valuable experience to bring back to your home institution.
 
