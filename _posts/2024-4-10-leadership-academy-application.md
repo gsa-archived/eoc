@@ -1,7 +1,7 @@
 ---
 title: 'Applications for the Summer/Fall 2024 Evidence-Based Decision-Making Leadership Academy are Now Open!'
 layout: post
-date: April 15, 2024
+date: April 16, 2024
 author: The Evidence Team, OMB
 excerpt: 'Creating an evidence-based Government means that staff at all levels – from program operators to Senior Executives – embrace the use of evidence to make decisions...'
 aria: 
