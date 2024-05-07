@@ -17,7 +17,7 @@ eval-policy: https://www.commerce.gov/opog/directives/department-administrative-
 learning-agenda:  https://www.commerce.gov/sites/default/files/2022-03/DOC-Learning-Agenda-2022%E2%80%932026.pdf
 capacity-assesment:  https://www.commerce.gov/sites/default/files/2022-03/Capacity-Assessment.pdf
 agency-offices: 
-    - name: Institute of Education Sciences
+    - name: Census Bureau’s Center of Excellence
       link: https://www.census.gov/about/what/evidence-act/center-of-excellence.html
 landing-page: https://www.commerce.gov/about/budget-and-performance/evaluation
 ---
