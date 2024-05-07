@@ -11,9 +11,11 @@ eval-plan:
       link: https://www.energy.gov/sites/default/files/2022-02/doe-evaluation-evidence-building-activities-fy23-v3.pdf
     - name: FY 2024
       link: https://www.energy.gov/sites/default/files/2022-09/doe-evaluation-evidence-building-activities-fy24.pdf
+    - name: FY 2025
+      link: https://www.energy.gov/sites/default/files/2023-09/doe-evaluation-evidence-building-activities-fy25.pdf
 eval-policy: https://www.directives.doe.gov/directives-documents/400-series/0410.3-APolicy/@@images/file
-learning-agenda: https://www.energy.gov/sites/default/files/2022-02/doe-evaluation-evidence-building-activities-fy23-v3.pdf
-capacity-assesment: https://www.energy.gov/sites/default/files/2022-02/doe-evaluation-evidence-building-activities-fy23-v3.pdf
+learning-agenda: https://www.energy.gov/sites/default/files/2023-09/doe-evaluation-evidence-building-activities-fy25.pdf
+capacity-assesment: https://www.energy.gov/sites/default/files/2023-09/doe-evaluation-evidence-building-activities-fy25.pdf
 agency-offices:
     - name: Office of Energy Efficiency & Renewable Energy Program Evaluation
       link: https://www.energy.gov/eere/analysis/eere-program-evaluation
