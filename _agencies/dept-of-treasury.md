@@ -12,6 +12,8 @@ eval-plan:
       link: https://home.treasury.gov/system/files/266/Treasury-FY22-Annual-Evaluation-Plan.pdf
     - name: FY 2024
       link: https://home.treasury.gov/system/files/266/Treasury-FY24-Annual-Evaluation-Plan.pdf
+    - name: FY 2025
+      link: https://home.treasury.gov/system/files/266/Treasury-FY25-Annual-Evaluation-Plan-FINAL-3-13-24.pdf
 eval-policy: https://home.treasury.gov/system/files/266/Interim-Evaluation-Policy.pdf
 learning-agenda: https://home.treasury.gov/system/files/266/Treasury-FY2022-2026-LearningAgenda.pdf
 capacity-assesment: https://home.treasury.gov/system/files/266/Treasury-FY2022-2026-CapacityAssessment.pdf
