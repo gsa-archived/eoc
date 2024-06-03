@@ -10,7 +10,7 @@ filters: evaluation policy-filter guidance
 permalink: /omb-revises-its-uniform-grants-guidance/
 image: cfr-circle-thumbnail.png
 img-alt: CFR circle thumbnail image
-thumbnail: cfr-blog-thumbnail.jpeg
+thumbnail: cfr-blog-thumbnail.png
 thumbnail-alt: IPA thumbnail image
 ---
 
