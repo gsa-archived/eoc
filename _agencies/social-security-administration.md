@@ -13,13 +13,13 @@ eval-plan:
       link: https://www.ssa.gov/data/policy/SSA%20FY%202024%20Evaluation%20Plan%203.14.2023.pdf
     - name: FY 2025
       link: https://www.ssa.gov/data/policy/SSA%20-%20FY%202025%20Evaluation%20Plan%20FINAL.pdf
-eval-policy: https://www.ssa.gov/data/data_governance_board/Evidence%20Act%20Evaluation%20Policy%20-%20September%202020.pdf
-learning-agenda: https://www.ssa.gov/data/data_governance_board/SSA%20FY2022-2026%20Learning%20Agenda%20Final%20032322.pdf
+eval-policy: https://www.ssa.gov/evidence/documents/Evidence%20Act%20Evaluation%20Policy%20-%20April%202024.pdf
+learning-agenda: https://www.ssa.gov/evidence/documents/SSA%20FY2022-2026%20Learning%20Agenda%20Final%20032322.pdf
 capacity-assesment: https://www.ssa.gov/data/data_governance_board/SSA%20FY2022-2026%20Capacity%20Assessment%20Final%20032322.pdf
 agency-offices:
     - name: Office of Research, Demonstration, and Employment Support
       link: https://www.ssa.gov/disabilityresearch/
     - name: Office of Research, Evaluation, and Statistics
       link: https://www.ssa.gov/policy/  
-landing-page: https://www.ssa.gov/data/
+landing-page: https://www.ssa.gov/evidence/
 ---
