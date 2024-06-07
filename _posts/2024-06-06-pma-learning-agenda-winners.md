@@ -8,8 +8,8 @@ aria: 'Announcing Phase I winners of the President’s Management Agenda Learnin
 tags: Equity Evaluation Public-Participation Community-Engagement
 filters: equity evaluation public-participation community-engagement
 permalink: /pma-learning-agenda-winners/
-image: PMALA-Challenge-circle.png
-img-alt: PMALA circle thumbnail image
+image: team-trophy-circle.png
+img-alt: team-trophy image
 thumbnail: PMALA-Challenge.png
 thumbnail-alt: PMALA thumbnail image
 ---
