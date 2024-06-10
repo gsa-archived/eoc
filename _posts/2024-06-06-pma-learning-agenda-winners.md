@@ -1,7 +1,7 @@
 ---
 title: 'Announcing Phase I winners of the President’s Management Agenda Learning Agenda: Public Participation and Community Engagement Evidence Challenge'
 layout: post
-date: June 6, 2024
+date: June 10, 2024
 author: The Evidence Team, OMB
 excerpt: On June 3, the Office of Management and Budget (OMB) and the U.S. General Services Administration (GSA) announced the Phase I winning submissions...
 aria: 'Announcing Phase I winners of the President’s Management Agenda Learning Agenda: Public Participation and Community Engagement Evidence Challenge'
