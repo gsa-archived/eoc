@@ -29,8 +29,8 @@ agency-offices:
       link: https://acl.gov/about-acl/center-policy-and-evaluation
       eval-policy: https://acl.gov/sites/default/files/programs/2018-07/ACL%20evaluation%20policy%20FINAL%207-2-2018_0.docx
       logo: assets/images/ACL_logo.png
-    - name: CDC Program Performance and Evaluation Office
-      link: https://www.cdc.gov/program/
+    - name: CDC Office of Policy, Performance, and Evaluation
+      link: https://www.cdc.gov/evaluation/index.htm
     - name: NIH Office of Evaluation, Performance, and Reporting
 landing-page: https://aspe.hhs.gov/topics/data/evidence-act-0
 ---
