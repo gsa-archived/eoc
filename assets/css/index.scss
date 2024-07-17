@@ -268,7 +268,7 @@ html {
     }
 
     .usa-banner__button::after {
-        background-image: url("../img/angle-arrow-down-primary.svg"), linear-gradient(transparent, transparent);
+        background-image: url("{{baseurl}}/assets/img/angle-arrow-down-primary.svg"), linear-gradient(transparent, transparent);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: 0.5rem;
@@ -281,7 +281,7 @@ html {
     }
 
     .usa-banner__button:hover::after {
-        background-image: url("../img/angle-arrow-down-primary-hover.svg"), linear-gradient(transparent, transparent);
+        background-image: url("{{baseurl}}/assets/img/angle-arrow-down-primary-hover.svg"), linear-gradient(transparent, transparent);
         background-color: transparent !important;
     }
 }
@@ -302,7 +302,7 @@ html {
     }
 
     .usa-banner__header-action::after {
-        background-image: url("../img/angle-arrow-down-primary.svg"), linear-gradient(transparent, transparent);
+        background-image: url("{{baseurl}}/assets/img/angle-arrow-down-primary.svg"), linear-gradient(transparent, transparent);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: 0.5rem;
