@@ -267,23 +267,23 @@ html {
         transform: rotate(0deg) !important;
     }
 
-    .usa-banner__button::after {
-        background-image: url("../img/angle-arrow-down-primary.svg"), linear-gradient(transparent, transparent);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: 0.5rem;
-        content: '';
-        display: inline-block;
-        height: 0.5rem;
-        width: 0.5rem;
-        margin-left: 2px;
-        background-color: transparent !important;
-    }
+    // .usa-banner__button::after {
+    //     background-image: url("../img/angle-arrow-down-primary.svg"), linear-gradient(transparent, transparent);
+    //     background-repeat: no-repeat;
+    //     background-position: center center;
+    //     background-size: 0.5rem;
+    //     content: '';
+    //     display: inline-block;
+    //     height: 0.5rem;
+    //     width: 0.5rem;
+    //     margin-left: 2px;
+    //     background-color: transparent !important;
+    // }
 
-    .usa-banner__button:hover::after {
-        background-image: url("../img/angle-arrow-down-primary-hover.svg"), linear-gradient(transparent, transparent);
-        background-color: transparent !important;
-    }
+    // .usa-banner__button:hover::after {
+    //     background-image: url("../img/angle-arrow-down-primary-hover.svg"), linear-gradient(transparent, transparent);
+    //     background-color: transparent !important;
+    // }
 }
 
 @media screen and (max-width: 640px) {
@@ -301,18 +301,18 @@ html {
         background-color: transparent !important;
     }
 
-    .usa-banner__header-action::after {
-        background-image: url("../img/angle-arrow-down-primary.svg"), linear-gradient(transparent, transparent);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: 0.5rem;
-        content: '';
-        display: inline-block;
-        height: 0.5rem;
-        width: 0.5rem;
-        margin-left: 2px;
-        background-color: transparent !important;
-    }
+    // .usa-banner__header-action::after {
+    //     background-image: url("../img/angle-arrow-down-primary.svg"), linear-gradient(transparent, transparent);
+    //     background-repeat: no-repeat;
+    //     background-position: center center;
+    //     background-size: 0.5rem;
+    //     content: '';
+    //     display: inline-block;
+    //     height: 0.5rem;
+    //     width: 0.5rem;
+    //     margin-left: 2px;
+    //     background-color: transparent !important;
+    // }
 }
 
 .bg-evaluation {
