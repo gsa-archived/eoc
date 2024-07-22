@@ -2,7 +2,7 @@
 bio-image: us_nrc_fb.png
 bio-image-alt-text: Nuclear Regulatory Commission
 layout: bio
-name: Raymond Furstenau
+name: Jody Martin
 department: Nuclear Regulatory Commission
-job-title: Director of Nuclear Regulatory Research
+job-title: Associate Director for Operations
 ---
