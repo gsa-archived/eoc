@@ -2,8 +2,7 @@
 ---
 // https://jekyllrb.com/docs/assets/
 $theme-show-notifications: false;
-@use "uswds" as *;
-@use "../../_sass/knowledgesharing" as *;
+@import "../node_modules/uswds/dist/scss/uswds";
 // Example - Override the background image in the hero component using CSS:
 .usa-hero {
     background-image: url("../images/welcome_image.jpg");
