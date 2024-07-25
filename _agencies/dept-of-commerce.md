@@ -13,7 +13,7 @@ eval-plan:
       link: https://www.commerce.gov/sites/default/files/2023-03/FY24-Evaluation-Plan.pdf
     - name: FY 2025
       link: https://www.commerce.gov/sites/default/files/2024-03/FY25-Evaluation-Plan.pdf
-eval-policy: https://www.commerce.gov/opog/directives/department-administrative-orders/program-evaluation
+eval-policy: https://www.commerce.gov/opog/directives/DAO_216-21
 learning-agenda:  https://www.commerce.gov/sites/default/files/2022-03/DOC-Learning-Agenda-2022%E2%80%932026.pdf
 capacity-assesment:  https://www.commerce.gov/sites/default/files/2022-03/Capacity-Assessment.pdf
 agency-offices: 
