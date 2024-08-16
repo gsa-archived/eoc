@@ -99,13 +99,7 @@ This is used for Agency pages.
                 <div class="desktop:grid-col-3 tablet:grid-col-3"><strong>Evaluation Officer</strong></div>
                 
                 <div class="desktop:grid-col-9 tablet:grid-col-9">
-                    {% for member in site.members %}
-                    {% if member.department == page.agency-name %}
-                    {% assign member-found = member %}
-                    {{ member-found.name }},
-                    {% endif %}
-                    {% endfor %}
-                    {% if member-found.job-title %} {{ member-found.job-title }}{% endif %}
+                    {% for member in site.members %}{% if member.department == page.agency-name %}{% assign member-found = member %}{{ member-found.name }}{% endif %}{% endfor %}{% if member-found.job-title %}, {{ member-found.job-title }}{% endif %}
                 </div>
             </div>
 
