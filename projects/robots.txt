@@ -1,3 +1,0 @@
-User-agent: *
-Sitemap: http://localhost:9000/preview/gsa/eoc/feature/OMB-2-Release1.0/projects/sitemap-index.xml
-Host: localhost:9000
