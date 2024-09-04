@@ -7,7 +7,7 @@ excerpt: The OMB Evidence Team is excited to launch the new Evidence Project Por
 aria: 'Launching the New Evidence Project Portal!'
 tags: Evaluation Evidence-Use
 filters: evaluation evidence-use
-permalink: /launching-the-new-evidence-project-portal/
+permalink: /evidence-portal-launch/
 image: partnership-circle.png
 img-alt: man and woman at desk with computer giving each other a high five
 thumbnail: partnership-thumbnail.jpg
