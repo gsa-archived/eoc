@@ -3,7 +3,7 @@ title: 'Launching the New Evidence Project Portal!'
 layout: post
 date: September 3, 2024
 author: Evidence Project Portal Team
-excerpt: The OMB Evidence Team is excited to launch the new <a href="http://www.evaluation.gov/evidenceportal/">Evidence Project Portal</a> on Evaluation.gov....
+excerpt: The OMB Evidence Team is excited to launch the new <a href="/evidenceportal/">Evidence Project Portal</a> on Evaluation.gov....
 aria: 'Launching the New Evidence Project Portal!'
 tags: Evaluation Evidence-Use
 filters: evaluation evidence-use
