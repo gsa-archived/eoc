@@ -1,7 +1,7 @@
 ---
 title: 'Celebrating Evidence: Honoring the People Driving the Federal Evidence Ecosystem'
 layout: post
-date: September 12, 2024
+date: September 16, 2024
 author: OMB Evidence Team and OSTP Science, Society, and Policy Team
 excerpt: Why is evidence so critical to solving our nation’s greatest challenges? Who are the subject matter experts and policy leaders that build and use evidence to make decisions...
 aria: 'Celebrating Evidence: Honoring the People Driving the Federal Evidence Ecosystem'
