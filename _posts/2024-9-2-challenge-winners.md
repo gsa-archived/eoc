@@ -1,7 +1,7 @@
 ---
 title: 'And the Award Goes To… The Improve Group Cooperative for their PPCE Evaluation Toolkit'
 layout: post
-date: September 2, 2024
+date: September 25, 2024
 author: The Evidence and Equity Teams, OMB PPM
 excerpt: On August 19, 2024, the Office of Management and Budget (OMB) and the U.S. General Services Administration (GSA)...
 aria: 'And the Award Goes To… The Improve Group Cooperative for their PPCE Evaluation Toolkit'
@@ -22,7 +22,7 @@ At the inception of this Challenge, OMB recognized the need for a user-friendly 
 
 In a recent interview with Challenge.gov, representatives from The Improve Group Cooperative shared what motivated them to enter this Challenge. "We live in a time when there are lots of different information sources and people don't have high trust in government.... The PMA acknowledges the history of people not feeling engaged. When people witness a deeper engagement effort like this Challenge and see what came out as a result, with emphasis on the result and how their feedback affected policy, they eventually become more engaged citizens." When asked about the unique aspects of their toolkit, The Improve Group officials highlighted their focus on how to conduct evaluations while implementing PPCE activities, how to use different methods of evaluation, and how to track trust building over time. In developing this evaluation toolkit, The Improve Group visualized an employee conducting *and* evaluating the engagement without having to overcome a huge learning curve. "Employees conducting engagement projects should feel empowered to do an evaluation themselves and not need to bring a separate 'evaluator' on board. This toolkit aims to provide agency staff with resources to do just that."
 
-The resource will be available on the [Evidence Project Portal]({{site.baseurl}}/evidenceportal/project/PMALA%20Challenge/) on [Evaluation.gov]({{site.baseurl}}/), on [Performance.gov](http://www.performance.gov){:target="_blank"}, and shared widely with Federal agencies. OMB will also coordinate with The Improve Group to ensure that agencies taking up the toolkit have the resources and support they need to benefit from the rich collection of tools and insights it provides. Stay tuned for the release of the toolkit!
+The resource is now available here on [Evaluation.gov]({{site.baseurl}}/assets/resources/The Improve Group PPCE Toolkit.pdf), on [Performance.gov](https://www.performance.gov/){:target="_blank"}, and will be shared widely with Federal agencies. OMB will also coordinate with The Improve Group to ensure that agencies taking up the toolkit have the resources and support they need to benefit from the rich collection of tools and insights it provides. We are very excited to announce the release of the toolkit!
 
 * * * * *
 
