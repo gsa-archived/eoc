@@ -1,7 +1,7 @@
 ---
 title: 'And the Award Goes To… The Improve Group Cooperative for their PPCE Evaluation Toolkit'
 layout: post
-date: September 25, 2024
+date: September 27, 2024
 author: The Evidence and Equity Teams, OMB PPM
 excerpt: On August 19, 2024, the Office of Management and Budget (OMB) and the U.S. General Services Administration (GSA)...
 aria: 'And the Award Goes To… The Improve Group Cooperative for their PPCE Evaluation Toolkit'
