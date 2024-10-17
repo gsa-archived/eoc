@@ -1,7 +1,7 @@
 ---
 title: 'Increasing Evidence Use through Research-Policy Partnerships'
 layout: post
-date: October 17, 2024
+date: October 21, 2024
 author: Lindsay Barclay, Gray Barrett, Michael Becker, Susanna Campbell, Brad Kent, and Joe Young
 excerpt: On April 17, 2024, the U.S. Department of State’s Bureau of Conflict and Stabilization Operations (CSO) and American University (AU) established an innovative research partnership...
 aria: 'Increasing Evidence Use through Research-Policy Partnerships'
