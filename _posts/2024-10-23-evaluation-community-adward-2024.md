@@ -172,7 +172,7 @@ The 2024 Evaluation Community Awards recipients highlighted below provide a glim
         Department of the Interior</p>
         <p>Brooke leads Interior’s evidence and evaluation team within the Office of the Secretary to advance Departmental learning, evidence-building, and program evaluation activities.</p>
     </div>
-</div>
+
 <blockquote class="padding-bottom-2">
     <p>
        “Brooke has done a stellar job of advancing a culture of evaluation across Interior. She meets with our bureaus and communicates the benefits of evaluation, emphasizing the benefits to our customers in understanding impact, what works, and equity. … [H]er greatest achievement this year may be that she is building evaluation capacity within our office. Brooke brought on two high potential, high performing PMFs and led them through a thoughtful and deliberate training process to reorient them from scientists into evaluators. With this new expanded and extremely capable team, Brooke has established a strong demand across Interior for logic models, outcomes analyses, and evaluation pre-work. 
