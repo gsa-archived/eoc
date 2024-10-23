@@ -1,7 +1,7 @@
 ---
-title: Announcing the 2024 Evaluation Community Awards Winners
+title: Announcing the 2023 Evaluation Community Awards Winners
 layout: post
-date: October 24, 2024
+date: October 23, 2023
 author: The Evidence Team, OMB
 excerpt: We are thrilled to share the winners of the Annual Evaluation Community Awards Program...
 aria: EOC Awards 2023 Blog Post
