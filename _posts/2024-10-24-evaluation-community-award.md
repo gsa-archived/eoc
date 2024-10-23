@@ -6,8 +6,8 @@ author: The Evidence Team, OMB
 excerpt: On behalf of the Evaluation Officer Council, it is our honor to announce the winners of the Fourth Annual Evaluation Community Awards Program! Each year, we are overwhelmed...
 aria: 'Increasing Evidence Use through Research-Policy Partnerships'
 tags: Evaluation Officer Council Evaluation Evidence Use
-filters: evaluation officer councul evaluation evidence use
-permalink: /2024-10-24-announcing-2024-evaluation-community-award/
+filters: evaluation officer council evaluation evidence use
+permalink: /announcing-2024-evaluation-community-award/
 image: golden-trophy-confetti.png
 img-alt: Golden trophy with confetti
 thumbnail: golden-trophy-confetti.png
