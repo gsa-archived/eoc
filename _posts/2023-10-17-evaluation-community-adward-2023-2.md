@@ -12,21 +12,21 @@ image: golden-trophy-thumbnail.png
 img-alt: Golden trophy
 ---
 
-<img src="{{site.baseurl}}/assets/images/blog/golden-trophy.png" alt="Golden trophy with stars" class="adward-post-img">
-We are thrilled to share the winners of the Annual Evaluation Community Awards Program, on behalf of the Evaluation Officer Council! These awards celebrate Federal civil service leaders committed to uplifting evaluation and evidence-based policymaking across the Federal Government whose work far too often goes unrecognized. Individuals from across the Federal evaluation community, as well as those who work alongside Federal evaluators, nominated 26 individuals and team, representing 15 different agencies. A cross-functional panel reviewed the submissions to provide recommendations for recipients in each category. OMB presented the awards at the October 2023 Evaluation Officer Council (EOC) meeting.
+<img src="{{site.baseurl}}/assets/images/blog/golden-trophy-confetti.png" alt="Golden trophy with confetti" class="adward-post-img">
+On behalf of the Evaluation Officer Council, it is our honor to announce the winners of the Fourth Annual Evaluation Community Awards Program! Each year, we are overwhelmed with pride and admiration for the individuals and teams nominated and selected to receive these awards, and this year is no exception. To honor Federal civil service leaders working tirelessly to advance evaluation and evidence-based policymaking across the Federal Government, we solicited nominations from across the Federal evaluation community. We received over 30 fantastic nominations representing 20 different agencies or components, and OMB announced the selected awardees at the October Evaluation Officer Council meeting.
 
-The winners of the 2023 Evaluation Community Awards profiled below reflect the commitment and ingenuity of the Federal evaluation community. The below excerpts from their nominations share compelling stories of how Federal evaluators develop high-quality evidence that program and policy leaders rely on, contributing to positive change across Government. The profiles of each recipient serve to showcase their excellent work, which we hope inspires others to connect with and celebrate the Federal evaluation community in all they do to improve Federal programs and enable evidence-based policymaking and decision-making.
+The 2024 Evaluation Community Awards recipients highlighted below provide a glimpse of the how the Federal evaluation community is working tirelessly to improve programs and operations across the Government. The profiles below share excerpts from the winning nominations to illustrate the myriad ways that Federal evaluators, and the high-quality evidence they generate, inform critical program and policy decisions and support positive change. We share these profiles to recognize the exemplary work of the awardees and inspire others to engage with and support the Federal evaluation community in all they do to improve Federal programs and decision-making!
 
 <div class="grid-row grid-gap">
     <div class="tablet:grid-col-6">
-        <h3 class="awrd-title"><a href="#distinguished">EOC Distinguished Contribution Award</a><br/><span class="awrd-sub-title">Megan Kays, OPM</span></h3>
-        <h3 class="awrd-title"><a href="#team-of-year">Evaluation and Evidence Team of the Year Award</a><br/><span class="awrd-sub-title">COVID-19 Public Education Campaign Team, HHS/DOC/EOP</span></h3>
-        <h3 class="awrd-title"><a href="#action-award">Evaluation in Action Award </a><br/><span class="awrd-sub-title">Enoh T. Ebong, USTDA</span></h3>
+        <h3 class="awrd-title"><a href="#distinguished">EOC Distinguished Contribution Award</a><br/><span class="awrd-sub-title">Shawn Klimek, DOC</span></h3>
+        <h3 class="awrd-title"><a href="#team-of-year">Evaluation and Evidence Team of the Year Award</a><br/><span class="awrd-sub-title">Analysis and Evaluation Division, SBA</span></h3>
+        <h3 class="awrd-title"><a href="#action-award">Evaluation in Action Award </a><br/><span class="awrd-sub-title">Michele Sumilas, USAID</span></h3>
     </div>
     <div class="tablet:grid-col-6">
-        <h3 class="awrd-title"><a href="#excellence">Excellence in Program Evaluation Award</a><br/><span class="awrd-sub-title">Marsha Silverberg, ED</span></h3>
-        <h3 class="awrd-title"><a href="#innovator">Federal Evaluation Innovator Award</a><br/><span class="awrd-sub-title">Paul O’Leary, SSA</span></h3>
-        <h3 class="awrd-title"><a href="#mentor">Outstanding Evaluation Mentor Award</a><br/><span class="awrd-sub-title">Maureen Wilce, HHS<br>Linda Vo, HHS</span></h3>
+        <h3 class="awrd-title"><a href="#excellence">Excellence in Program Evaluation Award</a><br/><span class="awrd-sub-title">Kasey Martin, USDA</span></h3>
+        <h3 class="awrd-title"><a href="#innovator">Federal Evaluation Innovator Award</a><br/><span class="awrd-sub-title">THomas Hertz, IRS</span></h3>
+        <h3 class="awrd-title"><a href="#mentor">Outstanding Evaluation Mentor Award</a><br/><span class="awrd-sub-title">Brooke Hanson, DOI<br>Savi Swick, DOL</span></h3>
     </div>
 </div>
 
@@ -34,19 +34,20 @@ The winners of the 2023 Evaluation Community Awards profiled below reflect the c
 <h3 class="awrd-title" id="distinguished">Evaluation Officer Council Distinguished Contribution Award<br/><span class="awrd-sub-title"><i>For Evaluation Officer Council members who make exceptional contributions to the Federal evaluation community.</i></span></h3>
 <div class="grid-row grid-gap">
     <div class="tablet:grid-col-2">
-        <img src="{{site.baseurl}}/assets/images/blog/megan-kays.png" alt="Megan Kays Headshot" class="adward-bio-img">
+        <img src="{{site.baseurl}}/assets/images/blog/shawn-klimek.png" alt="Shawn Klimek Headshot" class="adward-bio-img">
     </div>
     <div class="tablet:grid-col-10">
-        <p class="margin-0"><strong>Megan Kays</strong>, Evaluation Officer<br />
-        US Office of Personnel Management (OPM)</p>
-        <p>Meg leads the Office of Personnel Management’s (OPM) evaluation and evidence building initiatives under the Foundations for Evidence-Based Policymaking Act, including implementation of OPM’s Learning Agenda and Annual Evaluation Plans. Meg also coordinates initiatives related to strengthening the agency’s use of evidence in strategic initiatives and capacity-building for research and evaluation.</p>
+        <p class="margin-0"><strong>Shawn Klimek</strong>, Department of Commerce Evaluation Officer<br />
+        Office of the Under Secretary for Economic Affairs (OUSEA)<br />
+        Department of Commerce</p>
+        <p>Shawn collaborates with and assists bureaus and offices in complying with the Department of Commerce program evaluation policy and Evidence Act requirements; facilitates cross-bureau collaboration on evaluations and works with the Chief Data Officer and the Statistical Official to improve access and usability of data.</p>
     </div>
 </div>
 <blockquote class="padding-bottom-2">
     <p>
-       "Meg Kays has played a leading role in building a stronger culture of learning and continuous improvement at OPM. She led the development of OPM’s first Learning Agenda and first Research, Analysis, Statistics, and Evaluation Capacity Assessment.  The Learning Agenda includes questions related to top OPM and Administration priorities, and Meg is actively leading OPM-specific and Government-wide studies on these and other topics.
-       <br><br>
-       Meg has played a critical role in filling knowledge gaps related to OPM’s strategic plan and equity action plans. She established OPM’s first Research Community of Practice to foster cross-organizational connections and knowledge transfer among OPM’s research, evaluation, and statistics experts. She also established and led a cross-organizational Data Sharing Working Group to determine how to share data externally with research partners.  In a short period of time, Meg has become recognized within OPM as a trusted advisor to leaders, managers, researchers, evaluators, and analysts throughout the agency on matters related to research and evaluation."
+       "Mr. Klimek is committed to breaking silos and inspiring a culture of evaluation across DOC. He has worked with internal agency colleagues to support the design of a fast-track clearance process to promote efficiency and innovative solutions across DOC grant programs. He has led a collaborative and working agreement with statistical agencies to link data and enhance cross-departmental evaluations at a global, state, and local level. This collaboration is critical for evidence-building that impacts the economic and social well-being of individuals, small businesses, and communities."
+    <br><br>
+       The working agreement across statistical agencies and bureaus allows a deeper dive into the data by giving Evaluation leads better access and data linkage abilities to determine programmatic and participant outcomes and impact needed to meet various agency's evidence building and evaluation goals and objectives. The goal is to develop tools and models to better guide federal investments.  Under his leadership, bureaus have come together to work toward a common goal and participates in a community of practice, monthly, to share and learn from each other, which also further inspires a culture of evidence building and evaluation. During these presentations, all of DOC Bureau Heads and other key staff members are invited to learn and participate.”
     </p>
 </blockquote>
 
@@ -54,48 +55,40 @@ The winners of the 2023 Evaluation Community Awards profiled below reflect the c
 <h3 class="awrd-title" id="team-of-year">Evaluation and Evidence Team of the Year Award<br/><span class="awrd-sub-title"><i>For Federal teams who collaborate across disciplines and silos to conduct evaluation(s) that generate critical evidence for decision-making in or across agencies.</i></span></h3>
 <div class="grid-row grid-gap">
     <div class="tablet:grid-col-2">
-        <img src="{{site.baseurl}}/assets/images/blog/covid-education-campaign-team.png" alt="COVID-19 Public Education Campaign Team logo" class="adward-bio-img">
+        <img src="{{site.baseurl}}/assets/images/blog/analysis-evaluation-team.png" alt="Analysis and Evaluation Division Team logo" class="adward-bio-img">
     </div>
     <div class="tablet:grid-col-10">
-        <p class="margin-0"><strong>COVID-19 Public Education Campaign Team</strong><br />
-        Department of Health and Human Services, Department of Commerce, and Executive Office of the President</p>
+        <p class="margin-0"><strong>Analysis and Evaluation Division (AED)</strong><br />
+        Small Business Administration (SBA)</p>
+        <p>­
+        AED comprises of a division director, Evaluators, Data Scientists, and an Economist. Together this multi-disciplinary team has taken a portfolio approach to studying complex issues to generate the necessary evidence to inform decision-making at the enterprise level for this cabinet-level agency.
+        </p>­
     </div>
 </div>
 
 <div class="grid-row grid-gap">
     <div class="tablet:grid-col-6">
         <ul>
-            <li>Sarah Trigger, HHS/FDA</li>
-            <li>Katherine Margolis, HHS/FDA</li>
-            <li>Kathleen Yu, HHS/FDA</li>
-            <li>Daphney Dupervil, DOC/Census</li>
-            <li>Maysoon Malik, HHS</li>
-            <li>Monica Vines, DOC/Census</li>
-            <li>Elizabeth Petrun Sayers, HHS/FDA</li>
-            <li>Morgane Bennett, HHS/FDA</li>
+            <li>Shabori Sen, SBA</li>
+            <li>Sana Ahmed Wilder, formerly SBA</li>
+            <li>Travis Dorsey, SBA</li>
+            <li>Olivia Gonzalez, SBA</li>
+            <li>Shay Meinzer, SBA</li>
         </ul>
     </div>
     <div class="tablet:grid-col-6">
         <ul>
-            <li>Lynn Sokler, HHS/CDC</li>
-            <li>Allison Kurti, HHS/NIH</li>
-            <li>Jessica Weinberg, HHS/FDA </li>
-            <li>Joshua Peck, EOP</li>
-            <li>Trinidad Beleche, HHS</li>
-            <li>Nicholas Holtkamp, HHS</li>
-            <li>Lok Wong Samson, HHS</li>
-            <li>Aaron Kearsley, HHS</li>
+            <li>Akira Chou, SBA</li>
+            <li>Katherine Abrikian, SBA</li>
+            <li>Carlin Soler Kanchumarthy, SBA</li>
         </ul>
     </div>
 </div>
-
 <blockquote class="padding-bottom-2">
     <p>
-       "The HHS COVID-19 Public Education Campaign is a national initiative to increase public confidence in and uptake of COVID-19 vaccines and educate the public about the availability of COVID treatments while reinforcing basic prevention measures. The Campaign is led by a team of government employees on detail to HHS, including those who specialize in research and evaluation as well as those in other disciplines who led efforts on partnerships, media placement, and strategic planning. 
-       <br><br>
-       As one of the largest public education campaigns in U.S. history, evaluation was critical to demonstrating Campaign success and securing funding. The campaign relied on a multi-method approach to evaluate campaign effectiveness, including using social media analysis, in-depth interviews, focus groups, and longitudinal and cross-sectional nationally representative surveys.  This methodology reflects a novel way to simultaneously evaluate short- and long-term campaign effectiveness.
-       <br><br>
-       As COVID-19 was an evolving pandemic, the team demonstrated agility and efficiency to quickly analyze data and tailor messaging. The evaluation findings show that the Campaign helped the public make informed decisions about their health and COVID-19. Specifically, exposure to the campaign increased vaccine confidence and likelihood of first-dose vaccination."
+       “… this multi-disciplinary team has taken a portfolio approach to studying complex issues to generate the necessary evidence to inform decision-making at the enterprise level for this cabinet-level agency. [The Analysis and Evaluation Division’s] impact spans the SBA and the federal government. This team was tapped by OMB to undertake an equity in procurement evaluation for the entire federal government. The equity in procurement portfolio has advanced using a mixed-method approach comprised of quantitative, qualitative, and experimental methods. … Further, the team is working with GSA's Office of Evaluation Sciences to study how to effectively communicate with federal agencies and contractors to increase participation in SBA certification programs.
+    <br><br>
+       Moreover, AED proactively uses a range of available evaluation methods to answer specific learning questions to continuously improve program operations and inform decision-making. … AED continues to work across the agency to break down silos, cultivate a learning culture, and be the resource for evaluations, analyses, and process improvements. These are some of AED's tireless efforts, making this team worthy of this top honor. “
     </p>
 </blockquote>
 
@@ -103,42 +96,45 @@ The winners of the 2023 Evaluation Community Awards profiled below reflect the c
 <h3 class="awrd-title" id="action-award">Evaluation in Action Award<br/><span class="awrd-sub-title"><i>For Federal executives or program leaders who use evaluation results to drive program improvement.</i></span></h3>
 <div class="grid-row grid-gap">
     <div class="tablet:grid-col-2">
-        <img src="{{site.baseurl}}/assets/images/blog/enoh-ebong.png" alt="Enoh T. Ebong Headshot" class="adward-bio-img">
+        <img src="{{site.baseurl}}/assets/images/blog/michele-sumilas.png" alt="Michele Sumilas Headshot" class="adward-bio-img">
     </div>
     <div class="tablet:grid-col-10">
-        <p class="margin-0"><strong>Enoh T. Ebong</strong>, Director<br />
-            US Trade and Development Agency (USTDA)</p>
-        <p>Enoh T. Ebong is the Director of the U.S. Trade and Development Agency. Nominated by President Biden to serve as USTDA’s Director, she was confirmed by unanimous consent of the U.S. Senate. As Director, Ms. Ebong leads USTDA in its efforts to develop sustainable, clean infrastructure and foster economic growth in emerging economies, while also supporting U.S. jobs through the exports of U.S. goods and services.<br/></p>
+        <p class="margin-0"><strong>Michele Sumilas</strong>, Acting Deputy 
+        Administrator for Management and Resources<br />
+        Bureau for Planning, Learning and Resource Management (PLR)<br />
+        U.S. Agency for International Development</p>
+        <p>Michele oversees the overall management, budgeting, and day-to-day operations of USAID. In this role, she drives on key priorities such as growing and strengthening USAID's global workforce, advancing equity and inclusion, and slashing administrative and programmatic burdens.</p>
     </div>
 </div>
 <blockquote class="padding-bottom-2">
     <p>
-       "Director Ebong has a long history of using and elevating evaluation and evidence to help make evidence-informed decisions. The examples are too numerous to count, but some recent examples include:
-       <ul class="quote-arrow-list">
-            <li>Insistence on using evidence from past climate obligations to improve a strategic objective goal in the 4-Year Strategic Plan.</li>
-            <li>Use of findings [from] pilot projects to inform how resources can best be prioritized during consideration of new pilot project activities. This led to changes to a program’s design to support effective and responsible use of U.S. government resources.</li>
-            <li>Use of multiple evaluation findings relating to stakeholder responsiveness and resulting impacts to USTDA’s ability to understand and document outcomes. Director Ebong uses those findings to discuss with stakeholders’ senior leadership the importance of providing information during the evaluation process.  Director Ebong’s approach to always include Monitoring & Evaluation representatives in the room during these discussions helps to underscore the importance to USTDA of monitoring, evaluation, and evidence-based learning."</li>
-        </ul>
+       “As Assistant to the Administrator for the Bureau for Planning, Learning and Resource Management, Michele Sumilas provided consistent leadership support, direction, resources and encouragement for the generation and use of evidence through evaluations and other processes to inform USAID's most important policy, program and budget decisions. … she consistently asked for evidence synthesis to inform the most challenging policy questions, such as understanding the underlying factors related to migration and adopting meaningful measures of success for policy priorities such as mitigating climate change. She advanced new policies and papers related to evaluations and evidence, such as championing the first-of-its-kind Knowledge Management and Organizational Learning (KMOL) Policy at USAID, and empowering staff to develop a new white paper outlining USAID's principles for evidence generation and use. 
+    <br><br>
+       … Michele partnered with other senior champions of evidence and evaluation, … to advance USAID's evidence and evaluation practices across all program areas. Under her leadership, all USAID policies now include a practical implementation plan with sections on how monitoring and evaluation will be used to track policy implementation and make adaptations as new evidence and learning emerge…” 
     </p>
 </blockquote>
+
 <hr class="hr-color margin-top-5">
-<h3 class="awrd-title" id="excellence">Excellence in Program Evaluation Award<br/><span class="awrd-sub-title"><i>For evaluation leaders or staff who keep initiatives on track and deliver high quality evaluations that uphold the standards of relevance and utility; independence and objectivity; rigor, transparency, and ethics.</i></span></h3>
+<h3 class="awrd-title" id="excellence">Excellence in Program Evaluation Award<br/><span class="awrd-sub-title"><i>For evaluation leaders or staff who keep initiatives on track and deliver high-quality evaluations that uphold the standards of relevance and utility; independence and objectivity; rigor, transparency, and ethics.</i></span></h3>
 <div class="grid-row grid-gap">
     <div class="tablet:grid-col-2">
-        <img src="{{site.baseurl}}/assets/images/blog/marsha-silverberg.png" alt="Marsha Silverberg Headshot" class="adward-bio-img">
+        <img src="{{site.baseurl}}/assets/images/blog/kasey-martin.png" alt="Kasey Martin Headshot" class="adward-bio-img">
     </div>
     <div class="tablet:grid-col-10">
-        <p class="margin-0"><strong>Marsha Silverberg</strong>, Associate Commissioner<br />
-        Institute of Education Sciences, National Center for Educational Evaluation and Regional Assistance<br />
-        US Department of Education</p>
-        <p>Marsha leads the evaluation division at the U.S. Department of Education, working with a talented team of researchers and analysts to design and conduct rigorous studies of federal programs and federally supported strategies.  Drawing on nearly three decades of experience, she has helped the Department develop its evidence agenda, supporting program offices and grantees in both using and generating evaluations to improve program outcomes.</p>
+        <p class="margin-0"><strong>Kasey J. Martin</strong>, Research & Program 
+        Evaluation Branch Chief<br />
+        Rural Development (RD), Innovation Center, Data Analytics Division<br />
+        US Department of Agriculture</p>
+        <p>Kasey leads and manages the development and implementation of the performance evaluation framework, collection and coordination of data within RD and other relevant Federal partners, identifying and implementing the best methodology for analysis and reporting, and high-quality presentation of findings to local and national level officials.</p>
     </div>
 </div>
 <blockquote class="padding-bottom-2">
     <p>
-       "Marsha truly exemplifies each of values found in the Department’s evaluation policy, modeling rigor, utility, objectivity, transparency, and ethics. Her tireless work across the Department garnered senior leader (Assistant Secretary-level) buy-in to design and conduct the Department’s first-ever randomized controlled trial of a federal student aid program, rigorously evaluating the impact of access to Pell Grant funds for short-term programs. The resulting study yielded evidence crucial to Executive and Legislative branch policymakers.
-       <br><br>
-       Marsha’s fair, open, and forthright style has allowed her to build productive working relationships with stakeholders both within and beyond ED, including staunch advocates who were wary of rigorous program evaluation. Several evaluations, both recently completed and underway, would not have been possible without her collegial spirit and commitment to learning for the sake of program improvement, including impact studies of the DC Opportunity Scholarship Program and the 21st Century Community Learning Centers Program. As she nears her 25th year with the Department, Marsha has been a role model for a generation of program evaluators known government-wide for their commitment to excellence.”
+       “… Dr. Martin oversees a portfolio of program evaluations and other evidence-building initiatives that mirror Rural Development's (RD) wide-ranging mission. [Her] commitment to the standards of relevance and utility, independence and objectivity, and rigor is evident in her ongoing effort to build a valid and reliable body of program and socio-economic data to assess RD's impact on rural America. Making the data accessible to the public through a set of tools and resources demonstrates her commitment to transparency and ethics. The Rural Data Gateway, for example, includes investment data for more than 65 RD programs that can be viewed and downloaded by members of the public.
+    <br><br>
+       … Dr. Martin and her team conduct innovative, relevant, objective, and rigorous program evaluations.  As one example of this, they built a rural-centric Distressed Community Index to assess the extent to which RD investments result in community-wide improvements in living conditions, amenities, and services.  The analysis produced conclusive evidence that RD programs collectively improved rural communities' wellbeing. It found that a $10 million investment in a rural community can lift a community from a distressed to at-risk status. 
+    <br><br>
+       Dr. Martin has also been an influential leader at USDA. Her presentations on evaluation designs, methods, and results generate interest by others who want to apply RD's methods to evaluations of their programs.”
     </p>
 </blockquote>
 
@@ -146,20 +142,20 @@ The winners of the 2023 Evaluation Community Awards profiled below reflect the c
 <h3 class="awrd-title" id="innovator">Federal Evaluation Innovator Award<br/><span class="awrd-sub-title"><i>For evaluation mavericks who think up creative and outside-the-box evaluation ideas, help design them, and see them through to execution.</i></span></h3>
 <div class="grid-row grid-gap">
     <div class="tablet:grid-col-2">
-        <img src="{{site.baseurl}}/assets/images/blog/paul-leary.png" alt="Paul O’Leary Headshot" class="adward-bio-img">
+        <img src="{{site.baseurl}}/assets/images/blog/tom-hertz.png" alt="Tom Hertz Headshot" class="adward-bio-img">
     </div>
     <div class="tablet:grid-col-10">
-        <p class="margin-0"><strong>Paul O’Leary</strong>, Senior Economist<br />
-        Office of Retirement and Disability Policy, Office of Research, Demonstration, and Employment Support<br />
-        US Social Security Administration</p>
-        <p>Paul leads SSA’s development of data products to support disability and return-to-work analyses. These data products transform complex administrative data into easy-to-use research files that allow SSA to answer complex research questions quickly and efficiently. Paul supports a cadre of analysts in using this data and conducts rapid cycle analyses to support policy development and program evaluation.</p>
+        <p class="margin-0"><strong>Thomas Hertz</strong>, Senior Economist
+        Office of Research, Applied Analytics, and Statistics<br />
+        Internal Revenue Service, Department of Commerce</p>
+        <p>Tom’s team orchestrates strategic partnerships with the academic community and key external stakeholders to generate greater understanding on topics pertaining to behavioral insights and IRS research priorities, develop new methodologies and validate insights.</p>
     </div>
 </div>
 <blockquote class="padding-bottom-2">
     <p>
-       “Paul O’Leary, a Senior Economist at the SSA, has led the development of an innovative evaluation infrastructure that includes the creation of the Disability Analysis Files (DAF) and National Beneficiary Surveys. As part of his work leading the agency’s Ticket to Work (TTW) evaluation, Paul had the foresight to identify the need for these data for broader evidence-building and evaluation.  … These files serve as a key source of information on program experiences and return-to-work outcomes for SSA disability beneficiaries. The data files have been used to conduct evaluations to support major regulatory changes to the Ticket to Work program, as well as by the Department of Education, GAO, and numerous external researchers.
-       <br><br>
-       In addition to developing the data and mentoring junior members of SSA’s evaluation team, Paul’s own evaluations using these data have set the standard by which the TTW program has been assessed. His rigorous analytical approach to the TTW evaluation has often corrected the naive analyses from external stakeholders that created misperceptions about the program. Paul’s work is foundational to the agency’s efforts to fulfill the promise of the Evidence Act.”
+       “Tom Hertz developed a method to assess fairness with regard to race in pre-refund audits for taxpayers who claim the Earned Income Tax Credit (EITC) at the IRS.  This was a difficult project, with a high profile in the press and with external stakeholders, especially the Treasury Advisory Committee on Racial Equity. 
+    <br><br>
+       Taxpayers do not report race when they file a 1040.  So, first, Tom participated in the development of a model to impute race data for tax filers, collaborating with a team of academics and the Treasury Department. He worked with program personnel to integrate a measure of compliance risk that allowed for a more nuanced bias assessment.  He also worked closely with leadership and Treasury policymakers to communicate findings and mitigation options.  The mitigations showed program administrators that it was possible to both decrease disparate impact and also increase revenue.  Through his efforts, the IRS has effective methods for evaluating disparate impacts that can be applied to other workstreams.  Tom is a persuasive advocate for this analysis and has worked long hours to bring it to fruition.”   
     </p>
 </blockquote>
 
@@ -167,40 +163,40 @@ The winners of the 2023 Evaluation Community Awards profiled below reflect the c
 <h3 class="awrd-title" id="mentor">Outstanding Evaluation Mentor Award<br/><span class="awrd-sub-title"><i>For evaluation leaders or staff who go above and beyond to provide mentorship, support, and guidance to others in the Federal evaluation community.</i></span></h3>
 <div class="grid-row grid-gap">
     <div class="tablet:grid-col-2">
-        <img src="{{site.baseurl}}/assets/images/blog/maureen-wilce.png" alt="Maureen Wilce Headshot" class="adward-bio-img">
+        <img src="{{site.baseurl}}/assets/images/blog/brooke-hanson.png" alt="Brooke Hanson Headshot" class="adward-bio-img">
     </div>
-    <div class="tablet:grid-col-10">
-        <p class="margin-0"><strong>Maureen Wilce</strong>, Evaluation Team Lead<br />
-        Centers for Disease Control<br />
-        U.S. Department of Health and Human Services</p>
-        <p>Maureen leads a multidisciplinary team in building evaluation capacity within the National Asthma Control Program and its partners. Key to this is developing and providing technical support based on a suite of evaluation tools based on the CDC Framework for Program Evaluation and the principles and standards established by evaluation professional organizations.</p>
+        <p class="margin-0"><strong>Brooke Hanson</strong>, Deputy Evaluation Officer
+        Office of Planning & Performance Management<br />
+        Department of the Interior</p>
+        <p>Brooke leads Interior’s evidence and evaluation team within the Office of the Secretary to advance Departmental learning, evidence-building, and program evaluation activities.</p>
     </div>
 </div>
 <blockquote class="padding-bottom-2">
     <p>
-       “Maureen Wilce has inculcated in countless evaluators - novice and seasoned alike - an appreciation for an evaluation approach rooted in the CDC Evaluation Framework. She mentors the multitudes: her team members, who never really leave Maureen’s team even when they’ve moved on; solo evaluators in her center and beyond who need a thought partner (or therapist); evaluation fellows whose supervisors aren’t grounded in the Framework; and staff in funded state programs, whether they’re the epidemiologist-turned-evaluator (yesterday) or the evaluator with decades of experience.
-       <br><br>
-       Maureen truly practices what she preaches; she brings a practical approach to evaluation, emphasizing utility and promoting efficient and effective use of evaluation resources (and by extension, programmatic resources). Maureen’s research on evaluative thinking illustrates her awareness that we make great progress by helping colleagues create space to reflect on their work, project its impact, bring multiple perspectives to their work (even dissenting ones), and draw on evidence in decision making. Many, many of us have learned this from Maureen. Her influence is deep, wide, and will persist long past her 2024 retirement.”
+       "Brooke has done a stellar job of advancing a culture of evaluation across Interior. She brought on two high-potential PMFs and led them through a thoughtful training process to reorient them from scientists into evaluators."
+    <br><br>
+       The advancements speak for themselves. Our first significant evaluation, [one that is] culturally sensitive to native Hawaiians, is kicking off. We are enabling evaluating effectiveness in processes to relocate coastal Tribal communities at risk due to climate. Our Annual Evaluation Plan reflects increasing buy-in and commitment from our program offices. Our learning agenda update is robust, dynamic, inclusive, and strongly linked to our outcome focused strategic plan.
+    <br><br> 
+       In short, Brooke is coach, a mentor, a trainer, an analyst, and always, an evaluator with an eye on achieving outcomes. I can't imagine anyone more deserving of this recognition.”
     </p>
 </blockquote>
 
 <div class="grid-row grid-gap">
     <div class="tablet:grid-col-2">
-        <img src="{{site.baseurl}}/assets/images/blog/linda-vo.png" alt="Linda Vo headshot" class="adward-bio-img">
+        <img src="{{site.baseurl}}/assets/images/blog/savi-swick.png" alt="Savi Swick Headshot" class="adward-bio-img">
     </div>
     <div class="tablet:grid-col-10">
-        <p class="margin-0"><strong>Linda Vo</strong>, Knowledge Translation Program Coordinator, Rehabilitation Program Specialist<br />
-        Administration for Community Living<br />
-        U.S. Department of Health and Human Services</p>
-        <p>Linda was the Evaluation Lead in the Performance and Evaluation Office at the Centers for Disease Control and Prevention, where she led agency-wide evaluation and capacity-building activities and oversaw the CDC Evaluation Fellowship Program. In June 2023, she joined National Institute on Disability, Independent Living, and Rehabilitation Research (NIDILRR) within HHS’s Agency for Community Living. She currently serves as the Knowledge Translation Program Coordinator and is responsible for developing and managing NIDILRR’s knowledge translation program and monitoring NIDILRR-funded knowledge translation grants and contracts.</p>
+        <p class="margin-0"><strong>Savi Swick</strong>, Director of Research, 
+        Employment and Training Programs<br />
+        Chief Evaluation Office (CEO), Office of Assistant Secretary for Policy<br />
+        Department of Labor</p>
+        <p>Savi leads research and evaluation activities in the Chief Evaluation Office within the Department of Labor, working with a talented team of evaluators to design and conduct rigorous studies on a range of employment and training programs.  She oversees the development of the learning agendas, knowledge translation and evidence capacity building to support program improvement in Employment and Training Administration, Office of Disability Employment Policy, Women’s Bureau and the Veterans’ Employment and Training Services agencies within the Department.</p>
     </div>
 </div>
 <blockquote class="padding-bottom-2">
     <p>
-       “Linda Vo has been a mentor and a mentor’s mentor. In an agency filled with interns and fellows, Linda has shepherded many new public health professionals as they navigate the challenges a federal bureaucracy presents. She has been patient and persistent, provided encouragement, given thorough and direct feedback on work products and on personal presentation, and tailored her approach to the individual professionals. More importantly, she has been a sounding board and fierce advocate for newer evaluators in the agency, especially people of color. She has listened, she has believed, she has acted.
+       “Savi is a leader and an inspiring mentor who has helped and supported many over her long career in the federal service. During her long career as an evaluation leader, Savi has built an incredible reputation as a trustworthy mentor to both junior staff and senior leadership. Savi is warm and kind, collegial and compassionate, and never hesitant to support her colleagues. … and is a trusted advisor to both her superiors and her peers.  
        <br><br>
-       In her role with CDC’s Evaluation Fellowship, Linda was a confidante to many fellows. ... For more seasoned evaluators in the agency, Linda has provided guidance not only on how to be a good evaluator (though she does that, too), but on how to be a good mentor. 
-       <br><br>
-       For all of us, Linda has modeled the courage, honesty, and vulnerability that are perhaps the hardest part of the interpersonal domain in the evaluator competencies. She has been a cheerleader, an ally, a teacher to many.”
+       "Savi has been an exceptional mentor from the day she joined the Chief Evaluation Office at the Department of Labor… Through weekly meetings and her open-door policy, Savi has cultivated a welcoming environment to troubleshoot challenges and develop solutions. Most importantly, Savi has encouraged my development of leadership competencies by providing me opportunities to lead in our office (e.g., Doctoral Summer Fellowship Program), and outside of our office (e.g., Interagency Council on Evaluation Policy). During a tumultuous period in our office, she served as a steadying force by maintaining the organizational culture of the office. Through her work, Savi exemplifies the values, vision, and mission of the Department of Labor and is the gold standard of outstanding mentorship."
     </p>
 </blockquote>
