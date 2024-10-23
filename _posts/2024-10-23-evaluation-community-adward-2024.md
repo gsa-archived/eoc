@@ -27,7 +27,7 @@ The 2024 Evaluation Community Awards recipients highlighted below provide a glim
     </div>
     <div class="tablet:grid-col-6">
         <h3 class="awrd-title"><a href="#excellence">Excellence in Program Evaluation Award</a><br/><span class="awrd-sub-title">Kasey Martin, USDA</span></h3>
-        <h3 class="awrd-title"><a href="#innovator">Federal Evaluation Innovator Award</a><br/><span class="awrd-sub-title">THomas Hertz, IRS</span></h3>
+        <h3 class="awrd-title"><a href="#innovator">Federal Evaluation Innovator Award</a><br/><span class="awrd-sub-title">Thomas Hertz, IRS</span></h3>
         <h3 class="awrd-title"><a href="#mentor">Outstanding Evaluation Mentor Award</a><br/><span class="awrd-sub-title">Brooke Hanson, DOI<br>Savi Swick, DOL</span></h3>
     </div>
 </div>
