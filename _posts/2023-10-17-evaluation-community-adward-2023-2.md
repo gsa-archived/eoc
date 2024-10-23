@@ -8,8 +8,10 @@ aria: EOC Awards 2024 Blog Post
 tags: Evaluation-Officer-Council Evaluation
 filters: evaluation-officer-council evaluation
 permalink: /2023-10-17-announcing-2023-evaluation-community-awards-2/
-image: golden-trophy-thumbnail.png
-img-alt: Golden trophy
+image: golden-trophy-confetti.png
+img-alt: Golden trophy with confetti
+thumbnail: golden-trophy-confetti.png
+thumbnail-alt: Golden trophy with confetti
 ---
 
 <img src="{{site.baseurl}}/assets/images/blog/golden-trophy-confetti.png" alt="Golden trophy with confetti" class="adward-post-img">
