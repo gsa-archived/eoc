@@ -4,7 +4,7 @@ layout: post
 date: October 24, 2024
 author: The Evidence Team, OMB
 excerpt: On behalf of the Evaluation Officer Council, it is our honor to announce the winners of the Fourth Annual Evaluation Community Awards Program! Each year, we are overwhelmed...
-aria: 'Increasing Evidence Use through Research-Policy Partnerships'
+aria: 'EOC Awards 2024 Blog Post'
 tags: Evaluation Officer Council Evaluation Evidence Use
 filters: evaluation officer council evaluation evidence use
 permalink: /announcing-2024-evaluation-community-award/
