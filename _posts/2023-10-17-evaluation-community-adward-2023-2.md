@@ -1,9 +1,9 @@
 ---
 title: Congratulations to the 2024 Evaluation Community Award Winners!
 layout: post
-date: October 23, 2023
+date: October 24, 2024
 author: The Evidence Team, OMB
-excerpt: We are thrilled to share the winners of the Annual Evaluation Community Awards Program...
+excerpt: On behalf of the Evaluation Officer Council, it is our honor to announce the winners of the Fourth Annual Evaluation Community Awards Program! Each year, we are overwhelmed...
 aria: EOC Awards 2024 Blog Post
 tags: Evaluation-Officer-Council Evaluation
 filters: evaluation-officer-council evaluation
