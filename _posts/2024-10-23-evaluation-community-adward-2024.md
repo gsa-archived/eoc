@@ -36,7 +36,7 @@ The 2024 Evaluation Community Awards recipients highlighted below provide a glim
 <h3 class="awrd-title" id="distinguished">Evaluation Officer Council Distinguished Contribution Award<br/><span class="awrd-sub-title"><i>For Evaluation Officer Council members who make exceptional contributions to the Federal evaluation community.</i></span></h3>
 <div class="grid-row grid-gap">
     <div class="tablet:grid-col-2">
-        <img src="{{site.baseurl}}/assets/images/blog/shawn-klimek.png" alt="Shawn Klimek Headshot" class="adward-bio-img">
+        <img src="{{site.baseurl}}/assets/images/blog/shawn-klimek-r.png" alt="Shawn Klimek Headshot" class="adward-bio-img">
     </div>
     <div class="tablet:grid-col-10">
         <p class="margin-0"><strong>Shawn Klimek</strong>, Department of Commerce Evaluation Officer<br />
@@ -57,7 +57,7 @@ The 2024 Evaluation Community Awards recipients highlighted below provide a glim
 <h3 class="awrd-title" id="team-of-year">Evaluation and Evidence Team of the Year Award<br/><span class="awrd-sub-title"><i>For Federal teams who collaborate across disciplines and silos to conduct evaluation(s) that generate critical evidence for decision-making in or across agencies.</i></span></h3>
 <div class="grid-row grid-gap">
     <div class="tablet:grid-col-2">
-        <img src="{{site.baseurl}}/assets/images/blog/analysis-evaluation-team.png" alt="Analysis and Evaluation Division Team logo" class="adward-bio-img">
+        <img src="{{site.baseurl}}/assets/images/blog/analysis-evaluation-team-r.png" alt="Analysis and Evaluation Division Team logo" class="adward-bio-img">
     </div>
     <div class="tablet:grid-col-10">
         <p class="margin-0"><strong>Analysis and Evaluation Division (AED)</strong><br />
@@ -75,11 +75,11 @@ The 2024 Evaluation Community Awards recipients highlighted below provide a glim
             <li>Sana Ahmed Wilder, formerly SBA</li>
             <li>Travis Dorsey, SBA</li>
             <li>Olivia Gonzalez, SBA</li>
-            <li>Shay Meinzer, SBA</li>
         </ul>
     </div>
     <div class="tablet:grid-col-6">
         <ul>
+            <li>Shay Meinzer, SBA</li>
             <li>Akira Chou, SBA</li>
             <li>Katherine Abrikian, SBA</li>
             <li>Carlin Soler Kanchumarthy, SBA</li>
@@ -144,7 +144,7 @@ The 2024 Evaluation Community Awards recipients highlighted below provide a glim
 <h3 class="awrd-title" id="innovator">Federal Evaluation Innovator Award<br/><span class="awrd-sub-title"><i>For evaluation mavericks who think up creative and outside-the-box evaluation ideas, help design them, and see them through to execution.</i></span></h3>
 <div class="grid-row grid-gap">
     <div class="tablet:grid-col-2">
-        <img src="{{site.baseurl}}/assets/images/blog/tom-hertz.png" alt="Tom Hertz Headshot" class="adward-bio-img">
+        <img src="{{site.baseurl}}/assets/images/blog/tom-hertz-r.png" alt="Tom Hertz Headshot" class="adward-bio-img">
     </div>
     <div class="tablet:grid-col-10">
         <p class="margin-0"><strong>Thomas Hertz</strong>, Senior Economist
@@ -185,7 +185,7 @@ The 2024 Evaluation Community Awards recipients highlighted below provide a glim
 
 <div class="grid-row grid-gap">
     <div class="tablet:grid-col-2">
-        <img src="{{site.baseurl}}/assets/images/blog/savi-swick.png" alt="Savi Swick Headshot" class="adward-bio-img">
+        <img src="{{site.baseurl}}/assets/images/blog/savi-swick-2.png" alt="Savi Swick Headshot" class="adward-bio-img">
     </div>
     <div class="tablet:grid-col-10">
         <p class="margin-0"><strong>Savi Swick</strong>, Director of Research, 
