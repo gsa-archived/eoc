@@ -56,21 +56,21 @@ The 2024 Evaluation Community Awards recipients highlighted below provide a glim
 <hr class="hr-color margin-top-5">
 <h3 class="awrd-title" id="team-of-year">Evaluation and Evidence Team of the Year Award<br/><span class="awrd-sub-title"><i>For Federal teams who collaborate across disciplines and silos to conduct evaluation(s) that generate critical evidence for decision-making in or across agencies.</i></span></h3>
 
-<div style="text-align: center;">
+<div style="display: flex; align-items: flex-start; gap: 20px;">
 
-    <img src="{{site.baseurl}}/assets/images/blog/analysis-evaluation-team-r.png" alt="Analysis and Evaluation Division Team logo" style="display:block; margin:auto; width:60%; max-width:450px;">
+    <div style="flex-shrink: 0;">
+        <img src="{{site.baseurl}}/assets/images/blog/analysis-evaluation-team-s.png" alt="Analysis and Evaluation Division Team logo" style="width:300px; max-width:100%;">
+    </div>
 
-</div>
-<br>
-<div class="grid-row grid-gap">
-    <div class="tablet:grid-col-10">
+    <div>
         <p class="margin-0"><strong>Analysis and Evaluation Division (AED)</strong><br />
         Small Business Administration (SBA)</p>
         <p>­
-        AED comprises of a division director, Evaluators, Data Scientists, and an Economist. Together this multi-disciplinary team has taken a portfolio approach to studying complex issues to generate the necessary evidence to inform decision-making at the enterprise level for this cabinet-level agency.
+        AED comprises a division director, Evaluators, Data Scientists, and an Economist. Together this multi-disciplinary team has taken a portfolio approach to studying complex issues to generate the necessary evidence to inform decision-making at the enterprise level for this cabinet-level agency.
         </p>­
     </div>
 </div>
+
 
 <div class="grid-row grid-gap">
     <div class="tablet:grid-col-6">
