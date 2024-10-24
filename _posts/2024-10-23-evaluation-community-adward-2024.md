@@ -57,7 +57,7 @@ The 2024 Evaluation Community Awards recipients highlighted below provide a glim
 <h3 class="awrd-title" id="team-of-year">Evaluation and Evidence Team of the Year Award<br/><span class="awrd-sub-title"><i>For Federal teams who collaborate across disciplines and silos to conduct evaluation(s) that generate critical evidence for decision-making in or across agencies.</i></span></h3>
 
 <div style="display: flex; align-items: flex-start; gap: 20px;">
-
+    
     <div style="flex-shrink: 0;">
         <img src="{{site.baseurl}}/assets/images/blog/analysis-evaluation-team-s.png" alt="Analysis and Evaluation Division Team logo" style="width:300px; max-width:100%;">
     </div>
@@ -66,7 +66,7 @@ The 2024 Evaluation Community Awards recipients highlighted below provide a glim
         <p class="margin-0"><strong>Analysis and Evaluation Division (AED)</strong><br />
         Small Business Administration (SBA)</p>
         <p>­
-        AED comprises a division director, Evaluators, Data Scientists, and an Economist. Together this multi-disciplinary team has taken a portfolio approach to studying complex issues to generate the necessary evidence to inform decision-making at the enterprise level for this cabinet-level agency.
+        AED comprises of a division director, Evaluators, Data Scientists, and an Economist. Together this multi-disciplinary team has taken a portfolio approach to studying complex issues to generate the necessary evidence to inform decision-making at the enterprise level for this cabinet-level agency.
         </p>­
     </div>
 </div>
