@@ -36,7 +36,7 @@ The 2024 Evaluation Community Awards recipients highlighted below provide a glim
 <h3 class="awrd-title" id="distinguished">Evaluation Officer Council Distinguished Contribution Award<br/><span class="awrd-sub-title"><i>For Evaluation Officer Council members who make exceptional contributions to the Federal evaluation community.</i></span></h3>
 <div class="grid-row grid-gap">
     <div class="tablet:grid-col-2">
-        <img src="{{site.baseurl}}/assets/images/blog/shawn-klimek-r.png" alt="Shawn Klimek Headshot" class="adward-bio-img">
+        <img src="{{site.baseurl}}/assets/images/blog/shawn-klimek.png" alt="Shawn Klimek Headshot" class="adward-bio-img">
     </div>
     <div class="tablet:grid-col-10">
         <p class="margin-0"><strong>Shawn Klimek</strong>, Department of Commerce Evaluation Officer<br />
@@ -144,7 +144,7 @@ The 2024 Evaluation Community Awards recipients highlighted below provide a glim
 <h3 class="awrd-title" id="innovator">Federal Evaluation Innovator Award<br/><span class="awrd-sub-title"><i>For evaluation mavericks who think up creative and outside-the-box evaluation ideas, help design them, and see them through to execution.</i></span></h3>
 <div class="grid-row grid-gap">
     <div class="tablet:grid-col-2">
-        <img src="{{site.baseurl}}/assets/images/blog/tom-hertz-r.png" alt="Tom Hertz Headshot" class="adward-bio-img">
+        <img src="{{site.baseurl}}/assets/images/blog/tom-hertz.png" alt="Tom Hertz Headshot" class="adward-bio-img">
     </div>
     <div class="tablet:grid-col-10">
         <p class="margin-0"><strong>Thomas Hertz</strong>, Senior Economist
@@ -185,7 +185,7 @@ The 2024 Evaluation Community Awards recipients highlighted below provide a glim
 
 <div class="grid-row grid-gap">
     <div class="tablet:grid-col-2">
-        <img src="{{site.baseurl}}/assets/images/blog/savi-swick-2.png" alt="Savi Swick Headshot" class="adward-bio-img">
+        <img src="{{site.baseurl}}/assets/images/blog/savi-swick.png" alt="Savi Swick Headshot" class="adward-bio-img">
     </div>
     <div class="tablet:grid-col-10">
         <p class="margin-0"><strong>Savi Swick</strong>, Director of Research, 
