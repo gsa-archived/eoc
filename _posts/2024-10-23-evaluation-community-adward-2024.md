@@ -58,9 +58,10 @@ The 2024 Evaluation Community Awards recipients highlighted below provide a glim
 
 <div style="text-align: center;">
 
-    <img src="{{site.baseurl}}/assets/images/blog/analysis-evaluation-team-r.png" alt="Analysis and Evaluation Division Team logo" style="display:block; margin:auto; width:80%; max-width:600px;">
+    <img src="{{site.baseurl}}/assets/images/blog/analysis-evaluation-team-r.png" alt="Analysis and Evaluation Division Team logo" style="display:block; margin:auto; width:60%; max-width:450px;">
 
 </div>
+<br>
 <div class="grid-row grid-gap">
     <div class="tablet:grid-col-10">
         <p class="margin-0"><strong>Analysis and Evaluation Division (AED)</strong><br />
