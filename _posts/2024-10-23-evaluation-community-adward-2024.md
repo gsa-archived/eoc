@@ -55,10 +55,13 @@ The 2024 Evaluation Community Awards recipients highlighted below provide a glim
 
 <hr class="hr-color margin-top-5">
 <h3 class="awrd-title" id="team-of-year">Evaluation and Evidence Team of the Year Award<br/><span class="awrd-sub-title"><i>For Federal teams who collaborate across disciplines and silos to conduct evaluation(s) that generate critical evidence for decision-making in or across agencies.</i></span></h3>
+
+<div style="text-align: center;">
+
+    <img src="{{site.baseurl}}/assets/images/blog/analysis-evaluation-team-r.png" alt="Analysis and Evaluation Division Team logo" style="display:block; margin:auto; width:80%; max-width:600px;">
+
+</div>
 <div class="grid-row grid-gap">
-    <div class="tablet:grid-col-2">
-        <img src="{{site.baseurl}}/assets/images/blog/analysis-evaluation-team-r.png" alt="Analysis and Evaluation Division Team logo" class="adward-bio-img">
-    </div>
     <div class="tablet:grid-col-10">
         <p class="margin-0"><strong>Analysis and Evaluation Division (AED)</strong><br />
         Small Business Administration (SBA)</p>
