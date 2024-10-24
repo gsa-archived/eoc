@@ -147,7 +147,7 @@ The 2024 Evaluation Community Awards recipients highlighted below provide a glim
         <img src="{{site.baseurl}}/assets/images/blog/tom-hertz.png" alt="Tom Hertz Headshot" class="adward-bio-img">
     </div>
     <div class="tablet:grid-col-10">
-        <p class="margin-0"><strong>Thomas Hertz</strong>, Senior Economist
+        <p class="margin-0"><strong>Thomas Hertz</strong>, Senior Economist<br />
         Office of Research, Applied Analytics, and Statistics<br />
         Internal Revenue Service, Department of Commerce</p>
         <p>Tom’s team orchestrates strategic partnerships with the academic community and key external stakeholders to generate greater understanding on topics pertaining to behavioral insights and IRS research priorities, develop new methodologies and validate insights.</p>
@@ -168,7 +168,7 @@ The 2024 Evaluation Community Awards recipients highlighted below provide a glim
         <img src="{{site.baseurl}}/assets/images/blog/brooke-hanson.png" alt="Brooke Hanson Headshot" class="adward-bio-img">
     </div>
     <div class="tablet:grid-col-10">
-        <p class="margin-0"><strong>Brooke Hanson</strong>, Deputy Evaluation Officer
+        <p class="margin-0"><strong>Brooke Hanson</strong>, Deputy Evaluation Officer<br />
         Office of Planning & Performance Management<br />
         Department of the Interior</p>
         <p>Brooke leads Interior’s evidence and evaluation team within the Office of the Secretary to advance Departmental learning, evidence-building, and program evaluation activities.</p>
