@@ -77,4 +77,4 @@ _Shannon Noelle Rivera, Program Evaluation Officer_
 
 <sup id="ftn3">3</sup> Ayambire et al. (2024) Challenges in assessing the effects of environmental governance systems on conservation outcomes. <https://conbio.onlinelibrary.wiley.com/doi/full/10.1111/cobi.14392>{:target="_blank"}
 
-<sup id="ftn4">4</sup> Soulé, Michael E. “What Is Conservation Biology?” BioScience 35, no. 11 (1985): 727–34. <https://doi.org/10.2307/1310054>{:target="_blank"}
+<sup id="ftn4">4</sup> Soulé, Michael E. “What Is Conservation Biology?” _BioScience_ 35, no. 11 (1985): 727–34. <https://doi.org/10.2307/1310054>{:target="_blank"}
