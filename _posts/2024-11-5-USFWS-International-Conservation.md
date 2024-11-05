@@ -14,7 +14,7 @@ thumbnail: savanna_elephants.jpg
 thumbnail-alt: Savanna elephants in Tanzania
 ---
 
-<h3>The Division of International Conservation is striving to fund more of what works to conserve species abroad</h3>
+<h2>The Division of International Conservation is striving to fund more of what works to conserve species abroad</h2>
 
 Wildlife conservation faces a global crisis with the rapid loss of biodiversity, leading to calls for investing in the most effective conservation interventions. The wildlife sector has accomplished much utilizing the best available science, however, compared to other sectors such as medicine and public health, conservation science often lacks the data for rigorous evaluation and has a relatively short history of evidence and implementation science. There is a growing community of researchers, practitioners, and donors interested in learning and doing more of what works in conservation.
 
