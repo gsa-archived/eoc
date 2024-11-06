@@ -1,7 +1,7 @@
 ---
 title: "Small program, big vision: How the U.S. Fish and Wildlife Service is using and building evidence to move beyond crisis management in international wildlife conservation"
 layout: post
-date: November 5, 2024
+date: November 12, 2024
 author: Dr. Daphne Carlson, Tatiana Hendrix, Dr. Matt Muir, Shannon Noelle Rivera, USFWS
 excerpt: Wildlife conservation faces a global crisis with the rapid loss of biodiversity, leading to calls for investing in the most effective conservation interventions. The wildlife sector has accomplished much utilizing the best available science, however...
 aria: USFWS International Conservation 
