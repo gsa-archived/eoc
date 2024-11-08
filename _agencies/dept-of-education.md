@@ -6,7 +6,7 @@ layout: agency
 permalink: /agencies/department-of-education/
 eval-plan:
     - name: FY 2022
-      link: https://www.ed.gov/sites/default/files/cdo/fy-2022-evaluation-plan.pdf
+      link: https://www.ed.gov/sites/ed/files/cdo/fy-2022-evaluation-plan.pdf
     - name: FY 2023
       link: https://ies.ed.gov/ncee/pdf/ED_FY23_Annual_Evaluation_Plan_Final.pdf
     - name: FY 2024
