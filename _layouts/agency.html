@@ -2,184 +2,378 @@
 layout: wide
 ---
 
-{% comment %}
-This is used for Agency pages.
-{% endcomment %}
+{% comment %} This is used for Agency pages. {% endcomment %}
 
 <div class="usa-layout-docs">
-<section class="usa-graphic-list usa-section sml-margin bg-gradient">
+  <section class="usa-graphic-list usa-section sml-margin bg-gradient">
     <div class="grid-container">
-        <div class="grid-row grid-gap">
-            <div class="tablet:grid-col">
-                <p class="margin-0 font-ui-2xl text-bold">Agency Details</p>
-            </div>
+      <div class="grid-row grid-gap">
+        <div class="tablet:grid-col">
+          <p class="margin-0 font-ui-2xl text-bold">Agency Details</p>
         </div>
+      </div>
     </div>
-</section>
-    <div class="grid-container grey-back padding-top-3 padding-bottom-2">
-<div>
+  </section>
+  <div class="grid-container grey-back padding-top-3 padding-bottom-2">
     <div>
+      <div>
         <div class="usa-graphic-list__row container">
-            <div class="grid-row">
-        <a href="{{ page.agency-link }}" class="desktop:grid-col-1 tablet:grid-col-1 margin-right-2" aria-label="{{ page.agency-name }} seal (opens in a new window)" target="_blank"><img src="{{ site.baseurl }}/{{ page.agency-logo }}" alt="agency seal" align="center" width="87" style="max-width:100%;"></a>
-        <h1 class="title margin-top-auto desktop:grid-col-10 tablet:grid-col-10">
-            
-            {{page.agency-name}}
-        </h1>
-    </div>
+          <div class="grid-row">
+            <a
+              href="{{ page.agency-link }}"
+              class="desktop:grid-col-1 tablet:grid-col-1 margin-right-2"
+              aria-label="{{ page.agency-name }} seal (opens in a new window)"
+              target="_blank"
+              ><img
+                src="{{ site.baseurl }}/{{ page.agency-logo }}"
+                alt="agency seal"
+                align="center"
+                width="87"
+                style="max-width: 100%"
+            /></a>
+            <h1
+              class="title margin-top-auto desktop:grid-col-10 tablet:grid-col-10"
+            >
+              {{page.agency-name}}
+            </h1>
+          </div>
         </div>
-            <!--<section class="usa-section">-->
+        <!--<section class="usa-section">-->
         <div class="usa-grid usa-graphic_list-row margin-top-4">
           <div class="usa-width-one-whole usa-media_block">
-            <h2 style="margin-left:20px;">Agency Evidence Plans</h2>
-              </div>
-            </div>
-          <div class="grid-container" style="margin-right: -25px;">
+            <h2 style="margin-left: 20px">Agency Evidence Plans</h2>
+          </div>
+        </div>
+        <div class="grid-container" style="margin-right: -25px">
           <div class="usa-graphic-list__row grid-row grid-gap">
-            <div class="desktop:grid-col-4 tablet:grid-col-4 container agency-evidence-plans">
-              <h3 class="agency-link-title"><center>Learning Agenda</center></h3>
+            <div
+              class="desktop:grid-col-4 tablet:grid-col-4 container agency-evidence-plans"
+            >
+              <h3 class="agency-link-title">
+                <center>Learning Agenda</center>
+              </h3>
               <div class="agency-link-banner margin-bottom-2">
-                  <center><img src="{{ site.baseurl }}/assets/images/learning-agenda-circle-icon@2x.png" alt="Learning Agenda Image" width="120"></center>
+                <center>
+                  <img
+                    src="{{ site.baseurl }}/assets/images/learning-agenda-circle-icon@2x.png"
+                    alt="Learning Agenda Image"
+                    width="120"
+                  />
+                </center>
               </div>
               <div>
                 {% if page.learning-agenda %}
-                <center><p class="card-tag" style="margin-top:1rem;margin-bottom:30px;font-size:.7em;"><a class="pill-btn" href="{{ page.learning-agenda }}" aria-label="{{ page.agency-name }} Learning Agenda (opens in a new window)" target="_blank">FY 2022 - 2026</a></p></center>
+                <center>
+                  <p
+                    class="card-tag"
+                    style="
+                      margin-top: 1rem;
+                      margin-bottom: 30px;
+                      font-size: 0.7em;
+                    "
+                  >
+                    <a
+                      class="pill-btn"
+                      href="{{ page.learning-agenda }}"
+                      aria-label="{{ page.agency-name }} Learning Agenda (opens in a new window)"
+                      target="_blank"
+                    >
+                      {% if page.agency-name == 'Department of Transportation'
+                      %} FY 2024-2026 {% else %} FY 2022-2024 {% endif %}
+                    </a>
+                  </p>
+                </center>
                 {% else %}
-                <center><p class="card-tag" style="margin-top:1rem;margin-bottom:30px;font-size:.7em;"><a class="pill-btn-1" href="#">Coming Soon</a></p></center>
+                <center>
+                  <p
+                    class="card-tag"
+                    style="
+                      margin-top: 1rem;
+                      margin-bottom: 30px;
+                      font-size: 0.7em;
+                    "
+                  >
+                    <a class="pill-btn-1" href="#">Coming Soon</a>
+                  </p>
+                </center>
                 {% endif %}
               </div>
             </div>
-            <div class="desktop:grid-col-4 tablet:grid-col-4 container agency-evidence-plans">
-              <h3 class="agency-link-title"><center>Capacity Assessment</center></h3>
+            <div
+              class="desktop:grid-col-4 tablet:grid-col-4 container agency-evidence-plans"
+            >
+              <h3 class="agency-link-title">
+                <center>Capacity Assessment</center>
+              </h3>
               <div class="agency-link-banner margin-bottom-2">
-                  <center><img src="{{ site.baseurl }}/assets/images/capacity-assessment-circle-icon@2x.png" alt="Capacity Assesment Image" width="120"></center>
+                <center>
+                  <img
+                    src="{{ site.baseurl }}/assets/images/capacity-assessment-circle-icon@2x.png"
+                    alt="Capacity Assesment Image"
+                    width="120"
+                  />
+                </center>
               </div>
               <div>
                 {% if page.capacity-assesment %}
-                <center><p class="card-tag" style="margin-top:1rem;margin-bottom:30px;font-size:.7em;"><a class="pill-btn" href="{{ page.capacity-assesment }}" aria-label="{{ page.agency-name }} Capacity Assesment (opens in a new window)" target="_blank">FY 2022 - 2026</a></p></center>
+                <center>
+                  <p
+                    class="card-tag"
+                    style="
+                      margin-top: 1rem;
+                      margin-bottom: 30px;
+                      font-size: 0.7em;
+                    "
+                  >
+                    <a
+                      class="pill-btn"
+                      href="{{ page.capacity-assesment }}"
+                      aria-label="{{ page.agency-name }} Capacity Assesment (opens in a new window)"
+                      target="_blank"
+                      >FY 2022 - 2026</a
+                    >
+                  </p>
+                </center>
                 {% else %}
-                <center><p class="card-tag" style="margin-top:1rem;margin-bottom:30px;font-size:.7em;"><a class="pill-btn-1" href="#">Coming Soon</a></p></center>
+                <center>
+                  <p
+                    class="card-tag"
+                    style="
+                      margin-top: 1rem;
+                      margin-bottom: 30px;
+                      font-size: 0.7em;
+                    "
+                  >
+                    <a class="pill-btn-1" href="#">Coming Soon</a>
+                  </p>
+                </center>
                 {% endif %}
               </div>
             </div>
-            <div class="desktop:grid-col-4 tablet:grid-col-4 container agency-evidence-plans">
-              <h3 class="agency-link-title"><center>Annual Evaluation Plan</center></h3>
+            <div
+              class="desktop:grid-col-4 tablet:grid-col-4 container agency-evidence-plans"
+            >
+              <h3 class="agency-link-title">
+                <center>Annual Evaluation Plan</center>
+              </h3>
               <div class="agency-link-banner margin-bottom-2">
-                  <center><img src="{{ site.baseurl }}/assets/images/annual-evaluation-plan-circle-icon@2x.png" alt="Annual Evaluation Plan Image" width="120"></center>
+                <center>
+                  <img
+                    src="{{ site.baseurl }}/assets/images/annual-evaluation-plan-circle-icon@2x.png"
+                    alt="Annual Evaluation Plan Image"
+                    width="120"
+                  />
+                </center>
               </div>
-              <div style="display: flex; margin: -1rem 0 -1.5rem; justify-content: center; position:relative;">
-                {% if page.eval-plan %}
-                {% assign evaluation_plans = page.eval-plan | sort_natural: "name" | reverse %}
-                  <p class="card-tag card-tag-fy">
-                      <a class="pill-btn eval-plan-link" aria-label="Select Fiscal Year controls element, collapsed" href="#">Select Fiscal Year</a></p>
-                  <p class="card-tag pill-btn eval-plan" style="margin-top:1rem;margin-bottom:30px;font-size:.7em;">
-                {% for bio in evaluation_plans limit:4 %}
-                    <a href="{{ bio.link }}" aria-label="{{ page.agency-name }} {{ bio.name }} Evaluation Plan (opens in a new window)" target="_blank">{{ bio.name }} &#10095;</a>
-                {% endfor %}
-                  </p>
+              <div
+                style="
+                  display: flex;
+                  margin: -1rem 0 -1.5rem;
+                  justify-content: center;
+                  position: relative;
+                "
+              >
+                {% if page.eval-plan %} {% assign evaluation_plans =
+                page.eval-plan | sort_natural: "name" | reverse %}
+                <p class="card-tag card-tag-fy">
+                  <a
+                    class="pill-btn eval-plan-link"
+                    aria-label="Select Fiscal Year controls element, collapsed"
+                    href="#"
+                    >Select Fiscal Year</a
+                  >
+                </p>
+                <p
+                  class="card-tag pill-btn eval-plan"
+                  style="
+                    margin-top: 1rem;
+                    margin-bottom: 30px;
+                    font-size: 0.7em;
+                  "
+                >
+                  {% for bio in evaluation_plans limit:4 %}
+                  <a
+                    href="{{ bio.link }}"
+                    aria-label="{{ page.agency-name }} {{ bio.name }} Evaluation Plan (opens in a new window)"
+                    target="_blank"
+                    >{{ bio.name }} &#10095;</a
+                  >
+                  {% endfor %}
+                </p>
                 {% else %}
-                <center><p class="card-tag" style="margin-top:1rem;margin-bottom:30px;font-size:.7em;"><a class="pill-btn-1" href="#">Coming Soon</a></p></center>
+                <center>
+                  <p
+                    class="card-tag"
+                    style="
+                      margin-top: 1rem;
+                      margin-bottom: 30px;
+                      font-size: 0.7em;
+                    "
+                  >
+                    <a class="pill-btn-1" href="#">Coming Soon</a>
+                  </p>
+                </center>
                 {% endif %}
               </div>
-            </div> 
+            </div>
+          </div>
         </div>
-    </div>
-    {% assign find_member = site.members | where: "department", page.agency-name %}
-    {% for member in site.members %}
-    {% if member.department == page.agency-name %}
-    {% assign member-found = member %}
-    {% endif %}
-    {% endfor %}
-      
-    {% if member-found.name or  page.eval-policy %}
-    <div class="usa-graphic-list__row container shadow-5 white-background agency-border-top margin-top-3">
-        <div class="white-background padding-bottom-3 padding-x-4">
+        {% assign find_member = site.members | where: "department",
+        page.agency-name %} {% for member in site.members %} {% if
+        member.department == page.agency-name %} {% assign member-found = member
+        %} {% endif %} {% endfor %} {% if member-found.name or page.eval-policy
+        %}
+        <div
+          class="usa-graphic-list__row container shadow-5 white-background agency-border-top margin-top-3"
+        >
+          <div class="white-background padding-bottom-3 padding-x-4">
             <h2>Agency Information</h2>
             <div class="grid-row margin-bottom-1">
-                <div class="desktop:grid-col-3 tablet:grid-col-3"><strong>Evaluation Officer</strong></div>
-                
-                <div class="desktop:grid-col-9 tablet:grid-col-9">
-                    {% for member in site.members %}{% if member.department == page.agency-name %}{% assign member-found = member %}{{ member-found.name }}{% endif %}{% endfor %}{% if member-found.job-title %}, {{ member-found.job-title }}{% endif %}
-                </div>
+              <div class="desktop:grid-col-3 tablet:grid-col-3">
+                <strong>Evaluation Officer</strong>
+              </div>
+
+              <div class="desktop:grid-col-9 tablet:grid-col-9">
+                {% for member in site.members %}{% if member.department ==
+                page.agency-name %}{% assign member-found = member %}{{
+                member-found.name }}{% endif %}{% endfor %}{% if
+                member-found.job-title %}, {{ member-found.job-title }}{% endif
+                %}
+              </div>
             </div>
 
             {% if page.eval-policy %}
             <div class="grid-row margin-bottom-1">
-                <div class="desktop:grid-col-3 tablet:grid-col-3"><strong>Evaluation Policy</strong></div>
-                <div class="desktop:grid-col-9 tablet:grid-col-9"><a href="{{  page.eval-policy }}" aria-label="{{ page.agency-name }} Evaluation Policy (opens in a new window)" target="_blank">Evaluation Policy for {{ page.agency-name }}</a></div>
+              <div class="desktop:grid-col-3 tablet:grid-col-3">
+                <strong>Evaluation Policy</strong>
+              </div>
+              <div class="desktop:grid-col-9 tablet:grid-col-9">
+                <a
+                  href="{{  page.eval-policy }}"
+                  aria-label="{{ page.agency-name }} Evaluation Policy (opens in a new window)"
+                  target="_blank"
+                  >Evaluation Policy for {{ page.agency-name }}</a
+                >
+              </div>
             </div>
-            {% endif %}
-    
-            {% if page.landing-page %}
+            {% endif %} {% if page.landing-page %}
             <div class="grid-row margin-bottom-1">
-                <div class="desktop:grid-col-3 tablet:grid-col-3"><strong>Evidence Landing Page</strong></div>
-                <div class="desktop:grid-col-9 tablet:grid-col-9"><a href="{{  page.landing-page }}" aria-label="{{ page.agency-name }} Home for Evidence Plans (opens in a new window)" target="_blank">{{ page.agency-name }} Home for Evidence Plans</a></div>
+              <div class="desktop:grid-col-3 tablet:grid-col-3">
+                <strong>Evidence Landing Page</strong>
+              </div>
+              <div class="desktop:grid-col-9 tablet:grid-col-9">
+                <a
+                  href="{{  page.landing-page }}"
+                  aria-label="{{ page.agency-name }} Home for Evidence Plans (opens in a new window)"
+                  target="_blank"
+                  >{{ page.agency-name }} Home for Evidence Plans</a
+                >
+              </div>
             </div>
             {% endif %}
+          </div>
         </div>
-
-
-    </div>
-    {% endif %}
-        
-
-        {% if page.agency-offices %}
-        <div class="usa-grid usa-graphic_list-row container agency-border-top shadow-5 white-background padding-y-2 padding-x-4 margin-top-5">
-            <h2 class="margin-0 margin-bottom-1">Relevant Offices</h2>
-            {% for office in page.agency-offices %}
-            <div class="grid-row">
-                <div class="desktop:grid-col-6 tablet:grid-col-6">
-                    {% if office.link %}
-                    <p style="font-weight: bold; font-size: 18px; margin-top: 5px;"><a style="text-decoration: none;" href="{{ office.link }}" aria-label="{{ office.name }} link (opens in a new window)" target="_blank">{{ office.name }}</a></p>
-                    {% else %}
-                    <p style="font-weight: bold; font-size: 18px; margin-top: 5px;">{{ office.name }}</p>
-                    {% endif %}
-                    <ul class="rel-offices">
-                        {% if office.eval-policy %}
-                        <li><a style="text-decoration: none;" href="{{ office.eval-policy }}" aria-label="{{ office.name }} Evaluation Policy (opens in a new window)" target="_blank">Evaluation Policy</a></li>
-                        {% endif %}
-                        {% if office.eval-plan-link %}
-                        <li><a style="text-decoration: none;" href="{{ office.eval-plan-link }}" aria-label="{{ office.name }} Evaluation Plan (opens in a new window)" target="_blank">{{ office.eval-plan }}</a></li>
-                        {% endif %}
-                        {% if office.eval-learning-link %}
-                        <li><a style="text-decoration: none;" href="{{ office.eval-learning-link }}" aria-label="{{ office.name }} Evaluation Learning Agenda (opens in a new window)" target="_blank">{{ office.eval-learning }}</a></li>
-                        {% endif %}
-                        <!--<li>Link 3</li>-->
-                    </ul>
-                </div>
-                {% if office.logo %}
-                {% if office.link %}
-                <div class="desktop:grid-col-6 tablet:grid-col-6">
-                <a href="{{ office.link }}" aria-label="{{ office.name }} link (opens in a new window)" target="_blank" class="agency-office-logo"><img class="office-logo" src="{{ site.baseurl }}/{{ office.logo }}" alt="agency seal" align="center"></a>
-                </div>
-                {% else %}
-                <div class="desktop:grid-col-6 tablet:grid-col-6">
-                <img class="agency-office-logo office-logo" src="{{ site.baseurl }}/{{ office.logo }}" alt="agency seal" align="center">
-            </div>
+        {% endif %} {% if page.agency-offices %}
+        <div
+          class="usa-grid usa-graphic_list-row container agency-border-top shadow-5 white-background padding-y-2 padding-x-4 margin-top-5"
+        >
+          <h2 class="margin-0 margin-bottom-1">Relevant Offices</h2>
+          {% for office in page.agency-offices %}
+          <div class="grid-row">
+            <div class="desktop:grid-col-6 tablet:grid-col-6">
+              {% if office.link %}
+              <p style="font-weight: bold; font-size: 18px; margin-top: 5px">
+                <a
+                  style="text-decoration: none"
+                  href="{{ office.link }}"
+                  aria-label="{{ office.name }} link (opens in a new window)"
+                  target="_blank"
+                  >{{ office.name }}</a
+                >
+              </p>
+              {% else %}
+              <p style="font-weight: bold; font-size: 18px; margin-top: 5px">
+                {{ office.name }}
+              </p>
+              {% endif %}
+              <ul class="rel-offices">
+                {% if office.eval-policy %}
+                <li>
+                  <a
+                    style="text-decoration: none"
+                    href="{{ office.eval-policy }}"
+                    aria-label="{{ office.name }} Evaluation Policy (opens in a new window)"
+                    target="_blank"
+                    >Evaluation Policy</a
+                  >
+                </li>
+                {% endif %} {% if office.eval-plan-link %}
+                <li>
+                  <a
+                    style="text-decoration: none"
+                    href="{{ office.eval-plan-link }}"
+                    aria-label="{{ office.name }} Evaluation Plan (opens in a new window)"
+                    target="_blank"
+                    >{{ office.eval-plan }}</a
+                  >
+                </li>
+                {% endif %} {% if office.eval-learning-link %}
+                <li>
+                  <a
+                    style="text-decoration: none"
+                    href="{{ office.eval-learning-link }}"
+                    aria-label="{{ office.name }} Evaluation Learning Agenda (opens in a new window)"
+                    target="_blank"
+                    >{{ office.eval-learning }}</a
+                  >
+                </li>
                 {% endif %}
-                {% endif %}
+                <!--<li>Link 3</li>-->
+              </ul>
             </div>
-            <hr class="rel-hr-border">
-            {% endfor %}
-            
+            {% if office.logo %} {% if office.link %}
+            <div class="desktop:grid-col-6 tablet:grid-col-6">
+              <a
+                href="{{ office.link }}"
+                aria-label="{{ office.name }} link (opens in a new window)"
+                target="_blank"
+                class="agency-office-logo"
+                ><img
+                  class="office-logo"
+                  src="{{ site.baseurl }}/{{ office.logo }}"
+                  alt="agency seal"
+                  align="center"
+              /></a>
+            </div>
+            {% else %}
+            <div class="desktop:grid-col-6 tablet:grid-col-6">
+              <img
+                class="agency-office-logo office-logo"
+                src="{{ site.baseurl }}/{{ office.logo }}"
+                alt="agency seal"
+                align="center"
+              />
+            </div>
+            {% endif %} {% endif %}
+          </div>
+          <hr class="rel-hr-border" />
+          {% endfor %}
         </div>
         {% endif %}
         <!--</section>-->
-</div>
-
-
+      </div>
     </div>
-</div>
+  </div>
 
-<style>
+  <style>
     #small-agency {
-    width: 46.83%;
-    margin: 13px;
-}
-@media only screen and (max-width: 639px) {
-.title{
-margin-top: 1.1rem;
-}
-}
-
-</style>
+      width: 46.83%;
+      margin: 13px;
+    }
+    @media only screen and (max-width: 639px) {
+      .title {
+        margin-top: 1.1rem;
+      }
+    }
+  </style>
+</div>
