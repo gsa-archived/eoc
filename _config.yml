@@ -165,12 +165,12 @@ primary_navigation:
         url: "/evidence-plans/evaluation-policies/"
   - name: Explore
     children:
-      - name: Learning Agenda Questions Dashboard
-        url: "/learning-agenda-questions-dashboard/"
       - name: Evaluation Toolkit
         url: "/evaluation-toolkit/"
       - name: Evidence Project Portal
         url: "/evidenceportal/"
+      - name: Learning Agenda Questions Dashboard
+        url: "/learning-agenda-questions-dashboard/"
   - name: Resources
     url: /resources/
   - name: News
