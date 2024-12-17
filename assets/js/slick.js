@@ -28,6 +28,7 @@
 }(function ($) {
     'use strict';
     var Slick = window.Slick || {};
+    var DOMPurify = require('dompurify')(window);
 
     Slick = (function () {
 
@@ -1648,7 +1649,7 @@
         if ($imgsToLoad.length) {
 
             image = $imgsToLoad.first();
-            imageSource = image.attr('data-lazy');
+            imageSource = DOMPurify.sanitize(image.attr('data-lazy'));
             imageToLoad = document.createElement('img');
 
             imageToLoad.onload = function () {
