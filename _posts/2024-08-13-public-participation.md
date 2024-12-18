@@ -5,8 +5,8 @@ date: August 13, 2024
 author: Performance.gov and Evaluation.gov Teams
 excerpt: Public engagement is imperative to <a href="https://www.performance.gov/pma/cx/" target="_blank">delivering excellent, equitable, and secure services to the American people</a>....
 aria: 'Public Participation Opens the Front Door of Government'
-tags: Equity Evaluation Public-Participation Community-Engagement
-filters: equity evaluation public-participation community-engagement
+tags: Evaluation Public-Participation Community-Engagement
+filters: evaluation public-participation community-engagement
 permalink: /public-participation-opens-the-front-door-of-government/
 image: public-participation-circle.png
 img-alt: public participation circle thumbnail image

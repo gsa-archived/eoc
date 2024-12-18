@@ -5,8 +5,8 @@ date: June 4, 2024
 author: The Evidence Team, OMB
 excerpt: The Office of Management and Budget (OMB) issues guidance in Title 2 of the CFR, often referred to as the Uniform Grants Guidance...
 aria: OMB Revises its Uniform Grants Guidance, Clarifying Support for Program Evaluation
-tags: Evaluation Guidance Policy
-filters: evaluation policy-filter guidance
+tags: Evaluation Guidance
+filters: evaluation guidance
 permalink: /omb-revises-its-uniform-grants-guidance/
 image: cfr-circle-thumbnail.png
 img-alt: CFR circle thumbnail image
