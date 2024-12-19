@@ -130,7 +130,7 @@ DEPENDENCIES
   kramdown-parser-gfm (~> 1.1.0)
   sprockets (~> 3.7)
   tzinfo-data
-  webrick
+  webrick (>= 1.8.2)
 
 RUBY VERSION
    ruby 3.1.4p223
