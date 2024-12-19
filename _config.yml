@@ -149,8 +149,8 @@ primary_navigation:
             hasSeperator: true  
           - name: Other Federal Agencies
             url: "/agencies/other-agencies/"
-          - name: Cross-Government Plans
-            url: "/agencies/cross-government/"
+          # - name: Cross-Government Plans
+          #   url: "/agencies/cross-government/"
   - name: Evidence Plans
     children:
       - name: Summary
@@ -169,8 +169,8 @@ primary_navigation:
         url: "/evaluation-toolkit/"
       - name: Evidence Project Portal
         url: "/evidenceportal/"
-      - name: Learning Agenda Questions Dashboard
-        url: "/learning-agenda-questions-dashboard/"
+      # - name: Learning Agenda Questions Dashboard
+      #   url: "/learning-agenda-questions-dashboard/"
   - name: Resources
     url: /resources/
   - name: News

@@ -5,8 +5,8 @@ date: March 19, 2024
 author: The Evidence Team
 excerpt: The President’s <a href="https://www.whitehouse.gov/wp-content/uploads/2024/03/budget_fy2025.pdf" target="_blank">Budget</a> demonstrates the Administration’s commitment to support evidence-based programs and strengthen evidence-building capacity across Federal agencies...
 aria: 
-tags: Evaluation Evidence-Act Policy
-filters: evaluation evidence-act policy-filter
+tags: Evaluation Evidence-Act
+filters: evaluation evidence-act
 permalink: /president-budget-sustains-investments/
 image: budget-circle.png
 img-alt: circle image of budget folder with a calculator

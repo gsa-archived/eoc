@@ -5,8 +5,8 @@ date: April 8, 2022
 author: Christina Ciocca Eller, OSTP; Mariam Gulaid, OSTP/OMB; Evidence Team, OMB
 excerpt: Today, the Biden-Harris Administration launched a “Year of Evidence for Action” at its first-ever White House Summit on Evidence for Action, co-hosted by the Office of Science and Technology Policy (OSTP) and the Office of Management and Budget (OMB). 
 aria: 
-tags: Evidence-Act Evaluation Policy Year-of-Evidence
-filters: evidence-act evaluation policy-filter year-of-evidence
+tags: Evidence-Act Evaluation Year-of-Evidence
+filters: evidence-act evaluation year-of-evidence
 permalink: /2022-4-7-year-of-evidence-for-action/
 image: stacked-blocks.jpg
 img-alt: Three stacked blocks with a lightbulb, gears, and target to illustrate ideas leading to action.
