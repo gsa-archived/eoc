@@ -4,58 +4,44 @@ site, this is the place to do it.
 {% endcomment %}
 
 <head>
-    <!-- Basic Page Needs
-      ================================================== -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name=“robots” content=“index,follow”>
-    <!-- Mobile Specific Metas
-      ================================================== -->
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Title and meta description
-      ================================================== -->
-    <title>{{site.title}} | {{ page.title | strip_html }}</title>
-    <meta property="og:title" content="{{site.title}} | {{ page.title | strip_html }}">
-    <meta name="description" content="{{site.description}}">
-    <meta property="og:description" content="{{site.description}}">
-    <meta property="og:image" content="https://www.evaluation.gov/assets/images/eoc-social-thumbnail.png">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="robots" content="index,follow">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@{{site.twitter}}" />
-    <meta name="twitter:title" content="{{site.title}} | {{ page.title | strip_html }}" />
-    <meta name="twitter:description" content="{{site.description}}" />
-    <meta name="twitter:image" content="https://www.evaluation.gov/assets/images/eoc-social-thumbnail.png" />
+  <title>{{ page.title | default: site.title | escape }}</title>
+  <meta property="og:title" content="{{ page.title | default: site.title | escape }}">
+  <meta name="description" content="{{ page.excerpt | default: site.description | escape }}">
+  <meta property="og:description" content="{{ page.excerpt | default: site.description | escape }}">
+  <meta property="og:image" content="{{ page.thumbnail | default: site.baseurl | append: '/assets/images/default-thumbnail.jpg' | escape }}">
+  <meta property="og:image:alt" content="{{ page.thumbnail-alt | default: 'Default image description' | escape }}">
 
-    <meta property="og:type" content="article">
-    <link rel="canonical" href="{{ page.url | absolute_url }}" />
-    <meta property="og:url" content="{{ page.url | absolute_url }}" />
-    <!-- Favicons
-      ================================================== -->
-    <!-- 128x128 -->
-    <link rel="shortcut icon" type="image/png" href="{{ site.baseurl }}/assets/images/favicon.png">
-    <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/images/favicon.png">
-    <!-- 192x192, as recommended for Android
-      http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
-      -->
-    <link rel="icon" type="image/png" sizes="192x192" href="{{ site.baseurl }}/assets/images/favicon.png">
-    <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
-    <link rel="apple-touch-icon-precomposed" href="{{ site.baseurl }}/assets/images/favicon.png">
-    <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.baseurl }}/assets/images/favicon.png">
-    <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.baseurl }}/assets/images/favicon.png">
-    <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/assets/images/favicon.png">
-    <!-- CSS
-      ================================================== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@{{ site.twitter }}" />
+  <meta name="twitter:title" content="{{ page.title | default: site.title | escape }}" />
+  <meta name="twitter:description" content="{{ page.excerpt | default: site.description | escape }}" />
+  <meta name="twitter:image" content="{{ page.thumbnail | default: site.baseurl | append: '/assets/images/default-thumbnail.jpg' | escape }}">
+  <meta name="twitter:image:alt" content="{{ page.thumbnail-alt | default: 'Default image description' | escape }}">
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/slick.css?{{ site.time | date: '%s%N' }}">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/slick-theme.css?{{ site.time | date: '%s%N' }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/index.css?{{ site.time | date: '%s%N' }}">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/main.css?{{ site.time | date: '%s%N' }}">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="{{ site.baseurl }}/assets/js/uswds-init.min.js?{{ site.time | date: '%s%N' }}"></script>
+  <meta property="og:type" content="article">
+  <link rel="canonical" href="{{ page.permalink | absolute_url | escape }}">
+  <meta property="og:url" content="{{ page.permalink | absolute_url | escape }}">
+
+  <link rel="shortcut icon" type="image/png" href="{{ site.baseurl }}/assets/images/favicon.png">
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/images/favicon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="{{ site.baseurl }}/assets/images/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="{{ site.baseurl }}/assets/images/favicon.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.baseurl }}/assets/images/favicon.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.baseurl }}/assets/images/favicon.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/assets/images/favicon.png">
+
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/slick.css?{{ site.time | date: '%s%N' }}">
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/slick-theme.css?{{ site.time | date: '%s%N' }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/index.css?{{ site.time | date: '%s%N' }}">
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/main.css?{{ site.time | date: '%s%N' }}">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="{{ site.baseurl }}/assets/js/uswds-init.min.js?{{ site.time | date: '%s%N' }}"></script>
 </head>
