@@ -15,7 +15,7 @@ site, this is the place to do it.
   <meta property="og:title" content="{{ page.title | default: site.title | escape }}">
   <meta name="description" content="{{ page.excerpt | default: site.description | escape }}">
   <meta property="og:description" content="{{ page.excerpt | default: site.description | escape }}">
-  {% assign thumbnail_path = site.baseurl | append: '/assets/images/thumbnails/' | append: page.thumbnail %}
+  {% assign thumbnail_path = site.baseurl | append: '/assets/images/' | append: page.thumbnail %}
   {% if page.thumbnail and thumbnail_path %}
     <meta property="og:image" content="{{ thumbnail_path }}">
     <meta name="twitter:image" content="{{ thumbnail_path }}">
