@@ -37,10 +37,10 @@ site, this is the place to do it.
   {% endif %}
 
   <!-- Twitter Image: Prefer page-specific, fallback to site-wide default -->
-  {% if page.thumbnail %}
-  <meta name="twitter:image" content="{{ page.thumbnail }}" />
+  {% if page.image %}
+  <meta name="twitter:image" content="{{ page.image }}" />
   {% else %}
-  <meta name="twitter:image" content="/eoc/assets/images/eoc-social-thumbnail.png" />
+  <meta name="twitter:image" content="https://www.evaluation.gov/assets/images/eoc-social-thumbnail.png" />
   {% endif %}
 
   <!-- Alt Text for Twitter Image -->
