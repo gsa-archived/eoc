@@ -15,7 +15,7 @@ site, this is the place to do it.
   <meta property="og:title" content="{{ page.title | default: site.title | escape }}">
   <meta name="description" content="{{ page.excerpt | default: site.description | escape }}">
   <meta property="og:description" content="{{ page.excerpt | default: site.description | escape }}">
-  {% if page.url == "/" %}
+  {% if page.url == "/" % or page.url == site.baseurl}
     <meta property="og:image" content="../assets/images/eoc-social-thumbnail.png">
     <meta name="twitter:image" content="../assets/images/eoc-social-thumbnail.png">
   {% elsif page.thumbnail %}
