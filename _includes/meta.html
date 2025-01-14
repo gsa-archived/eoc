@@ -15,13 +15,17 @@ site, this is the place to do it.
   <meta property="og:title" content="{{ page.title | default: site.title | escape }}">
   <meta name="description" content="{{ page.excerpt | default: site.description | escape }}">
   <meta property="og:description" content="{{ page.excerpt | default: site.description | escape }}">
-  {% if page.thumbnail %}
-  <meta property="og:image" content="../assets/images/{{ page.thumbnail }}">
-  <meta name="twitter:image" content="../assets/images/eoc-social-thumbnail.png">
+  {% if page.url == "/" %}
+    <meta property="og:image" content="../assets/images/eoc-social-thumbnail.png">
+    <meta name="twitter:image" content="../assets/images/eoc-social-thumbnail.png">
+  {% elsif page.thumbnail %}
+    <meta property="og:image" content="../assets/images/{{ page.thumbnail }}">
+    <meta name="twitter:image" content="../assets/images/{{ page.thumbnail }}">
   {% else %}
     <meta property="og:image" content="../assets/images/eoc-social-thumbnail.png">
     <meta name="twitter:image" content="../assets/images/eoc-social-thumbnail.png">
   {% endif %}
+
 
   <meta property="og:image:alt" content="{{ page.thumbnail-alt | default: 'Evaluation.gov' | escape }}">
   
