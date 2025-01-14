@@ -12,23 +12,17 @@ site, this is the place to do it.
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>{{ page.title | default: site.title | escape }}</title>
-  <meta property="og:title" content="{{ site.title | page.title }}">
+  <meta property="og:title" content="{{ page.title | default: site.title | escape }}">
   <meta name="description" content="{{ page.excerpt | default: site.description | escape }}">
   <meta property="og:description" content="{{ page.excerpt | default: site.description | escape }}">
   <meta property="og:image" content="{{ page.thumbnail | default: 'https://www.evaluation.gov/assets/images/eoc-social-thumbnail.png' | escape }}">
   <meta property="og:image:alt" content="{{ page.thumbnail-alt | default: 'Evaluation.gov' | escape }}">
-
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@{{ site.twitter }}">
   <meta name="twitter:title" content="{{ page.title | default: site.title | escape }}">
   <meta name="twitter:description" content="{{ page.excerpt | default: site.description | escape }}">
-  {% if page.thumbnail %}
-      <meta name="twitter:image" content="{{ page.thumbnail }}" />
-  {% else %}
-      <meta name="twitter:image" content='https://www.evaluation.gov/assets/images/eoc-social-thumbnail.png' />
-  {% endif %}
-
-  <meta name="twitter:image:alt" content="{{ page.thumbnail-alt | default: 'Image related to this page' | escape }}">
+  <meta name="twitter:image" content="{{ page.thumbnail | default: 'https://www.evaluation.gov/assets/images/eoc-social-thumbnail.png' | escape }}">
+  <meta name="twitter:image:alt" content="{{ page.thumbnail-alt | default: 'Evaluation.gov' | escape }}">
   <meta name="twitter:creator" content="@{{ site.twitter_creator }}">
 
 
