@@ -18,24 +18,6 @@ site, this is the place to do it.
   <meta property="og:image" content="{{ page.thumbnail | default: 'https://www.evaluation.gov/assets/images/eoc-social-thumbnail.png' | escape }}">
   <meta property="og:image:alt" content="{{ page.thumbnail-alt | default: 'Evaluation.gov' | escape }}">
 
-   <!-- Aggressive Twitter Metadata with Folder Check -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content="@{{ site.twitter }}" />
-
-<!-- Twitter Title: Prefer page-specific title -->
-{% if page.title %}
-<meta name="twitter:title" content="{{ page.title | strip_html }}" />
-{% else %}
-<meta name="twitter:title" content="{{ site.title }}" />
-{% endif %}
-
-<!-- Twitter Description: Prefer page-specific description -->
-{% if page.excerpt %}
-<meta name="twitter:description" content="{{ page.excerpt | strip_html }}" />
-{% else %}
-<meta name="twitter:description" content="{{ site.description }}" />
-{% endif %}
-
 <!-- Twitter Image: Check for page-specific thumbnail -->
 <!-- Aggressive Twitter Metadata with Folder Check -->
 <meta name="twitter:card" content="summary_large_image" />
