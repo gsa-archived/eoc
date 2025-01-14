@@ -15,14 +15,20 @@ site, this is the place to do it.
   <meta property="og:title" content="{{ page.title | default: site.title | escape }}">
   <meta name="description" content="{{ page.excerpt | default: site.description | escape }}">
   <meta property="og:description" content="{{ page.excerpt | default: site.description | escape }}">
-  <meta property="og:image" content="{{ page.thumbnail | absolute_url | default: 'https://www.evaluation.gov/assets/images/eoc-social-thumbnail.png' }}">
+  {% assign thumbnail_path = site.baseurl | append: '/assets/images/thumbnails/' | append: page.thumbnail %}
+  {% if page.thumbnail and thumbnail_path %}
+    <meta property="og:image" content="{{ thumbnail_path }}">
+    <meta name="twitter:image" content="{{ thumbnail_path }}">
+  {% else %}
+    <meta property="og:image" content="https://www.evaluation.gov/assets/images/eoc-social-thumbnail.png">
+    <meta name="twitter:image" content="https://www.evaluation.gov/assets/images/eoc-social-thumbnail.png">
+  {% endif %}
   <meta property="og:image:alt" content="{{ page.thumbnail-alt | default: 'Evaluation.gov' | escape }}">
   
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@{{ site.twitter }}">
   <meta name="twitter:title" content="{{ page.title | default: site.title | escape }}">
   <meta name="twitter:description" content="{{ page.excerpt | default: site.description | escape }}" />
-  <meta name="twitter:image" content="{{ page.thumbnail | absolute_url | default: 'https://www.evaluation.gov/assets/images/eoc-social-thumbnail.png' }}">
   <meta name="twitter:image:alt" content="{{ page.thumbnail-alt | default: 'Evaluation.gov' | escape }}" />
   <meta name="twitter:creator" content="@{{ site.twitter_creator }}">
 
