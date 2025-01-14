@@ -22,9 +22,10 @@ site, this is the place to do it.
   <meta name="twitter:site" content="@{{ site.twitter | default: 'username' }}">
   <meta name="twitter:title" content="{{ page.title | default: site.title | escape }}">
   <meta name="twitter:description" content="{{ page.excerpt | default: site.description | escape }}">
-  <meta name="twitter:image" content="{{ page.thumbnail | default: site.baseurl | append: '/assets/images/default-thumbnail.jpg' | escape }}">
+  <meta name="twitter:image" content="{{ site.url | default: 'https://your-website.com' }}{{ page.thumbnail | default: '/assets/images/default-thumbnail.jpg' }}">
   <meta name="twitter:image:alt" content="{{ page.thumbnail-alt | default: 'Default image description' | escape }}">
   <meta name="twitter:creator" content="@{{ site.twitter_creator | default: 'username' }}">
+
 
   <meta property="og:type" content="article">
   <link rel="canonical" href="{{ page.permalink | absolute_url | escape }}">
