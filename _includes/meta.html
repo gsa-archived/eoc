@@ -19,12 +19,12 @@ site, this is the place to do it.
   <meta property="og:image:alt" content="{{ page.thumbnail-alt | default: 'Default image description' | escape }}">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@{{ site.twitter | default: 'username' }}">
+  <meta name="twitter:site" content="@{{ site.twitter }}">
   <meta name="twitter:title" content="{{ page.title | default: site.title | escape }}">
   <meta name="twitter:description" content="{{ page.excerpt | default: site.description | escape }}">
-  <meta name="twitter:image" content="{{ site.url | default: 'https://your-website.com' }}{{ page.thumbnail | default: '/assets/images/default-thumbnail.jpg' }}">
-  <meta name="twitter:image:alt" content="{{ page.thumbnail-alt | default: 'Default image description' | escape }}">
-  <meta name="twitter:creator" content="@{{ site.twitter_creator | default: 'username' }}">
+  <meta name="twitter:image" content="{{ page.thumbnail | default: site.baseurl | append: '/eoc/assets/images/eoc-social-thumbnail' | escape }}">
+  <meta name="twitter:image:alt" content="{{ page.thumbnail-alt | default: 'Image related to this page' | escape }}">
+  <meta name="twitter:creator" content="@{{ site.twitter_creator }}">
 
 
   <meta property="og:type" content="article">
