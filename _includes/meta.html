@@ -37,11 +37,30 @@ site, this is the place to do it.
 {% endif %}
 
 <!-- Twitter Image: Check for page-specific thumbnail -->
+<!-- Aggressive Twitter Metadata with Folder Check -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@{{ site.twitter }}" />
+
+<!-- Twitter Title: Prefer page-specific title -->
+{% if page.title %}
+<meta name="twitter:title" content="{{ page.title | strip_html }}" />
+{% else %}
+<meta name="twitter:title" content="{{ site.title }}" />
+{% endif %}
+
+<!-- Twitter Description: Prefer page-specific description -->
+{% if page.excerpt %}
+<meta name="twitter:description" content="{{ page.excerpt | strip_html }}" />
+{% else %}
+<meta name="twitter:description" content="{{ site.description }}" />
+{% endif %}
+
+<!-- Twitter Image: Check for page-specific thumbnail -->
 {% assign thumbnail_found = false %}
 {% if page.thumbnail %}
-  {% assign thumbnail_path = "assets/images/" | append: page.thumbnail %}
+  {% assign thumbnail_path = "../assets/images/" | append: page.thumbnail %}
   {% for folder in "agency-seals,blog,evaluation,highlight-images" | split: "," %}
-    {% assign full_thumbnail_path = "assets/images/" | append: folder | append: "/" | append: page.thumbnail %}
+    {% assign full_thumbnail_path = "../assets/images/" | append: folder | append: "/" | append: page.thumbnail %}
     {% if full_thumbnail_path %}
       <meta name="twitter:image" content="{{ full_thumbnail_path }}" />
       {% assign thumbnail_found = true %}
@@ -52,7 +71,7 @@ site, this is the place to do it.
 
 <!-- Use default image if no specific thumbnail found -->
 {% if not thumbnail_found %}
-<meta name="twitter:image" content="assets/images/eoc-social-thumbnail.png" />
+<meta name="twitter:image" content="../assets/images/eoc-social-thumbnail.png" />
 {% endif %}
 
 <!-- Alt Text for Twitter Image -->
