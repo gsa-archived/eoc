@@ -15,16 +15,20 @@ site, this is the place to do it.
   <meta property="og:title" content="{{ page.title | default: site.title | escape }}">
   <meta name="description" content="{{ page.excerpt | default: site.description | escape }}">
   <meta property="og:description" content="{{ page.excerpt | default: site.description | escape }}">
-  {% if page.url == "/" % or page.url == site.baseurl or (page.thumbnail=='savanna_elephants.jpg' and page.url != "/USFWS-International-Conservation/")}
-    <meta property="og:image" content="../assets/images/eoc-social-thumbnail.png">
-    <meta name="twitter:image" content="../assets/images/eoc-social-thumbnail.png">
+  {% assign imgPathSocials = "../assets/images/eoc-social-thumbnail.png" %}
+
+  {% if page.url == "/" or page.url == site.baseurl %}
+    {% assign imgPathSocials = "../assets/images/eoc-social-thumbnail.png" %}
   {% elsif page.thumbnail %}
-    <meta property="og:image" content="../assets/images/{{ page.thumbnail }}">
-    <meta name="twitter:image" content="../assets/images/{{ page.thumbnail }}">
-  {% else %}
-    <meta property="og:image" content="../assets/images/eoc-social-thumbnail.png">
-    <meta name="twitter:image" content="../assets/images/eoc-social-thumbnail.png">
+    {% assign imgPathSocials = "../assets/images/{{ page.thumbnail }}" %}
+    {% if imgPathSocials == "../assets/images/savanna_elephants.jpg" and page.permalink != "/USFWS-International-Conservation/" %}
+      {% assign imgPathSocials = "../assets/images/eoc-social-thumbnail.png" %}
+    {% endif %}
   {% endif %}
+
+  <meta property="og:image" content="{{ imgPathSocials }}">
+  <meta name="twitter:image" content="{{ imgPathSocials }}">
+
 
 
   <meta property="og:image:alt" content="{{ page.thumbnail-alt | default: 'Evaluation.gov' | escape }}">
