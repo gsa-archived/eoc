@@ -17,7 +17,7 @@ site, this is the place to do it.
   <meta property="og:description" content="{{ page.excerpt | default: site.description | escape }}">
   {% assign imgPathSocials = "../assets/images/eoc-social-thumbnail.png" %}
 
-  {% if page.url == "/" or page.url == site.baseurl %}
+  {% if page.url == "/" or page.url == site.baseurl % or page.permalink == "/"}
     {% assign imgPathSocials = "../assets/images/eoc-social-thumbnail.png" %}
   {% elsif page.thumbnail %}
     {% assign imgPathSocials = "../assets/images/{{ page.thumbnail }}" %}
