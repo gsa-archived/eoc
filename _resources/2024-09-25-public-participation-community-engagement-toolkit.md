@@ -2,7 +2,7 @@
 title: Public Participation and Community Engagement Toolkit
 year: 2024
 description: 
-doc-link: assets/resources/The-Improve-Group-PPCE-Toolkit-Jan-2025.pdf
+doc-link: assets/resources/The%20Improve%20Group%20PPCE%20Toolkit.pdf
 aria-label: Public Participation and Community Engagement Toolkit
 content_tags:
 type: pdf
