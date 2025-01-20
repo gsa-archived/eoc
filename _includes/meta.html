@@ -60,4 +60,30 @@ site, this is the place to do it.
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/main.css?{{ site.time | date: '%s%N' }}">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="{{ site.baseurl }}/assets/js/uswds-init.min.js?{{ site.time | date: '%s%N' }}"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      function shorten(s, max){
+          s = s.split(' ');
+          cut = '';
+          while (cut.length<=max && s.length){
+              cut += s.shift() + ' ';
+          }
+          if (s.length) cut = cut.substring(0,cut.length-1) + '...'
+          return cut
+      }
+      const metaTitle = document.querySelector('meta[property="og:title"]');
+      const twitterTitle = document.querySelector('meta[name="twitter:title"]');
+      if (metaTitle) {
+        var metaTitleContent = metaTitle.getAttribute('content');
+        metaTitleContent = shorten(metaTitleContent,60);
+        metaTitle.setAttribute('content', metaTitleContent);
+      }
+      if (twitterTitle) {
+        var twitterTitleContent = twitterTitle.getAttribute('content');
+        twitterTitleContent = shorten(twitterTitleContent,60);
+        twitterTitle.setAttribute('content', twitterTitleContent);
+      }
+      
+    });
+  </script>
 </head>
