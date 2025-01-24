@@ -52,7 +52,7 @@ permalink: /faqs/
         </button>
       </h3>
       <div id="b-a5" class="usa-accordion__content">
-        <p>The full scope of responsibilities of Evaluation Officers are determined by each agency. Among other responsibilities, the Evaluation Officer coordinates activities with agency officials necessary to: (1) continually assess the coverage, quality, methods, consistency, effectiveness, independence, and balance of the portfolio of evaluations, policy research, and ongoing evaluation activities of the agency; (2) assess agency capacity to support the development and use of evaluation; (3) establish and implement an agency evaluation policy; and (4) coordinate, develop, and implement the agency evidence-building plan (Learning Agenda) and Annual Evaluation Plan. Appendix C of <a href="https://www.whitehouse.gov/wp-content/uploads/2019/07/M-19-23.pdf" aria-label="Appendix C of OMB M-19-23 (opens in a new window)" target="_blank">OMB M-19-23</a> outlines the full scope of qualifications and responsibilities of Evaluation Officers.</p>
+        <p>The full scope of responsibilities of Evaluation Officers are determined by each agency. Among other responsibilities, the Evaluation Officer coordinates activities with agency officials necessary to: (1) continually assess the coverage, quality, methods, consistency, effectiveness, independence, and balance of the portfolio of evaluations, policy research, and ongoing evaluation activities of the agency; (2) assess agency capacity to support the development and use of evaluation; (3) establish and implement an agency evaluation policy; and (4) coordinate, develop, and implement the agency evidence-building plan (Learning Agenda) and Annual Evaluation Plan. Appendix C of <a href="{{ site.baseurl }}/assets/resources/M-19-23.pdf" aria-label="Appendix C of OMB M-19-23 (opens in a new window)" target="_blank">OMB M-19-23</a> outlines the full scope of qualifications and responsibilities of Evaluation Officers.</p>
       </div>
       <br />
    <h2>Questions about the Evidence Act</h2>
@@ -166,7 +166,7 @@ permalink: /faqs/
         </button>
       </h3>
       <div id="b-a15" class="usa-accordion__content">
-        <p>Agencies must determine which types of evidence are needed to answer their specific questions, and use appropriate methodological approaches that match those questions. Evaluation is best suited to answer questions of effectiveness or efficiency. Existing OMB guidance (<a href="https://www.whitehouse.gov/wp-content/uploads/2020/03/M-20-12.pdf" aria-label="OMB M-20-12 guidance document (opens in a new window)" target="_blank">OMB M-20-12</a> and <a href="https://www.whitehouse.gov/wp-content/uploads/2018/06/a11.pdf" aria-label="OMB Circular No. A-11 guidance document (opens in a new window)" target="_blank">OMB Circular No. A-11</a>) describes different types of evaluation (i.e., impact, outcome, process/implementation, and formative), discusses when they should be used, and provides potential research questions that each type of evaluation can answer.</p>
+        <p>Agencies must determine which types of evidence are needed to answer their specific questions, and use appropriate methodological approaches that match those questions. Evaluation is best suited to answer questions of effectiveness or efficiency. Existing OMB guidance (<a href="{{ site.baseurl }}/assets/resources/M-20-12.pdf" aria-label="OMB M-20-12 guidance document (opens in a new window)" target="_blank">OMB M-20-12</a> and <a href="https://www.whitehouse.gov/wp-content/uploads/2018/06/a11.pdf" aria-label="OMB Circular No. A-11 guidance document (opens in a new window)" target="_blank">OMB Circular No. A-11</a>) describes different types of evaluation (i.e., impact, outcome, process/implementation, and formative), discusses when they should be used, and provides potential research questions that each type of evaluation can answer.</p>
       </div>
       <!-- Use the accurate heading level to maintain the document outline -->
       <h3 class="usa-accordion__heading">
@@ -175,13 +175,13 @@ permalink: /faqs/
         </button>
       </h3>
       <div id="b-a16" class="usa-accordion__content">
-        <p>Agencies should consider a range of evidence types. <a href="https://www.whitehouse.gov/wp-content/uploads/2019/07/M-19-23.pdf" aria-label="OMB M-19-23 four different types of evidence (opens in a new window)" target="_blank">OMB M-19-23</a> defines four different types of evidence:</p>
+        <p>Agencies should consider a range of evidence types. <a href="{{ site.baseurl }}/assets/resources/M-19-23.pdf" aria-label="OMB M-19-23 four different types of evidence (opens in a new window)" target="_blank">OMB M-19-23</a> defines four different types of evidence:</p>
         <ul>
            <li><strong>Foundational Fact Finding:</strong> Foundational research and analysis such as aggregate indicators, exploratory studies, descriptive statistics, and basic research.</li>
            <li><strong>Performance Measurement:</strong> Ongoing, systematic tracking of information relevant to policies, strategies, programs, projects, goals/objectives, and/or activities.</li> 
            <li><strong>Policy Analysis:</strong> Analysis of data, such as general purpose survey or program-specific administrative data, to generate and inform policy, e.g., estimating regulatory impacts and other relevant effects.</li>
            <li><strong>Evaluation:</strong> Systematic analysis of a program, policy, organization, or component of these to assess effectiveness and efficiency.<br/>
-           Source: <a href="https://www.whitehouse.gov/wp-content/uploads/2019/07/M-19-23.pdf" aria-label="OMB M-19-23 (opens in a new window)" target="_blank">OMB M-19-23</a></li>
+           Source: <a href="{{ site.baseurl }}/assets/resources/M-19-23.pdf" aria-label="OMB M-19-23 (opens in a new window)" target="_blank">OMB M-19-23</a></li>
         </ul>
       </div>
  </div>     
