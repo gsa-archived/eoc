@@ -1,9 +1,10 @@
 ---
-layout: wide
-title: FAQs and Definitions
+#layout: wide
+#title: FAQs and Definitions
 #permalink: /faqs-and-definitions/
 ---
 
+<!--
 <div class="usa-layout-docs">
     <section class="usa-graphic-list usa-section sml-margin bg-gradient">
         <div class="grid-container">
@@ -18,3 +19,4 @@ title: FAQs and Definitions
         {% include faqs-and-definitions.html %}
     </div>  
 </div>
+-->
