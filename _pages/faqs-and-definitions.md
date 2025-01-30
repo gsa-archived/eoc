@@ -2,7 +2,6 @@
 layout: wide
 title: FAQs and Definitions
 #permalink: /faqs-and-definitions/
-
 ---
 
 <div class="usa-layout-docs">
