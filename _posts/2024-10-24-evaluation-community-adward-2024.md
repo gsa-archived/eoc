@@ -7,7 +7,7 @@ excerpt: On behalf of the Evaluation Officer Council, it is our honor to announc
 aria: EOC Awards 2024 Blog Post
 tags: Evaluation-Officer-Council Evaluation
 filters: evaluation-officer-council evaluation
-permalink: /announcing-2024-evaluation-community-award/
+#permalink: /announcing-2024-evaluation-community-award/
 image: golden-trophy-confetti.png
 img-alt: Golden trophy with confetti
 thumbnail: golden-trophy-confetti.png

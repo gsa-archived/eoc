@@ -7,7 +7,7 @@ excerpt: 'This post was originally shared on the OSTP <a href="https://www.white
 aria: 
 tags: Year-of-Evidence
 filters: year-of-evidence
-permalink: /2023-01-17-progress-on-year-of-evidence-for-action/
+#permalink: /2023-01-17-progress-on-year-of-evidence-for-action/
 image: lightbulb-stickers.jpg
 img-alt: light bulb with stickers
 ---

@@ -7,7 +7,7 @@ excerpt: Why is evidence so critical to solving our nation’s greatest challeng
 aria: 'Celebrating Evidence: Honoring the People Driving the Federal Evidence Ecosystem'
 tags: Evaluation Evidence-Use
 filters: evaluation evidence-use
-permalink: /celebrating-evidence/
+#permalink: /celebrating-evidence/
 image: celebrating-blog-circle.png
 img-alt: Celebrating evidence blog circle thumbnail image
 thumbnail: blog-img-5.png

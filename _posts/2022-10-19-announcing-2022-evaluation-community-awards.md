@@ -7,7 +7,7 @@ excerpt: It is our honor to announce the winners of the Second Annual Evaluation
 aria: EOC Awards Blog Post
 tags: Evaluation-Officer-Council Evaluation
 filters: evaluation-officer-council evaluation
-permalink: /2022-10-20-announcing-2022-evaluation-community-awards/
+#permalink: /2022-10-20-announcing-2022-evaluation-community-awards/
 image: trophy-stars-thumbnail.png
 img-alt: Golden trophy with stars
 ---

@@ -7,7 +7,7 @@ excerpt: The President’s <a href="https://www.whitehouse.gov/wp-content/upload
 aria: 
 tags: Evaluation Evidence-Act
 filters: evaluation evidence-act
-permalink: /president-budget-sustains-investments/
+#permalink: /president-budget-sustains-investments/
 image: budget-circle.png
 img-alt: circle image of budget folder with a calculator
 thumbnail: budget-thumbnail.jpg

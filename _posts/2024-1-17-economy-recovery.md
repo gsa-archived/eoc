@@ -7,7 +7,7 @@ excerpt: Treasury is using evidence to inform program implementation and is look
 aria: 
 tags: Evaluation Evidence-Use
 filters: evaluation evidence-use
-permalink: /actionable-learning-about-economic-recovery/
+#permalink: /actionable-learning-about-economic-recovery/
 image: economic-recovery-circle.png
 img-alt: Economic Recovery Learning Agenda cover
 thumbnail: economic-recovery-thumbnail.png

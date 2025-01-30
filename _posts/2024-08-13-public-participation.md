@@ -7,7 +7,7 @@ excerpt: Public engagement is imperative to <a href="https://www.performance.gov
 aria: 'Public Participation Opens the Front Door of Government'
 tags: Evaluation Public-Participation Community-Engagement
 filters: evaluation public-participation community-engagement
-permalink: /public-participation-opens-the-front-door-of-government/
+#permalink: /public-participation-opens-the-front-door-of-government/
 image: public-participation-circle.png
 img-alt: public participation circle thumbnail image
 thumbnail: public-participation-thumbnail.png

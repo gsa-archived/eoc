@@ -7,7 +7,7 @@ excerpt: The latest edition of New Directions for Evaluation—an official journ
 aria: 
 tags: Evaluation
 filters: evaluation
-permalink: /importance-of-federal-evaluation-workforce/
+#permalink: /importance-of-federal-evaluation-workforce/
 image: ICEP alt.jpg
 img-alt: two people are discussing in front of a white board with diagrams
 ---

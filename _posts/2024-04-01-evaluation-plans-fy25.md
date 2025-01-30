@@ -7,7 +7,7 @@ excerpt: Agencies recently published their latest Annual Evaluation Plans, descr
 aria: Agencies Publish Their FY25 Annual Evaluation Plans
 tags: Evaluation Evidence-Act
 filters: evaluation evidence-act
-permalink: /2024-04-01-agencies-publish-anual-evaluation-plans/
+#permalink: /2024-04-01-agencies-publish-anual-evaluation-plans/
 image: evaluation-circle-thumbnail.png
 img-alt: Evaluation circle thumbnail image
 thumbnail: evaluation-thumbnail.jpeg
