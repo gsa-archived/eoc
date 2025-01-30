@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Resources
-#permalink: /resources/
+permalink: /resources/
 ---
 
 <section class="usa-graphic-list">

@@ -171,8 +171,8 @@ primary_navigation:
         url: "/evidenceportal/"
       # - name: Learning Agenda Questions Dashboard
       #   url: "/learning-agenda-questions-dashboard/"
-  #- name: Resources
-  #  url: /resources/
+  - name: Resources
+    url: /resources/
   #- name: News
   #  url: /news/
   - name: About
