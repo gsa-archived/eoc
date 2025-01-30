@@ -1,7 +1,7 @@
 ---
 #layout: wide
 #title: FAQs and Definitions
-# /faqs-and-definitions/
+#permalink: /faqs-and-definitions/
 ---
 
 <!--
