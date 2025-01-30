@@ -11,7 +11,7 @@ permalink: /resources/
     </div>
   </div>
 </section>
-
+<br>
 <section class="usa-graphic-list margin-bottom-4">
   <div class="grid-container margin-0 padding-0">
     <div class="usa-graphic-list__row grid-row grid-gap">
