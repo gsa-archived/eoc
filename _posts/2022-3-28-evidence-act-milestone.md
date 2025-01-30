@@ -7,7 +7,7 @@ excerpt: Today marks an important milestone in the implementation of the Foundat
 aria: 
 tags: Evidence-Act
 filters: evidence-act
-permalink: /2022-3-28-evidence-act-milestone/
+#permalink: /2022-3-28-evidence-act-milestone/
 image: success road.jpg
 img-alt: A road through the trees, with road sign that says “success.”
 ---

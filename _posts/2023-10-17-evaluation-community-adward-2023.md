@@ -7,7 +7,7 @@ excerpt: We are thrilled to share the winners of the Annual Evaluation Community
 aria: EOC Awards 2023 Blog Post
 tags: Evaluation-Officer-Council Evaluation
 filters: evaluation-officer-council evaluation
-permalink: /2023-10-17-announcing-2023-evaluation-community-awards/
+#permalink: /2023-10-17-announcing-2023-evaluation-community-awards/
 image: golden-trophy-thumbnail.png
 img-alt: Golden trophy
 ---

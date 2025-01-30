@@ -7,7 +7,7 @@ excerpt: We are excited to kick off a new regular feature on Evaluation.gov – 
 aria: 
 tags: In-the-Spotlight
 filters: in-the-spotlight
-permalink: /2021-11-17-in-the-spotlight-irs-raas/
+#permalink: /2021-11-17-in-the-spotlight-irs-raas/
 image: spotlight-1.png
 img-alt: spotlight
 ---

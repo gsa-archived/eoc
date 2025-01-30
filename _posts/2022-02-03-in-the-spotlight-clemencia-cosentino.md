@@ -7,7 +7,7 @@ excerpt: <em>In the Spotlight</em> serves to introduce you to the people and off
 aria: 
 tags: In-the-Spotlight
 filters: in-the-spotlight
-permalink: /2022-02-03-in-the-spotlight-clemencia-cosentino/
+#permalink: /2022-02-03-in-the-spotlight-clemencia-cosentino/
 image: clemencia-cosentino-1.png
 img-alt: spotlight
 ---

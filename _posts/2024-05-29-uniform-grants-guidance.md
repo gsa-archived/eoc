@@ -7,7 +7,7 @@ excerpt: The Office of Management and Budget (OMB) issues guidance in Title 2 of
 aria: OMB Revises its Uniform Grants Guidance, Clarifying Support for Program Evaluation
 tags: Evaluation Guidance
 filters: evaluation guidance
-permalink: /omb-revises-its-uniform-grants-guidance/
+#permalink: /omb-revises-its-uniform-grants-guidance/
 image: cfr-circle-thumbnail.png
 img-alt: CFR circle thumbnail image
 thumbnail: cfr-blog-thumbnail.png

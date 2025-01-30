@@ -7,7 +7,7 @@ excerpt: January 2024 marks five years since passage of the Foundations for Evid
 aria: 
 tags: Evaluation Evidence-Act Evaluation-Officer-Council
 filters: evaluation evidence-act evaluation-officer-council
-permalink: /celebrating-five-years-of-the-evidence-act/
+#permalink: /celebrating-five-years-of-the-evidence-act/
 image: 5-year-evidence-act.png
 img-alt: 5th anniversary of the evidence act
 thumbnail: evidence-act-thumbnail.png

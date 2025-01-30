@@ -7,7 +7,7 @@ excerpt: We are pleased to announce the winners of the Inaugural Evaluation Offi
 aria: EOC Awards Blog Post
 tags: Evaluation-Officer-Council Evaluation
 filters: evaluation-officer-council evaluation
-permalink: /2021-10-11-eoc-awards-blog/
+#permalink: /2021-10-11-eoc-awards-blog/
 image: award-trophy-1.png
 img-alt: Golden trophy to symbolize awards
 ---

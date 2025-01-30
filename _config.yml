@@ -173,8 +173,8 @@ primary_navigation:
       #   url: "/learning-agenda-questions-dashboard/"
   - name: Resources
     url: /resources/
-  - name: News
-    url: /news/
+  #- name: News
+  #  url: /news/
   - name: About
     children:
       - name: About the Site

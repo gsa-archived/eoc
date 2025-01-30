@@ -7,7 +7,7 @@ excerpt: In the Spotlight serves to introduce you to the people and offices acro
 aria: 
 tags: In-the-Spotlight
 filters: in-the-spotlight
-permalink: /2022-09-08-in-the-spotlight-usaid/
+#permalink: /2022-09-08-in-the-spotlight-usaid/
 image: spotlight-1.png
 img-alt: spotlight
 ---

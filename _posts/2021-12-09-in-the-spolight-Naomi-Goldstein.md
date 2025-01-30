@@ -7,7 +7,7 @@ excerpt: <em>In the Spotlight</em> serves to introduce you to the people and off
 aria: 
 tags: In-the-Spotlight
 filters: in-the-spotlight
-permalink: /2021-12-09-in-the-spolight-Naomi-Goldstein/
+#permalink: /2021-12-09-in-the-spolight-Naomi-Goldstein/
 image: naomi-goldstein.jpeg
 img-alt: Naomi Goldstein Headshot
 ---

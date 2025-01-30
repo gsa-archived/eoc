@@ -7,7 +7,7 @@ excerpt: The five-year anniversary of the Foundations for Evidence-Based Policym
 aria: 
 tags: Evaluation Evidence-Use Evidence-Act
 filters: evaluation evidence-use evidence-act
-permalink: /build-a-foundation/
+#permalink: /build-a-foundation/
 image: evidence-capacity.png
 img-alt: Evidence capacity thumbnail
 thumbnail: evidence-capacity-thumbnail.png

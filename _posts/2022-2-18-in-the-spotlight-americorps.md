@@ -7,7 +7,7 @@ excerpt: The latest In the Spotlight highlights the innovative evaluation work u
 aria: 
 tags: In-the-Spotlight
 filters: in-the-spotlight
-permalink: /2022-2-18-in-the-spotlight-americorps/
+#permalink: /2022-2-18-in-the-spotlight-americorps/
 image: spotlight-1.png
 img-alt: spotlight
 ---

@@ -7,7 +7,7 @@ excerpt: <em>In the Spotlight</em> serves to introduce you to the people and off
 aria: 
 tags: In-the-Spotlight
 filters: in-the-spotlight
-permalink: /2021-11-29-in-the-spotlight-evaluator-christina-yancey/
+#permalink: /2021-11-29-in-the-spotlight-evaluator-christina-yancey/
 image: christina-yancey-1.png
 img-alt: Christina Yancey Headshot
 ---
