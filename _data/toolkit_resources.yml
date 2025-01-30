@@ -1,21 +1,21 @@
 -
-  domain: "Evaluation 101: What is Evaluation?"
-  title: "What is Program Evaluation?: A Beginners Guide"
-  description: Program evaluation uses systematic data collection to help us understand whether programs, policies, or organizations are effective. This guide explains how program evaluation can contribute to improving program services. It provides a high-level, easy-to-read overview of program evaluation from start (planning and evaluation design) to finish (dissemination), and includes links to additional resources.
-  source: Gene Shackman, Ph.D.
-  type: Slide Deck
-  image: <i class="fa fa-file-powerpoint-o font-size-logo"></i>
-  another_type:
-  another_image:
-  keywords:
-    - Planning
-    - Design
-    - Dissemination
-  year: 2017
-  format: PDF
-  link: Resource_What is Program Evaluation - A Beginners Guide.pdf
-  cover_sheet: 
-  citation: Shackman, G. (2020). What is program evaluation? A Beginners Guide [Presentation slides]. The Global Social Change Research Project. http://dx.doi.org/10.2139/ssrn.3060080
+  #domain: "Evaluation 101: What is Evaluation?"
+  #title: "What is Program Evaluation?: A Beginners Guide"
+  #description: Program evaluation uses systematic data collection to help us understand whether programs, policies, or organizations are effective. This guide explains how program evaluation can contribute to improving program services. It provides a high-level, easy-to-read overview of program evaluation from start (planning and evaluation design) to finish (dissemination), and includes links to additional resources.
+  #source: Gene Shackman, Ph.D.
+  #type: Slide Deck
+  #image: <i class="fa fa-file-powerpoint-o font-size-logo"></i>
+  #another_type:
+  #another_image:
+  #keywords:
+  #  - Planning
+  #  - Design
+  #  - Dissemination
+  #year: 2017
+  #format: PDF
+  #link: Resource_What is Program Evaluation - A Beginners Guide.pdf
+  #cover_sheet: 
+  #citation: Shackman, G. (2020). What is program evaluation? A Beginners Guide [Presentation slides]. The Global Social Change Research Project. http://dx.doi.org/10.2139/ssrn.3060080
 -
   domain: "Evaluation 101: Types of Evaluation"
   title: Common Framework for Research and Evaluation
