@@ -7,7 +7,7 @@ excerpt: On June 3, the Office of Management and Budget (OMB) and the U.S. Gener
 aria: 'Announcing Phase I winners of the President’s Management Agenda Learning Agenda: Public Participation and Community Engagement Evidence Challenge'
 tags: Evaluation Public-Participation Community-Engagement
 filters: evaluation public-participation community-engagement
-permalink: /pma-learning-agenda-winners/
+#permalink: /pma-learning-agenda-winners/
 image: team-trophy-circle.png
 img-alt: team-trophy image
 thumbnail: PMALA-Challenge.png

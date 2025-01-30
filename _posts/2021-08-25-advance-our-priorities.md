@@ -7,7 +7,7 @@ excerpt: As this Administration works to address complex and urgent challenges f
 aria: Evaluation to Advance Our Priorities
 tags: Evaluation
 filters: evaluation
-permalink: /2020-08-25-advance-our-priorities/
+#permalink: /2020-08-25-advance-our-priorities/
 image: danny-post-1.png
 img-alt: Looking glass to signify a focus on priorities
 ---

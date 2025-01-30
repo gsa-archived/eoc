@@ -7,7 +7,7 @@ excerpt: On March 4, the Office of Management and Budget (OMB) released the Pres
 aria: 
 tags: Evaluation Evidence-Use
 filters: evaluation evidence-use
-permalink: /pma-learning-agenda-end-of-year-report/
+#permalink: /pma-learning-agenda-end-of-year-report/
 image: collaboration-circle.png
 img-alt: Group of people collaborating around a table
 thumbnail: collaboration.png

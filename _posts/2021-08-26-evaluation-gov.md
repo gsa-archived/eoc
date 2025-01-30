@@ -7,7 +7,7 @@ excerpt: Welcome to Evaluation.gov, the home for Federal program evaluation and 
 aria: Article Evaluation.gov
 tags: Evaluation Evidence-Act
 filters: evaluation evidence-act
-permalink: /2021-08-26-evaluation-gov/
+#permalink: /2021-08-26-evaluation-gov/
 image: welcome-post-DE-1.png
 img-alt: Yellow tiles on blue background that spell “welcome”
 ---

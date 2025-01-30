@@ -7,7 +7,7 @@ excerpt: The <a href="https://www.whitehouse.gov/wp-content/uploads/2023/03/ap_1
 aria: 
 tags: Evaluation Evidence-Act
 filters: evaluation evidence-act
-permalink: /2023-03-13-president-budget-demonstrates-commitment-to-evidence-and-evaluation/
+#permalink: /2023-03-13-president-budget-demonstrates-commitment-to-evidence-and-evaluation/
 image: budget-report.jpg
 img-alt: budget report
 ---

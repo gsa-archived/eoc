@@ -7,7 +7,7 @@ excerpt: Today, the Biden-Harris Administration launched a “Year of Evidence f
 aria: 
 tags: Evidence-Act Evaluation Year-of-Evidence
 filters: evidence-act evaluation year-of-evidence
-permalink: /2022-4-7-year-of-evidence-for-action/
+#permalink: /2022-4-7-year-of-evidence-for-action/
 image: stacked-blocks.jpg
 img-alt: Three stacked blocks with a lightbulb, gears, and target to illustrate ideas leading to action.
 ---

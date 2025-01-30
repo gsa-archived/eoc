@@ -1,22 +1,4 @@
 -
-  domain: "Evaluation 101: What is Evaluation?"
-  title: "What is Program Evaluation?: A Beginners Guide"
-  description: Program evaluation uses systematic data collection to help us understand whether programs, policies, or organizations are effective. This guide explains how program evaluation can contribute to improving program services. It provides a high-level, easy-to-read overview of program evaluation from start (planning and evaluation design) to finish (dissemination), and includes links to additional resources.
-  source: Gene Shackman, Ph.D.
-  type: Slide Deck
-  image: <i class="fa fa-file-powerpoint-o font-size-logo"></i>
-  another_type:
-  another_image:
-  keywords:
-    - Planning
-    - Design
-    - Dissemination
-  year: 2017
-  format: PDF
-  link: Resource_What is Program Evaluation - A Beginners Guide.pdf
-  cover_sheet: 
-  citation: Shackman, G. (2020). What is program evaluation? A Beginners Guide [Presentation slides]. The Global Social Change Research Project. http://dx.doi.org/10.2139/ssrn.3060080
--
   domain: "Evaluation 101: Types of Evaluation"
   title: Common Framework for Research and Evaluation
   description: Building evidence is not one-size-fits all, and different questions require different methods and approaches. <i>The Administration for Children & Families Common Framework for Research and Evaluation</i> describes, in detail, six different types of research and evaluation approaches – foundational descriptive studies, exploratory descriptive studies, design and development studies, efficacy studies, effectiveness studies, and scale-up studies – and can help you understand which type of evaluation might be most useful for you and your information needs.
@@ -371,3 +353,21 @@
   format: PDF
   link: Resource_Dissemination Matrix Template.pdf
   citation: "Lopez, M. & Wilson Becho, L. (2022). Dissemination Matrix Template: How to Share Important Aspects of your ATE Project with Others. EvaluATE. https://evalu-ate.org/template/dissemination-matrix/"
+
+#  #domain: "Evaluation 101: What is Evaluation?"
+  #title: "What is Program Evaluation?: A Beginners Guide"
+  #description: Program evaluation uses systematic data collection to help us understand whether programs, policies, or organizations are effective. This guide explains how program evaluation can contribute to improving program services. It provides a high-level, easy-to-read overview of program evaluation from start (planning and evaluation design) to finish (dissemination), and includes links to additional resources.
+  #source: Gene Shackman, Ph.D.
+  #type: Slide Deck
+  #image: <i class="fa fa-file-powerpoint-o font-size-logo"></i>
+  #another_type:
+  #another_image:
+  #keywords:
+  #  - Planning
+  #  - Design
+  #  - Dissemination
+  #year: 2017
+  #format: PDF
+  #link: Resource_What is Program Evaluation - A Beginners Guide.pdf
+  #cover_sheet: 
+  #citation: Shackman, G. (2020). What is program evaluation? A Beginners Guide [Presentation slides]. The Global Social Change Research Project. http://dx.doi.org/10.2139/ssrn.3060080

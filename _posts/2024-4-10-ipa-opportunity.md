@@ -7,7 +7,7 @@ excerpt: Are you a mid-career to senior-level professional passionate about usin
 aria: Calling Evidence Experts for a Year-Long IPA with the Evidence Team 
 tags: Evaluation Evidence-Act
 filters: evaluation evidence-act
-permalink: /calling-evidence-experts-for-a-year-long-ipa/
+#permalink: /calling-evidence-experts-for-a-year-long-ipa/
 image: IPA-circle-thumbnail.png
 img-alt: IPA circle thumbnail image
 thumbnail: IPA-blog-thumbnail.png

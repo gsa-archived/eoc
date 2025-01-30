@@ -7,7 +7,7 @@ excerpt: Agencies have now published their latest Annual Evaluation Plans, which
 aria: Agencies publish their latest annual evaluation planes
 tags: Evaluation Evidence-Act
 filters: evaluation evidence-act
-permalink: /2023-04-03-agencies-publish-anual-evaluation-plans/
+#permalink: /2023-04-03-agencies-publish-anual-evaluation-plans/
 image: notebook.jpg
 img-alt: Notebook with text "time to evaluate" on cover and a pen and glasses
 ---

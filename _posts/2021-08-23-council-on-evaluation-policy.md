@@ -7,7 +7,7 @@ excerpt: The Foundations for Evidence-Based Policymaking Act of 2018 (Evidence A
 aria: Why an Interagency Council on Evaluation Policy
 tags: ICEP Evaluation
 filters: icep evaluation
-permalink: /2020-08-23-council-on-evaluation-policy/
+#permalink: /2020-08-23-council-on-evaluation-policy/
 image: ICEP-post-JH-1.png
 img-alt: People in a meeting to signify the Interagency Council on Evaluation Policy
 ---

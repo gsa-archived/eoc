@@ -7,7 +7,7 @@ excerpt: 'On April 8, the Office of Management and Budget (OMB) and the U.S. Gen
 aria: 
 tags: Evaluation Public-Participation Community-Engagement
 filters: evaluation public-participation community-engagement
-permalink: /public-participation-and-community-engagement-evidenc-challenge/
+#permalink: /public-participation-and-community-engagement-evidenc-challenge/
 image: evaluation-gov-challenge-circle.png
 img-alt: cicle thumbnail image challenge.gov blog
 thumbnail: evaluation-gov-challenge-thumbnail.png
