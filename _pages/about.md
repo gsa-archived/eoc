@@ -18,7 +18,7 @@ permalink: /about/
     The OMB Evidence Team at the Office of Management and Budget is committed to developing, building, producing and using evidence and evaluation as a tool to improve government-wide effectiveness. Toward this end, the Team coordinates and supports evidence building and use across the Federal Government. Through support of the Evaluation Officer Council, engagement with the Federal evaluation community, and development of guidance and resources, the Evidence Team advances the goal of better integrating evidence and rigorous evaluation in budget, management, operational, and policy decisions. <br />
 
 <div class="grid-container padding-left-0">
-            <h2 class="font-sans-lg">Leadership</h2>
+            <!--<h2 class="font-sans-lg">Leadership</h2>
             <div class="usa-graphic-list__row grid-row grid-gap padding-top-0">
                 <div class="tablet:grid-col-6 container" style="padding:10px;">
                         <div class="left">
@@ -55,7 +55,7 @@ permalink: /about/
                         </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     <p><a href="mailto:evidence@omb.eop.gov">Contact</a> the Evidence Team</p>
 <h2>Site Information and Policies</h2>
 
