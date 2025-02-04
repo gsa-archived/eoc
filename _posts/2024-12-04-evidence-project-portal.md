@@ -7,7 +7,7 @@ excerpt: The OMB Evidence Team is excited to launch the new <a href="https://www
 aria:  New Evidence Project Portal
 tags: Evaluation Evidence-Use
 filters: evaluation evidence-use
-permalink: /evidence-portal-launch/
+#permalink: /evidence-portal-launch/
 image: partnership.jpg
 img-alt: Man and woman at desk with computer giving each other a high five.
 thumbnail: partnership.jpg

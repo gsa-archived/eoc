@@ -7,7 +7,7 @@ excerpt: Wildlife conservation faces a global crisis with the rapid loss of biod
 aria: USFWS International Conservation 
 tags: Evaluation Evidence-Use
 filters: evaluation evidence-use
-permalink: /USFWS-International-Conservation/
+#permalink: /USFWS-International-Conservation/
 image: savanna_elephants.jpg
 img-alt: Savanna elephants in Tanzania
 thumbnail: savanna_elephants.jpg

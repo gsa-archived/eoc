@@ -7,7 +7,7 @@ excerpt: Many federal agencies are striving to increase their capacity to collec
 aria: 
 tags: Evidence-Use
 filters: evidence-use
-permalink: /2023-10-23-connecting-goverment-agencies/
+#permalink: /2023-10-23-connecting-goverment-agencies/
 image: tanf-data-collaborative.png
 img-alt: TANF data collaborative
 ---

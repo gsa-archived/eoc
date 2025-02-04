@@ -7,7 +7,7 @@ excerpt: Evidence is a powerful tool to inform government practices and policies
 aria: 
 tags: Evaluation Year-of-Evidence
 filters: evaluation year-of-evidence
-permalink: /2022-6-3-evidence-in-action-across-the-country/
+#permalink: /2022-6-3-evidence-in-action-across-the-country/
 image: team-work.jpg
 img-alt: the words "team work" in a white background
 ---

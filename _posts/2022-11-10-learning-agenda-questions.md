@@ -7,7 +7,7 @@ excerpt: Federal agencies recently published agency-wide Learning Agendas as req
 aria: Evidence Act
 tags: Evidence Act
 filters: learning-agendas
-permalink: /2022-11-10-learning-agenda-questions/
+#permalink: /2022-11-10-learning-agenda-questions/
 image: learning-agenda-thumbnail.jpg
 img-alt: learning-agenda
 ---

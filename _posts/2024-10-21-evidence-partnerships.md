@@ -7,7 +7,7 @@ excerpt: On April 17, 2024, the U.S. Department of State’s Bureau of Conflict 
 aria: 'Increasing Evidence Use through Research-Policy Partnerships'
 tags: Evaluation Evidence-Use Public-Participation
 filters: evaluation evidence-use public-participation
-permalink: /evidence-partnerships/
+#permalink: /evidence-partnerships/
 image: seal-partnership-logo.png
 img-alt: SEAL Partnership State Evidence and Learning logo
 thumbnail: seal-partnership-logo.png

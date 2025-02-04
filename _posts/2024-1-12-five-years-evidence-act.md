@@ -7,7 +7,7 @@ excerpt: January 2024 marks five years since passage of the Foundations for Evid
 aria: 
 tags: Evaluation Evidence-Act Evaluation-Officer-Council
 filters: evaluation evidence-act evaluation-officer-council
-permalink: /celebrating-five-years-of-the-evidence-act/
+#permalink: /celebrating-five-years-of-the-evidence-act/
 image: 5-year-evidence-act.png
 img-alt: 5th anniversary of the evidence act
 thumbnail: evidence-act-thumbnail.png
@@ -24,7 +24,7 @@ Since Evaluation.gov is the home for the Act’s evaluation activities, below we
 2. The [Evaluation Officer Council]({{site.baseurl}}/about-evaluation-officers/) has met monthly since 2019, providing a venue for collaboration and knowledge sharing, and the [Interagency Council on Evaluation Policy]({{site.baseurl}}/interagency-council-on-evaluation-policy/) brings evaluation experts from across the Federal government together to provide support, tools, and professional development opportunities for Federal evaluators.
 3. [Evaluation.gov]({{site.baseurl}}/) launched in August, 2021, providing a central hub for evaluation efforts across the Federal Government, amplified by the Evaluation.gov [LinkedIn](https://www.linkedin.com/company/evaluation-gov/){:target="_blank"} account and Evaluation.gov [newsletter](https://public.govdelivery.com/accounts/USGSA/subscriber/new?topic_id=USGSA_1068){:target="_blank"}.
 4. Agencies published inaugural [Learning Agendas]({{site.baseurl}}/evidence-plans/learning-agenda/), [Capacity Assessments]({{site.baseurl}}/evidence-plans/capacity-assessments/), and four years of [Annual Evaluation Plans]({{site.baseurl}}/evidence-plans/annual-evaluation-plan/).
-5. OMB published the first-ever governmentwide standards for program evaluation ([OMB M-20-12](https://www.whitehouse.gov/wp-content/uploads/2020/03/M-20-12.pdf){:target="_blank"}): relevance and utility, rigor, independence and objectivity, transparency, and ethics.
+5. OMB published the first-ever governmentwide standards for program evaluation ([OMB M-20-12]({{ site.baseurl }}/assets/resources/M-20-12.pdf){:target="_blank"}): relevance and utility, rigor, independence and objectivity, transparency, and ethics.
 6. Agencies published [Evaluation Policies]({{site.baseurl}}/evidence-plans/evaluation-policies/) to guide their evaluation activities, many for the first time.
 7. An interactive [Learning Agenda Questions Dashboard]({{site.baseurl}}/learning-agenda-questions-dashboard/) on Evaluation.gov allows users to explore where evidence is most needed across the Federal landscape.
 8. OMB and GSA (OSSPI and the Federal Acquisition Service) created a new dedicated procurement vehicle ([SIN subgroup]({{site.baseurl}}/assets/resources/Program%20Evaluation%20Services%20Subgroup%20One-Pager.pdf)) to simplify and improve the quality of program evaluation contracting.

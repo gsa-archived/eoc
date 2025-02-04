@@ -7,7 +7,7 @@ excerpt: 'Creating an evidence-based Government means that staff at all levels â
 aria: 
 tags: Evidence-Use
 filters: evidence-use
-permalink: /application-for-summer-fall-2024-leadership-academy/
+#permalink: /application-for-summer-fall-2024-leadership-academy/
 image: Evaluation-Leadership Academy-circle.png
 img-alt: Leadership Academy circle thumbnail
 thumbnail: Evaluation-Leadership Academy-thumbnail.png

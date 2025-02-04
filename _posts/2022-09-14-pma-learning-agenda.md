@@ -7,7 +7,7 @@ excerpt: Today, the Office of Management and Budget (OMB) released the President
 aria: 
 tags: Evaluation
 filters: evaluation
-permalink: /pma-learning-agenda/
+#permalink: /pma-learning-agenda/
 image: pma-blog-thumbnail.png
 img-alt: PMA seal
 ---

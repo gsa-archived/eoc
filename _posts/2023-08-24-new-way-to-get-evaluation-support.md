@@ -7,7 +7,7 @@ excerpt: High quality program evaluations require connecting agencies’ evidenc
 aria: 
 tags: Evaluation
 filters: evaluation
-permalink: /2023-08-29-new-way-to-get-evaluation-support/
+#permalink: /2023-08-29-new-way-to-get-evaluation-support/
 image: hand-shake.jpg
 img-alt: hand shake
 ---

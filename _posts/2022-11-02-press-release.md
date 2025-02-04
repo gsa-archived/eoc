@@ -7,9 +7,10 @@ excerpt: The OMB Evidence Team is excited to share this U.S. General Services Ad
 aria: EOC Awards Blog Post
 tags: General-Services-Administration
 filters: General-Services-Administration
-permalink: /2022-11-02-general-service-administration/
+#permalink: /2022-11-02-general-service-administration/
 image: general-service-administration-thumbnail.jpg
 img-alt: General-Service-Administration
+published: false
 ---
 
 <img src="{{site.baseurl}}/assets/images/blog/general-service-administration.jpg" alt="General-Services-Administration" style="float:left; width:36%; height:35%; margin-right:1rem; margin-top:0.4rem">

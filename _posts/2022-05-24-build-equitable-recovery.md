@@ -7,7 +7,7 @@ excerpt: The $1.9 trillion American Rescue Plan (ARP) pandemic relief bill, sign
 aria: 
 tags: Evaluation
 filters: evaluation
-permalink: /build-equitable-recovery/
+#permalink: /build-equitable-recovery/
 image: open-sign.jpg
 img-alt: An open sign on the glass door of a shop.
 ---

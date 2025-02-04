@@ -7,7 +7,7 @@ excerpt: On August 19, 2024, the Office of Management and Budget (OMB) and the U
 aria: 'And the Award Goes To… The Improve Group Cooperative for their PPCE Evaluation Toolkit'
 tags: Evidence-Use Evaluation Public-Participation Community-Engagement
 filters: evidence-use evaluation public-participation community-engagement
-permalink: /ppce-evaluation-toolkit/
+#permalink: /ppce-evaluation-toolkit/
 image: improve-group-circle.png
 img-alt: The Improve Group in a meeting room
 thumbnail: improve-group-thumbnail.jpg
