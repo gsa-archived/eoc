@@ -24,7 +24,8 @@ def clean_url(url):
 
 def check_link(locs):
     print('checking {}'.format(locs[:2]))
-    fin = []
+    lins = []
+    stats = []
     errors = 0
     for i in locs:
         i = i.strip()
@@ -35,29 +36,29 @@ def check_link(locs):
             html = urlopen(i)
         
         except HTTPError as e:
-            print(i)
-            print('HTTP error - \n{}'.format(e))
-            fin.append([i,e])
+            print('{}, {}'.format(i,e))
+            lins.append([i,e])
             errors+=1
             continue
             
         except URLError as e:
-            print(i)
-            print('URL Error - \n{}'.format(e))
-            fin.append([i,e])
+            print('{}, {}'.format(i,e))
+            lins.append([i,e])
             errors+=1
             continue
 
         else:
-            fin.append([i,'Good'])
+            print('{}, good!'.format(i))
+            lins.append([i,'good'])
             continue
-    print('There are {} errors'.format(errors))
+    print('there are {} errors'.format(errors))
+    return lins
 
 def read_urls(fold_path):
     urls = []
     for file in os.listdir(fold_path):
         file_path = os.path.join(fold_path, file)
-        with open(file_path, mode= 'r', encoding='utf-8') as f:
+        with open(file_path, 'w') as f:
             reader = csv.reader(f)
             next(reader,None)
             for row in reader:
