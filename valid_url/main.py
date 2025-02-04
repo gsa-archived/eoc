@@ -1,4 +1,22 @@
-from valid_url import check_link
+from valid_url import check_link, read_urls
+from xml.dom.minidom import parseString
+from xml.dom.minidom import parse
+import requests
+from csv import writer
+import os
+import csv
 
-link = "https://www.evaluation.gov/assets/resources/Resource_What%20is%20Program%20Evaluation%20-%20A%20Beginners%20Guide.pdf"
-check_link(link)
+
+links = []
+
+path = 'path_csvs'
+files = []
+
+urls = read_urls(path)
+
+links = check_link(urls)
+
+with open('broken_links.csv', 'a') as f_object:
+    writer_object = writer(f_object)
+    writer_object.writerow(links)
+    f_object.close()
