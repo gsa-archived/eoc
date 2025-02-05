@@ -2,77 +2,79 @@
 console.log("Hi from Federalist");
 
 (function(){
-    let forcedUrl = null;
-    let special = false;
     const forcedSpecialUrl = "https://evaluation.gov/evidenceportal";
-    
-    function buildForcedUrl(href) {
-      href = href.trim();
-      return href.indexOf(window.location.origin) === 0 ? href : window.location.origin + href;
-    }
-    
-    function enforceForcedUrl() {
-      if(special) {
-        if(window.location.href !== forcedSpecialUrl) {
-          window.history.replaceState({}, '', forcedSpecialUrl);
-          window.location.replace(forcedSpecialUrl);
-        }
-      } else {
-        if(forcedUrl && window.location.href !== forcedUrl) {
-          window.history.replaceState({}, '', forcedUrl);
-          window.location.replace(forcedUrl);
-        }
+    const redirectDelay = 100; // milliseconds delay to allow the server to capture the event
+  
+    function enforceSpecialUrl() {
+      if (window.location.href.includes("evidenceportal") && window.location.href !== forcedSpecialUrl) {
+        setTimeout(() => {
+          window.location.href = forcedSpecialUrl;
+        }, redirectDelay);
       }
     }
-    
-    const observer = new MutationObserver(function(mutations) {
-      enforceForcedUrl();
-      mutations.forEach(function(mutation) {
-        if(mutation.addedNodes) {
-          mutation.addedNodes.forEach(function(node) {
-            if(node.nodeType === Node.ELEMENT_NODE && node.tagName === "META" && node.getAttribute("http-equiv") && node.getAttribute("http-equiv").toLowerCase() === "refresh"){
+  
+    const observer = new MutationObserver(mutations => {
+      enforceSpecialUrl();
+      mutations.forEach(mutation => {
+        if (mutation.addedNodes) {
+          mutation.addedNodes.forEach(node => {
+            if (
+              node.nodeType === Node.ELEMENT_NODE &&
+              node.tagName === "META" &&
+              node.getAttribute("http-equiv") &&
+              node.getAttribute("http-equiv").toLowerCase() === "refresh"
+            ) {
               node.parentNode && node.parentNode.removeChild(node);
             }
           });
         }
       });
     });
-    
-    observer.observe(document.documentElement, {
-      childList: true,
-      subtree: true,
-      attributes: true
-    });
-    
-    window.addEventListener("popstate", enforceForcedUrl);
-    window.addEventListener("load", enforceForcedUrl);
-    
-    document.addEventListener("click", function(e) {
-      let el = e.target;
-      while(el && el !== document) {
-        if(el.tagName === "A"){
-          if(el.getAttribute("aria-label") === "Evidence Project Portal" && el.getAttribute("tabindex") === "0"){
-            special = true;
-            forcedUrl = forcedSpecialUrl;
-          } else {
-            special = false;
-            let href = el.getAttribute("href");
-            if(href) forcedUrl = buildForcedUrl(href);
-          }
+    observer.observe(document.documentElement, { childList: true, subtree: true, attributes: true });
+  
+    window.addEventListener("popstate", enforceSpecialUrl);
+    window.addEventListener("hashchange", enforceSpecialUrl);
+    window.addEventListener("load", enforceSpecialUrl);
+    setInterval(enforceSpecialUrl, 100);
+  
+    function overrideEvidenceButton(){
+      const btn = document.querySelector('a[aria-label="Evidence Project Portal"][tabindex="0"]');
+      if (btn) {
+        btn.setAttribute("href", forcedSpecialUrl);
+        btn.addEventListener("click", function(e) {
           e.preventDefault();
           e.stopImmediatePropagation();
-          if(forcedUrl) {
-            window.history.replaceState({}, '', forcedUrl);
-            window.location.replace(forcedUrl);
+          setTimeout(() => {
+            window.location.href = forcedSpecialUrl;
+          }, redirectDelay);
+        }, true);
+      }
+    }
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", overrideEvidenceButton);
+    } else {
+      overrideEvidenceButton();
+    }
+  
+    document.addEventListener("click", function(e) {
+      let el = e.target;
+      while (el && el !== document) {
+        if (el.tagName === "A") {
+          const href = el.getAttribute("href");
+          if (href && href.includes("evidenceportal")) {
+            e.preventDefault();
+            e.stopImmediatePropagation();
+            setTimeout(() => {
+              window.location.href = forcedSpecialUrl;
+            }, redirectDelay);
+            return;
           }
-          break;
         }
         el = el.parentElement;
       }
     }, true);
   })();
   
-
 // Add a new class for all of the external anchor tags
 $("a").each(function(index, element) {
     if (!$(element).attr("href").startsWith('https://www.evaluation.gov' && 'javascript:void(0)')
