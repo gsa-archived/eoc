@@ -1,6 +1,25 @@
 // Add your custom javascript here
 console.log("Hi from Federalist");
 
+const BASE_URL = 'https://evaluation.gov';
+
+function redirectLinks(link) {
+  const rawHref = link.getAttribute("href");
+  if (!rawHref) return;
+  const normalizedPath = rawHref.startsWith('/') ? rawHref : '/' + rawHref;
+  const fallback = BASE_URL + normalizedPath;
+  if (link.target === '_blank') window.open(fallback, "_blank");
+  else window.location.href = fallback;
+}
+
+document.addEventListener("click", (event) => {
+  const link = event.target.closest("a");
+  if (!link) return;
+  event.preventDefault();
+  redirectLinks(link);
+}, true);
+
+
 // Add a new class for all of the external anchor tags
 $("a").each(function(index, element) {
     if (!$(element).attr("href").startsWith('https://www.evaluation.gov' && 'javascript:void(0)')
