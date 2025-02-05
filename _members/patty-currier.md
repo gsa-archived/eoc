@@ -5,4 +5,5 @@ layout: bio
 name: Patty Currier
 department: Department of Interior
 job-title: Director of Planning and Performance Management
+published: False
 ---
