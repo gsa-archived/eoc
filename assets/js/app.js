@@ -1,27 +1,32 @@
 // Add your custom javascript here
 console.log("Hi from Federalist");
 
-function redirectLinks(){
-    let len = document.querySelectorAll('a[href*="/preview/gsa/eoc/feature/OMB-3-Release2.0-Demo/"]').length;
-    console.log(len);
-    console.log('in redirect');
+function redirectLinks() {
+    console.log('Running redirectLinks...');
+    
     document.querySelectorAll('a[href*="/preview/gsa/eoc/feature/OMB-3-Release2.0-Demo/"]').forEach(anchor => {
-        let href = anchor.getAttribute('href');
-        let newHref = href.split('/preview/gsa/eoc/feature/OMB-3-Release2.0-Demo/')[1];
-        if (newHref) {
-            let updatedHref = `https://evaluation.gov/${newHref}`;
-            anchor.setAttribute('href', updatedHref);
+        let href = anchor.href;
+        
+        if (href.includes('/preview/gsa/eoc/feature/OMB-3-Release2.0-Demo/')) {
+            let newHref = href.split('/preview/gsa/eoc/feature/OMB-3-Release2.0-Demo/')[1];
+            if (newHref) {
+                let updatedHref = `https://evaluation.gov/${newHref}`;
+                anchor.href = updatedHref;
+                console.log(`Updated href: ${updatedHref}`);
+            }
         }
     });
 }
+
+// Run after the DOM is loaded
 document.addEventListener("DOMContentLoaded", redirectLinks);
 
+// Run again if new elements are added dynamically
 const observer = new MutationObserver(() => {
     redirectLinks();
 });
 
 observer.observe(document.body, { childList: true, subtree: true });
-
 
 
 // Add a new class for all of the external anchor tags
