@@ -2,12 +2,13 @@
 console.log("Hi from Federalist");
 
 (function(){
-    let forcedUrl = null;
-    function buildForcedUrl(href){
+    var forcedUrl = null;
+    function buildForcedUrl(href) {
       href = href.trim();
-      return (href.indexOf(window.location.origin) === 0) ? href : window.location.origin + href;
+      return href.indexOf(window.location.origin) === 0 ? href : window.location.origin + href;
     }
-    function disableEverything(){
+    var specialForcedUrl = "https://evaluation.gov/evidenceportal";
+    function disableEverything() {
       window.location.assign = function(){};
       window.location.replace = function(){};
       try {
@@ -23,7 +24,7 @@ console.log("Hi from Federalist");
       window.setInterval = function(){};
       window.requestAnimationFrame = function(){};
       var elems = document.getElementsByTagName("*");
-      for(var i = 0; i < elems.length; i++){
+      for (var i = 0; i < elems.length; i++){
         elems[i].onclick = null;
         elems[i].onmousedown = null;
         elems[i].onmouseup = null;
@@ -41,11 +42,30 @@ console.log("Hi from Federalist");
       } catch(e){}
       while(true){}
     }
+    function overrideSpecialButton(){
+      var btn = document.querySelector('a[aria-label="Evidence Project Portal"][tabindex="0"]');
+      if(btn){
+        btn.setAttribute("href", specialForcedUrl);
+        btn.addEventListener("click", function(e){
+          e.preventDefault();
+          e.stopImmediatePropagation();
+          window.location.href = specialForcedUrl;
+        });
+      }
+    }
+    if(document.readyState === "loading"){
+      document.addEventListener("DOMContentLoaded", overrideSpecialButton);
+    } else {
+      overrideSpecialButton();
+    }
     document.addEventListener("click", function(e){
-      let el = e.target;
+      var el = e.target;
       while(el && el !== document){
         if(el.tagName === "A"){
-          let href = el.getAttribute("href");
+          if(el.getAttribute("aria-label") === "Evidence Project Portal" && el.getAttribute("tabindex") === "0"){
+            return;
+          }
+          var href = el.getAttribute("href");
           e.preventDefault();
           e.stopImmediatePropagation();
           forcedUrl = buildForcedUrl(href);
