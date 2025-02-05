@@ -17,28 +17,6 @@ function redirectLinks(){
 
 redirectLinks();
 
-function devRedirectLinks() {
-    let len = document.querySelectorAll('a[href*="/preview/gsa/eoc/"]').length;
-    console.log(len);
-    
-    document.querySelectorAll('a[href*="/preview/gsa/eoc/"]').forEach(anchor => {
-        let href = anchor.getAttribute('href');
-        
-        if (href.includes('evidenceportal')) {
-            let extension = href;
-            let ind = extension.indexOf('evidenceportal');
-            if (ind) {
-                let e1 = extension.substring(0,extension.indexOf('evidenceportal'));
-                let e2 = extension.substring(extension.indexOf('evidenceportal'),extension.length);
-                extension = e1+e2;
-                let updatedHref = window.origin + extension;
-                anchor.setAttribute('href',updatedHref);
-            }
-        }
-    });
-}
-
-//devRedirectLinks();
 
 // Add a new class for all of the external anchor tags
 $("a").each(function(index, element) {
