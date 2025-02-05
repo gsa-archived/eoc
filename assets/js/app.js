@@ -9,18 +9,17 @@ function redirectLinks() {
     console.log(`Found ${anchors.length} matching links.`);
     
     anchors.forEach(anchor => {
-        let href = anchor.getAttribute('href'); // Get current href
+        let href = anchor.getAttribute('href'); 
 
         console.log(`Processing href: ${href}`);
 
         if (href.includes('evidenceportal')) {
-            let ind = href.indexOf('evidenceportal'); // Find 'evidenceportal' position
+            let ind = href.indexOf('evidenceportal'); 
             
-            if (ind !== -1) { // Ensure it's found
-                let newHref = href.substring(ind); // Extract from 'evidenceportal' onwards
-                let updatedHref = `https://evaluation.gov/${newHref}`; // Construct the new URL
-                
-                anchor.setAttribute('href', updatedHref); // Update the href
+            if (ind !== -1) { 
+                let newHref = href.substring(ind); 
+                let updatedHref = `https://evaluation.gov/${newHref}`; 
+                anchor.setAttribute('href', updatedHref); 
                 
                 console.log(`Updated href: ${updatedHref}`);
             }
@@ -28,10 +27,8 @@ function redirectLinks() {
     });
 }
 
-// 1. Run after DOM is loaded
 document.addEventListener("DOMContentLoaded", redirectLinks);
 
-// 2. Run again if new elements are added dynamically
 const observer = new MutationObserver(() => {
     redirectLinks();
 });
