@@ -7,6 +7,7 @@ aria-label: The LGBTQI+ Equity Learning Agenda
 agency-offices:
     - name: The LGBTQI+ Equity Learning Agenda
       link: https://www.whitehouse.gov/wp-content/uploads/2023/01/Federal-Evidence-Agenda-on-LGBTQI-Equity.pdf#page=21
+published: False
 ---
 {% comment %}
 A document in the cross-government collection, used in cross-government.html page

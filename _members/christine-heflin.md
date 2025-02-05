@@ -5,4 +5,5 @@ layout: bio
 name: Shawn Klimek
 department: Department of Commerce
 job-title: Evaluation Officer
+published: False
 ---
