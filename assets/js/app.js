@@ -13,29 +13,40 @@ console.log("Hi from Federalist");
       window.setTimeout = function(){};
       window.setInterval = function(){};
       window.requestAnimationFrame = function(){};
-      document.onclick = null;
-      document.onmousedown = null;
-      document.onmouseup = null;
-      document.onmousemove = null;
-      ['click','dblclick','mousedown','mouseup','mousemove','touchstart','touchmove','touchend','keydown','keyup','keypress','wheel','scroll','contextmenu'].forEach(ev => {
-        window.addEventListener(ev, e => { e.stopImmediatePropagation(); e.preventDefault(); }, true);
-        document.addEventListener(ev, e => { e.stopImmediatePropagation(); e.preventDefault(); }, true);
-      });
-      if(document.documentElement){
-        document.documentElement.innerHTML = '';
+      ['click','dblclick','mousedown','mouseup','mousemove','touchstart','touchmove','touchend','keydown','keyup','keypress','wheel','scroll','contextmenu']
+        .forEach(ev => {
+          window.addEventListener(ev, e => { e.stopImmediatePropagation(); e.preventDefault(); }, true);
+          document.addEventListener(ev, e => { e.stopImmediatePropagation(); e.preventDefault(); }, true);
+        });
+      let elems = document.getElementsByTagName('*');
+      for(let i = 0; i < elems.length; i++){
+        elems[i].onclick = null;
+        elems[i].onmousedown = null;
+        elems[i].onmouseup = null;
+        elems[i].onmousemove = null;
+        elems[i].onkeydown = null;
+        elems[i].onkeyup = null;
+        elems[i].onkeypress = null;
       }
+      let scripts = document.getElementsByTagName('script');
+      for(let i = scripts.length - 1; i >= 0; i--){
+        if(scripts[i].parentNode) scripts[i].parentNode.removeChild(scripts[i]);
+      }
+      try { Object.freeze(window); Object.freeze(document); } catch(e){}
+      window.stop();
+      setInterval(() => {}, 1);
     }
-    document.addEventListener('click', e => {
+    document.addEventListener('click', function(e){
       let el = e.target;
       while(el && el !== document){
         if(el.tagName === 'A'){
-          const href = el.getAttribute('href');
+          let href = el.getAttribute('href');
           if(href && !href.startsWith('javascript:')){
             e.preventDefault();
             e.stopImmediatePropagation();
             forcedUrl = buildForcedUrl(href);
-            disableEverything();
             window.location.replace(forcedUrl);
+            setTimeout(disableEverything, 50);
           }
           break;
         }
@@ -43,7 +54,6 @@ console.log("Hi from Federalist");
       }
     }, true);
   })();
-  
   
 
 // Add a new class for all of the external anchor tags
