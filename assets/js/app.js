@@ -1,125 +1,143 @@
 // Add your custom javascript here
 console.log("Hi from Federalist");
 
-(function() {
-
+(function(){
     let forcedUrl = null;
-  
-    function buildForcedUrl(href) {
+    let lockActive = false;
+    function buildForcedUrl(href){
       href = href.trim();
-  
-      if (href.indexOf(window.location.origin) === 0) {
-        return href;
-      }
-      return window.location.origin + href;
+      if(href.indexOf(window.location.origin) === 0)return href;
+      return window.location.origin+href;
     }
-  
-    const originalAssign  = window.location.assign;
+    const originalAssign = window.location.assign;
     const originalReplace = window.location.replace;
-    const originalPush    = history.pushState;
+    const originalPushState = history.pushState;
     const originalReplaceState = history.replaceState;
-  
-    window.location.assign = function(url) {
+    window.location.assign = function(url){
+      if(lockActive)return;
       forcedUrl = buildForcedUrl(url);
-      console.log("[Override] location.assign intercepted. Forcing URL:", forcedUrl);
-      originalReplace.call(window.location, forcedUrl);
+      lockActive = true;
+      originalReplace.call(window.location,forcedUrl);
     };
-  
-    window.location.replace = function(url) {
+    window.location.replace = function(url){
+      if(lockActive)return;
       forcedUrl = buildForcedUrl(url);
-      console.log("[Override] location.replace intercepted. Forcing URL:", forcedUrl);
-      originalReplace.call(window.location, forcedUrl);
+      lockActive = true;
+      originalReplace.call(window.location,forcedUrl);
     };
-  
-    history.pushState = function(state, title, url) {
-      if (url) {
+    try{
+      const proto = Object.getPrototypeOf(window.location);
+      const desc = Object.getOwnPropertyDescriptor(proto,"href");
+      if(desc && desc.configurable){
+        Object.defineProperty(proto,"href",{
+          set: function(val){
+            if(lockActive)return;
+            forcedUrl = buildForcedUrl(val);
+            lockActive = true;
+            originalReplace.call(window.location,forcedUrl);
+          },
+          get: desc.get,
+          configurable: false,
+          enumerable: true
+        });
+      }
+    }catch(e){}
+    history.pushState = function(state,title,url){
+      if(lockActive)return;
+      if(url){
         forcedUrl = buildForcedUrl(url);
-        console.log("[Override] history.pushState intercepted. Forcing URL:", forcedUrl);
-        originalReplace.call(window.location, forcedUrl);
+        lockActive = true;
+        originalReplace.call(window.location,forcedUrl);
       } else {
-  
-        originalPush.apply(history, arguments);
+        originalPushState.apply(history,arguments);
       }
     };
-  
-    history.replaceState = function(state, title, url) {
-      if (url) {
+    history.replaceState = function(state,title,url){
+      if(lockActive)return;
+      if(url){
         forcedUrl = buildForcedUrl(url);
-        console.log("[Override] history.replaceState intercepted. Forcing URL:", forcedUrl);
-        originalReplace.call(window.location, forcedUrl);
+        lockActive = true;
+        originalReplace.call(window.location,forcedUrl);
       } else {
-        originalReplaceState.apply(history, arguments);
+        originalReplaceState.apply(history,arguments);
       }
     };
-  
-    document.addEventListener('click', function(event) {
-      let el = event.target;
-  
-      while (el && el !== document) {
-        if (el.tagName === 'A') {
+    const origAddEventListener = EventTarget.prototype.addEventListener;
+    EventTarget.prototype.addEventListener = function(type,listener,options){
+      if(type==='click'){
+        const wrapped = function(e){
+          if(lockActive){
+            e.stopImmediatePropagation();
+            return;
+          }
+          return listener.apply(this,arguments);
+        };
+        return origAddEventListener.call(this,type,wrapped,options);
+      }
+      return origAddEventListener.call(this,type,listener,options);
+    };
+    document.addEventListener('click',function(e){
+      if(lockActive){
+        e.stopImmediatePropagation();
+        return;
+      }
+      let el = e.target;
+      while(el && el!==document){
+        if(el.tagName==='A'){
           const href = el.getAttribute('href');
-          if (href && !href.startsWith('javascript:')) {
-            event.preventDefault();
-            event.stopImmediatePropagation();
+          if(href && !href.startsWith('javascript:')){
+            e.preventDefault();
+            e.stopImmediatePropagation();
             forcedUrl = buildForcedUrl(href);
-            console.log("[Override] Click intercepted. Forcing navigation to:", forcedUrl);
-  
-            originalReplace.call(window.location, forcedUrl);
+            lockActive = true;
+            originalReplace.call(window.location,forcedUrl);
           }
           break;
         }
         el = el.parentElement;
       }
-    }, true);
-  
-    const observer = new MutationObserver((mutationsList) => {
-  
-      if (forcedUrl && window.location.href !== forcedUrl) {
-        console.log("[Override] MutationObserver: Detected location change. Forcing back to:", forcedUrl);
-        originalReplace.call(window.location, forcedUrl);
+    },true);
+    ['mousedown','mouseup','touchstart','touchend'].forEach(function(type){
+      document.addEventListener(type,function(e){
+        if(lockActive)e.stopImmediatePropagation();
+      },true);
+    });
+    const observer = new MutationObserver(function(mutations){
+      if(lockActive && forcedUrl && window.location.href!==forcedUrl){
+        originalReplace.call(window.location,forcedUrl);
       }
-  
-      mutationsList.forEach((mutation) => {
-        if (mutation.type === 'childList') {
-          mutation.addedNodes.forEach((node) => {
-            if (node.nodeType === Node.ELEMENT_NODE) {
-              const el = node;
-              if (
-                el.tagName === 'META' &&
-                el.getAttribute('http-equiv') &&
-                el.getAttribute('http-equiv').toLowerCase() === 'refresh'
-              ) {
-                console.log("[Override] MutationObserver: Removing injected meta refresh tag.");
-                el.parentNode && el.parentNode.removeChild(el);
+      mutations.forEach(function(mutation){
+        if(mutation.type==='childList'){
+          Array.from(mutation.addedNodes).forEach(function(node){
+            if(node.nodeType===Node.ELEMENT_NODE && node.tagName==='META'){
+              if(node.getAttribute('http-equiv') && node.getAttribute('http-equiv').toLowerCase()==='refresh'){
+                node.parentNode && node.parentNode.removeChild(node);
               }
             }
           });
         }
       });
     });
-  
-    observer.observe(document.documentElement, {
-      childList: true,
-      subtree: true,
-      attributes: true
-    });
-  
-    window.addEventListener('popstate', function() {
-      if (forcedUrl && window.location.href !== forcedUrl) {
-        console.log("[Override] popstate event detected. Forcing URL:", forcedUrl);
-        originalReplace.call(window.location, forcedUrl);
+    observer.observe(document.documentElement,{childList:true,subtree:true,attributes:true});
+    window.addEventListener('popstate',function(){
+      if(lockActive && forcedUrl && window.location.href!==forcedUrl){
+        originalReplace.call(window.location,forcedUrl);
       }
     });
-  
-    setInterval(() => {
-      if (forcedUrl && window.location.href !== forcedUrl) {
-        console.log("[Override] setInterval check: Detected URL mismatch. Forcing URL:", forcedUrl);
-        originalReplace.call(window.location, forcedUrl);
+    window.addEventListener('hashchange',function(){
+      if(lockActive && forcedUrl && window.location.href!==forcedUrl){
+        originalReplace.call(window.location,forcedUrl);
       }
-    }, 100);
-  
+    });
+    setInterval(function(){
+      if(lockActive && forcedUrl && window.location.href!==forcedUrl){
+        originalReplace.call(window.location,forcedUrl);
+      }
+    },10);
   })();
   
+  
+
 // Add a new class for all of the external anchor tags
 $("a").each(function(index, element) {
     if (!$(element).attr("href").startsWith('https://www.evaluation.gov' && 'javascript:void(0)')
