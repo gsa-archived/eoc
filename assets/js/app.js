@@ -6,8 +6,6 @@ function redirectLinks() {
 
     let anchors = document.querySelectorAll('a[href*="/preview/gsa/eoc/"]');
     
-    console.log(`Found ${anchors.length} matching links.`);
-    
     anchors.forEach(anchor => {
         let href = anchor.getAttribute('href'); 
 
@@ -20,8 +18,6 @@ function redirectLinks() {
                 let newHref = href.substring(ind); 
                 let updatedHref = `https://evaluation.gov/${newHref}`; 
                 anchor.setAttribute('href', updatedHref); 
-                
-                console.log(`Updated href: ${updatedHref}`);
             }
         }
     });
