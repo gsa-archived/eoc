@@ -15,7 +15,7 @@ function redirectLinks() {
                 let e1 = extension.substring(0,extension.indexOf('evidenceportal'));
                 let e2 = extension.substring(extension.indexOf('evidenceportal'),extension.length);
                 extension = e1+e2;
-                let updatedHref = `https://evaluation.gov${e2}`
+                let updatedHref = `https://evaluation.gov/${extension}`
                 anchor.setAttribute('href',updatedHref);
             }
         }
