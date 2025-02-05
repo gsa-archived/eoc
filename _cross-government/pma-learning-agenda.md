@@ -7,6 +7,7 @@ learning-agenda: https://assets.performance.gov/PMA/PMA-Learning-Agenda.pdf
 agency-offices:
     - name: PMA Learning Agenda
       link: https://assets.performance.gov/PMA/PMA-Learning-Agenda.pdf
+published: False
 ---
 {% comment %}
 A document in the cross-government collection, used in cross-government.html page

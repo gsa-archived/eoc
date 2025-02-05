@@ -291,6 +291,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - assets/resources-hidden
+  - _posts
 
 autoprefixer:
   browsers:
@@ -307,3 +308,10 @@ sass:
   quiet_deps: true
   style: compressed
   verbose: true
+
+defaults:
+  - scope:
+      path: ""  # Apply this setting globally
+      type: posts  # Only for posts
+    values:
+      permalink: /news/:title/
