@@ -2,47 +2,7 @@
 console.log("Hi from Federalist");
 
 
-(function(){
-    console.log('in new');
-  
-    function overrideEvidenceButton(){
-      const btn = document.querySelector('a[aria-label="Evidence Project Portal"][tabindex="0"]');
-      if (btn) {
-        btn.setAttribute("href", forcedSpecialUrl);
-        btn.addEventListener("click", function(e) {
-          e.preventDefault();
-          e.stopImmediatePropagation();
-          setTimeout(() => {
-            window.location.href = forcedSpecialUrl;
-          }, redirectDelay);
-        }, true);
-      }
-    }
-    if (document.readyState === "loading") {
-      document.addEventListener("DOMContentLoaded", overrideEvidenceButton);
-    } else {
-      overrideEvidenceButton();
-    }
-  
-    document.addEventListener("click", function(e) {
-      let el = e.target;
-      while (el && el !== document) {
-        if (el.tagName === "A") {
-          const href = el.getAttribute("href");
-          if (href && href.includes("evidenceportal")) {
-            e.preventDefault();
-            e.stopImmediatePropagation();
-            setTimeout(() => {
-              window.location.href = forcedSpecialUrl;
-            }, redirectDelay);
-            return;
-          }
-        }
-        el = el.parentElement;
-      }
-    }, true);
-  })();
-  
+
 
 // Add a new class for all of the external anchor tags
 $("a").each(function(index, element) {
