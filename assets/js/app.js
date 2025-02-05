@@ -16,6 +16,12 @@ function redirectLinks(){
 }
 document.addEventListener("DOMContentLoaded", redirectLinks);
 
+const observer = new MutationObserver(() => {
+    redirectLinks();
+});
+
+observer.observe(document.body, { childList: true, subtree: true });
+
 
 
 // Add a new class for all of the external anchor tags
