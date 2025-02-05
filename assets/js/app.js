@@ -20,10 +20,6 @@ function redirectLinks() {
                     let updatedHref = `${window.origin}/${newHref}`; 
                     anchor.setAttribute('href', updatedHref); 
                 }
-                else {
-                    let updatedHref = `https://evaluation.gov/${newHref}`; 
-                    anchor.setAttribute('href', updatedHref); 
-                }
             }
         }
     });
