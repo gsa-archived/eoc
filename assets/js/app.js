@@ -16,8 +16,14 @@ function redirectLinks() {
             
             if (ind !== -1) { 
                 let newHref = href.substring(ind); 
-                let updatedHref = `https://evaluation.gov/${newHref}`; 
-                anchor.setAttribute('href', updatedHref); 
+                if (window.origin.includes('evaluation.gov')) {
+                    let updatedHref = `/${newHref}`; 
+                    anchor.setAttribute('href', updatedHref); 
+                }
+                else {
+                    let updatedHref = `https://evaluation.gov/${newHref}`; 
+                    anchor.setAttribute('href', updatedHref); 
+                }
             }
         }
     });
