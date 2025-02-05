@@ -2225,8 +2225,11 @@ urls = locs.findall(xml_2)
 
 print(urls[999])
 
+locs = re.compile(r"<loc>(.*?)</loc>")
 
-links = check_link(urls)
+print(locs[:5])
+
+links = check_link(locs)
 
 print(links)
 
