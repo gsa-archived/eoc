@@ -1,28 +1,30 @@
 // Add your custom javascript here
 console.log("Hi from Federalist");
 
-function forceNavigationToOrigin() {
-    document.addEventListener('click', function(event) {
-      let element = event.target;
-      
-      while (element && element !== document) {
-        if (element.tagName === 'A') {
-          const href = element.getAttribute('href');
-          if (href) {
-            event.preventDefault();
-            // Force navigation to window.origin + href
-            window.location.href = window.location.origin + href;
+(function() {
+    // Attach the listener in the capture phase
+    document.addEventListener(
+      'click',
+      function(event) {
+        let element = event.target;
+        while (element && element !== document) {
+          if (element.tagName === 'A') {
+            const href = element.getAttribute('href');
+            
+            if (href && !href.startsWith('javascript:')) {
+              event.preventDefault();
+              event.stopImmediatePropagation();
+              window.location.href = window.location.origin + href;
+            }
+            break;
           }
-          break;
+          element = element.parentElement;
         }
-        element = element.parentElement;
-      }
-    });
-  }
+      },
+      true
+    );
+  })();
   
-  forceNavigationToOrigin();
-  
-
 // Add a new class for all of the external anchor tags
 $("a").each(function(index, element) {
     if (!$(element).attr("href").startsWith('https://www.evaluation.gov' && 'javascript:void(0)')
