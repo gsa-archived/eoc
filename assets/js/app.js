@@ -17,7 +17,7 @@ function redirectLinks() {
             if (ind !== -1) { 
                 let newHref = href.substring(ind); 
                 if (window.origin.includes('evaluation.gov')) {
-                    let updatedHref = `${window.origin}/${newHref}`; 
+                    let updatedHref = `/${newHref}`; 
                     anchor.setAttribute('href', updatedHref); 
                 }
                 else {
