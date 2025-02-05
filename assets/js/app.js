@@ -4,40 +4,6 @@ console.log("Hi from Federalist");
 
 (function(){
     console.log('in new');
-    const forcedSpecialUrl = "https://evaluation.gov/evidenceportal";
-    const redirectDelay = 100; // milliseconds delay to allow the server to capture the event
-  
-    function enforceSpecialUrl() {
-      if (window.location.href.includes("evidenceportal") && window.location.href !== forcedSpecialUrl) {
-        setTimeout(() => {
-          window.location.href = forcedSpecialUrl;
-        }, redirectDelay);
-      }
-    }
-  
-    const observer = new MutationObserver(mutations => {
-      enforceSpecialUrl();
-      mutations.forEach(mutation => {
-        if (mutation.addedNodes) {
-          mutation.addedNodes.forEach(node => {
-            if (
-              node.nodeType === Node.ELEMENT_NODE &&
-              node.tagName === "META" &&
-              node.getAttribute("http-equiv") &&
-              node.getAttribute("http-equiv").toLowerCase() === "refresh"
-            ) {
-              node.parentNode && node.parentNode.removeChild(node);
-            }
-          });
-        }
-      });
-    });
-    observer.observe(document.documentElement, { childList: true, subtree: true, attributes: true });
-  
-    window.addEventListener("popstate", enforceSpecialUrl);
-    window.addEventListener("hashchange", enforceSpecialUrl);
-    window.addEventListener("load", enforceSpecialUrl);
-    setInterval(enforceSpecialUrl, 100);
   
     function overrideEvidenceButton(){
       const btn = document.querySelector('a[aria-label="Evidence Project Portal"][tabindex="0"]');
