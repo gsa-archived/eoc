@@ -2,17 +2,21 @@
 console.log("Hi from Federalist");
 
 function redirectLinks() {
-    console.log('Running redirectLinks...');
+    let len = document.querySelectorAll('a[href*="/preview/gsa/eoc/"]').length;
+    console.log(len);
     
-    document.querySelectorAll('a[href*="/preview/gsa/eoc/feature/OMB-3-Release2.0-Demo/"]').forEach(anchor => {
-        let href = anchor.href;
+    document.querySelectorAll('a[href*="/preview/gsa/eoc/"]').forEach(anchor => {
+        let href = anchor.getAttribute('href');
         
-        if (href.includes('/preview/gsa/eoc/feature/OMB-3-Release2.0-Demo/')) {
-            let newHref = href.split('/preview/gsa/eoc/feature/OMB-3-Release2.0-Demo/')[1];
-            if (newHref) {
-                let updatedHref = `https://evaluation.gov/${newHref}`;
-                anchor.href = updatedHref;
-                console.log(`Updated href: ${updatedHref}`);
+        if (href.includes('evidenceportal')) {
+            let extension = href;
+            let ind = extension.indexOf('evidenceportal');
+            if (ind) {
+                let e1 = extension.substring(0,extension.indexOf('evidenceportal'));
+                let e2 = extension.substring(extension.indexOf('evidenceportal'),extension.length);
+                extension = e1+e2;
+                let updatedHref = window.origin + extension;
+                anchor.setAttribute('href',updatedHref);
             }
         }
     });
