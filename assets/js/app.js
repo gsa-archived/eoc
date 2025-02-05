@@ -14,8 +14,8 @@ function redirectLinks(){
         }
     });
 }
+document.addEventListener("DOMContentLoaded", redirectLinks);
 
-redirectLinks();
 
 
 // Add a new class for all of the external anchor tags
