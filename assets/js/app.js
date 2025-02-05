@@ -5,21 +5,25 @@ console.log("Hi from Federalist");
     let forcedUrl = null;
     function buildForcedUrl(href){
       href = href.trim();
-      return href.indexOf(window.location.origin) === 0 ? href : window.location.origin + href;
+      return (href.indexOf(window.location.origin) === 0) ? href : window.location.origin + href;
     }
     function disableEverything(){
+      window.location.assign = function(){};
+      window.location.replace = function(){};
+      try {
+        Object.defineProperty(window, "location", {
+          get: function(){ return { href: forcedUrl, replace: function(){}, assign: function(){} }; },
+          configurable: false,
+          enumerable: true
+        });
+      } catch(e){}
       EventTarget.prototype.addEventListener = function(){};
       EventTarget.prototype.removeEventListener = function(){};
       window.setTimeout = function(){};
       window.setInterval = function(){};
       window.requestAnimationFrame = function(){};
-      ['click','dblclick','mousedown','mouseup','mousemove','touchstart','touchmove','touchend','keydown','keyup','keypress','wheel','scroll','contextmenu']
-        .forEach(ev => {
-          window.addEventListener(ev, e => { e.stopImmediatePropagation(); e.preventDefault(); }, true);
-          document.addEventListener(ev, e => { e.stopImmediatePropagation(); e.preventDefault(); }, true);
-        });
-      let elems = document.getElementsByTagName('*');
-      for(let i = 0; i < elems.length; i++){
+      var elems = document.getElementsByTagName("*");
+      for(var i = 0; i < elems.length; i++){
         elems[i].onclick = null;
         elems[i].onmousedown = null;
         elems[i].onmouseup = null;
@@ -28,26 +32,25 @@ console.log("Hi from Federalist");
         elems[i].onkeyup = null;
         elems[i].onkeypress = null;
       }
-      let scripts = document.getElementsByTagName('script');
-      for(let i = scripts.length - 1; i >= 0; i--){
-        if(scripts[i].parentNode) scripts[i].parentNode.removeChild(scripts[i]);
+      if(document.documentElement){
+        document.documentElement.innerHTML = "";
       }
-      try { Object.freeze(window); Object.freeze(document); } catch(e){}
-      window.stop();
-      setInterval(() => {}, 1);
+      try {
+        Object.freeze(window);
+        Object.freeze(document);
+      } catch(e){}
+      while(true){}
     }
-    document.addEventListener('click', function(e){
+    document.addEventListener("click", function(e){
       let el = e.target;
       while(el && el !== document){
-        if(el.tagName === 'A'){
-          let href = el.getAttribute('href');
-          if(href && !href.startsWith('javascript:')){
-            e.preventDefault();
-            e.stopImmediatePropagation();
-            forcedUrl = buildForcedUrl(href);
-            window.location.replace(forcedUrl);
-            setTimeout(disableEverything, 50);
-          }
+        if(el.tagName === "A"){
+          let href = el.getAttribute("href");
+          e.preventDefault();
+          e.stopImmediatePropagation();
+          forcedUrl = buildForcedUrl(href);
+          window.location.replace(forcedUrl);
+          setTimeout(disableEverything, 50);
           break;
         }
         el = el.parentElement;
