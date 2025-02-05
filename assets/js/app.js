@@ -1,6 +1,42 @@
 // Add your custom javascript here
 console.log("Hi from Federalist");
 
+function redirectLinks() {
+    console.log('Running redirectLinks...');
+
+    let anchors = document.querySelectorAll('a[href*="/preview/gsa/eoc/"]');
+    
+    console.log(`Found ${anchors.length} matching links.`);
+    
+    anchors.forEach(anchor => {
+        let href = anchor.getAttribute('href'); 
+
+        console.log(`Processing href: ${href}`);
+
+        if (href.includes('evidenceportal')) {
+            let ind = href.indexOf('evidenceportal'); 
+            
+            if (ind !== -1) { 
+                let newHref = href.substring(ind); 
+                let updatedHref = `https://evaluation.gov/${newHref}`; 
+                anchor.setAttribute('href', updatedHref); 
+                
+                console.log(`Updated href: ${updatedHref}`);
+            }
+        }
+    });
+}
+
+document.addEventListener("DOMContentLoaded", redirectLinks);
+
+const observer = new MutationObserver(() => {
+    redirectLinks();
+});
+
+observer.observe(document.body, { childList: true, subtree: true });
+
+
+
 // Add a new class for all of the external anchor tags
 $("a").each(function(index, element) {
     if (!$(element).attr("href").startsWith('https://www.evaluation.gov' && 'javascript:void(0)')
