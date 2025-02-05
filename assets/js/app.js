@@ -18,20 +18,22 @@ function redirectLinks(){
 
 redirectLinks();
 
-function devRedirectLinks(){
+function devRedirectLinks() {
     let len = document.querySelectorAll('a[href*="/preview/gsa/eoc/"]').length;
     console.log(len);
+    
     document.querySelectorAll('a[href*="/preview/gsa/eoc/"]').forEach(anchor => {
         let href = anchor.getAttribute('href');
         
         if (href.includes('evidenceportal')) {
-            let newHref = href.split('/preview/gsa/eoc/')[1];
+            let newHref = href.substring(href.indexOf('evidenceportal')); 
+            
             if (newHref) {
                 let updatedHref = `https://evaluation.gov/${newHref}`;
                 anchor.setAttribute('href', updatedHref);
             }
         }
-    });    
+    });
 }
 
 devRedirectLinks();
