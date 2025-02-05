@@ -2,35 +2,42 @@
 console.log("Hi from Federalist");
 
 function redirectLinks() {
-    let len = document.querySelectorAll('a[href*="/preview/gsa/eoc/"]').length;
-    console.log(len);
+    console.log('Running redirectLinks...');
+
+    let anchors = document.querySelectorAll('a[href*="/preview/gsa/eoc/"]');
     
-    document.querySelectorAll('a[href*="/preview/gsa/eoc/"]').forEach(anchor => {
-        let href = anchor.getAttribute('href');
-        
+    console.log(`Found ${anchors.length} matching links.`);
+    
+    anchors.forEach(anchor => {
+        let href = anchor.getAttribute('href'); // Get current href
+
+        console.log(`Processing href: ${href}`);
+
         if (href.includes('evidenceportal')) {
-            let extension = href;
-            let ind = extension.indexOf('evidenceportal');
-            if (ind) {
-                let e1 = extension.substring(0,extension.indexOf('evidenceportal'));
-                let e2 = extension.substring(extension.indexOf('evidenceportal'),extension.length);
-                extension = e1+e2;
-                let updatedHref = `https://evaluation.gov/${extension}`
-                anchor.setAttribute('href',updatedHref);
+            let ind = href.indexOf('evidenceportal'); // Find 'evidenceportal' position
+            
+            if (ind !== -1) { // Ensure it's found
+                let newHref = href.substring(ind); // Extract from 'evidenceportal' onwards
+                let updatedHref = `https://evaluation.gov/${newHref}`; // Construct the new URL
+                
+                anchor.setAttribute('href', updatedHref); // Update the href
+                
+                console.log(`Updated href: ${updatedHref}`);
             }
         }
     });
 }
 
-// Run after the DOM is loaded
+// 1. Run after DOM is loaded
 document.addEventListener("DOMContentLoaded", redirectLinks);
 
-// Run again if new elements are added dynamically
+// 2. Run again if new elements are added dynamically
 const observer = new MutationObserver(() => {
     redirectLinks();
 });
 
 observer.observe(document.body, { childList: true, subtree: true });
+
 
 
 // Add a new class for all of the external anchor tags
