@@ -1,17 +1,40 @@
 // Add your custom javascript here
 console.log("Hi from Federalist");
 
-document.querySelectorAll('a[href*="/preview/gsa/eoc/feature/OMB-3-Release2.0-Demo/"]').forEach(anchor => {
-    console.log(anchor);
-    let href = anchor.getAttribute('href');
-    let newHref = href.split('/preview/gsa/eoc/feature/OMB-3-Release2.0-Demo/')[1]; // Extract part after
-    if (newHref) {
-        let updatedHref = `https://evaluation.gov/${newHref}`;
-        anchor.setAttribute('href', updatedHref);
-    }
-});
+function redirectLinks(){
+    console.log('in redirect');
+    document.querySelectorAll('a[href*="/preview/gsa/eoc/feature/OMB-3-Release2.0-Demo/"]').forEach(anchor => {
+        console.log(anchor);
+        let href = anchor.getAttribute('href');
+        let newHref = href.split('/preview/gsa/eoc/feature/OMB-3-Release2.0-Demo/')[1];
+        if (newHref) {
+            let updatedHref = `https://evaluation.gov/${newHref}`;
+            anchor.setAttribute('href', updatedHref);
+        }
+    });
+    let len = document.querySelectorAll('a[href*="/preview/gsa/eoc/feature/OMB-3-Release2.0-Demo/"]').length;
+    console.log(len);
+}
 
+redirectLinks();
 
+function devRedirectLinks(){
+    let len = document.querySelectorAll('a[href*="/preview/gsa/eoc/"]').length;
+    console.log(len);
+    document.querySelectorAll('a[href*="/preview/gsa/eoc/"]').forEach(anchor => {
+        let href = anchor.getAttribute('href');
+        
+        if (href.includes('evidenceportal')) {
+            let newHref = href.split('/preview/gsa/eoc/')[1];
+            if (newHref) {
+                let updatedHref = `https://evaluation.gov/${newHref}`;
+                anchor.setAttribute('href', updatedHref);
+            }
+        }
+    });    
+}
+
+devRedirectLinks();
 
 // Add a new class for all of the external anchor tags
 $("a").each(function(index, element) {
