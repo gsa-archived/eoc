@@ -15,5 +15,11 @@ let origin = 'https://federalist-a1f29504-db06-4d32-992e-c2dadbfe82f2.sites.page
 
 let fullUrl = 'https://federalist-a1f29504-db06-4d32-992e-c2dadbfe82f2.sites.pages.cloud.gov/preview/gsa/eoc/feature/OMB-3-Release2.0-Demo/evidenceportal/ongoing/';
 
+let extension = '/preview/gsa/eoc/feature/junk/evidenceportal/about/';
+
+let e1 = extension.substring(0,extension.indexOf('evidenceportal'));
+let e2 = extension.substring(extension.indexOf('evidenceportal'),extension.length);
+extension = e1+e2;
+console.log(extension);
+
 let index = fullUrl.indexOf(origin) + origin.length;
-console.log(fullUrl.substring(index,fullUrl.length));

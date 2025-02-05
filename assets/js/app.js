@@ -2,6 +2,8 @@
 console.log("Hi from Federalist");
 
 function redirectLinks(){
+    let len = document.querySelectorAll('a[href*="/preview/gsa/eoc/feature/OMB-3-Release2.0-Demo/"]').length;
+    console.log(len);
     console.log('in redirect');
     document.querySelectorAll('a[href*="/preview/gsa/eoc/feature/OMB-3-Release2.0-Demo/"]').forEach(anchor => {
         console.log(anchor);
@@ -12,11 +14,9 @@ function redirectLinks(){
             anchor.setAttribute('href', updatedHref);
         }
     });
-    let len = document.querySelectorAll('a[href*="/preview/gsa/eoc/feature/OMB-3-Release2.0-Demo/"]').length;
-    console.log(len);
 }
 
-redirectLinks();
+//redirectLinks();
 
 function devRedirectLinks() {
     let len = document.querySelectorAll('a[href*="/preview/gsa/eoc/"]').length;
@@ -26,11 +26,14 @@ function devRedirectLinks() {
         let href = anchor.getAttribute('href');
         
         if (href.includes('evidenceportal')) {
-            let newHref = href.substring(href.indexOf('evidenceportal')); 
-            
-            if (newHref) {
-                let updatedHref = `https://evaluation.gov/${newHref}`;
-                anchor.setAttribute('href', updatedHref);
+            let extension = href;
+            let ind = extension.indexOf('evidenceportal');
+            if (ind) {
+                let e1 = extension.substring(0,extension.indexOf('evidenceportal'));
+                let e2 = extension.substring(extension.indexOf('evidenceportal'),extension.length);
+                extension = e1+e2;
+                let updatedHref = window.origin + extension;
+                anchor.setAttribute('href',updatedHref);
             }
         }
     });
