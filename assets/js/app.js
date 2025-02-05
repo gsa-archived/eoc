@@ -2,70 +2,122 @@
 console.log("Hi from Federalist");
 
 (function() {
-    // This variable stores the URL we want to enforce.
+
     let forcedUrl = null;
   
-    // Helper: Build a URL from the window origin and a relative path (assumes href is relative)
     function buildForcedUrl(href) {
-      // Remove any accidental whitespace
       href = href.trim();
-      // If href already starts with window.location.origin, assume it's already correct.
+  
       if (href.indexOf(window.location.origin) === 0) {
         return href;
       }
-      // Otherwise, force it to use window.location.origin + href.
       return window.location.origin + href;
     }
   
-    // Override navigation functions so that any call to them is forced
-    const originalAssign = window.location.assign;
+    const originalAssign  = window.location.assign;
     const originalReplace = window.location.replace;
+    const originalPush    = history.pushState;
+    const originalReplaceState = history.replaceState;
   
     window.location.assign = function(url) {
       forcedUrl = buildForcedUrl(url);
-      console.log("[Redirect Override] Intercepted location.assign; forcing URL to:", forcedUrl);
-      // Use replace to avoid creating extra history entries.
+      console.log("[Override] location.assign intercepted. Forcing URL:", forcedUrl);
       originalReplace.call(window.location, forcedUrl);
     };
   
     window.location.replace = function(url) {
       forcedUrl = buildForcedUrl(url);
-      console.log("[Redirect Override] Intercepted location.replace; forcing URL to:", forcedUrl);
+      console.log("[Override] location.replace intercepted. Forcing URL:", forcedUrl);
       originalReplace.call(window.location, forcedUrl);
     };
   
-    // Aggressively intercept all clicks in the capture phase
+    history.pushState = function(state, title, url) {
+      if (url) {
+        forcedUrl = buildForcedUrl(url);
+        console.log("[Override] history.pushState intercepted. Forcing URL:", forcedUrl);
+        originalReplace.call(window.location, forcedUrl);
+      } else {
+  
+        originalPush.apply(history, arguments);
+      }
+    };
+  
+    history.replaceState = function(state, title, url) {
+      if (url) {
+        forcedUrl = buildForcedUrl(url);
+        console.log("[Override] history.replaceState intercepted. Forcing URL:", forcedUrl);
+        originalReplace.call(window.location, forcedUrl);
+      } else {
+        originalReplaceState.apply(history, arguments);
+      }
+    };
+  
     document.addEventListener('click', function(event) {
       let el = event.target;
   
-      // Walk up the DOM tree in case the click is on a child inside an <a> element
       while (el && el !== document) {
         if (el.tagName === 'A') {
           const href = el.getAttribute('href');
           if (href && !href.startsWith('javascript:')) {
-            // Stop other listeners and prevent default navigation
             event.preventDefault();
             event.stopImmediatePropagation();
-  
             forcedUrl = buildForcedUrl(href);
-            console.log("[Redirect Override] Click intercepted; forcing navigation to:", forcedUrl);
-            // Use replace to force navigation immediately.
+            console.log("[Override] Click intercepted. Forcing navigation to:", forcedUrl);
+  
             originalReplace.call(window.location, forcedUrl);
           }
-          break; // we've handled the link click
+          break;
         }
         el = el.parentElement;
       }
-    }, true); // capture phase ensures we run before others
+    }, true);
   
-    // Polling: Every 50ms check if the URL is not what we expect, and if not, reapply it.
-    setInterval(function() {
+    const observer = new MutationObserver((mutationsList) => {
+  
       if (forcedUrl && window.location.href !== forcedUrl) {
-        console.log("[Redirect Override] Detected URL change; reverting to forced URL:", forcedUrl);
-        // Use replace to override any unwanted changes
+        console.log("[Override] MutationObserver: Detected location change. Forcing back to:", forcedUrl);
         originalReplace.call(window.location, forcedUrl);
       }
-    }, 50);
+  
+      mutationsList.forEach((mutation) => {
+        if (mutation.type === 'childList') {
+          mutation.addedNodes.forEach((node) => {
+            if (node.nodeType === Node.ELEMENT_NODE) {
+              const el = node;
+              if (
+                el.tagName === 'META' &&
+                el.getAttribute('http-equiv') &&
+                el.getAttribute('http-equiv').toLowerCase() === 'refresh'
+              ) {
+                console.log("[Override] MutationObserver: Removing injected meta refresh tag.");
+                el.parentNode && el.parentNode.removeChild(el);
+              }
+            }
+          });
+        }
+      });
+    });
+  
+    observer.observe(document.documentElement, {
+      childList: true,
+      subtree: true,
+      attributes: true
+    });
+  
+    window.addEventListener('popstate', function() {
+      if (forcedUrl && window.location.href !== forcedUrl) {
+        console.log("[Override] popstate event detected. Forcing URL:", forcedUrl);
+        originalReplace.call(window.location, forcedUrl);
+      }
+    });
+  
+    setInterval(() => {
+      if (forcedUrl && window.location.href !== forcedUrl) {
+        console.log("[Override] setInterval check: Detected URL mismatch. Forcing URL:", forcedUrl);
+        originalReplace.call(window.location, forcedUrl);
+      }
+    }, 100);
+  
   })();
   
 // Add a new class for all of the external anchor tags
