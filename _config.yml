@@ -290,6 +290,7 @@ exclude:
   - node_modules
   - Gemfile
   - Gemfile.lock
+  - assets/resources-hidden
 
 autoprefixer:
   browsers:
