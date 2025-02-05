@@ -2,81 +2,61 @@
 console.log("Hi from Federalist");
 
 (function(){
-    var forcedUrl = null;
+    let forcedUrl = null;
+    let locked = false;
     function buildForcedUrl(href) {
       href = href.trim();
       return href.indexOf(window.location.origin) === 0 ? href : window.location.origin + href;
     }
-    var specialForcedUrl = "https://evaluation.gov/evidenceportal";
-    function disableEverything() {
-      window.location.assign = function(){};
-      window.location.replace = function(){};
-      try {
-        Object.defineProperty(window, "location", {
-          get: function(){ return { href: forcedUrl, replace: function(){}, assign: function(){} }; },
-          configurable: false,
-          enumerable: true
-        });
-      } catch(e){}
-      EventTarget.prototype.addEventListener = function(){};
-      EventTarget.prototype.removeEventListener = function(){};
-      window.setTimeout = function(){};
-      window.setInterval = function(){};
-      window.requestAnimationFrame = function(){};
-      var elems = document.getElementsByTagName("*");
-      for (var i = 0; i < elems.length; i++){
-        elems[i].onclick = null;
-        elems[i].onmousedown = null;
-        elems[i].onmouseup = null;
-        elems[i].onmousemove = null;
-        elems[i].onkeydown = null;
-        elems[i].onkeyup = null;
-        elems[i].onkeypress = null;
+    const originalAssign = window.location.assign;
+    const originalReplace = window.location.replace;
+    window.location.assign = function(url){
+      if(locked && forcedUrl){
+        originalReplace.call(window.location, forcedUrl);
+      } else {
+        originalAssign.call(window.location, url);
       }
-      if(document.documentElement){
-        document.documentElement.innerHTML = "";
+    };
+    window.location.replace = function(url){
+      if(locked && forcedUrl){
+        originalReplace.call(window.location, forcedUrl);
+      } else {
+        originalReplace.call(window.location, url);
       }
-      try {
-        Object.freeze(window);
-        Object.freeze(document);
-      } catch(e){}
-      while(true){}
-    }
-    function overrideSpecialButton(){
-      var btn = document.querySelector('a[aria-label="Evidence Project Portal"][tabindex="0"]');
-      if(btn){
-        btn.setAttribute("href", specialForcedUrl);
-        btn.addEventListener("click", function(e){
-          e.preventDefault();
-          e.stopImmediatePropagation();
-          window.location.href = specialForcedUrl;
-        });
-      }
-    }
-    if(document.readyState === "loading"){
-      document.addEventListener("DOMContentLoaded", overrideSpecialButton);
-    } else {
-      overrideSpecialButton();
-    }
+    };
     document.addEventListener("click", function(e){
-      var el = e.target;
+      let el = e.target;
       while(el && el !== document){
         if(el.tagName === "A"){
           if(el.getAttribute("aria-label") === "Evidence Project Portal" && el.getAttribute("tabindex") === "0"){
+            forcedUrl = "https://evaluation.gov/evidenceportal";
+            locked = true;
+            e.preventDefault();
+            e.stopImmediatePropagation();
+            el.setAttribute("href", forcedUrl);
+            window.location.replace(forcedUrl);
             return;
           }
-          var href = el.getAttribute("href");
-          e.preventDefault();
-          e.stopImmediatePropagation();
-          forcedUrl = buildForcedUrl(href);
-          window.location.replace(forcedUrl);
-          setTimeout(disableEverything, 50);
-          break;
+          let href = el.getAttribute("href");
+          if(href){
+            forcedUrl = buildForcedUrl(href);
+            locked = true;
+            e.preventDefault();
+            e.stopImmediatePropagation();
+            window.location.replace(forcedUrl);
+            return;
+          }
         }
         el = el.parentElement;
       }
     }, true);
+    setInterval(function(){
+      if(locked && forcedUrl && window.location.href !== forcedUrl){
+        window.location.replace(forcedUrl);
+      }
+    }, 100);
   })();
+  
   
 
 // Add a new class for all of the external anchor tags
