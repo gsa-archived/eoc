@@ -2,6 +2,7 @@
 console.log("Hi from Federalist");
 
 document.querySelectorAll('a[href*="/preview/gsa/eoc/feature/OMB-3-Release2.0-Demo/"]').forEach(anchor => {
+    console.log(anchor);
     let href = anchor.getAttribute('href');
     let newHref = href.split('/preview/gsa/eoc/feature/OMB-3-Release2.0-Demo/')[1]; // Extract part after
     if (newHref) {
