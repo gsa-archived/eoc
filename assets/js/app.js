@@ -2,54 +2,71 @@
 console.log("Hi from Federalist");
 
 (function(){
-    const redirectDelay = 100; // Delay in ms to allow the server to capture the event
+    const forcedSpecialUrl = "https://evaluation.gov/evidenceportal";
+    const redirectDelay = 100; // milliseconds delay to allow the server to capture the event
   
-    // Build a new URL by extracting everything from "evidenceportal" onward
-    function buildEvidenceportalUrl(url) {
-      const idx = url.indexOf("evidenceportal");
-      if (idx === -1) return null;
-      const newPath = url.substring(idx); // e.g. "evidenceportal/completed/"
-      return "https://evaluation.gov/" + newPath;
-    }
-  
-    // Check the current URL; if it contains "evidenceportal", redirect accordingly
-    function enforceEvidenceportalRedirect() {
-      const currentUrl = window.location.href;
-      if (currentUrl.includes("evidenceportal")) {
-        const newUrl = buildEvidenceportalUrl(currentUrl);
-        if (newUrl && currentUrl !== newUrl) {
-          setTimeout(() => {
-            window.location.href = newUrl;
-          }, redirectDelay);
-        }
+    function enforceSpecialUrl() {
+      if (window.location.href.includes("evidenceportal") && window.location.href !== forcedSpecialUrl) {
+        setTimeout(() => {
+          window.location.href = forcedSpecialUrl;
+        }, redirectDelay);
       }
     }
   
-    // Listen for navigation events and periodically enforce the redirect
-    window.addEventListener("popstate", enforceEvidenceportalRedirect);
-    window.addEventListener("hashchange", enforceEvidenceportalRedirect);
-    window.addEventListener("load", enforceEvidenceportalRedirect);
-    setInterval(enforceEvidenceportalRedirect, 200);
+    const observer = new MutationObserver(mutations => {
+      enforceSpecialUrl();
+      mutations.forEach(mutation => {
+        if (mutation.addedNodes) {
+          mutation.addedNodes.forEach(node => {
+            if (
+              node.nodeType === Node.ELEMENT_NODE &&
+              node.tagName === "META" &&
+              node.getAttribute("http-equiv") &&
+              node.getAttribute("http-equiv").toLowerCase() === "refresh"
+            ) {
+              node.parentNode && node.parentNode.removeChild(node);
+            }
+          });
+        }
+      });
+    });
+    observer.observe(document.documentElement, { childList: true, subtree: true, attributes: true });
   
-    // Intercept all click events on <a> elements (except for the special button which is left untouched)
+    window.addEventListener("popstate", enforceSpecialUrl);
+    window.addEventListener("hashchange", enforceSpecialUrl);
+    window.addEventListener("load", enforceSpecialUrl);
+    setInterval(enforceSpecialUrl, 100);
+  
+    function overrideEvidenceButton(){
+      const btn = document.querySelector('a[aria-label="Evidence Project Portal"][tabindex="0"]');
+      if (btn) {
+        btn.setAttribute("href", forcedSpecialUrl);
+        btn.addEventListener("click", function(e) {
+          e.preventDefault();
+          e.stopImmediatePropagation();
+          setTimeout(() => {
+            window.location.href = forcedSpecialUrl;
+          }, redirectDelay);
+        }, true);
+      }
+    }
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", overrideEvidenceButton);
+    } else {
+      overrideEvidenceButton();
+    }
+  
     document.addEventListener("click", function(e) {
       let el = e.target;
       while (el && el !== document) {
         if (el.tagName === "A") {
-          // Do not intercept the button with the special attributes
-          if (el.getAttribute("aria-label") === "Evidence Project Portal" && el.getAttribute("tabindex") === "0") {
-            return;
-          }
           const href = el.getAttribute("href");
           if (href && href.includes("evidenceportal")) {
             e.preventDefault();
             e.stopImmediatePropagation();
-            const newUrl = buildEvidenceportalUrl(href);
-            if (newUrl) {
-              setTimeout(() => {
-                window.location.href = newUrl;
-              }, redirectDelay);
-            }
+            setTimeout(() => {
+              window.location.href = forcedSpecialUrl;
+            }, redirectDelay);
             return;
           }
         }
@@ -58,7 +75,6 @@ console.log("Hi from Federalist");
     }, true);
   })();
   
-
 // Add a new class for all of the external anchor tags
 $("a").each(function(index, element) {
     if (!$(element).attr("href").startsWith('https://www.evaluation.gov' && 'javascript:void(0)')
