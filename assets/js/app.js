@@ -6,7 +6,6 @@ function redirectLinks(){
     console.log(len);
     console.log('in redirect');
     document.querySelectorAll('a[href*="/preview/gsa/eoc/feature/OMB-3-Release2.0-Demo/"]').forEach(anchor => {
-        console.log(anchor);
         let href = anchor.getAttribute('href');
         let newHref = href.split('/preview/gsa/eoc/feature/OMB-3-Release2.0-Demo/')[1];
         if (newHref) {
@@ -16,7 +15,7 @@ function redirectLinks(){
     });
 }
 
-//redirectLinks();
+redirectLinks();
 
 function devRedirectLinks() {
     let len = document.querySelectorAll('a[href*="/preview/gsa/eoc/"]').length;
@@ -39,7 +38,7 @@ function devRedirectLinks() {
     });
 }
 
-devRedirectLinks();
+//devRedirectLinks();
 
 // Add a new class for all of the external anchor tags
 $("a").each(function(index, element) {
