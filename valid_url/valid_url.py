@@ -29,7 +29,6 @@ def check_link(locs):
     errors = 0
     for i in locs:
         i = i.strip()
-        i = i.replace(' ', '%20')
         if not i:
             continue
         #i = clean_url(i)
@@ -50,7 +49,7 @@ def check_link(locs):
 
         else:
             print('{}, good!'.format(i))
-            lins.append([i,'Good'])
+            lins.append([i,'good'])
             continue
     print('there are {} errors'.format(errors))
     return lins
