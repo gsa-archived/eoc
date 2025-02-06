@@ -14,6 +14,22 @@ jQuery(document).ready(function ($) {
 
     if ($container !== undefined) {
 
+        let currentYear = new Date().getFullYear();
+        const archivedYears = 7;
+        const endYear = (currentYear - archivedYears);
+        let notArchivedYears = [];
+        for (let i = currentYear; i >= endYear; i--) {
+            notArchivedYears.push(`.${i}:not(.archived)`);
+        }
+
+        let notArchivedFilter = notArchivedYears.join(", ");
+        $("#filter-list-not-archived").attr("data-filter", notArchivedFilter);
+        var initialFilter = notArchivedFilter;
+        var initHash = "archive_area=" + encodeURIComponent(initialFilter);
+
+        if (location.pathname == 'resources') {
+            location.hash = initHash;
+        }
         // Filter isotope
         $container.isotope({
             // options
@@ -21,7 +37,8 @@ jQuery(document).ready(function ($) {
             layoutMode: "masonry",
             getSortData: {
                 date: "p"
-            }
+            },
+            filter: initialFilter,
         });
 
         var iso = $container.data('isotope');
@@ -68,6 +85,7 @@ jQuery(document).ready(function ($) {
                 filters["role"] = hashFilter["role"];
                 filters["content"] = hashFilter["content"];
                 filters["year"] = hashFilter["year"];
+                filters["archive_area"] = hashFilter["archive_area"];
                 // data-filter attribute of clicked button
                 var currentFilter = $(this).attr("data-filter");
                 // Navigation group (subject or role) as object
@@ -76,7 +94,7 @@ jQuery(document).ready(function ($) {
                 // data-filter-group key for the current nav group
                 var filterGroup = $navGroup.attr("data-filter-group");
                 // If the current data-filter attribute matches the current filter,
-                if (currentFilter == hashFilter["resource"] || currentFilter == hashFilter["role"] || currentFilter == hashFilter["content"] || currentFilter == hashFilter["year"]) {
+                if (currentFilter == hashFilter["resource"] || currentFilter == hashFilter["role"] || currentFilter == hashFilter["content"] || currentFilter == hashFilter["year"] || currentFilter == hashFilter["archive_area"]) {
                     // Reset group filter as the user has unselected the button
                     filters[filterGroup] = "*";
                 } else {
@@ -85,7 +103,7 @@ jQuery(document).ready(function ($) {
                 }
                 // Create new hash
                 // var newHash = "subject=" + encodeURIComponent( filters["subject"] ) + "&role=" + encodeURIComponent( filters["role"] ) + "&status=" + encodeURIComponent( filters["status"] );
-                var newHash = "resource=" + filters["resource"] + "&role=" + filters["role"] + "&content=" + filters["content"] + "&year=" + filters["year"];
+                var newHash = "resource=" + filters["resource"] + "&role=" + filters["role"] + "&content=" + filters["content"] + "&year=" + filters["year"] + "&archive_area=" + filters["archive_area"];
                 // If sort value exists, add it to hash
                 if (sortValue) {
                     newHash = newHash + "&sort=" + encodeURIComponent(sortValue);
@@ -126,7 +144,7 @@ jQuery(document).ready(function ($) {
             var hashFilter = getHashFilter();
             // Concatenate subject and role for Isotope filtering
             if (link.indexOf("/resources/") != -1) {
-                var theFilter = hashFilter["resource"] + hashFilter["role"] + hashFilter["content"] + hashFilter["year"];
+                var theFilter = hashFilter["resource"] + hashFilter["role"] + hashFilter["content"] + hashFilter["year"] + hashFilter["archive_area"];
                 if (hashFilter) {
                     // Repaint Isotope container with current filters and sorts
                     $container.isotope({
@@ -147,9 +165,11 @@ jQuery(document).ready(function ($) {
                     var roleFilters = hashFilter["role"].split(",");
                     var contentFilters = hashFilter["content"].split(",");
                     var yearFilters = hashFilter["year"].split(",");
+                    var archiveFilters = hashFilter["archive_area"].split(",");
                     var allFilters = resourceFilters.concat(roleFilters);
                     allFilters = allFilters.concat(contentFilters);
                     allFilters = allFilters.concat(yearFilters);
+                    allFilters = allFilters.concat(archiveFilters);
                     for (filter in allFilters) {
                         $(".filter-list").find("[data-filter='" + allFilters[filter] + "']").addClass("checked").attr("aria-checked", "true");
                     }
@@ -193,6 +213,7 @@ jQuery(document).ready(function ($) {
                 var role = location.hash.match(/role=([^&]+)/i);
                 var content = location.hash.match(/content=([^&]+)/i);
                 var year = location.hash.match(/year=([^&]+)/i);
+                var archive_area = location.hash.match(/archive_area=([^&]+)/i);
                 var sorts = location.hash.match(/sort=([^&]+)/i);
 
                 // Set up a hashFilter array
@@ -202,6 +223,7 @@ jQuery(document).ready(function ($) {
                 hashFilter["role"] = role ? role[1] : "*";
                 hashFilter["content"] = content ? content[1] : "*";
                 hashFilter["year"] = year ? year[1] : "*";
+                hashFilter["archive_area"] = archive_area ? archive_area[1] : "*";
                 hashFilter["sorts"] = sorts ? sorts[1] : "";
 
                 return hashFilter;
