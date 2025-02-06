@@ -76,17 +76,20 @@ jQuery(document).ready(function ($) {
         // Set the URI hash to the current selected filters
         $("#filter-list-not-archived").on("click", function () {
             let $this = $(this);
-            
+        
             if ($this.hasClass("checked")) {
                 $this.removeClass("checked");
-                $this.attr("data-filter", "*"); // Reset filter
-                $(".resources").isotope({ filter: "*" });
+                $this.attr("data-filter", "*"); 
+                $(".resources").isotope({ filter: "*" }); 
             } else {
                 $this.addClass("checked");
                 $this.attr("data-filter", notArchivedFilter);
                 $(".resources").isotope({ filter: notArchivedFilter });
             }
+            $(".resources").isotope("layout");
+            updateFilterCount();
         });
+        
         
         
         function filterSelect() {
