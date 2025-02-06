@@ -7,6 +7,7 @@ aria-label: ARP Equity Learning Agenda
 agency-offices:
     - name: ARP Equity Learning Agenda
       link: https://www.whitehouse.gov/wp-content/uploads/2022/05/American-Rescue-Plan-Equity-Learning-Agenda.pdf
+published: False
 ---
 {% comment %}
 A document in the cross-government collection, used in cross-government.html page
