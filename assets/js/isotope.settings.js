@@ -166,13 +166,12 @@ jQuery(document).ready(function ($) {
                         filter: decodeURIComponent(theFilter),
                         sortBy: hashFilter["sorts"]
                     });
-
+                    updateFilterCount();
                     if (hashFilter["archive_area"] !== "*") {
                         $("#filter-list-not-archived").addClass("checked");
                     } else {
                         $("#filter-list-not-archived").removeClass("checked");
                     }
-                    updateFilterCount();
                     // Toggle checked status of sort button
                     if (hashFilter["sorts"]) {
                         $(".sort").addClass("checked");
