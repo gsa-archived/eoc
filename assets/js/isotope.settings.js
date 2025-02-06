@@ -74,6 +74,9 @@ jQuery(document).ready(function ($) {
         // When a button is pressed, run filterSelect
         $(".filter-list a").on("click", filterSelect);
         // Set the URI hash to the current selected filters
+        $("#filter-list-not-archived").on("click", function () {
+            $(this).toggleClass("checked");
+        });
         function filterSelect() {
             // Current hash value
             var hashFilter = getHashFilter();
@@ -165,7 +168,7 @@ jQuery(document).ready(function ($) {
                     var roleFilters = hashFilter["role"].split(",");
                     var contentFilters = hashFilter["content"].split(",");
                     var yearFilters = hashFilter["year"].split(",");
-                    var archiveFilters = hashFilter["archive_area"].split(",");
+                    var archiveFilters = [decodeURIComponent(hashFilter["archive_area"])];
                     var allFilters = resourceFilters.concat(roleFilters);
                     allFilters = allFilters.concat(contentFilters);
                     allFilters = allFilters.concat(yearFilters);
