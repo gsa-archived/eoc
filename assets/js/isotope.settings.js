@@ -79,14 +79,15 @@ jQuery(document).ready(function ($) {
         
             if ($this.hasClass("checked")) {
                 $this.removeClass("checked");
-                $this.attr("data-filter", "*"); // Show all items
+                $this.attr("data-filter", "*"); // Reset filter
+                $(".resources").isotope({ filter: getCombinedFilters(true) });
             } else {
                 $this.addClass("checked");
-                $this.attr("data-filter", notArchivedFilter); 
+                $this.attr("data-filter", notArchivedFilter);
+                $(".resources").isotope({ filter: getCombinedFilters(false) });
             }
-        
-            $(".resources").isotope({ filter: getCombinedFilters() });
         });
+        
         
         
         function filterSelect() {
