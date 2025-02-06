@@ -76,18 +76,17 @@ jQuery(document).ready(function ($) {
         // Set the URI hash to the current selected filters
         $("#filter-list-not-archived").on("click", function () {
             let $this = $(this);
-        
+            
             if ($this.hasClass("checked")) {
                 $this.removeClass("checked");
                 $this.attr("data-filter", "*"); // Reset filter
-                $(".resources").isotope({ filter: getCombinedFilters(true) });
+                $(".resources").isotope({ filter: "*" });
             } else {
                 $this.addClass("checked");
                 $this.attr("data-filter", notArchivedFilter);
-                $(".resources").isotope({ filter: getCombinedFilters(false) });
+                $(".resources").isotope({ filter: notArchivedFilter });
             }
         });
-        
         
         
         function filterSelect() {
@@ -168,6 +167,11 @@ jQuery(document).ready(function ($) {
                         sortBy: hashFilter["sorts"]
                     });
 
+                    if (hashFilter["archive_area"] !== "*") {
+                        $("#filter-list-not-archived").addClass("checked");
+                    } else {
+                        $("#filter-list-not-archived").removeClass("checked");
+                    }
                     updateFilterCount();
                     // Toggle checked status of sort button
                     if (hashFilter["sorts"]) {
