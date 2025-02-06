@@ -79,18 +79,17 @@ jQuery(document).ready(function ($) {
             
             if ($this.hasClass("checked")) {
                 $this.removeClass("checked");
-                $this.attr("data-filter", "*"); 
-                $(".resources").isotope({ filter: "*" }); 
-                $(".resources").isotope("layout");
+                filters["archive_area"] = "*"; 
             } else {
                 $this.addClass("checked");
-                $this.attr("data-filter", notArchivedFilter);
-                $(".resources").isotope({ filter: notArchivedFilter });
-                $(".resources").isotope("layout");
+                filters["archive_area"] = notArchivedFilter; 
             }
-
+            let combinedFilters = getUpdatedFilters();
+            $(".resources").isotope({ filter: combinedFilters });
+        
+            $(".resources").isotope("layout");
             updateFilterCount();
-        });        
+        });
         
         
         function filterSelect() {
@@ -156,14 +155,27 @@ jQuery(document).ready(function ($) {
             }
             // Apply the new hash to the URI, triggering onHahschange()
             location.hash = newHash;
-        } // filterSelect
-
+        } 
+        function getUpdatedFilters() {
+            let activeFilters = [];
+        
+            $(".filter-list a.checked").each(function () {
+                let filterValue = $(this).attr("data-filter");
+                if (filterValue && filterValue !== "*") {
+                    activeFilters.push(filterValue);
+                }
+            });
+            if (filters["archive_area"] && filters["archive_area"] !== "*") {
+                activeFilters.push(filters["archive_area"]);
+            }
+            return activeFilters.length ? activeFilters.join("") : "*";
+        } 
         function onHashChange() {
             // Current hash value
             var hashFilter = getHashFilter();
             // Concatenate subject and role for Isotope filtering
             if (link.indexOf("/resources/") != -1) {
-                var theFilter = hashFilter["resource"] + hashFilter["role"] + hashFilter["content"] + hashFilter["year"] + hashFilter["archive_area"];
+                var theFilter = getUpdatedFilters();
                 if (hashFilter) {
                     // Repaint Isotope container with current filters and sorts
                     $container.isotope({
