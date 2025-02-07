@@ -3,87 +3,98 @@
 <div class="usa-media-block tablet:grid-col-9">
     <p class="filter-count itm-tag margin-top-0 text-gray-50 text-thin count"></p>
     <div class="resources">
-               {% assign resources = site.resources | sort: 'year' | reverse %}
-                {% for resource in resources %}
-                        <div class="tablet:grid-col-4 grid-spacing policy {{ resource.filters }}" >
-                            
-                            <!-- adds star icon on new resources for 30 days -->
-                            {% if resource.post-date %}
-                                {% assign days = 30 | times: 24 | times: 60 | times: 60 %}
-                                {% assign end_date = resource.post-date | date: '%s' | plus: days %}
-                                {% assign today_date = 'now' | date: '%s' | plus: 0 %}
-                                {% if today_date < end_date %}
-                                <img class="new-resource-icon" src="{{ site.baseurl }}/assets/images/star.svg" alt="an icon for newly posted resource">
-                                {% endif %}
-                            {% endif %}
 
-                            <!--sets border logic statements for resources-->
-                            {% if resource.filters contains 'legislation' %}
-                            <div class="shadow-1 legislation-border">
-                                {% endif %}
-                            {% if resource.filters contains 'guidance' %}
-                            <div class="shadow-1 guidance-border">
-                                {% endif %}
-                                {% if resource.filters contains 'report' %}
-                                <div class="shadow-1 report-border">
-                                {% endif %}
-                                {% if resource.filters contains 'analytical-perspectives' %}
-                                <div class="shadow-1 analytical-perspectives-border">
-                                    {% endif %}
-                                    {% if resource.filters contains 'evidence-clearinghouse' %}
-                                    <div class="shadow-1 evidence-clearinghouse-border ">
-                                        {% endif %}
-                                        {% if resource.filters contains 'quick-reference' %}
-                                        <div class="shadow-1 quick-reference-border ">
-                                            {% endif %}
-                                        {% if resource.filters contains 'portal-opportunities' %}
-                                        <div class="shadow-1 opportunity-border ">
-                                            {% endif %}
-        
-                                            <div class="text-container">
-                                                 {% if resource.filters contains 'legislation' %}
-                                                <span class="card-tag">Legislation</span>
-                                                {% endif %}
-                                                {% if resource.filters contains 'guidance' %}
-                                                <span class="card-tag">Guidance</span>
-                                                {% endif %}
-                                                {% if resource.filters contains 'analytical-perspectives' %}
-                                                <span class="card-tag">Analytical Perspectives</span>
-                                                {% endif %}
-                                                {% if resource.filters contains 'evidence-clearinghouse' %}
-                                                <span class="card-tag">Evidence Clearinghouse</span>
-                                                {% endif %}
-                                                {% if resource.filters contains 'quick-reference' %}
-                                                <span class="card-tag">Quick Reference</span>
-                                                {% endif %}
-                                                {% if resource.filters contains 'report' %}
-                                                <span class="card-tag">Report</span>
-                                                {% endif %}
-                                                <!--{% if resource.filters contains 'portal-opportunities' %}
-                                                <span class="card-tag">Portal Opportunities</span>
-                                                {% endif %}-->
-                                         
-                                                {% if resource.external_url %}
-                                                <a class="anchor-fill text-ink text-no-underline" href="http://{{ resource.external_url }}" aria-label="{{ resource.aria-label }} link (opens in a new window)" target="_blank">
-                                                <p class="title-resources">{{ resource.title }}</p>
-                                                </a>
-                                                {% endif %}
+        {% assign current_year = site.time | date: '%Y' %}
+        {% assign cutoff_year = current_year | minus: 7 %}
 
-                                                {% if resource.permalink %}
-                                                <p class="title-resources"><a class="text-ink text-no-underline" href="{{ site.baseurl }}{{ resource.permalink }}">{{ resource.title }}</a></p>
-                                                {% endif %}
-                                                {% if resource.doc-link %}
-                                                <a class="anchor-fill text-ink text-no-underline" href="{{ site.baseurl }}/{{ resource.doc-link }}" aria-label="{{ resource.aria-label }} link (opens in a new window)" target="_blank">
-                                                <p class="title-resources">{{ resource.title }}</p>
-                                                </a>
-                                                {% endif %}
-                                                                      
-                                                <!--for 508 accessibility-->
-                                            </div>
-                                        </div>
-        
-                                    </div>			
-                {% endfor %}
- 
+        {% assign resources = site.resources | sort: 'year' | reverse %}
+        {% for resource in resources %}
+            <div class="tablet:grid-col-4 grid-spacing policy {{ resource.filters }}{% if resource.year < cutoff_year %} archived{% endif %}" style="position: relative;">
+
+                <!-- adds star icon on new resources for 30 days -->
+                {% if resource.post-date %}
+                    {% assign days = 30 | times: 24 | times: 60 | times: 60 %}
+                    {% assign end_date = resource.post-date | date: '%s' | plus: days %}
+                    {% assign today_date = 'now' | date: '%s' | plus: 0 %}
+                    {% if today_date < end_date %}
+                    <img class="new-resource-icon" src="{{ site.baseurl }}/assets/images/star.svg" alt="an icon for newly posted resource">
+                    {% endif %}
+                {% endif %}
+
+                <!--sets border logic statements for resources-->
+                {% if resource.filters contains 'legislation' %}
+                <div class="shadow-1 legislation-border">
+                {% endif %}
+                {% if resource.filters contains 'guidance' %}
+                <div class="shadow-1 guidance-border">
+                {% endif %}
+                {% if resource.filters contains 'report' %}
+                <div class="shadow-1 report-border">
+                {% endif %}
+                {% if resource.filters contains 'analytical-perspectives' %}
+                <div class="shadow-1 analytical-perspectives-border">
+                {% endif %}
+                {% if resource.filters contains 'evidence-clearinghouse' %}
+                <div class="shadow-1 evidence-clearinghouse-border ">
+                {% endif %}
+                {% if resource.filters contains 'quick-reference' %}
+                <div class="shadow-1 quick-reference-border ">
+                {% endif %}
+                {% if resource.filters contains 'portal-opportunities' %}
+                <div class="shadow-1 opportunity-border ">
+                {% endif %}
+
+                    <div class="text-container">
+                        {% if resource.filters contains 'legislation' %}
+                        <span class="card-tag">Legislation</span>
+                        {% endif %}
+                        {% if resource.filters contains 'guidance' %}
+                        <span class="card-tag">Guidance</span>
+                        {% endif %}
+                        {% if resource.filters contains 'analytical-perspectives' %}
+                        <span class="card-tag">Analytical Perspectives</span>
+                        {% endif %}
+                        {% if resource.filters contains 'evidence-clearinghouse' %}
+                        <span class="card-tag">Evidence Clearinghouse</span>
+                        {% endif %}
+                        {% if resource.filters contains 'quick-reference' %}
+                        <span class="card-tag">Quick Reference</span>
+                        {% endif %}
+                        {% if resource.filters contains 'report' %}
+                        <span class="card-tag">Report</span>
+                        {% endif %}
+                        <!--{% if resource.filters contains 'portal-opportunities' %}
+                        <span class="card-tag">Portal Opportunities</span>
+                        {% endif %}-->
+
+                        {% if resource.external_url %}
+                        <a class="anchor-fill text-ink text-no-underline" href="http://{{ resource.external_url }}" aria-label="{{ resource.aria-label }} link (opens in a new window)" target="_blank">
+                            <p class="title-resources">{{ resource.title }}</p>
+                        </a>
+                        {% endif %}
+
+                        {% if resource.permalink %}
+                        <p class="title-resources">
+                            <a class="text-ink text-no-underline" href="{{ site.baseurl }}{{ resource.permalink }}">
+                                {{ resource.title }}
+                            </a>
+                        </p>
+                        {% endif %}
+
+                        {% if resource.doc-link %}
+                        <a class="anchor-fill text-ink text-no-underline" href="{{ site.baseurl }}/{{ resource.doc-link }}" aria-label="{{ resource.aria-label }} link (opens in a new window)" target="_blank">
+                            <p class="title-resources">{{ resource.title }}</p>
+                        </a>
+                        {% endif %}
+                    </div>
+                </div>
+
+                {% if resource.year < cutoff_year %}
+                <span class="archived-label">Archived</span>
+                {% endif %}
+
+            </div>
+        {% endfor %}
+
     </div>
 </div>
