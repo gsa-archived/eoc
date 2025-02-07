@@ -204,7 +204,7 @@ jQuery(document).ready(function ($) {
                         $(".filter-list").find("[data-filter='" + allFilters[filter] + "']").addClass("checked").attr("aria-checked", "true");
                     }
 
-                    if (hashFilter["archive_area"] !== "*") {
+                    if (hashFilter["archive_area"] === "*") {
                         $("#filter-list-not-archived")
                             .addClass("checked")
                             .attr("aria-checked", "true");
