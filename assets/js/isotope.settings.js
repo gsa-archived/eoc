@@ -130,18 +130,19 @@ jQuery(document).ready(function ($) {
                     newHash = newHash + "&sort=" + encodeURIComponent(sortValue);
                 }
             }
-            // Apply the new hash to the URI, triggering onHahschange()
+            // Apply the new hash to the URI, triggering on Hash Change()
             location.hash = newHash;
         } // filterSelect
 
         function combineAND(selectorsArray) {
-            // Remove any "*" or empty strings since "*" = "no restriction"
-            let nonStar = selectorsArray.filter(sel => sel && sel !== "*");
+            // Remove the * from no filter preset
+            let nonFilter = selectorsArray.filter(sel => sel && sel !== "*");
           
-            // Join them with no space => .class1.class2 => AND in CSS
-            return nonStar.join("");
+            // Join two classes
+            return noFilter.join("");
           }
-          
+         
+          //combine all filters regardless of operator
           function buildFinalFilter(hashFilter) {
             let baseAND = combineAND([
               hashFilter["resource"],
@@ -161,6 +162,7 @@ jQuery(document).ready(function ($) {
                 return baseAND + p;
               });
 
+              //join operators in the end
               return combinedParts.join(", ");
             } else {
               return baseAND ? baseAND + archiveVal : archiveVal;
