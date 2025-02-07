@@ -5,5 +5,4 @@ layout: bio
 name: Taryn Lovelace, Tanya Kabel-Ballard
 department: Department of State
 job-title: Evaluation Officers
-published: False
 ---

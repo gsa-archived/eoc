@@ -5,5 +5,4 @@ layout: bio
 name: Katherine Dawes
 department: Environmental Protection Agency
 job-title: Evaluation Officer 
-published: False
 ---

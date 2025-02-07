@@ -5,5 +5,4 @@ layout: bio
 name: James Owendoff
 department: Department of Energy
 job-title: Chief Risk Officer
-published: False
 ---
