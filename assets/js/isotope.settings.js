@@ -134,12 +134,45 @@ jQuery(document).ready(function ($) {
             location.hash = newHash;
         } // filterSelect
 
+        function combineAND(selectorsArray) {
+            // Remove any "*" or empty strings since "*" = "no restriction"
+            let nonStar = selectorsArray.filter(sel => sel && sel !== "*");
+          
+            // Join them with no space => .class1.class2 => AND in CSS
+            return nonStar.join("");
+          }
+          
+          function buildFinalFilter(hashFilter) {
+            let baseAND = combineAND([
+              hashFilter["resource"],
+              hashFilter["role"],
+              hashFilter["content"],
+              hashFilter["year"]
+            ]);
+            let archiveVal = hashFilter["archive_area"];
+            if (!archiveVal || archiveVal === "*") {
+              return baseAND || "*";
+            }
+          
+            if (archiveVal.indexOf(",") > -1) {
+              let parts = archiveVal.split(",").map(p => p.trim());
+              let combinedParts = parts.map(p => {
+                if (!baseAND || baseAND === "*") return p;
+                return baseAND + p;
+              });
+
+              return combinedParts.join(", ");
+            } else {
+              return baseAND ? baseAND + archiveVal : archiveVal;
+            }
+          }
+
         function onHashChange() {
             // Current hash value
             var hashFilter = getHashFilter();
             // Concatenate subject and role for Isotope filtering
             if (link.indexOf("/resources/") != -1) {
-                var theFilter = hashFilter["resource"] + hashFilter["role"] + hashFilter["content"] + hashFilter["year"] + hashFilter["archive_area"];
+                var theFilter = buildFinalFilter(hashFilter);
                 if (hashFilter) {
                     // Repaint Isotope container with current filters and sorts
                     $container.isotope({
