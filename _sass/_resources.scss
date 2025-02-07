@@ -60,7 +60,7 @@
 a.checked {
   background: #595959;
   color: white;
-}
+} 
 
 .legislation-border {
   border-top: solid 4px #f2938c;
@@ -105,4 +105,20 @@ a.checked {
   right: 12px; 
   max-width: 15%;
 }
-  
+
+.policy {
+  position: relative; 
+}
+
+.policy.archived::after {
+  content: "Archived";
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  font-size: 0.75rem;
+  background: #d9534f; 
+  color: #fff;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
