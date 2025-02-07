@@ -9,7 +9,8 @@
 
         {% assign resources = site.resources | sort: 'year' | reverse %}
         {% for resource in resources %}
-            <div class="tablet:grid-col-4 grid-spacing policy {{ resource.filters }}{% if resource.year < cutoff_year %} archived{% endif %}" style="position: relative;">
+            {% capture numeric_year %}{{ resource.year | default: 0 | plus: 0 }}{% endcapture %}
+            <div class="tablet:grid-col-4 grid-spacing policy {{ resource.filters }}{% if numeric_year == 0 or numeric_year <= cutoff_year %} archived{% endif %}" style="position: relative;">
 
                 <!-- adds star icon on new resources for 30 days -->
                 {% if resource.post-date %}
@@ -89,7 +90,7 @@
                     </div>
                 </div>
 
-                {% if resource.year < cutoff_year %}
+                {% if numeric_year == 0 or numeric_year <= cutoff_year %}
                 <span class="archived-label">Archived</span>
                 {% endif %}
 
