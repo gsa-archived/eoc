@@ -5,5 +5,4 @@ layout: bio
 name: Silvana Rubino-Hallman
 department: Department of Defense
 job-title: Deputy Performance Improvement Officer and Evaluation Officer
-published: False
 ---

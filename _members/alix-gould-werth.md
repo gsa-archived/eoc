@@ -5,5 +5,4 @@ layout: bio
 name: Alix Gould-Werth
 department: Department of Labor
 job-title: Chief Evaluation Officer
-published: False
 ---

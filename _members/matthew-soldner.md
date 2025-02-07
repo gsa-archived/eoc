@@ -5,5 +5,4 @@ layout: bio
 name: Matthew Soldner
 department: Department of Education
 job-title: Commissioner, National Center for Education Evaluation
-published: False
 ---

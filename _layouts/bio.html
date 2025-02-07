@@ -1,4 +1,44 @@
 ---
+layout: base
+---
+<!-- Temporary 404 page for unwanted bios -->
+
+{% comment %}
+This template is for a single page that does not have a date associated with it. For example, an about page.
+{% endcomment %}
+
+<!-- <div class="usa-graphic-list usa-section sml-margin bg-gradient">
+  <div class="grid-container">
+    <div class="grid-row grid-gap">
+      <div class="priority-tag-line"><h1 class="text-white margin-0 font-ui-2xl">{{ page.title }}</h1></div>
+    </div>
+  </div>
+</div> -->
+<div class="usa-graphic-list grid-container margin-bottom-3 padding-left-0 padding-right-0">
+  <div class="grid-container">
+    <div class="grid-row grid-gap">
+      {% if page.sidenav == true %}
+      {% include sidenav.html %}
+      {% endif %}
+    
+        <div class="usa-layout-docs__main desktop:grid-col-12 usa-prose">
+            <div class="grid-row grid-gap">
+                <div class="usa-layout-docs-main_content desktop:grid-col-9 usa-prose">
+                    <h1>>Page not found</strong></h1>
+                    <p>The requested page could not be found (404).</p>
+                </div>
+            </div>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- 
+---
 layout: page
 ---
 <div class="grid-container" xmlns="http://www.w3.org/1999/html">
@@ -36,4 +76,4 @@ layout: page
 
         <br>
     </section>
-</div>
+</div> -->
