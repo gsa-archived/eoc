@@ -1,41 +1,6 @@
 // Add your custom javascript here
 console.log("Hi from Federalist");
 
-function redirectLinks() {
-    console.log('Running redirectLinks...');
-
-    let anchors = document.querySelectorAll('a[href*="/preview/gsa/eoc/"]');
-    
-    anchors.forEach(anchor => {
-        let href = anchor.getAttribute('href'); 
-
-        console.log(`Processing href: ${href}`);
-
-        if (href.includes('evidenceportal')) {
-            let ind = href.indexOf('evidenceportal'); 
-            
-            if (ind !== -1) { 
-                let newHref = href.substring(ind); 
-                if (window.origin.includes('evaluation.gov')) {
-                    let updatedHref = `${window.origin}/${newHref}`; 
-                    anchor.setAttribute('href', updatedHref); 
-                }
-                else {
-                    let updatedHref = `https://evaluation.gov/${newHref}`; 
-                    anchor.setAttribute('href', updatedHref); 
-                }
-            }
-        }
-    });
-}
-
-document.addEventListener("DOMContentLoaded", redirectLinks);
-
-const observer = new MutationObserver(() => {
-    redirectLinks();
-});
-
-observer.observe(document.body, { childList: true, subtree: true });
 
 
 
