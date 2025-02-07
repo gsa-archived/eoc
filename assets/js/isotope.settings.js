@@ -23,6 +23,10 @@ jQuery(document).ready(function ($) {
         }
     
         let notArchivedFilter = notArchivedYears.join(", ");
+
+        if (!location.hash && link.indexOf("/resources/") != -1) {
+            location.hash = "archive_area=" + encodeURIComponent(notArchivedFilter);
+          }
     
         $("#filter-list-not-archived").attr("data-filter", notArchivedFilter);
 
