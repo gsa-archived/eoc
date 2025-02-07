@@ -14,6 +14,18 @@ jQuery(document).ready(function ($) {
 
     if ($container !== undefined) {
 
+        let currentYear = new Date().getFullYear();
+        const archivedYears = 7;
+        const endYear = (currentYear - archivedYears);
+        let notArchivedYears = [];
+        for (let i = currentYear; i >= endYear; i--) {
+            notArchivedYears.push(`.${i}:not(.archived)`);
+        }
+    
+        let notArchivedFilter = notArchivedYears.join(", ");
+    
+        $("#filter-list-not-archived").attr("data-filter", notArchivedFilter);
+
         // Filter isotope
         $container.isotope({
             // options
@@ -68,6 +80,7 @@ jQuery(document).ready(function ($) {
                 filters["role"] = hashFilter["role"];
                 filters["content"] = hashFilter["content"];
                 filters["year"] = hashFilter["year"];
+                filters["archive_area"] = hashFilter["archive_area"];
                 // data-filter attribute of clicked button
                 var currentFilter = $(this).attr("data-filter");
                 // Navigation group (subject or role) as object
@@ -85,7 +98,7 @@ jQuery(document).ready(function ($) {
                 }
                 // Create new hash
                 // var newHash = "subject=" + encodeURIComponent( filters["subject"] ) + "&role=" + encodeURIComponent( filters["role"] ) + "&status=" + encodeURIComponent( filters["status"] );
-                var newHash = "resource=" + filters["resource"] + "&role=" + filters["role"] + "&content=" + filters["content"] + "&year=" + filters["year"];
+                var newHash = "resource=" + filters["resource"] + "&role=" + filters["role"] + "&content=" + filters["content"] + "&year=" + filters["year"] + "&archive_area=" + filters["archive_area"];
                 // If sort value exists, add it to hash
                 if (sortValue) {
                     newHash = newHash + "&sort=" + encodeURIComponent(sortValue);
@@ -126,7 +139,7 @@ jQuery(document).ready(function ($) {
             var hashFilter = getHashFilter();
             // Concatenate subject and role for Isotope filtering
             if (link.indexOf("/resources/") != -1) {
-                var theFilter = hashFilter["resource"] + hashFilter["role"] + hashFilter["content"] + hashFilter["year"];
+                var theFilter = hashFilter["resource"] + hashFilter["role"] + hashFilter["content"] + hashFilter["year"] + hashFilter["archive_area"];
                 if (hashFilter) {
                     // Repaint Isotope container with current filters and sorts
                     $container.isotope({
@@ -194,6 +207,7 @@ jQuery(document).ready(function ($) {
                 var content = location.hash.match(/content=([^&]+)/i);
                 var year = location.hash.match(/year=([^&]+)/i);
                 var sorts = location.hash.match(/sort=([^&]+)/i);
+                var archive_area = location.hash.match(/archive_area=([^&]+)/i);
 
                 // Set up a hashFilter array
                 var hashFilter = {};
@@ -203,6 +217,8 @@ jQuery(document).ready(function ($) {
                 hashFilter["content"] = content ? content[1] : "*";
                 hashFilter["year"] = year ? year[1] : "*";
                 hashFilter["sorts"] = sorts ? sorts[1] : "";
+                hashFilter["filter-list-not-archived"] = year ? decodeURIComponent(year[1]) : "*";
+                hashFilter["archive_area"] = archive_area ? decodeURIComponent(archive_area[1]) : "*";
 
                 return hashFilter;
             } else if (link.indexOf("/news/") != -1) {
