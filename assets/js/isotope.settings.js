@@ -89,7 +89,7 @@ jQuery(document).ready(function ($) {
                 // data-filter-group key for the current nav group
                 var filterGroup = $navGroup.attr("data-filter-group");
                 // If the current data-filter attribute matches the current filter,
-                if (currentFilter == hashFilter["resource"] || currentFilter == hashFilter["role"] || currentFilter == hashFilter["content"] || currentFilter == hashFilter["year"]) {
+                if (currentFilter == hashFilter["resource"] || currentFilter == hashFilter["role"] || currentFilter == hashFilter["content"] || currentFilter == hashFilter["year"] || currentFilter == hashFilter["archive_area"]) {
                     // Reset group filter as the user has unselected the button
                     filters[filterGroup] = "*";
                 } else {
@@ -160,9 +160,11 @@ jQuery(document).ready(function ($) {
                     var roleFilters = hashFilter["role"].split(",");
                     var contentFilters = hashFilter["content"].split(",");
                     var yearFilters = hashFilter["year"].split(",");
+                    var archiveFilters = hashFilter["archive_area"].split(",");
                     var allFilters = resourceFilters.concat(roleFilters);
                     allFilters = allFilters.concat(contentFilters);
                     allFilters = allFilters.concat(yearFilters);
+                    allFilters = allFilters.concat(archiveFilters);
                     for (filter in allFilters) {
                         $(".filter-list").find("[data-filter='" + allFilters[filter] + "']").addClass("checked").attr("aria-checked", "true");
                     }
