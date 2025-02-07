@@ -203,6 +203,12 @@ jQuery(document).ready(function ($) {
                     for (filter in allFilters) {
                         $(".filter-list").find("[data-filter='" + allFilters[filter] + "']").addClass("checked").attr("aria-checked", "true");
                     }
+
+                    if (hashFilter["archive_area"] !== "*") {
+                        $("#filter-list-not-archived")
+                            .addClass("checked")
+                            .attr("aria-checked", "true");
+                    }
                     // $( ".filter-list" ).find("[data-filter='" + hashFilter["subject"] + "'],[data-filter='" + hashFilter["role"] + "'] ,[data-filter='" + hashFilter["status"] + "']").addClass("checked").attr("aria-checked","true");
                 }
                 //News Page
