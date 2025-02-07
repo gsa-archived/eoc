@@ -136,7 +136,7 @@ jQuery(document).ready(function ($) {
 
         function combineAND(selectorsArray) {
             // Remove the * from no filter preset
-            let nonFilter = selectorsArray.filter(sel => sel && sel !== "*");
+            let noFilter = selectorsArray.filter(sel => sel && sel !== "*");
           
             // Join two classes
             return noFilter.join("");
