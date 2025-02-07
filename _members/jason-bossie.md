@@ -5,5 +5,4 @@ layout: bio
 name: Anna Maria Calcagno
 department: Small Business Administration
 job-title: Acting Director, Office of Program Performance, Analysis, and Evaluation (OPPAE)
-published: False
 ---

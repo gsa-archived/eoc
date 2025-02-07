@@ -5,5 +5,4 @@ layout: bio
 name: Vacant
 department: Department of Veterans Affairs
 job-title: 
-published: False
 ---

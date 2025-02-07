@@ -5,5 +5,4 @@ layout: bio
 name: Vacant
 department: Department of Justice
 job-title: 
-published: False
 ---
