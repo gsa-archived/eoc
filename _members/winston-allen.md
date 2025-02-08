@@ -5,5 +5,4 @@ layout: bio
 name: Winston J Allen, PhD
 department: U.S. Agency for International Development
 job-title: Agency Evaluation Officer
-published: False
 ---
