@@ -14,6 +14,14 @@ jQuery(document).ready(function ($) {
 
     if ($container !== undefined) {
 
+        let currentYear = new Date().getFullYear();
+        const archivedYears = 7;
+        const endYear = (currentYear - archivedYears);
+        let notArchivedYears = [];
+        for (let i = currentYear; i >= endYear; i--) {
+            notArchivedYears.push(`.${i}:not(.archived)`);
+        }
+    
         let notArchivedFilter = ":not(.archived)";
 
         if (!location.hash && link.indexOf("/resources/") != -1) {
@@ -141,21 +149,29 @@ jQuery(document).ready(function ($) {
           //combine all filters regardless of operator
           function buildFinalFilter(hashFilter) {
             let baseAND = combineAND([
-                hashFilter["resource"],
-                hashFilter["role"],
-                hashFilter["content"],
-                hashFilter["year"] 
+              hashFilter["resource"],
+              hashFilter["role"],
+              hashFilter["content"],
+              hashFilter["year"]
             ]);
-        
             let archiveVal = hashFilter["archive_area"];
-            if (archiveVal === ":not(.archived)") {
-                return baseAND ? baseAND + ":not(.archived)" : ":not(.archived)";
-            } else if (archiveVal === ".archived") {
-                return baseAND ? baseAND + ".archived" : ".archived";
-            } else {
-                return baseAND || "*";
+            if (!archiveVal || archiveVal === "*") {
+              return baseAND || "*";
             }
-        }
+          
+            if (archiveVal.indexOf(",") > -1) {
+              let parts = archiveVal.split(",").map(p => p.trim());
+              let combinedParts = parts.map(p => {
+                if (!baseAND || baseAND === "*") return p;
+                return baseAND + p;
+              });
+
+              //join operators in the end
+              return combinedParts.join(", ");
+            } else {
+              return baseAND ? baseAND + archiveVal : archiveVal;
+            }
+          }
 
         function onHashChange() {
             // Current hash value
