@@ -82,11 +82,14 @@ jQuery(document).ready(function ($) {
                     // Set data-filter of current button as value with filterGroup as key
                     filters[filterGroup] = $(this).attr("data-filter");
                 }
-                // Create new hash
-                var newHash = "resource=" + filters["resource"] + "&role=" + filters["role"] + "&content=" + filters["content"] + "&year=" + filters["year"];
-                if (filters["historical"] !== "*") {
-                    newHash += "&historical=" + encodeURIComponent(filters["historical"]);
+        
+                // Toggle historical filter
+                if ($(this).attr("id") === "filter-list-not-archived") {
+                    filters["historical"] = (hashFilter["historical"] === "true") ? "false" : "true";
                 }
+        
+                // Create new hash
+                var newHash = "resource=" + filters["resource"] + "&role=" + filters["role"] + "&content=" + filters["content"] + "&year=" + filters["year"] + "&historical=" + filters["historical"];
                 // If sort value exists, add it to hash
                 if (sortValue) {
                     newHash = newHash + "&sort=" + encodeURIComponent(sortValue);
@@ -126,9 +129,15 @@ jQuery(document).ready(function ($) {
             // Concatenate subject and role for Isotope filtering
             if (link.indexOf("/resources/") != -1) {
                 var theFilter = hashFilter["resource"] + hashFilter["role"] + hashFilter["content"] + hashFilter["year"];
-                if (hashFilter["historical"] !== "*") {
-                    theFilter += ".historical";
+        
+                // By default, exclude historical documents unless explicitly enabled
+                if (hashFilter["historical"] !== "true") {
+                    theFilter += ":not(.historical)";
+                    $("#filter-list-not-archived").removeClass("checked").attr("aria-checked", "false");
+                } else {
+                    $("#filter-list-not-archived").addClass("checked").attr("aria-checked", "true");
                 }
+        
                 if (hashFilter) {
                     // Repaint Isotope container with current filters and sorts
                     $container.isotope({
@@ -149,7 +158,7 @@ jQuery(document).ready(function ($) {
                     var roleFilters = hashFilter["role"].split(",");
                     var contentFilters = hashFilter["content"].split(",");
                     var yearFilters = hashFilter["year"].split(",");
-                    var historicalFilters = hashFilter["historical"] !== "*" ? [".historical"] : [];
+                    var historicalFilters = hashFilter["historical"] === "true" ? [".historical"] : [];
                     var allFilters = resourceFilters.concat(roleFilters, contentFilters, yearFilters, historicalFilters);
                     for (filter in allFilters) {
                         $(".filter-list").find("[data-filter='" + allFilters[filter] + "']").addClass("checked").attr("aria-checked", "true");
@@ -200,7 +209,7 @@ jQuery(document).ready(function ($) {
                 hashFilter["role"] = role ? role[1] : "*";
                 hashFilter["content"] = content ? content[1] : "*";
                 hashFilter["year"] = year ? year[1] : "*";
-                hashFilter["historical"] = historical ? historical[1] : "*";
+                hashFilter["historical"] = historical ? historical[1] : "false"; // Default to false (hidden)
                 hashFilter["sorts"] = sorts ? sorts[1] : "";
         
                 return hashFilter;
@@ -217,7 +226,8 @@ jQuery(document).ready(function ($) {
         
                 return hashFilter;
             }
-        }// getHashFilter
+        }
+        // getHashFilter
 
         // When the hash changes, run onHashchange
         window.onhashchange = onHashChange;
