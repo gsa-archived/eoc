@@ -86,7 +86,7 @@ jQuery(document).ready(function ($) {
                 }
                 // Create new hash
                 // var newHash = "subject=" + encodeURIComponent( filters["subject"] ) + "&role=" + encodeURIComponent( filters["role"] ) + "&status=" + encodeURIComponent( filters["status"] );
-                var newHash = "resource=" + filters["resource"] + "&role=" + filters["role"] + "&content=" + filters["content"] + "&year=" + filters["year"] + "&historical" + filters["historical"];
+                var newHash = "resource=" + filters["resource"] + "&role=" + filters["role"] + "&content=" + filters["content"] + "&year=" + filters["year"] + "&historical=" + filters["historical"];
                 // If sort value exists, add it to hash
                 if (sortValue) {
                     newHash = newHash + "&sort=" + encodeURIComponent(sortValue);
@@ -196,7 +196,7 @@ jQuery(document).ready(function ($) {
                 var role = location.hash.match(/role=([^&]+)/i);
                 var content = location.hash.match(/content=([^&]+)/i);
                 var year = location.hash.match(/year=([^&]+)/i);
-                var historical = location.hash.match(/sort=([^&]+)/i);
+                var historical = location.hash.match(/historical=([^&]+)/i);
                 var sorts = location.hash.match(/sort=([^&]+)/i);
                 
 
