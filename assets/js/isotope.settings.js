@@ -22,7 +22,7 @@ jQuery(document).ready(function ($) {
             notArchivedYears.push(`.${i}:not(.archived)`);
         }
     
-        let notArchivedFilter = ":not(.archived)";
+        let notArchivedFilter = notArchivedYears.join(", ");
 
         if (!location.hash && link.indexOf("/resources/") != -1) {
             location.hash = "archive_area=" + encodeURIComponent(notArchivedFilter);
