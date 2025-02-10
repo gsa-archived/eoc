@@ -6,5 +6,5 @@ external_url: pathwaystowork.acf.hhs.gov/
 aria-label: Pathways to Work Evidence Clearinghouse
 content_tags: Clearinghouse
 type: link
-filters: evidence-clearinghouse federal-agency clearinghouse
+filters: evidence-clearinghouse federal-agency clearinghouse historical
 ---

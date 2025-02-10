@@ -6,5 +6,5 @@ external_url: evidence2impact.psu.edu/what-we-do/research-translation-platform/r
 aria-label: Results First Clearinghouse Database
 content_tags: Clearinghouse
 type: link
-filters: evidence-clearinghouse external clearinghouse
+filters: evidence-clearinghouse external clearinghouse historical
 ---

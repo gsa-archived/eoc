@@ -6,5 +6,5 @@ external_url: clear.dol.gov/
 aria-label: Clearinghouse for Labor Evaluation and Research
 content_tags: 
 type: link
-filters: evidence-clearinghouse federal-agency clearinghouse
+filters: evidence-clearinghouse federal-agency clearinghouse historical
 ---

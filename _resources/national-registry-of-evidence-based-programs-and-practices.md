@@ -6,5 +6,5 @@ external_url: samhsa.gov/resource-search/ebp
 aria-label: Evidence-Based Practices Resource Center
 content_tags: Clearinghouse
 type: link
-filters: evidence-clearinghouse federal-agency clearinghouse
+filters: evidence-clearinghouse federal-agency clearinghouse historical
 ---
