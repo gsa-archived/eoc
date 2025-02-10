@@ -106,3 +106,25 @@ a.checked {
   max-width: 15%;
 }
   
+.new-resource-icon {
+  position:absolute; 
+  top: 7px; 
+  right: 12px; 
+  max-width: 15%;
+}
+
+.policy {
+  position: relative;
+}
+
+.archived-label {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.7rem;
+  font-size: 0.75rem;
+  background: #07648d; 
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+}
