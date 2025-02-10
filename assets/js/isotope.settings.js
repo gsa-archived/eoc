@@ -76,7 +76,7 @@ jQuery(document).ready(function ($) {
                 // data-filter-group key for the current nav group
                 var filterGroup = $navGroup.attr("data-filter-group");
                 // If the current data-filter attribute matches the current filter,
-                if (currentFilter == hashFilter["resource"] || currentFilter == hashFilter["role"] || currentFilter == hashFilter["content"] || currentFilter == hashFilter["year"]) {
+                if (currentFilter == hashFilter["resource"] || currentFilter == hashFilter["role"] || currentFilter == hashFilter["content"] || currentFilter == hashFilter["year"] || currentFilter == hashFilter["historical"]) {
                     // Reset group filter as the user has unselected the button
                     filters[filterGroup] = "*";
                 } else {
@@ -136,7 +136,7 @@ jQuery(document).ready(function ($) {
             var hashFilter = getHashFilter();
             // Concatenate subject and role for Isotope filtering
             if (link.indexOf("/resources/") != -1) {
-                var theFilter = hashFilter["resource"] + hashFilter["role"] + hashFilter["content"] + hashFilter["year"];
+                var theFilter = hashFilter["resource"] + hashFilter["role"] + hashFilter["content"] + hashFilter["year"] + hashFilter["historical"];
         
                 // By default, exclude historical documents unless explicitly enabled
                 if (hashFilter["historical"] === "true") {
@@ -220,7 +220,7 @@ jQuery(document).ready(function ($) {
                 hashFilter["role"] = role ? role[1] : "*";
                 hashFilter["content"] = content ? content[1] : "*";
                 hashFilter["year"] = year ? year[1] : "*";
-                hashFilter["historical"] = historical ? historical[1] : "false"; // Default to false (hidden)
+                hashFilter["historical"] = historical ? historical[1] : "*"; // Default to false (hidden)
                 hashFilter["sorts"] = sorts ? sorts[1] : "";
         
                 return hashFilter;
