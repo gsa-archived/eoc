@@ -19,8 +19,19 @@ jQuery(document).ready(function ($) {
         if (!location.hash && link.indexOf("/resources/") != -1) {
             location.hash = "archive_area=" + encodeURIComponent(":not(.archived)");
         }
-    
+        
         $("#filter-list-not-archived").attr("data-filter", notArchivedFilter);
+
+        $("#filter-list-not-archived").on("click", function () {
+            var currentHash = location.hash;
+            var isShowingArchived = currentHash.includes("archive_area=.archived");
+        
+            if (isShowingArchived) {
+                location.hash = currentHash.replace(/archive_area=[^&]+/i, "archive_area=" + encodeURIComponent(":not(.archived)"));
+            } else {
+                location.hash = currentHash.replace(/archive_area=[^&]+/i, "archive_area=.archived");
+            }
+        });
 
         // Filter isotope
         $container.isotope({
@@ -141,29 +152,30 @@ jQuery(document).ready(function ($) {
           //combine all filters regardless of operator
           function buildFinalFilter(hashFilter) {
             let baseAND = combineAND([
-              hashFilter["resource"],
-              hashFilter["role"],
-              hashFilter["content"],
-              hashFilter["year"]
+                hashFilter["resource"],
+                hashFilter["role"],
+                hashFilter["content"],
+                hashFilter["year"]
             ]);
-            let archiveVal = hashFilter["archive_area"];
+        
+            let archiveVal = hashFilter["archive_area"]; // This controls visibility
+        
             if (!archiveVal || archiveVal === "*") {
-              return baseAND || "*";
+                return baseAND || "*"; // Show everything if no filter is set
             }
-          
+        
             if (archiveVal.indexOf(",") > -1) {
-              let parts = archiveVal.split(",").map(p => p.trim());
-              let combinedParts = parts.map(p => {
-                if (!baseAND || baseAND === "*") return p;
-                return baseAND + p;
-              });
-
-              //join operators in the end
-              return combinedParts.join(", ");
+                let parts = archiveVal.split(",").map(p => p.trim());
+                let combinedParts = parts.map(p => {
+                    if (!baseAND || baseAND === "*") return p;
+                    return baseAND + p;
+                });
+        
+                return combinedParts.join(", ");
             } else {
-              return baseAND ? baseAND + archiveVal : archiveVal;
+                return baseAND ? baseAND + archiveVal : archiveVal;
             }
-          }
+            }
 
         function onHashChange() {
             // Current hash value
@@ -200,10 +212,14 @@ jQuery(document).ready(function ($) {
                         $(".filter-list").find("[data-filter='" + allFilters[filter] + "']").addClass("checked").attr("aria-checked", "true");
                     }
 
-                    if (hashFilter["archive_area"] === "*") {
+                    if (hashFilter["archive_area"] === ".archived") {
                         $("#filter-list-not-archived")
                             .addClass("checked")
                             .attr("aria-checked", "true");
+                    } else {
+                        $("#filter-list-not-archived")
+                            .removeClass("checked")
+                            .attr("aria-checked", "false");
                     }
                     // $( ".filter-list" ).find("[data-filter='" + hashFilter["subject"] + "'],[data-filter='" + hashFilter["role"] + "'] ,[data-filter='" + hashFilter["status"] + "']").addClass("checked").attr("aria-checked","true");
                 }

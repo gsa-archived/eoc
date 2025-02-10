@@ -91,8 +91,8 @@
                     </div>
                 </div>
 
-                {% if numeric_year == 0 or numeric_year <= cutoff_year %}
-                <span class="archived-label">Archived</span>
+                {% if resource.filters contains 'archived' %}
+                    <span class="archived-label">Archived</span>
                 {% endif %}
 
             </div>
