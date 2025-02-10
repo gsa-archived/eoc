@@ -67,6 +67,7 @@ jQuery(document).ready(function ($) {
                 filters["content"] = hashFilter["content"];
                 filters["year"] = hashFilter["year"];
                 filters["historical"] = hashFilter["historical"];
+        
                 // data-filter attribute of clicked button
                 var currentFilter = $(this).attr("data-filter");
                 // Navigation group (subject or role) as object
@@ -75,7 +76,7 @@ jQuery(document).ready(function ($) {
                 // data-filter-group key for the current nav group
                 var filterGroup = $navGroup.attr("data-filter-group");
                 // If the current data-filter attribute matches the current filter,
-                if (currentFilter == hashFilter["resource"] || currentFilter == hashFilter["role"] || currentFilter == hashFilter["content"] || currentFilter == hashFilter["year"] || currentFilter == ".historical") {
+                if (currentFilter == hashFilter["resource"] || currentFilter == hashFilter["role"] || currentFilter == hashFilter["content"] || currentFilter == hashFilter["year"]) {
                     // Reset group filter as the user has unselected the button
                     filters[filterGroup] = "*";
                 } else {
@@ -85,7 +86,13 @@ jQuery(document).ready(function ($) {
         
                 // Toggle historical filter
                 if ($(this).attr("id") === "filter-list-not-archived") {
-                    filters["historical"] = (hashFilter["historical"] === "true") ? "false" : "true";
+                    if (hashFilter["historical"] === "true") {
+                        filters["historical"] = "false"; // Remove historical filter
+                        $("#filter-list-not-archived").removeClass("checked").attr("aria-checked", "false");
+                    } else {
+                        filters["historical"] = "true"; // Show historical documents
+                        $("#filter-list-not-archived").addClass("checked").attr("aria-checked", "true");
+                    }
                 }
         
                 // Create new hash
@@ -121,9 +128,10 @@ jQuery(document).ready(function ($) {
                 }
                 location.hash = newHash;
             }
-        } // filterSelect
+        }
+         // filterSelect
 
-        function onHashChange() {
+         function onHashChange() {
             // Current hash value
             var hashFilter = getHashFilter();
             // Concatenate subject and role for Isotope filtering
