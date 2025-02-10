@@ -4,6 +4,12 @@
     <a class="usa-button btn-primary margin-bottom-2" href="{{ site.baseurl }}/resources/#subject=*&role=*&status=*">Reset Filter</a>
 
     <nav id="filter" class="filters" aria-label="filter menu">
+
+        <h2 class="filter-title font-sans-sm">Historical</h2>
+        <ul class="filter-list" data-filter-group="archive_area">
+            <li><a aria-label="Filter by Type: Archive" role="checkbox" href="javascript:void(0)" data-filter="*" class="usa-tooltip" id="filter-list-not-archived" data-position="right" title="New documents">Show Historical Documents</a></li>
+        </ul>
+
         <h2 class="filter-title font-sans-sm">Filter by Resource Type</h2>
         <ul class="filter-list" data-filter-group="resource">
             <li><a aria-label="Filter by Type: Legislation" role="checkbox" href="javascript:void(0)" data-filter=".legislation" class="usa-tooltip" data-position="right" title="Relevant law" tabindex="0">Legislation</a></li>
