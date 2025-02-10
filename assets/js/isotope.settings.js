@@ -13,19 +13,11 @@ jQuery(document).ready(function ($) {
     }
 
     if ($container !== undefined) {
-
-        let currentYear = new Date().getFullYear();
-        const archivedYears = 7;
-        const endYear = (currentYear - archivedYears);
-        let notArchivedYears = [];
-        for (let i = currentYear; i >= endYear; i--) {
-            notArchivedYears.push(`.${i}:not(.archived)`);
-        }
     
-        let notArchivedFilter = notArchivedYears.join(", ");
+        let notArchivedFilter = ":not(.archived)";
 
         if (!location.hash && link.indexOf("/resources/") != -1) {
-            location.hash = "archive_area=" + encodeURIComponent(notArchivedFilter);
+            location.hash = "archive_area=" + encodeURIComponent(":not(.archived)");
         }
     
         $("#filter-list-not-archived").attr("data-filter", notArchivedFilter);
