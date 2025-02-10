@@ -139,11 +139,11 @@ jQuery(document).ready(function ($) {
                 var theFilter = hashFilter["resource"] + hashFilter["role"] + hashFilter["content"] + hashFilter["year"];
         
                 // By default, exclude historical documents unless explicitly enabled
-                if (hashFilter["historical"] !== "true") {
+                if (hashFilter["historical"] === "true") {
+                    $("#filter-list-not-archived").addClass("checked").attr("aria-checked", "true");
+                } else {
                     theFilter += ":not(.historical)";
                     $("#filter-list-not-archived").removeClass("checked").attr("aria-checked", "false");
-                } else {
-                    $("#filter-list-not-archived").addClass("checked").attr("aria-checked", "true");
                 }
         
                 if (hashFilter) {
@@ -198,7 +198,8 @@ jQuery(document).ready(function ($) {
                     }
                 }
             }
-        } // onHahschange
+        }
+         // onHahschange
 
         function getHashFilter() {
             if (link.indexOf("/resources/") != -1) {
