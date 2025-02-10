@@ -68,6 +68,7 @@ jQuery(document).ready(function ($) {
                 filters["role"] = hashFilter["role"];
                 filters["content"] = hashFilter["content"];
                 filters["year"] = hashFilter["year"];
+                filters["historical"] = hashFilter["historical"];
                 // data-filter attribute of clicked button
                 var currentFilter = $(this).attr("data-filter");
                 // Navigation group (subject or role) as object
@@ -76,7 +77,7 @@ jQuery(document).ready(function ($) {
                 // data-filter-group key for the current nav group
                 var filterGroup = $navGroup.attr("data-filter-group");
                 // If the current data-filter attribute matches the current filter,
-                if (currentFilter == hashFilter["resource"] || currentFilter == hashFilter["role"] || currentFilter == hashFilter["content"] || currentFilter == hashFilter["year"]) {
+                if (currentFilter == hashFilter["resource"] || currentFilter == hashFilter["role"] || currentFilter == hashFilter["content"] || currentFilter == hashFilter["year"] || currentFilter == hashFilter["historical"]) {
                     // Reset group filter as the user has unselected the button
                     filters[filterGroup] = "*";
                 } else {
@@ -85,7 +86,7 @@ jQuery(document).ready(function ($) {
                 }
                 // Create new hash
                 // var newHash = "subject=" + encodeURIComponent( filters["subject"] ) + "&role=" + encodeURIComponent( filters["role"] ) + "&status=" + encodeURIComponent( filters["status"] );
-                var newHash = "resource=" + filters["resource"] + "&role=" + filters["role"] + "&content=" + filters["content"] + "&year=" + filters["year"];
+                var newHash = "resource=" + filters["resource"] + "&role=" + filters["role"] + "&content=" + filters["content"] + "&year=" + filters["year"] + "&historical" + filters["historical"];
                 // If sort value exists, add it to hash
                 if (sortValue) {
                     newHash = newHash + "&sort=" + encodeURIComponent(sortValue);
@@ -126,7 +127,7 @@ jQuery(document).ready(function ($) {
             var hashFilter = getHashFilter();
             // Concatenate subject and role for Isotope filtering
             if (link.indexOf("/resources/") != -1) {
-                var theFilter = hashFilter["resource"] + hashFilter["role"] + hashFilter["content"] + hashFilter["year"];
+                var theFilter = hashFilter["resource"] + hashFilter["role"] + hashFilter["content"] + hashFilter["year"] + hashFilter["historical"];
                 if (hashFilter) {
                     // Repaint Isotope container with current filters and sorts
                     $container.isotope({
@@ -147,9 +148,11 @@ jQuery(document).ready(function ($) {
                     var roleFilters = hashFilter["role"].split(",");
                     var contentFilters = hashFilter["content"].split(",");
                     var yearFilters = hashFilter["year"].split(",");
+                    var historicalFilters =hashFilter["historical"].split(",");
                     var allFilters = resourceFilters.concat(roleFilters);
                     allFilters = allFilters.concat(contentFilters);
                     allFilters = allFilters.concat(yearFilters);
+                    allFilters = allFilters.concat(historicalFilters);
                     for (filter in allFilters) {
                         $(".filter-list").find("[data-filter='" + allFilters[filter] + "']").addClass("checked").attr("aria-checked", "true");
                     }
@@ -193,7 +196,9 @@ jQuery(document).ready(function ($) {
                 var role = location.hash.match(/role=([^&]+)/i);
                 var content = location.hash.match(/content=([^&]+)/i);
                 var year = location.hash.match(/year=([^&]+)/i);
+                var historical = location.hash.match(/sort=([^&]+)/i);
                 var sorts = location.hash.match(/sort=([^&]+)/i);
+                
 
                 // Set up a hashFilter array
                 var hashFilter = {};
@@ -202,6 +207,7 @@ jQuery(document).ready(function ($) {
                 hashFilter["role"] = role ? role[1] : "*";
                 hashFilter["content"] = content ? content[1] : "*";
                 hashFilter["year"] = year ? year[1] : "*";
+                hashFilter["historical"] = historical? historical[1] : "*";
                 hashFilter["sorts"] = sorts ? sorts[1] : "";
 
                 return hashFilter;
