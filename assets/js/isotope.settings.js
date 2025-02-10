@@ -139,12 +139,10 @@ jQuery(document).ready(function ($) {
                 var theFilter = hashFilter["resource"] + hashFilter["role"] + hashFilter["content"] + hashFilter["year"] + hashFilter["historical"];
         
                 // By default, exclude historical documents unless explicitly enabled
-                if (hashFilter["historical"] === "true") {
-                    theFilter += ", .historical"; // Show historical documents
-                    $("#filter-list-not-archived").addClass("checked").attr("aria-checked", "true");
-                } else {
-                    theFilter += ":not(.historical)"; // Hide historical documents
-                    $("#filter-list-not-archived").removeClass("checked").attr("aria-checked", "false");
+                if (hashFilter["historical"] === "*") {
+                    $("#filter-list-not-archived")
+                        .addClass("checked")
+                        .attr("aria-checked", "true");
                 }
         
                 if (hashFilter) {
