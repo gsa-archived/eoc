@@ -140,9 +140,10 @@ jQuery(document).ready(function ($) {
         
                 // By default, exclude historical documents unless explicitly enabled
                 if (hashFilter["historical"] === "true") {
+                    theFilter += ", .historical"; // Show historical documents
                     $("#filter-list-not-archived").addClass("checked").attr("aria-checked", "true");
                 } else {
-                    theFilter += ":not(.historical)";
+                    theFilter += ":not(.historical)"; // Hide historical documents
                     $("#filter-list-not-archived").removeClass("checked").attr("aria-checked", "false");
                 }
         
@@ -168,8 +169,8 @@ jQuery(document).ready(function ($) {
                     var yearFilters = hashFilter["year"].split(",");
                     var historicalFilters = hashFilter["historical"] === "true" ? [".historical"] : [];
                     var allFilters = resourceFilters.concat(roleFilters, contentFilters, yearFilters, historicalFilters);
-                    for (filter in allFilters) {
-                        $(".filter-list").find("[data-filter='" + allFilters[filter] + "']").addClass("checked").attr("aria-checked", "true");
+                    for (let filter of allFilters) {
+                        $(".filter-list").find("[data-filter='" + filter + "']").addClass("checked").attr("aria-checked", "true");
                     }
                 }
                 //News Page
@@ -193,15 +194,16 @@ jQuery(document).ready(function ($) {
                     // Toggle checked status of filter buttons
                     $(".filter-list").find(".checked").removeClass("checked").attr("aria-checked", "false");
                     var allFilters = hashFilter["content"].split(",");
-                    for (filter in allFilters) {
+                    for (let filter of allFilters) {
                         $(".filter-list").find("[data-filter='" + allFilters[filter] + "']").addClass("checked").attr("aria-checked", "true");
                     }
                 }
             }
         }
+        
          // onHahschange
 
-        function getHashFilter() {
+         function getHashFilter() {
             if (link.indexOf("/resources/") != -1) {
                 // Get filters (matches) and sort order (sorts)
                 var resource = location.hash.match(/resource=([^&]+)/i);
