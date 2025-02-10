@@ -77,12 +77,14 @@ jQuery(document).ready(function ($) {
                 // data-filter-group key for the current nav group
                 var filterGroup = $navGroup.attr("data-filter-group");
                 // If the current data-filter attribute matches the current filter,
-                if (currentFilter == hashFilter["resource"] || currentFilter == hashFilter["role"] || currentFilter == hashFilter["content"] || currentFilter == hashFilter["year"] || currentFilter == hashFilter["historical"]) {
-                    // Reset group filter as the user has unselected the button
-                    filters[filterGroup] = "*";
+                if (filterGroup === "historical") {
+                    filters[filterGroup] = $(this).hasClass("checked") ? ":not(.historical)" : $(this).attr("data-filter");
                 } else {
-                    // Set data-filter of current button as value with filterGroup as key
-                    filters[filterGroup] = $(this).attr("data-filter");
+                    if (currentFilter == hashFilter[filterGroup]) {
+                        filters[filterGroup] = "*";
+                    } else {
+                        filters[filterGroup] = currentFilter;
+                    }
                 }
                 // Create new hash
                 // var newHash = "subject=" + encodeURIComponent( filters["subject"] ) + "&role=" + encodeURIComponent( filters["role"] ) + "&status=" + encodeURIComponent( filters["status"] );
@@ -102,6 +104,7 @@ jQuery(document).ready(function ($) {
                 var $navGroup = $(this).parents(".filter-list");
                 // data-filter-group key for the current nav group
                 var filterGroup = $navGroup.attr("data-filter-group");
+
                 // If the current data-filter attribute matches the current filter,
                 if (currentFilter == hashFilter["content"]) {
                     // Reset group filter as the user has unselected the button
@@ -207,7 +210,7 @@ jQuery(document).ready(function ($) {
                 hashFilter["role"] = role ? role[1] : "*";
                 hashFilter["content"] = content ? content[1] : "*";
                 hashFilter["year"] = year ? year[1] : "*";
-                hashFilter["historical"] = historical? historical[1] : "*";
+                hashFilter["historical"] = historical ? historical[1] : ":not(.historical)";
                 hashFilter["sorts"] = sorts ? sorts[1] : "";
 
                 return hashFilter;
