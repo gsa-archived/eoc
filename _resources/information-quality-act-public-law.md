@@ -6,5 +6,5 @@ external_url: www.govinfo.gov/content/pkg/PLAW-106publ554/pdf/PLAW-106publ554.pd
 aria-label: Information Quality Act
 content_tags: 
 type: link
-filters: legislation congress 2001 historical
+filters: legislation congress 2001
 ---

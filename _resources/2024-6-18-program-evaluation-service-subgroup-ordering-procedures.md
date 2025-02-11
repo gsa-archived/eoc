@@ -6,6 +6,6 @@ doc-link: assets/resources/Buyers Guide_Program Evaluation Services Subgroup_508
 aria-label: 'Program Evaluation Services Subgroup Ordering Procedures'
 content_tags: 
 type: link
-filters: 2024 evaluation quick-reference federal-agency historical
+filters: 2024 evaluation quick-reference federal-agency
 post-date: June 18, 2024
 ---

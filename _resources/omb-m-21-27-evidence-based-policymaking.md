@@ -6,5 +6,5 @@ external_url: www.whitehouse.gov/wp-content/uploads/2021/06/M-21-27.pdf
 aria-label: Learning Agendas and Annual Evaluation Plans
 content_tags: 
 type: pdf
-filters: guidance omb evaluation 2021 historical
+filters: guidance omb evaluation 2021
 ---

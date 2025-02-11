@@ -6,5 +6,5 @@ external_url: homvee.acf.hhs.gov/
 aria-label: Home Visiting Evidence of Effectiveness
 content_tags: Clearinghouse
 type: link
-filters: evidence-clearinghouse federal-agency clearinghouse historical
+filters: evidence-clearinghouse federal-agency clearinghouse
 ---

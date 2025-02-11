@@ -6,5 +6,5 @@ external_url: www.whitehouse.gov/wp-content/uploads/2017/11/M-18-04-Final.pdf
 aria-label: Monitoring and Evaluation Guidelines for Federal Departments and Agencies
 content_tags: 
 type: link
-filters: guidance omb 2018 historical
+filters: guidance omb 2018
 ---

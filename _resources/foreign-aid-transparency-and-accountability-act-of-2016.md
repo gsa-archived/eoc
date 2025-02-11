@@ -6,5 +6,5 @@ external_url: congress.gov/114/plaws/publ191/PLAW-114publ191.pdf
 aria-label: Foreign Aid Transparency and Accountability Act
 content_tags:
 type: link
-filters: legislation congress 2016 historical
+filters: legislation congress 2016
 ---
