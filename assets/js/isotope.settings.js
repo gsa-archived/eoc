@@ -79,8 +79,7 @@ jQuery(document).ready(function ($) {
                 // If the current data-filter attribute matches the current filter,
                 if (filterGroup === "historical") {
                     filters[filterGroup] = $(this).hasClass("checked") ? ":not(.historical)" : "*";
-                }
-                else {
+                } else {
                     if (currentFilter == hashFilter[filterGroup]) {
                         filters[filterGroup] = "*";
                     } else {
@@ -129,7 +128,6 @@ jQuery(document).ready(function ($) {
         function onHashChange() {
             // Current hash value
             var hashFilter = getHashFilter();
-            // Concatenate subject and role for Isotope filtering
             if (link.indexOf("/resources/") != -1) {
                 var theFilter = hashFilter["resource"] + hashFilter["role"] + hashFilter["content"] + hashFilter["year"] + hashFilter["historical"];
                 if (hashFilter) {
@@ -138,31 +136,30 @@ jQuery(document).ready(function ($) {
                         filter: decodeURIComponent(theFilter),
                         sortBy: hashFilter["sorts"]
                     });
-
                     updateFilterCount();
-                    // Toggle checked status of sort button
+        
                     if (hashFilter["sorts"]) {
                         $(".sort").addClass("checked");
                     } else {
                         $(".sort").removeClass("checked");
                     }
-                    // Toggle checked status of filter buttons
-                    $(".filter-list").find(".checked").removeClass("checked").attr("aria-checked", "false");
-                    var resourceFilters = hashFilter["resource"].split(",");
-                    var roleFilters = hashFilter["role"].split(",");
-                    var contentFilters = hashFilter["content"].split(",");
-                    var yearFilters = hashFilter["year"].split(",");
-                    var historicalFilters =hashFilter["historical"].split(",");
-                    var allFilters = resourceFilters.concat(roleFilters);
-                    allFilters = allFilters.concat(contentFilters);
-                    allFilters = allFilters.concat(yearFilters);
-                    allFilters = allFilters.concat(historicalFilters);
-                    for (filter in allFilters) {
-                        $(".filter-list").find("[data-filter='" + allFilters[filter] + "']").addClass("checked").attr("aria-checked", "true");
-                    }
-                    // $( ".filter-list" ).find("[data-filter='" + hashFilter["subject"] + "'],[data-filter='" + hashFilter["role"] + "'] ,[data-filter='" + hashFilter["status"] + "']").addClass("checked").attr("aria-checked","true");
+                    $(".filter-list a").removeClass("checked").attr("aria-checked", "false");
+        
+                    $(".filter-list").each(function(){
+                        var group = $(this).attr("data-filter-group");
+                        var value = hashFilter[group]; 
+        
+                        if (group === "historical") {
+                            if (value === "*") {
+                                $(this).find("[data-filter='*']").addClass("checked").attr("aria-checked", "true");
+                            }
+                        } else {
+                            if (value !== "*") {
+                                $(this).find("[data-filter='" + value + "']").addClass("checked").attr("aria-checked", "true");
+                            }
+                        }
+                    });
                 }
-                //News Page
             } else if (link.indexOf("/news/") != -1) {
                 var theFilter = hashFilter["content"];
 
