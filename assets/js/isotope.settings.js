@@ -78,8 +78,9 @@ jQuery(document).ready(function ($) {
                 var filterGroup = $navGroup.attr("data-filter-group");
                 // If the current data-filter attribute matches the current filter,
                 if (filterGroup === "historical") {
-                    filters[filterGroup] = $(this).hasClass("checked") ? ":not(.historical)" : $(this).attr("data-filter");
-                } else {
+                    filters[filterGroup] = $(this).hasClass("checked") ? ":not(.historical)" : "*";
+                }
+                else {
                     if (currentFilter == hashFilter[filterGroup]) {
                         filters[filterGroup] = "*";
                     } else {
