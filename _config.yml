@@ -84,8 +84,8 @@ primary_navigation:
         url: "/about-evaluation-officers/"
       - name: Evaluation Officers
         url: "/evaluation-officers/"
-      - name: Sitemap Test page
-        url: "/test-sitemap/"
+      # - name: Sitemap Test page
+      #   url: "/test-sitemap/"
       - name: Interagency Council on Evaluation Policy
         url: "/interagency-council-on-evaluation-policy/"
   - name: Agencies
