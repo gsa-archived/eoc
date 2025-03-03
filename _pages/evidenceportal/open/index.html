@@ -51,12 +51,11 @@ page_title: Open Projects
                 class="gatsby-image-wrapper gatsby-image-wrapper-constrained xl:inline-block logotype"
               >
                 <div style="max-width: 302px; display: block">
-                  LOGO - PENDING
                   <img
                     alt=""
                     role="presentation"
                     aria-hidden="true"
-                    src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='64'%20width='302'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
+                    src="{{site.baseurl}}/evidenceportal/static/597f81b11ae8beaad281d4d90441264c/9d8d9/navbar.png"
                     style="max-width: 100%; display: block; position: static"
                   />
                 </div>
@@ -190,10 +189,67 @@ page_title: Open Projects
             </div>
           </div>
         </header>
-        FILTERS - PENDING
         <div
           class="pt-4 pb-10 md:mx-8 lg:mt-6 lg:pt-8 lg:pb-20 overflow-hidden px-2 xl:px-12 bg-white"
         >
+          <div
+            class="flex flex-wrap items-end gap-4 mb-8 mx-3 xl:mx-6 bg-white"
+          >
+            <div class="flex-1 min-w-30ch">
+              <label
+                id="filter-select-label"
+                class="font-bold p-1"
+                for="filter-select"
+                >Filter by
+              </label>
+              <div class="custom-select-container">
+                <div id="dropdown1"></div>
+              </div>
+            </div>
+            <div class="flex-1 min-w-30ch">
+              <label
+                id="filter-select-label"
+                class="font-bold p-1"
+                for="filter-select"
+                >Filter by agency</label
+              >
+              <div class="custom-select-container">
+                <div class="custom-select" id="select2"></div>
+              </div>
+            </div>
+            <div class="flex-1 min-w-30ch">
+              <label
+                id="filter-select-label"
+                class="font-bold p-1"
+                for="filter-select"
+                >Filter by topic</label
+              >
+              <div class="custom-select-container">
+                <div class="custom-select" id="select1"></div>
+              </div>
+              <!-- <button onclick="console.log(getSelectedValue('select1'))">
+                Get Selected Value
+              </button> -->
+            </div>
+            <div class="flex-1 min-w-30ch auto-rows-auto flex flex-col">
+              <label
+                id="projSearch-label"
+                class="font-bold p-1"
+                for="projSearch"
+                >Search</label
+              >
+              <input
+                class="rounded border-gray-300 hover:border-gray-400"
+                style="height: 44px"
+                type="text"
+                id="projSearch"
+                aria-label="Search"
+                placeholder="Type to filter posts..."
+                fdprocessedid="fmkxn"
+                autocomplete="off"
+              />
+            </div>
+          </div>
           <div
             class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-3 xl:mx-6 gap-4 justify-self-center"
           >
@@ -429,5 +485,14 @@ page_title: Open Projects
         </div>
       </div>
     </div>
+
+    <script
+      type="text/javascript"
+      src="{{site.baseurl}}/evidenceportal/multiselect.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{{site.baseurl}}/evidenceportal/singleSelect.js"
+    ></script>
   </body>
 </html>
