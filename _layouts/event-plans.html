@@ -29,6 +29,8 @@ This is used in blog posts. The index page can be found at blog/index.html
         {% if page.title == 'Learning Agendas' %}
         <h2>Learning Agendas by Agency</h2>
 
+        <p>The plans below reflect the priorities of the prior administration; new plans are currently under development.</p>
+
         <div class="grid-container padding-left-0 padding-right-0">
             <div class="usa-graphic-list__row grid-row grid-gap padding-top-0">
                 {% assign sorted_agencies = site.agencies| sort_natural: "agency-name" %}
