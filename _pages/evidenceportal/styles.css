@@ -2319,6 +2319,28 @@ a.text-link[target="_blank"]:after {
     /*margin-bottom: 20px;*/
 }
 
+.icon-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    /* Adjust the spacing between icons */
+}
+
+.clear-icon,
+.divider,
+.dropdown-icon {
+    font-size: 16px;
+    /* Adjust size if needed */
+    cursor: pointer;
+}
+
+.divider {
+    width: 1px;
+    height: 16px;
+    background-color: #ccc;
+    /* Light gray separator */
+}
+
 .arrow {
     font-size: 9px;
 }
@@ -2396,4 +2418,31 @@ a.text-link[target="_blank"]:after {
 .remove-option {
     cursor: pointer;
     font-weight: bold;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    /* Adjust the spacing between icons */
+}
+
+.clear-icon,
+.divider,
+.dropdown-icon {
+    font-size: 16px;
+    /* Adjust size if needed */
+    cursor: pointer;
+}
+
+.divider {
+    width: 1px;
+    height: 16px;
+    background-color: #ccc;
+    /* Light gray separator */
+}
+
+.dropdown-icon,
+.arrow svg {
+    fill: gray
 }

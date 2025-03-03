@@ -12,10 +12,16 @@ class CustomSelect {
     this.container.innerHTML = `
             <div class="select-box">
                 <div class="selected-options">Select...</div>
-                <span class="arrow">▼</span>
+               <div class="icon-container">
+                    <span class="clear-selection" style="display:none">×</span>
+                    <span class="divider"></span>
+                    <span class="dropdown-icon">
+                    <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" class="css-8mmkcg"><path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path></svg>
+                    </span>
+                </div>
             </div>
             <div class="options-container">
-                <input type="text" class="search-box" placeholder="Search...">
+                <input type="text" class="search-box" placeholder="Search..." autofocus="true">
                 <div class="options-list"></div>
             </div>
         `;
@@ -24,6 +30,7 @@ class CustomSelect {
     this.optionsContainer = this.container.querySelector(".options-container");
     this.optionsList = this.container.querySelector(".options-list");
     this.searchBox = this.container.querySelector(".search-box");
+    this.clearSelection = this.container.querySelector(".clear-selection");
     this.selectedOptionsContainer =
       this.container.querySelector(".selected-options");
 
@@ -34,6 +41,9 @@ class CustomSelect {
       this.filterOptions(e.target.value)
     );
     document.addEventListener("click", (e) => this.closeDropdownOutside(e));
+    this.clearSelection.addEventListener("click", (e) =>
+      this.clearAllSelections(e)
+    );
   }
 
   renderOptions() {
@@ -60,6 +70,7 @@ class CustomSelect {
     this.isOpen = !this.isOpen;
     if (this.isOpen) {
       this.optionsContainer.classList.add("show");
+      this.searchBox.focus();
     } else {
       this.optionsContainer.classList.remove("show");
     }
@@ -84,6 +95,7 @@ class CustomSelect {
       ); // Remove from available options
       this.updateSelectedOptions();
       this.renderOptions();
+      this.clearSelection.style.display = "inline";
     }
   }
 
