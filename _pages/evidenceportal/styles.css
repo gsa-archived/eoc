@@ -2446,3 +2446,10 @@ a.text-link[target="_blank"]:after {
 .arrow svg {
     fill: gray
 }
+
+.option.highlighted {
+    background-color: #d3d3d3;
+    /* Light grey background for highlighted option */
+    color: #000;
+    /* Black text for better visibility */
+}

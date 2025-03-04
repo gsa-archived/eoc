@@ -191,6 +191,7 @@ page_title: Open Projects
         </header>
         <div
           class="pt-4 pb-10 md:mx-8 lg:mt-6 lg:pt-8 lg:pb-20 overflow-hidden px-2 xl:px-12 bg-white"
+          style="height: 600px"
         >
           <div
             class="flex flex-wrap items-end gap-4 mb-8 mx-3 xl:mx-6 bg-white"
@@ -203,7 +204,7 @@ page_title: Open Projects
                 >Filter by
               </label>
               <div class="custom-select-container">
-                <div id="dropdown1"></div>
+                <div id="dropdown1" tabindex="0"></div>
               </div>
             </div>
             <div class="flex-1 min-w-30ch">
@@ -214,7 +215,7 @@ page_title: Open Projects
                 >Filter by agency</label
               >
               <div class="custom-select-container">
-                <div class="custom-select" id="select2"></div>
+                <div class="custom-select" id="select2" tabindex="0"></div>
               </div>
             </div>
             <div class="flex-1 min-w-30ch">
@@ -225,11 +226,8 @@ page_title: Open Projects
                 >Filter by topic</label
               >
               <div class="custom-select-container">
-                <div class="custom-select" id="select1"></div>
+                <div class="custom-select" id="select1" tabindex="0"></div>
               </div>
-              <!-- <button onclick="console.log(getSelectedValue('select1'))">
-                Get Selected Value
-              </button> -->
             </div>
             <div class="flex-1 min-w-30ch auto-rows-auto flex flex-col">
               <label
@@ -252,6 +250,7 @@ page_title: Open Projects
           </div>
           <div
             class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-3 xl:mx-6 gap-4 justify-self-center"
+            style="display: none"
           >
             <article>
               <div
@@ -412,7 +411,7 @@ page_title: Open Projects
             </article>
           </div>
         </div>
-        <div class="flex items-center gap-4 justify-center flex-wrap">
+        <!-- <div class="flex items-center gap-4 justify-center flex-wrap">
           <div class="flex-1 flex justify-end">
             <button class="font-bold pr-4 text-gray-500 pointer-events-none">
               <svg
@@ -464,10 +463,10 @@ page_title: Open Projects
               </svg>
             </button>
           </div>
-        </div>
+        </div> -->
       </main>
     </div>
-    <div class="py-6 mt-12 overflow-hidden bg-bottombanner p-responsive">
+    <!--  <div class="py-6 mt-12 overflow-hidden bg-bottombanner p-responsive">
       <div class="m-responsive">
         <div
           class="w-full flex gap-4 sm:gap-8 items-center justify-center flex-wrap"
@@ -484,7 +483,7 @@ page_title: Open Projects
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <script
       type="text/javascript"
@@ -494,5 +493,170 @@ page_title: Open Projects
       type="text/javascript"
       src="{{site.baseurl}}/evidenceportal/singleSelect.js"
     ></script>
+    <!--     <script>
+      document.getElementById("dropdown1").addEventListener("change", (e) => {
+        console.log("Selected Option from single select:", e.detail);
+      });
+    </script>
+    <script type="text/javascript">
+      document.getElementById("select1").addEventListener("change", (e) => {
+        console.log("Selected Options for Select 1:", e.detail);
+      });
+    </script>
+    <script type="text/javascript">
+      document.getElementById("select2").addEventListener("change", (e) => {
+        console.log("Selected Options for Select 2:", e.detail);
+      });
+    </script>
+    <script type="text/javascript">
+      document
+        .getElementById("projSearch")
+        .addEventListener("input", function () {
+          let filterValue = this.value.toLowerCase();
+          let articles = document.querySelectorAll("article");
+
+          articles.forEach((article) => {
+            let text = article.textContent.toLowerCase();
+            if (text.includes(filterValue)) {
+              article.style.display = "";
+            } else {
+              article.style.display = "none";
+            }
+          });
+        });
+    </script> -->
+    <!--  <script type="text/javascript">
+      function filterArticles() {
+        let filterValue = document
+          .getElementById("projSearch")
+          .value.toLowerCase();
+
+        let selectedDropdown1 = document
+          .getElementById("dropdown1")
+          .value?.toLowerCase();
+        let selectedMultiSelect1 = document.getElementById("select1").value
+          ? document
+              ?.getElementById("select1")
+              .value.map((v) => v.toLowerCase())
+          : [];
+        let selectedMultiSelect2 = document.getElementById("select2").value
+          ? document
+              ?.getElementById("select2")
+              .value.map((v) => v.toLowerCase())
+          : [];
+
+        let articles = document.querySelectorAll("article");
+
+        articles.forEach((article) => {
+          let text = article.textContent.toLowerCase();
+          let matchSearch = text.includes(filterValue);
+          let matchDropdown1 =
+            !selectedDropdown1 || text.includes(selectedDropdown1);
+          let matchMultiSelect1 =
+            selectedMultiSelect1.length === 0 ||
+            selectedMultiSelect1.some((opt) => text.includes(opt));
+          let matchMultiSelect2 =
+            selectedMultiSelect2.length === 0 ||
+            selectedMultiSelect2.some((opt) => text.includes(opt));
+
+          if (
+            matchSearch &&
+            matchDropdown1 &&
+            matchMultiSelect1 &&
+            matchMultiSelect2
+          ) {
+            article.style.display = "";
+          } else {
+            article.style.display = "none";
+          }
+        });
+      }
+
+      document
+        .getElementById("projSearch")
+        .addEventListener("input", filterArticles);
+      document
+        .getElementById("dropdown1")
+        .addEventListener("change", filterArticles);
+      document
+        .getElementById("select1")
+        .addEventListener("change", filterArticles);
+      document
+        .getElementById("select2")
+        .addEventListener("change", filterArticles);
+    </script> -->
+
+    <!-- <script type="text/javascript">
+      function filterArticles() {
+        let filterValue = document
+          .getElementById("projSearch")
+          .value.toLowerCase();
+
+        // Get values from select elements using e.detail
+        let selectedDropdown1 = document.getElementById("dropdown1").detail
+          ? document.getElementById("dropdown1").detail.toLowerCase()
+          : "";
+
+        let selectedMultiSelect1 =
+          document.getElementById("select1").detail || [];
+
+        let selectedMultiSelect2 =
+          document.getElementById("select2").detail || [];
+
+        let articles = document.querySelectorAll("article");
+
+        articles.forEach((article) => {
+          let text = article.textContent.toLowerCase();
+          let matchSearch = text.includes(filterValue);
+          let matchDropdown1 =
+            !selectedDropdown1 || text.includes(selectedDropdown1);
+
+          let matchMultiSelect1 =
+            selectedMultiSelect1.length === 0 ||
+            selectedMultiSelect1.some((opt) =>
+              text.includes(opt.toLowerCase())
+            );
+
+          let matchMultiSelect2 =
+            selectedMultiSelect2.length === 0 ||
+            selectedMultiSelect2.some((opt) =>
+              text.includes(opt.toLowerCase())
+            );
+
+          if (
+            matchSearch &&
+            matchDropdown1 &&
+            matchMultiSelect1 &&
+            matchMultiSelect2
+          ) {
+            article.style.display = "";
+          } else {
+            article.style.display = "none";
+          }
+        });
+      }
+
+      // Listen for search input changes
+      document
+        .getElementById("projSearch")
+        .addEventListener("input", filterArticles);
+
+      // Listen for single-select dropdown changes
+      document.getElementById("dropdown1").addEventListener("change", (e) => {
+        document.getElementById("dropdown1").detail = e.detail;
+        filterArticles();
+      });
+
+      // Listen for multi-select dropdown changes
+      document.getElementById("select1").addEventListener("change", (e) => {
+        document.getElementById("select1").detail = e.detail;
+        filterArticles();
+      });
+
+      document.getElementById("select2").addEventListener("change", (e) => {
+        document.getElementById("select2").detail = e.detail;
+        filterArticles();
+      });
+    </script> -->
   </body>
 </html>
