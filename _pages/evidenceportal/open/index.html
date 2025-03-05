@@ -324,7 +324,7 @@ page_title: Open Projects
                 <div class="p-5 pb-1 mt-auto border-t-2 border-solid">
                   <a
                     class="btn-wide"
-                    href="/evidenceportal/project/NIH - Measures for Impact/"
+                    href="{{site.baseurl}}/evidenceportal/project/NIH - Measures for Impact/"
                     >View Opportunity</a
                   >
                 </div>
@@ -401,7 +401,7 @@ page_title: Open Projects
                 <div class="p-5 pb-1 mt-auto border-t-2 border-solid">
                   <a
                     class="btn-wide"
-                    href="/evidenceportal/project/Treasury (SLFRF)/"
+                    href="{{site.baseurl}}/evidenceportal/project/Treasury (SLFRF)/"
                     >View Opportunity</a
                   >
                 </div>
@@ -699,7 +699,7 @@ page_title: Open Projects
             : "";
           let bgTopics = article.querySelector(".bg-topics");
           let bgText = bgTopics ? bgTopics.innerText.toLowerCase() : "";
-          console.log(agencyText, "span");
+          // console.log(agencyText, "span");
 
           // Match based on the search filter
           let matchSearch = filterValue === "" || text.includes(filterValue);
