@@ -402,7 +402,7 @@ new CustomSelect("select1", [
 ]);
 
 new CustomSelect("select2", [
-  "National Institution of Health",
+  "National Institutes of Health",
   "Department of the Treasury",
 ]);
 

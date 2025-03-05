@@ -191,7 +191,6 @@ page_title: Open Projects
         </header>
         <div
           class="pt-4 pb-10 md:mx-8 lg:mt-6 lg:pt-8 lg:pb-20 overflow-hidden px-2 xl:px-12 bg-white"
-          style="height: 600px"
         >
           <div
             class="flex flex-wrap items-end gap-4 mb-8 mx-3 xl:mx-6 bg-white"
@@ -250,7 +249,6 @@ page_title: Open Projects
           </div>
           <div
             class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-3 xl:mx-6 gap-4 justify-self-center"
-            style="display: none"
           >
             <article>
               <div
@@ -286,7 +284,7 @@ page_title: Open Projects
                       <span class="font-bold">Opportunity Closes: </span
                       ><span>Open until filled</span>
                     </div>
-                    <div class="mb-4 text-body">
+                    <div class="mb-4 text-body agency">
                       <span class="font-bold">Lead Agency: </span>National
                       Institutes of Health
                     </div>
@@ -368,7 +366,7 @@ page_title: Open Projects
                       <span class="font-bold">Opportunity Closes: </span
                       ><span>Open until filled</span>
                     </div>
-                    <div class="mb-4 text-body">
+                    <div class="mb-4 text-body agency">
                       <span class="font-bold">Lead Agency: </span>Department of
                       the Treasury
                     </div>
@@ -493,7 +491,7 @@ page_title: Open Projects
       type="text/javascript"
       src="{{site.baseurl}}/evidenceportal/singleSelect.js"
     ></script>
-    <!--     <script>
+    <script>
       document.getElementById("dropdown1").addEventListener("change", (e) => {
         console.log("Selected Option from single select:", e.detail);
       });
@@ -508,6 +506,7 @@ page_title: Open Projects
         console.log("Selected Options for Select 2:", e.detail);
       });
     </script>
+    <!--
     <script type="text/javascript">
       document
         .getElementById("projSearch")
@@ -524,7 +523,8 @@ page_title: Open Projects
             }
           });
         });
-    </script> -->
+    </script>
+    -->
     <!--  <script type="text/javascript">
       function filterArticles() {
         let filterValue = document
@@ -586,7 +586,7 @@ page_title: Open Projects
         .addEventListener("change", filterArticles);
     </script> -->
 
-    <!-- <script type="text/javascript">
+    <!--  <script type="text/javascript">
       function filterArticles() {
         let filterValue = document
           .getElementById("projSearch")
@@ -658,5 +658,123 @@ page_title: Open Projects
         filterArticles();
       });
     </script> -->
+
+    <script type="text/javascript">
+      // Declare the variables globally to store the selected values
+      let selectedDropdown1 = "";
+      let selectedMultiSelect1 = [];
+      let selectedMultiSelect2 = [];
+
+      function filterArticles() {
+        let filterValue = document
+          .getElementById("projSearch")
+          .value.toLowerCase();
+
+        // Safe check: If selectedDropdown1 is undefined or null, treat it as an empty string
+        selectedDropdown1 = selectedDropdown1 || "";
+
+        // Safe check: If selectedMultiSelect1 or selectedMultiSelect2 are undefined or null, treat them as empty arrays
+        selectedMultiSelect1 = selectedMultiSelect1 || [];
+        selectedMultiSelect2 = selectedMultiSelect2 || [];
+
+        console.log("Filtering Articles with the following values:");
+        console.log("Filter Value:", filterValue);
+        console.log("Selected Dropdown 1:", selectedDropdown1);
+        console.log("Selected Multi-Select 1:", selectedMultiSelect1);
+        console.log("Selected Multi-Select 2:", selectedMultiSelect2);
+
+        let articles = document.querySelectorAll("article");
+
+        articles.forEach((article) => {
+          //let text = article.textContent.toLowerCase();
+          let text = article.textContent
+            .replace(/\s+/g, " ")
+            .trim()
+            .toLowerCase();
+          console.log(text, "++++++++++");
+
+          let agencySpan = article.querySelector(".agency");
+          let agencyText = agencySpan
+            ? agencySpan.innerText.split(":").pop().trim().toLowerCase()
+            : "";
+          let bgTopics = article.querySelector(".bg-topics");
+          let bgText = bgTopics ? bgTopics.innerText.toLowerCase() : "";
+          console.log(agencyText, "span");
+
+          // Match based on the search filter
+          let matchSearch = filterValue === "" || text.includes(filterValue);
+
+          // Match based on the single dropdown (only if it's not empty)
+          let matchDropdown1 =
+            !selectedDropdown1 ||
+            selectedDropdown1 === "" ||
+            text.includes(selectedDropdown1.toLowerCase());
+
+          // Match based on the first multi-select dropdown (only if there are selected values)
+          let matchMultiSelect1 =
+            selectedMultiSelect1?.length === 0 ||
+            selectedMultiSelect1.some((opt) =>
+              bgText.includes(opt.toLowerCase())
+            );
+
+          // Match based on the second multi-select dropdown (only if there are selected values)
+          let matchMultiSelect2 =
+            selectedMultiSelect2?.length === 0 ||
+            selectedMultiSelect2.some(
+              (opt) => agencyText.includes(opt.toLowerCase())
+              //console.log(opt, "opt")
+            );
+
+          // Show the article only if all conditions are met
+          if (
+            matchSearch &&
+            matchDropdown1 &&
+            matchMultiSelect1 &&
+            matchMultiSelect2
+          ) {
+            article.style.display = "block";
+          } else {
+            article.style.display = "none";
+          }
+        });
+      }
+
+      // Listen for search input changes
+      document
+        .getElementById("projSearch")
+        .addEventListener("input", () => filterArticles());
+
+      // Listen for single-select dropdown changes
+      document.getElementById("dropdown1").addEventListener("change", (e) => {
+        console.log(
+          "Single-Select Dropdown (dropdown1) selected value:",
+          e.detail
+        );
+        // Update selectedDropdown1 and call filterArticles with updated values
+        selectedDropdown1 = e.detail || ""; // Store selected value for future use
+        filterArticles();
+      });
+
+      // Listen for multi-select dropdown changes
+      document.getElementById("select1").addEventListener("change", (e) => {
+        console.log(
+          "Multi-Select Dropdown 1 (select1) selected values:",
+          e.detail
+        );
+        // Update selectedMultiSelect1 and call filterArticles with updated values
+        selectedMultiSelect1 = e.detail || []; // Store selected values for future use
+        filterArticles();
+      });
+
+      document.getElementById("select2").addEventListener("change", (e) => {
+        console.log(
+          "Multi-Select Dropdown 2 (select2) selected values:",
+          e.detail
+        );
+        // Update selectedMultiSelect2 and call filterArticles with updated values
+        selectedMultiSelect2 = e.detail || []; // Store selected values for future use
+        filterArticles();
+      });
+    </script>
   </body>
 </html>
