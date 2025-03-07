@@ -4,5 +4,5 @@ bio-image-alt-text: U.S. Agency for International Development
 layout: bio
 name: Vacant
 department: U.S. Agency for International Development
-job-title: Agency Evaluation Officer
+job-title:
 ---

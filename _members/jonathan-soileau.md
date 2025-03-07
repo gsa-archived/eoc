@@ -4,5 +4,5 @@ bio-image-alt-text: Office of Personnel Management
 layout: bio
 name: Vacant
 department: Office of Personnel Management
-job-title: Evaluation Officer
+job-title:
 ---
