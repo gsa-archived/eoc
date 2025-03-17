@@ -2,7 +2,7 @@
 title: Program Evaluation Services Subgroup One-Pager
 year: 2023
 description: 
-doc-link: assets/resources/Program Evaluation Services Subgroup One-Pager.pdf
+external_url: https://www.gsa.gov/buy-through-us/purchasing-programs/multiple-award-schedule/program-evaluation-services-subgroup
 aria-label: Program Evaluation Services Subgroup One-Pager
 content_tags: 
 type: link
