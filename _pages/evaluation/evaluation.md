@@ -1,5 +1,5 @@
 ---
 layout: evaluation-toolkit
-permalink: /evaluation-toolkit/evaluation/
+permalink: /evaluation-toolkit/using-evaluation/
 title: Using Evaluation
 ---
