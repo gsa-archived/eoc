@@ -50,7 +50,7 @@ type : evaluation-toolkit
                 <img class="circle-evaluation-card" alt="Using evaluation icon" src="{{site.baseurl}}/assets/images/evaluation/using-evaluation.png">
               </div>
               <div class="tablet:grid-col-8 text-primary toolkit-text">
-                 <h3 class="usa-media-block__body evaluation-width margin-0"><a href="{{site.baseurl}}/evaluation-toolkit/evaluation" class="text-no-underline display-inline-block text-primary"><b>Using Evaluation</b></a></h3>
+                 <h3 class="usa-media-block__body evaluation-width margin-0"><a href="{{site.baseurl}}/evaluation-toolkit/using-evaluation" class="text-no-underline display-inline-block text-primary"><b>Using Evaluation</b></a></h3>
                 <p>Tools to help you be a savvy user of evaluation findings</p>
               </div>
             </div>
