@@ -81,7 +81,7 @@ permalink: /about/
         <p>The information on this website in no way constitutes policy or legal advice, nor does it in any way reflect Federal Government views or opinions. Agencies shall consult law, regulation, and policy, including Office of Management and Budget guidance, to understand applicable requirements.</p>
       </div>
       <!-- Use the accurate heading level to maintain the document outline -->
-      <h3 class="usa-accordion__heading">
+      <!-- <h3 class="usa-accordion__heading">
         <button class="usa-accordion__button" aria-expanded="false" aria-controls="b-a3">
           Materials on this Website
         </button>
@@ -89,7 +89,7 @@ permalink: /about/
       <div id="b-a3" class="usa-accordion__content">
         <p>The materials on this website were compiled by the Evidence Team at the Office of Management and Budget and include publicly-available information about the Evaluation Officer Council and some of its ongoing initiatives. This website also provides a partial inventory of laws, guidance, and Federal agency documents that reflect their implementation of the Evidence Act, specifically Title I. Additionally, this website collates and shares resources to support and improve evaluation activities and their use, including leading examples of how Federal evaluation is helping to answer priority questions about agency mission and operational effectiveness.</p>
         <p>This website does not provide a complete inventory of all the statutory and policy requirements associated with Evidence Act implementation across the Federal Government. Not all requirements or resources on this website apply to all agencies. The information contained on this website may not reflect current legal developments or agency-specific requirements and may not be accurate or complete.</p>
-      </div>
+      </div> -->
       <!-- Use the accurate heading level to maintain the document outline -->
       <h3 class="usa-accordion__heading">
         <button class="usa-accordion__button" aria-expanded="false" aria-controls="b-a4">
@@ -119,4 +119,4 @@ permalink: /about/
         <p>If you have a question about our accessibility policy or if you have a problem viewing any material on Evaluation.gov due to a broken link or a link that goes to the wrong page, please contact <a href="mailto:eocstaff@gsa.gov">eocstaff@gsa.gov</a>.</p>
       </div>
 </div>
-</section>
+<!-- </section> -->
