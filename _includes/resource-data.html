@@ -18,6 +18,9 @@
                             {% endif %}
 
                             <!--sets border logic statements for resources-->
+                            {% if resource.filters contains 'project' %}
+                            <div class="shadow-1 project-border">
+                            {% endif %}
                             {% if resource.filters contains 'legislation' %}
                             <div class="shadow-1 legislation-border">
                                 {% endif %}
@@ -55,6 +58,9 @@
                                                 {% endif %}
                                                 {% if resource.filters contains 'quick-reference' %}
                                                 <span class="card-tag">Quick Reference</span>
+                                                {% endif %}
+                                                {% if resource.filters contains 'project' %}
+                                                <span class="card-tag">Project</span>
                                                 {% endif %}
                                                 {% if resource.filters contains 'report' %}
                                                 <span class="card-tag">Report</span>
