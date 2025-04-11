@@ -211,7 +211,7 @@ collections:
     output: true
     permalink: /:path/
   members:
-    output: true
+    output: false
   evaluation-policy:
     output: true
   annual-evaluation-plans:
