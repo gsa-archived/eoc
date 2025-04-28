@@ -2453,3 +2453,13 @@ a.text-link[target="_blank"]:after {
     color: #000;
     /* Black text for better visibility */
 }
+
+
+/* Tom Select css*/
+
+.ts-dropdown,
+.ts-control,
+.ts-control input {
+    font-size: 16px !important;
+    line-height: 26px !important;
+}
