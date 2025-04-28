@@ -1,0 +1,177 @@
+<script src="https://cdn.jsdelivr.net/npm/tom-select/dist/js/tom-select.complete.min.js"></script>
+<script type="text/javascript">
+  let selectedAgency = "";
+  let selectedTopics = [];
+  let selectedDateSort = "";
+
+  const topicList = [
+    { value: "Impact", agency: "National Institutes of Health" },
+    { value: "Metascience", agency: "National Institutes of Health" },
+    { value: "Evaluation", agency: "National Institutes of Health" },
+    { value: "Stewardship", agency: "National Institutes of Health" },
+    { value: "Housing", agency: "Department of the Treasury" },
+    {
+      value: "Workforce Development",
+      agency: "Department of the Treasury",
+    },
+    {
+      value: "State and Local Governments",
+      agency: "Department of the Treasury",
+    },
+  ];
+
+  const agencySelect = new TomSelect("#agencySelect", {
+    create: false,
+    allowEmptyOption: true,
+    onChange: (value) => {
+      selectedAgency = value || "";
+      if (selectedAgency) {
+        updateTopicsByAgency(selectedAgency);
+      } else {
+        resetTopics();
+      }
+      filterArticles();
+    },
+  });
+
+  const topicSelect = new TomSelect("#topicSelect", {
+    plugins: ["remove_button"],
+    create: false,
+    persist: false,
+    onChange: (values) => {
+      selectedTopics = values || [];
+
+      if (selectedTopics.length > 0) {
+        const topicAgency = topicList.find(
+          (t) => t.value === selectedTopics[0]
+        ).agency;
+        selectedAgency = topicAgency;
+
+        updateAgencyDropdown(topicAgency); // Update agency dropdown options
+        updateTopicsByAgency(topicAgency); // Update topic options
+      } else {
+        resetAgency();
+        resetTopics();
+        selectedAgency = "";
+      }
+
+      filterArticles();
+    },
+  });
+
+  const dateSelect = new TomSelect("#dateSelect", {
+    create: false,
+    allowEmptyOption: true,
+    onChange: (value) => {
+      selectedDateSort = value || "";
+      filterArticles();
+    },
+  });
+
+  document
+    .getElementById("projSearch")
+    .addEventListener("input", filterArticles);
+
+  document.getElementById("clearFilters").addEventListener("click", () => {
+    selectedDateSort = "";
+    selectedAgency = "";
+    selectedTopics = [];
+
+    dateSelect.clear(true);
+    agencySelect.clear(true);
+    topicSelect.clear(true);
+
+    resetAgency();
+    resetTopics();
+
+    document.getElementById("projSearch").value = "";
+
+    filterArticles();
+  });
+
+  function updateTopicsByAgency(agency) {
+    topicSelect.clearOptions();
+
+    topicList.forEach((topic) => {
+      if (topic.agency === agency) {
+        topicSelect.addOption({ value: topic.value, text: topic.value });
+      }
+    });
+
+    topicSelect.refreshOptions(false);
+  }
+
+  function resetTopics() {
+    topicSelect.clearOptions();
+
+    topicList.forEach((topic) => {
+      topicSelect.addOption({ value: topic.value, text: topic.value });
+    });
+
+    topicSelect.refreshOptions(false);
+  }
+
+  function updateAgencyDropdown(agency) {
+    agencySelect.clearOptions();
+
+    agencySelect.addOption({ value: agency, text: agency });
+
+    agencySelect.refreshOptions(false);
+    agencySelect.setValue(agency, true);
+  }
+
+  function resetAgency() {
+    agencySelect.clearOptions();
+
+    const agencies = [...new Set(topicList.map((t) => t.agency))];
+
+    agencies.forEach((agency) => {
+      agencySelect.addOption({ value: agency, text: agency });
+    });
+
+    agencySelect.refreshOptions(false);
+  }
+
+  function filterArticles() {
+    const searchText = document
+      .getElementById("projSearch")
+      .value.trim()
+      .toLowerCase();
+
+    const articles = document.querySelectorAll("article");
+
+    articles.forEach((article) => {
+      let textContent = article.textContent.replace(/\s+/g, " ").toLowerCase();
+      let agency = (article.dataset.agency || "").toLowerCase();
+      let topicsJson = article.dataset.topic || "[]";
+      let topicsArray = [];
+
+      try {
+        topicsArray = JSON.parse(topicsJson).map((topic) =>
+          topic.toLowerCase()
+        );
+      } catch (e) {
+        console.error("Error parsing topics JSON:", topicsJson);
+      }
+
+      const matchSearch = searchText === "" || textContent.includes(searchText);
+      const matchAgency =
+        selectedAgency === "" || agency.includes(selectedAgency.toLowerCase());
+      const matchTopics =
+        selectedTopics.length === 0 ||
+        selectedTopics.some((topic) =>
+          topicsArray.includes(topic.toLowerCase())
+        );
+
+      if (matchSearch && matchAgency && matchTopics) {
+        article.style.display = "block";
+      } else {
+        article.style.display = "none";
+      }
+    });
+  }
+
+  // On load, show all agency options
+  resetAgency();
+  resetTopics();
+</script>

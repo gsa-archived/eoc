@@ -2463,3 +2463,7 @@ a.text-link[target="_blank"]:after {
     font-size: 16px !important;
     line-height: 26px !important;
 }
+
+.ts-wrapper.multi .ts-control>div {
+    background: #ebe7e7 !important;
+}

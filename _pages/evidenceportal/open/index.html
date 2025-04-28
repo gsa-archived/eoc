@@ -291,6 +291,19 @@ page_title: Open Projects
                 autocomplete="off"
               />
             </div>
+            <span
+              id="clearFilters"
+              style="
+                color: rgb(9 41 64);
+                cursor: pointer;
+                text-decoration: underline;
+                font-size: 14px;
+                margin-left: 10px;
+                font-weight: bold;
+              "
+            >
+              Clear All
+            </span>
           </div>
           <div
             class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-3 xl:mx-6 gap-4 justify-self-center"
@@ -372,126 +385,8 @@ page_title: Open Projects
         </div>
       </main>
     </div>
-    <!-- <script
-      type="text/javascript"
-      src="{{site.baseurl}}/evidenceportal/multiselect.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="{{site.baseurl}}/evidenceportal/singleSelect.js"
-    ></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/tom-select/dist/js/tom-select.complete.min.js"></script>
+
     <!--  <script type="text/javascript">
-      // Declare variables globally
-      let selectedDropdown1 = "";
-      let selectedMultiSelect1 = [];
-      let selectedMultiSelect2 = [];
-
-      function filterArticles() {
-        let filterValue = document
-          .getElementById("projSearch")
-          .value.toLowerCase()
-          .trim();
-
-        selectedDropdown1 = selectedDropdown1 || "";
-        selectedMultiSelect1 = selectedMultiSelect1 || [];
-        selectedMultiSelect2 = selectedMultiSelect2 || [];
-
-        console.log("Filtering with:");
-        console.log("Search:", filterValue);
-        console.log("Dropdown1:", selectedDropdown1);
-        console.log("MultiSelect1 (Topics):", selectedMultiSelect1);
-        console.log("MultiSelect2 (Agencies):", selectedMultiSelect2);
-
-        let articles = document.querySelectorAll("article");
-
-        articles.forEach((article) => {
-          let textContent = article.textContent
-            .replace(/\s+/g, " ")
-            .trim()
-            .toLowerCase();
-
-          // Pull from data attributes
-          let agency = (article.dataset.agency || "").toLowerCase();
-          let topicsJson = article.dataset.topic || "[]";
-          let topicsArray = [];
-
-          try {
-            topicsArray = JSON.parse(topicsJson).map((topic) =>
-              topic.toLowerCase()
-            );
-          } catch (e) {
-            console.error("Error parsing topics JSON:", topicsJson);
-          }
-
-          // Matching rules
-          let matchSearch =
-            filterValue === "" || textContent.includes(filterValue);
-
-          let matchDropdown1 =
-            !selectedDropdown1 ||
-            textContent.includes(selectedDropdown1.toLowerCase());
-
-          let matchMultiSelect1 =
-            selectedMultiSelect1.length === 0 ||
-            selectedMultiSelect1.some((opt) =>
-              topicsArray.includes(opt.toLowerCase())
-            );
-
-          let matchMultiSelect2 =
-            selectedMultiSelect2.length === 0 ||
-            selectedMultiSelect2.some((opt) =>
-              agency.includes(opt.toLowerCase())
-            );
-
-          if (
-            matchSearch &&
-            matchDropdown1 &&
-            matchMultiSelect1 &&
-            matchMultiSelect2
-          ) {
-            article.style.display = "block";
-          } else {
-            article.style.display = "none";
-          }
-        });
-      }
-
-      // Event Listeners
-      document
-        .getElementById("projSearch")
-        .addEventListener("input", filterArticles);
-
-      /*  document.getElementById("dropdown1").addEventListener("change", (e) => {
-        console.log("Dropdown1 changed:", e.detail || e.target.value);
-        selectedDropdown1 = e.detail || e.target.value || "";
-        filterArticles();
-      });
- */
-      document.getElementById("select1").addEventListener("change", (e) => {
-        console.log(
-          "Multi-Select1 (Topics) changed:",
-          e.detail || e.target.value
-        );
-        selectedMultiSelect1 =
-          e.detail ||
-          Array.from(e.target.selectedOptions || []).map((o) => o.value);
-        filterArticles();
-      });
-
-      document.getElementById("select2").addEventListener("change", (e) => {
-        console.log(
-          "Multi-Select2 (Agencies) changed:",
-          e.detail || e.target.value
-        );
-        selectedMultiSelect2 =
-          e.detail ||
-          Array.from(e.target.selectedOptions || []).map((o) => o.value);
-        filterArticles();
-      });
-    </script> -->
-
-    <script type="text/javascript">
       // Declare variables globally
       let selectedDateSort = "";
       let selectedAgency = "";
@@ -689,6 +584,190 @@ page_title: Open Projects
         ];
         agencySelect.refreshOptions(false);
       }
-    </script>
+    </script> -->
+    <!-- 
+    <script src="https://cdn.jsdelivr.net/npm/tom-select/dist/js/tom-select.complete.min.js"></script>
+    <script type="text/javascript">
+      let selectedAgency = "";
+      let selectedTopics = [];
+      let selectedDateSort = "";
+
+      const topicList = [
+        { value: "Impact", agency: "National Institutes of Health" },
+        { value: "Metascience", agency: "National Institutes of Health" },
+        { value: "Evaluation", agency: "National Institutes of Health" },
+        { value: "Stewardship", agency: "National Institutes of Health" },
+        { value: "Housing", agency: "Department of the Treasury" },
+        {
+          value: "Workforce Development",
+          agency: "Department of the Treasury",
+        },
+        {
+          value: "State and Local Governments",
+          agency: "Department of the Treasury",
+        },
+      ];
+
+      const agencySelect = new TomSelect("#agencySelect", {
+        create: false,
+        allowEmptyOption: true,
+        onChange: (value) => {
+          selectedAgency = value || "";
+          if (selectedAgency) {
+            updateTopicsByAgency(selectedAgency);
+          } else {
+            resetTopics();
+          }
+          filterArticles();
+        },
+      });
+
+      const topicSelect = new TomSelect("#topicSelect", {
+        plugins: ["remove_button"],
+        create: false,
+        persist: false,
+        onChange: (values) => {
+          selectedTopics = values || [];
+
+          if (selectedTopics.length > 0) {
+            const topicAgency = topicList.find(
+              (t) => t.value === selectedTopics[0]
+            ).agency;
+            selectedAgency = topicAgency;
+
+            updateAgencyDropdown(topicAgency); // Update agency dropdown options
+            updateTopicsByAgency(topicAgency); // Update topic options
+          } else {
+            resetAgency();
+            resetTopics();
+            selectedAgency = "";
+          }
+
+          filterArticles();
+        },
+      });
+
+      const dateSelect = new TomSelect("#dateSelect", {
+        create: false,
+        allowEmptyOption: true,
+        onChange: (value) => {
+          selectedDateSort = value || "";
+          filterArticles();
+        },
+      });
+
+      document
+        .getElementById("projSearch")
+        .addEventListener("input", filterArticles);
+
+      document.getElementById("clearFilters").addEventListener("click", () => {
+        selectedDateSort = "";
+        selectedAgency = "";
+        selectedTopics = [];
+
+        dateSelect.clear(true);
+        agencySelect.clear(true);
+        topicSelect.clear(true);
+
+        resetAgency();
+        resetTopics();
+
+        document.getElementById("projSearch").value = "";
+
+        filterArticles();
+      });
+
+      function updateTopicsByAgency(agency) {
+        topicSelect.clearOptions();
+
+        topicList.forEach((topic) => {
+          if (topic.agency === agency) {
+            topicSelect.addOption({ value: topic.value, text: topic.value });
+          }
+        });
+
+        topicSelect.refreshOptions(false);
+      }
+
+      function resetTopics() {
+        topicSelect.clearOptions();
+
+        topicList.forEach((topic) => {
+          topicSelect.addOption({ value: topic.value, text: topic.value });
+        });
+
+        topicSelect.refreshOptions(false);
+      }
+
+      function updateAgencyDropdown(agency) {
+        agencySelect.clearOptions();
+
+        agencySelect.addOption({ value: agency, text: agency });
+
+        agencySelect.refreshOptions(false);
+        agencySelect.setValue(agency, true);
+      }
+
+      function resetAgency() {
+        agencySelect.clearOptions();
+
+        const agencies = [...new Set(topicList.map((t) => t.agency))];
+
+        agencies.forEach((agency) => {
+          agencySelect.addOption({ value: agency, text: agency });
+        });
+
+        agencySelect.refreshOptions(false);
+      }
+
+      function filterArticles() {
+        const searchText = document
+          .getElementById("projSearch")
+          .value.trim()
+          .toLowerCase();
+
+        const articles = document.querySelectorAll("article");
+
+        articles.forEach((article) => {
+          let textContent = article.textContent
+            .replace(/\s+/g, " ")
+            .toLowerCase();
+          let agency = (article.dataset.agency || "").toLowerCase();
+          let topicsJson = article.dataset.topic || "[]";
+          let topicsArray = [];
+
+          try {
+            topicsArray = JSON.parse(topicsJson).map((topic) =>
+              topic.toLowerCase()
+            );
+          } catch (e) {
+            console.error("Error parsing topics JSON:", topicsJson);
+          }
+
+          const matchSearch =
+            searchText === "" || textContent.includes(searchText);
+          const matchAgency =
+            selectedAgency === "" ||
+            agency.includes(selectedAgency.toLowerCase());
+          const matchTopics =
+            selectedTopics.length === 0 ||
+            selectedTopics.some((topic) =>
+              topicsArray.includes(topic.toLowerCase())
+            );
+
+          if (matchSearch && matchAgency && matchTopics) {
+            article.style.display = "block";
+          } else {
+            article.style.display = "none";
+          }
+        });
+      }
+
+      // On load, show all agency options
+      resetAgency();
+      resetTopics();
+    </script> -->
+
+    {% include evidenceportal-includes/evidenceportalScripts.html %}
   </body>
 </html>
