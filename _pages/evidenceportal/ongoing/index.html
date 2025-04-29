@@ -193,7 +193,21 @@ page_title: on going Projects
                 >Filter by
               </label>
               <div class="custom-select-container">
-                <div id="dropdown1" tabindex="0"></div>
+                <select id="dateSelect" placeholder="Select...">
+                  <option value="">Select...</option>
+                  <option value="Date Posted: Newest to Oldest">
+                    Date Posted: Newest to Oldest
+                  </option>
+                  <option value="Date Posted: Oldest to Newest">
+                    Date Posted: Oldest to Newest
+                  </option>
+                  <option value="Opportunity Closes: Newest to Oldest">
+                    Opportunity Closes: Newest to Oldest
+                  </option>
+                  <option value="Opportunity Closes: Oldest to Newest">
+                    Opportunity Closes: Oldest to Newest
+                  </option>
+                </select>
               </div>
             </div>
             <div class="flex-1 min-w-30ch">
@@ -204,7 +218,15 @@ page_title: on going Projects
                 >Filter by agency</label
               >
               <div class="custom-select-container">
-                <div class="custom-select" id="select2" tabindex="0"></div>
+                <select id="agencySelect" placeholder="Select an agency...">
+                  <option value="">Select an agency...</option>
+                  <option value="National Institutes of Health">
+                    National Institutes of Health
+                  </option>
+                  <option value="Department of the Treasury">
+                    Department of the Treasury
+                  </option>
+                </select>
               </div>
             </div>
             <div class="flex-1 min-w-30ch">
@@ -215,11 +237,39 @@ page_title: on going Projects
                 >Filter by topic</label
               >
               <div class="custom-select-container">
-                <div class="custom-select" id="select1" tabindex="0"></div>
+                <select
+                  id="topicSelect"
+                  multiple
+                  placeholder="Select topics..."
+                >
+                  <option value="Impact" data-agency="National">Impact</option>
+                  <option value="Metascience" data-agency="National">
+                    Metascience
+                  </option>
+                  <option value="Evaluation" data-agency="National">
+                    Evaluation
+                  </option>
+                  <option value="Stewardship" data-agency="National">
+                    Stewardship
+                  </option>
+
+                  <option value="Housing" data-agency="Department of Treasury">
+                    Housing
+                  </option>
+                  <option
+                    value="Workforce Development"
+                    data-agency="Department of Treasury"
+                  >
+                    Workforce Development
+                  </option>
+                  <option
+                    value="State and Local Governments"
+                    data-agency="Department of Treasury"
+                  >
+                    State and Local Governments
+                  </option>
+                </select>
               </div>
-              <!-- <button onclick="console.log(getSelectedValue('select1'))">
-              Get Selected Value
-            </button> -->
             </div>
             <div class="flex-1 min-w-30ch auto-rows-auto flex flex-col">
               <label
@@ -239,11 +289,31 @@ page_title: on going Projects
                 autocomplete="off"
               />
             </div>
+            <span
+              id="clearFilters"
+              style="
+                color: rgb(9 41 64);
+                cursor: pointer;
+                text-decoration: underline;
+                font-size: 14px;
+                margin-left: 10px;
+                font-weight: bold;
+              "
+            >
+              Clear All
+            </span>
           </div>
           <div
             class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-3 xl:mx-6 gap-4 justify-self-center"
           >
-            <article>
+            {% for item in
+            site.data.ongoing.page-data.result.data.allProject.nodes %}
+            <article
+              data-agency="{{ item.agency }}"
+              data-topic='{{ item.topics | map: "slug" | jsonify }}'
+              data-start-date="{{ item.startDate }}"
+              data-end-date="{{ item.endDate }}"
+            >
               <div
                 class="px-2 py-4 overflow-hidden bg-white border border-gray-200 rounded-md shadow-sm h-full flex flex-col"
               >
@@ -261,26 +331,23 @@ page_title: on going Projects
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"
+                          d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
                         ></path></svg></span
-                    ><span class="pl-2 uppercase">In progress</span>
+                    ><span class="pl-2 uppercase">{{itsm.status}}</span>
                   </div>
                 </div>
                 <div class="p-5 pb-5">
                   <div class="pb-4 text-h3 font-bold leading-snug text-black">
-                    How can standardizing resilience metrics improve
-                    cross-agency disaster response and recovery and optimize the
-                    allocation of government resources to ensure cost-effective
-                    and equitable outcomes?
+                    {{item.question}}
                   </div>
                   <div>
                     <div class="mt-4 text-body">
-                      <span class="font-bold">Project started: </span
-                      ><span>December 9, 2024</span>
+                      <span class="font-bold">Opportunity Closes: </span
+                      ><span>{{item.opportunityCloses}}</span>
                     </div>
-                    <div class="mb-4 text-body">
-                      <span class="font-bold">Lead Agency: </span>Corps of
-                      Engineers--Civil Works
+                    <div class="mb-4 text-body agency">
+                      <span class="font-bold">Lead Agency: </span
+                      >{{item.agency}}
                     </div>
                     <div class="text-tag mt-4">
                       <figure>
@@ -290,16 +357,13 @@ page_title: on going Projects
                           Topics
                         </figcaption>
                         <ul class="text-tag flex flex-wrap">
+                          {% for topic in item.topics %}
                           <li
                             class="px-3 py-1 mt-1 uppercase text-tag whitespace font-semibold mr-2 bg-topics"
                           >
-                            Disaster Response
+                            {{topic.title}}
                           </li>
-                          <li
-                            class="px-3 py-1 mt-1 uppercase text-tag whitespace font-semibold mr-2 bg-topics"
-                          >
-                            Infrastructure
-                          </li>
+                          {% endfor %}
                         </ul>
                       </figure>
                     </div>
@@ -308,12 +372,13 @@ page_title: on going Projects
                 <div class="p-5 pb-1 mt-auto border-t-2 border-solid">
                   <a
                     class="btn-wide"
-                    href="/evidenceportal/project/USACE cross-agency portal project/"
-                    >View Project</a
+                    href="{{site.baseurl}}/evidenceportal/project/NIH - Measures for Impact/"
+                    >View Opportunity</a
                   >
                 </div>
               </div>
             </article>
+            {% endfor %}
           </div>
         </div>
         <div class="flex items-center gap-4 justify-center flex-wrap">
@@ -389,13 +454,35 @@ page_title: on going Projects
         </div>
       </div>
     </div>
-    <script
+    {% include evidenceportal-includes/evidenceportalScripts.html %}
+    <!--   <script
       type="text/javascript"
       src="{{site.baseurl}}/evidenceportal/multiselect.js"
     ></script>
     <script
       type="text/javascript"
       src="{{site.baseurl}}/evidenceportal/singleSelect.js"
-    ></script>
+    ></script> -->
+
+    <script>
+      initFilters({
+        topics: [
+          {
+            value: "Disaster Response",
+            agency: "Corps of Engineers--Civil Works",
+          },
+          {
+            value: "Infrastructure",
+            agency: "Corps of Engineers--Civil Works",
+          },
+        ],
+        dateOptions: [
+          "Project Started:Newest to Oldest",
+          "Project Started:Oldest to Newest",
+          "Date Posted:Newest to Oldest",
+          "Date Posted:Oldest to Newest",
+        ],
+      });
+    </script>
   </body>
 </html>

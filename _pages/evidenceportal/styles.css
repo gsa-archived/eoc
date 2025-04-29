@@ -1525,7 +1525,6 @@ textarea::placeholder {
 body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #fafafa;
     font-family: Public Sans, Roboto, system-ui, sans-serif;
 }
 
