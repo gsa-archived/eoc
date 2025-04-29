@@ -2207,7 +2207,7 @@ a.text-link[target="_blank"]:after {
 }
 
 .gatsby-image-wrapper [data-main-image] {
-    opacity: 0;
+    /* opacity: 0; */
     transform: translateZ(0);
     transition: opacity 0.25s linear;
     will-change: opacity;
