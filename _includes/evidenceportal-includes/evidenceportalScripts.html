@@ -335,6 +335,11 @@
     });
 
     const agencySelect = new TomSelect("#agencySelect", {
+      plugins: {
+        clear_button: {
+          title: "Remove all selected options",
+        },
+      },
       create: false,
       allowEmptyOption: true,
       onChange: (value) => {
@@ -372,6 +377,11 @@
     });
 
     const dateSelect = new TomSelect("#dateSelect", {
+      plugins: {
+        clear_button: {
+          title: "Remove all selected options",
+        },
+      },
       create: false,
       allowEmptyOption: true,
       options: dateOptions.map((d) => ({ value: d, text: d })),

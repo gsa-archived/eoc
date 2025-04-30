@@ -69,7 +69,7 @@
             ><span
               class="flex items-center p-5 leading-snug text-white hover:opacity-75 xl:text-black xl:px-3 xl:py-2"
               ><span
-                class="text-nav ml-2 border-b-2 hover:border-primary border-transparent"
+                class="text-nav ml-2 border-b-2 hover:border-primary border-transparent {% if page.url == '/evidenceportal/' %} active {% else %} ' ' {% endif %}"
                 >Open Projects</span
               ></span
             ></a
@@ -80,7 +80,7 @@
             ><span
               class="flex items-center p-5 leading-snug text-white hover:opacity-75 xl:text-black xl:px-3 xl:py-2"
               ><span
-                class="text-nav ml-2 border-b-2 hover:border-primary border-transparent"
+                class="text-nav ml-2 border-b-2 hover:border-primary border-transparent {% if page.url == '/evidenceportal/ongoing/' %} active {% else %} ' ' {% endif %}"
                 >In-Progress Projects</span
               ></span
             ></a
@@ -91,7 +91,7 @@
             ><span
               class="flex items-center p-5 leading-snug text-white hover:opacity-75 xl:text-black xl:px-3 xl:py-2"
               ><span
-                class="text-nav ml-2 border-b-2 hover:border-primary border-transparent"
+                class="text-nav ml-2 border-b-2 hover:border-primary border-transparent {% if page.url == '/evidenceportal/completed/' %} active {% else %} ' ' {% endif %}"
                 >Completed Projects</span
               ></span
             ></a
@@ -102,7 +102,7 @@
             ><span
               class="flex items-center p-5 leading-snug text-white hover:opacity-75 xl:text-black xl:px-3 xl:py-2"
               ><span
-                class="text-nav ml-2 border-b-2 hover:border-primary border-transparent"
+                class="text-nav ml-2 border-b-2 hover:border-primary border-transparent {% if page.url == '/evidenceportal/about/' %} active {% else %} ' ' {% endif %}"
                 >About</span
               ></span
             ></a
@@ -113,7 +113,7 @@
             ><span
               class="flex items-center p-5 leading-snug text-white hover:opacity-75 xl:text-black xl:px-3 xl:py-2"
               ><span
-                class="text-nav ml-2 border-b-2 hover:border-primary border-transparent"
+                class="text-nav ml-2 border-b-2 hover:border-primary border-transparent {% if page.url == '/evidenceportal/contact/' %} active {% else %} ' ' {% endif %}"
                 >Contact</span
               ></span
             ></a

@@ -2466,3 +2466,7 @@ a.text-link[target="_blank"]:after {
 .ts-wrapper.multi .ts-control>div {
     background: #ebe7e7 !important;
 }
+
+.active {
+    border-color: rgb(13 126 162);
+}
