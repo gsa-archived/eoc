@@ -62,13 +62,14 @@ page_title: Open Projects
             class="flex flex-wrap items-end gap-4 mb-8 mx-3 xl:mx-6 bg-white"
           >
             <div class="flex-1 min-w-30ch">
-              <label
+             
+              <div class="custom-select-container">
+                <label
                 id="filter-select-label"
                 class="font-bold p-1"
-                for="filter-select"
+                for="dateSelect"
                 >Filter by
               </label>
-              <div class="custom-select-container">
                 <select id="dateSelect" placeholder="Select...">
                   <option value="">Select...</option>
                   <option value="Date Posted: Newest to Oldest">
@@ -87,13 +88,14 @@ page_title: Open Projects
               </div>
             </div>
             <div class="flex-1 min-w-30ch">
-              <label
+             
+              <div class="custom-select-container">
+                <label
                 id="filter-select-label"
                 class="font-bold p-1"
-                for="filter-select"
+                for="agencySelect"
                 >Filter by agency</label
               >
-              <div class="custom-select-container">
                 <select id="agencySelect" placeholder="Select an agency...">
                   <option value="">Select an agency...</option>
                   <option value="National Institutes of Health">
@@ -106,13 +108,13 @@ page_title: Open Projects
               </div>
             </div>
             <div class="flex-1 min-w-30ch">
-              <label
+              <div class="custom-select-container">
+                <label
                 id="filter-select-label"
                 class="font-bold p-1"
-                for="filter-select"
+                for="topicSelect"
                 >Filter by topic</label
               >
-              <div class="custom-select-container">
                 <select
                   id="topicSelect"
                   multiple
