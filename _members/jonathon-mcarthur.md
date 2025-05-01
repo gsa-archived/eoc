@@ -2,7 +2,7 @@
 bio-image: nasa_seal.png
 bio-image-alt-text: National Aeronautics and Space Administration
 layout: bio
-name: Vacant
+name: Jim Worm
 department: National Aeronautics and Space Administration
-job-title: 
+job-title: Deputy CFO for Strategic Insights & Budget
 ---
