@@ -488,3 +488,54 @@
     resetTopics();
   }
 </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const pageUrl = encodeURIComponent(window.location.href);
+    const pageTitle = encodeURIComponent(document.title);
+
+    // Facebook
+    document
+      .querySelector('[aria-label="Facebook"]')
+      .addEventListener("click", function () {
+        window.open(
+          `https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`,
+          "_blank"
+        );
+      });
+
+    // Twitter/X
+    document
+      .querySelector('[aria-label="X / Twitter"]')
+      .addEventListener("click", function () {
+        window.open(
+          `https://twitter.com/intent/tweet?url=${pageUrl}&text=${pageTitle}`,
+          "_blank"
+        );
+      });
+
+    // LinkedIn
+    document
+      .querySelector('[aria-label="LinkedIn"]')
+      .addEventListener("click", function () {
+        window.open(
+          `https://www.linkedin.com/sharing/share-offsite/?url=${pageUrl}`,
+          "_blank"
+        );
+      });
+
+    // Email
+
+    document
+      .querySelector('[aria-label="e-mail"]')
+      .addEventListener("click", function () {
+        const subject = encodeURIComponent(
+          "Sharing a wonderful project opportunity!"
+        );
+        const body = encodeURIComponent(
+          `Hi,\n\nI wanted to share this great opportunity with you. Check it out here: ${window.location.href}`
+        );
+        window.location.href = `mailto:?subject=${subject}&body=${body}`;
+      });
+  });
+</script>
