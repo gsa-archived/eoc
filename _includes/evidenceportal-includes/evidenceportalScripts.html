@@ -517,7 +517,15 @@
         if (selectedAgency) {
           updateTopicsByAgency(selectedAgency);
         } else {
-          resetTopics();
+          if (selectedTopics.length > 0) {
+            const validAgencies = new Set();
+            selectedTopics.forEach((topic) => {
+              topicToAgencies[topic]?.forEach((a) => validAgencies.add(a));
+            });
+            updateTopicsByAgencyList([...validAgencies]);
+          } else {
+            resetTopics();
+          }
         }
         filterArticles();
       },
