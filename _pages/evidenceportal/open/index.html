@@ -61,7 +61,7 @@ page_title: Open Projects
           <div
             class="flex flex-wrap items-end gap-4 mb-8 mx-3 xl:mx-6 bg-white"
           >
-           <!--  <div class="flex-1 min-w-30ch">
+           <div class="flex-1 min-w-30ch">
              
               <div class="custom-select-container">
                 <label
@@ -72,12 +72,12 @@ page_title: Open Projects
               </label>
                 <select id="dateSelect" placeholder="Select...">
                   <option value="">Select...</option>
-                  <option value="Date Posted: Newest to Oldest">
+                  <!-- <option value="Date Posted: Newest to Oldest">
                     Date Posted: Newest to Oldest
                   </option>
                   <option value="Date Posted: Oldest to Newest">
                     Date Posted: Oldest to Newest
-                  </option>
+                  </option> -->
                   <option value="Opportunity Closes: Newest to Oldest">
                     Opportunity Closes: Newest to Oldest
                   </option>
@@ -86,7 +86,7 @@ page_title: Open Projects
                   </option>
                 </select>
               </div>
-            </div> -->
+            </div> 
             <div class="flex-1 min-w-30ch">
              
               <div class="custom-select-container">
@@ -157,7 +157,7 @@ page_title: Open Projects
                 >Search</label
               >
               <input
-                class="rounded border-gray-300 hover:border-gray-400"
+                class="rounded border-gray-300 hover:border-gray-400 tomInput"
                 style="height: 44px"
                 type="text"
                 id="projSearch"
@@ -734,7 +734,7 @@ page_title: Open Projects
           agency: "Department of the Treasury",
         },
         ],
-        dateOptions: ["Date Posted:Newest to Oldest", "Date Posted:Oldest to Newest","Opportunity closes:Newest to Oldest","Opportunity closes:Oldest to Newest"]
+        dateOptions: ["Opportunity closes:Newest to Oldest","Opportunity closes:Oldest to Newest"]
       });
     </script>
   </body>

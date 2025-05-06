@@ -490,7 +490,8 @@
   }
 </script> -->
 
-<script>
+<!--Today;s JS approved by Leticia with only clear all issue-->
+<!-- <script>
   function initFilters({ topics, dateOptions = [] }) {
     let selectedAgency = "";
     let selectedTopics = [];
@@ -557,7 +558,7 @@
       },
     });
 
-    /*  const dateSelect = new TomSelect("#dateSelect", {
+    const dateSelect = new TomSelect("#dateSelect", {
       plugins: {
         clear_button: {
           title: "Remove all selected options",
@@ -571,22 +572,44 @@
         filterArticles();
       },
     });
- */
+
     document
       .getElementById("projSearch")
       ?.addEventListener("input", filterArticles);
 
     document.getElementById("clearFilters")?.addEventListener("click", () => {
-      selectedDateSort = "";
-      selectedAgency = "";
-      selectedTopics = [];
-      //dateSelect.clear(true);
-      agencySelect.clear(true);
-      topicSelect.clear(true);
-      resetAgency();
-      resetTopics();
-      document.getElementById("projSearch").value = "";
-      filterArticles();
+      agencySelect.blur();
+      dateSelect.blur();
+      topicSelect.blur();
+
+      // 🔍 Manually adjust input field width so TomSelect doesn't glitch
+      document.querySelectorAll(".ts-control input").forEach((input) => {
+        input.style.minWidth = "1px";
+        input.style.flex = "1 1 auto";
+        input.style.maxWidth = "100%";
+      });
+
+      // 🕒 Wait a tiny bit to let TomSelect settle internally
+      setTimeout(() => {
+        selectedDateSort = "";
+        selectedAgency = "";
+        selectedTopics = [];
+
+        topicSelect.clear(true);
+        document.getElementById("projSearch").value = "";
+
+        resetAgency();
+        resetTopics();
+
+        // Explicitly clear dropdown selections
+        agencySelect.setValue("");
+        dateSelect.setValue("");
+
+        agencySelect.refreshOptions(false);
+        dateSelect.refreshOptions(false);
+
+        filterArticles();
+      }, 10);
     });
 
     function updateTopicsByAgency(agency) {
@@ -675,8 +698,237 @@
     resetAgency();
     resetTopics();
   }
+</script> -->
+
+<script>
+  function initFilters({ topics, dateOptions = [] }) {
+    let selectedAgency = "";
+    let selectedTopics = [];
+    let selectedDateSort = "";
+
+    const agencies = [...new Set(topics.map((t) => t.agency))];
+
+    const topicToAgencies = {};
+    topics.forEach((t) => {
+      if (!topicToAgencies[t.value]) topicToAgencies[t.value] = new Set();
+      topicToAgencies[t.value].add(t.agency);
+    });
+
+    function adjustTomSelectInputWidth(selectInstance, shrink = true) {
+      const wrapper = selectInstance.wrapper;
+      const input = wrapper.querySelector(".ts-control input");
+      if (input) {
+        if (shrink) {
+          input.style.minWidth = "1px";
+          input.style.flex = "1 1 auto";
+          input.style.maxWidth = "100%";
+        } else {
+          input.style.minWidth = "";
+          input.style.flex = "";
+          input.style.maxWidth = "";
+        }
+      }
+    }
+
+    const agencySelect = new TomSelect("#agencySelect", {
+      plugins: {
+        clear_button: {
+          title: "Remove all selected options",
+        },
+      },
+      create: false,
+      allowEmptyOption: true,
+      onChange: (value) => {
+        selectedAgency = value || "";
+        adjustTomSelectInputWidth(agencySelect, !!value);
+
+        if (selectedAgency) {
+          updateTopicsByAgency(selectedAgency);
+        } else {
+          if (selectedTopics.length > 0) {
+            const validAgencies = new Set();
+            selectedTopics.forEach((topic) => {
+              topicToAgencies[topic]?.forEach((a) => validAgencies.add(a));
+            });
+            updateTopicsByAgencyList([...validAgencies]);
+          } else {
+            resetTopics();
+          }
+        }
+        filterArticles();
+      },
+    });
+
+    const topicSelect = new TomSelect("#topicSelect", {
+      plugins: ["remove_button"],
+      create: false,
+      persist: false,
+      onChange: (values) => {
+        selectedTopics = values || [];
+        adjustTomSelectInputWidth(topicSelect, selectedTopics.length > 0);
+
+        if (selectedTopics.length > 0) {
+          const validAgencies = new Set();
+          selectedTopics.forEach((topic) => {
+            topicToAgencies[topic]?.forEach((a) => validAgencies.add(a));
+          });
+          updateAgencyDropdown([...validAgencies]);
+        } else {
+          selectedAgency = "";
+          agencySelect.clear(true);
+          resetAgency();
+          resetTopics();
+        }
+
+        filterArticles();
+      },
+    });
+
+    const dateSelect = new TomSelect("#dateSelect", {
+      plugins: {
+        clear_button: {
+          title: "Remove all selected options",
+        },
+      },
+      create: false,
+      allowEmptyOption: true,
+      options: dateOptions.map((d) => ({ value: d, text: d })),
+      onChange: (value) => {
+        selectedDateSort = value || "";
+        adjustTomSelectInputWidth(dateSelect, !!value);
+        filterArticles();
+      },
+    });
+
+    document
+      .getElementById("projSearch")
+      ?.addEventListener("input", filterArticles);
+
+    document.getElementById("clearFilters")?.addEventListener("click", () => {
+      // Blur to finalize selections
+      document.activeElement?.blur();
+
+      // Wait a tick to let TomSelect commit changes
+      setTimeout(() => {
+        selectedDateSort = "";
+        selectedAgency = "";
+        selectedTopics = [];
+
+        topicSelect.clear(true);
+        document.getElementById("projSearch").value = "";
+
+        resetAgency();
+        resetTopics();
+
+        agencySelect.setValue("");
+        dateSelect.setValue("");
+
+        agencySelect.refreshOptions(false);
+        dateSelect.refreshOptions(false);
+
+        // Reset input widths
+        adjustTomSelectInputWidth(agencySelect, false);
+        adjustTomSelectInputWidth(dateSelect, false);
+        adjustTomSelectInputWidth(topicSelect, false);
+
+        filterArticles();
+      }, 10);
+    });
+
+    function updateTopicsByAgency(agency) {
+      topicSelect.clearOptions();
+      topics
+        .filter((t) => t.agency === agency)
+        .forEach((topic) => {
+          topicSelect.addOption({ value: topic.value, text: topic.value });
+        });
+      topicSelect.refreshOptions(false);
+    }
+
+    function resetTopics() {
+      topicSelect.clearOptions();
+      topics.forEach((topic) => {
+        topicSelect.addOption({ value: topic.value, text: topic.value });
+      });
+      topicSelect.refreshOptions(false);
+    }
+
+    function updateAgencyDropdown(agencyList) {
+      agencySelect.clearOptions();
+
+      if (agencyList.length === 0) {
+        resetAgency();
+        return;
+      }
+
+      agencyList.forEach((a) => {
+        agencySelect.addOption({ value: a, text: a });
+      });
+      agencySelect.refreshOptions(false);
+
+      if (
+        agencyList.length === 1 &&
+        (!selectedAgency || agencyList[0] !== selectedAgency)
+      ) {
+        agencySelect.setValue(agencyList[0], true);
+        selectedAgency = agencyList[0];
+        updateTopicsByAgency(selectedAgency);
+      }
+    }
+
+    function resetAgency() {
+      agencySelect.clearOptions();
+      agencies.forEach((a) => agencySelect.addOption({ value: a, text: a }));
+      agencySelect.refreshOptions(false);
+    }
+
+    function filterArticles() {
+      const searchText = document
+        .getElementById("projSearch")
+        .value.trim()
+        .toLowerCase();
+      const articles = document.querySelectorAll("article");
+
+      articles.forEach((article) => {
+        let textContent = article.textContent
+          .replace(/\s+/g, " ")
+          .toLowerCase();
+        let agency = (article.dataset.agency || "").toLowerCase();
+        let topicsJson = article.dataset.topic || "[]";
+        let topicsArray = [];
+
+        try {
+          topicsArray = JSON.parse(topicsJson).map((t) => t.toLowerCase());
+        } catch (e) {
+          console.error("Invalid topic JSON:", topicsJson);
+        }
+
+        const matchSearch =
+          searchText === "" || textContent.includes(searchText);
+        const matchAgency =
+          selectedAgency === "" ||
+          agency.includes(selectedAgency.toLowerCase());
+        const matchTopics =
+          selectedTopics.length === 0 ||
+          selectedTopics.some((t) => topicsArray.includes(t.toLowerCase()));
+
+        article.style.display =
+          matchSearch && matchAgency && matchTopics ? "block" : "none";
+      });
+    }
+
+    // 🔄 Init
+    resetAgency();
+    resetTopics();
+
+    // 💡 Ensure clean layout at startup
+    adjustTomSelectInputWidth(agencySelect, false);
+    adjustTomSelectInputWidth(dateSelect, false);
+    adjustTomSelectInputWidth(topicSelect, false);
+  }
 </script>
 
+<!-- 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const pageUrl = encodeURIComponent(window.location.href);
@@ -726,4 +978,4 @@
         window.location.href = `mailto:?subject=${subject}&body=${body}`;
       });
   });
-</script>
+</script> -->
