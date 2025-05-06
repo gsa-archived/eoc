@@ -538,17 +538,18 @@
 
           updateAgencyDropdown([...validAgencies]);
         } else {
-          // ✅ NEW: Reset agency dropdown when all topics are deselected
-          selectedAgency = ""; // ✅ Clear selected agency state
-          agencySelect.clear(true); // ✅ Clear selected agency value
-          resetAgency(); // ✅ Reset agency options
+          // NEW: Reset agency dropdown when all topics are deselected
+          selectedAgency = ""; // Clear selected agency state
+          agencySelect.clear(true); // Clear selected agency value
+          resetAgency(); // Reset agency options
+          resetTopics();
         }
 
         filterArticles();
       },
     });
 
-    const dateSelect = new TomSelect("#dateSelect", {
+    /*  const dateSelect = new TomSelect("#dateSelect", {
       plugins: {
         clear_button: {
           title: "Remove all selected options",
@@ -562,7 +563,7 @@
         filterArticles();
       },
     });
-
+ */
     document
       .getElementById("projSearch")
       ?.addEventListener("input", filterArticles);
@@ -571,7 +572,7 @@
       selectedDateSort = "";
       selectedAgency = "";
       selectedTopics = [];
-      dateSelect.clear(true);
+      //dateSelect.clear(true);
       agencySelect.clear(true);
       topicSelect.clear(true);
       resetAgency();
@@ -603,6 +604,7 @@
 
       if (agencyList.length === 0) {
         resetAgency(); // ✅ Defensive fallback
+
         return;
       }
 
