@@ -2480,3 +2480,7 @@ a.text-link[target="_blank"]:after {
 .tomInput {
     font-size: 14px !important;
 }
+
+#emailError {
+    color: red;
+}

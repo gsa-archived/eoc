@@ -306,6 +306,9 @@ page_title: Contact
                 required
                 class="w-full px-3 py-2 border text-black"
               />
+              <p id="emailError" class="text-red-500 text-sm hidden">
+                Invalid email format
+              </p>
             </div>
 
             <div class="mb-6">
@@ -409,7 +412,7 @@ page_title: Contact
       });
     </script> -->
 
-    <script>
+    <!--  <script>
       const name = document.getElementById("name");
       const email = document.getElementById("email");
       const subject = document.getElementById("subject");
@@ -450,6 +453,66 @@ page_title: Contact
         }
       }
 
+      [name, email, subject, message].forEach((input) => {
+        input.addEventListener("input", validateForm);
+      });
+    </script> -->
+
+    <script>
+      const name = document.getElementById("name");
+      const email = document.getElementById("email");
+      const subject = document.getElementById("subject");
+      const message = document.getElementById("message");
+      const submitBtn = document.getElementById("submitBtn");
+      const emailError = document.getElementById("emailError");
+
+      // Regex for email validation
+      function isValidEmail(emailStr) {
+        return /^[^\s@]+@[^\s@]+\.(com|org|net|edu|gov|mil|co|io|us|info|biz)$/i.test(
+          emailStr
+        );
+      }
+
+      // Validate all fields and toggle submit button + error message
+      function validateForm() {
+        const isNameValid = name.value.trim().length > 0;
+        const isEmailValid = isValidEmail(email.value.trim());
+        const isSubjectValid = subject.value.trim().length > 0;
+        const isMessageValid = message.value.trim().length > 0;
+
+        // Show/hide email error message
+        if (!isEmailValid && email.value.trim().length > 0) {
+          emailError.classList.remove("hidden");
+        } else {
+          emailError.classList.add("hidden");
+        }
+
+        if (isNameValid && isEmailValid && isSubjectValid && isMessageValid) {
+          // Enable Submit
+          submitBtn.classList.remove(
+            "bg-gray-400",
+            "cursor-not-allowed",
+            "pointer-events-none"
+          );
+          submitBtn.classList.add("bg-blue-600", "cursor-pointer");
+          submitBtn.href = `mailto:evidence@omb.eop.gov?subject=${encodeURIComponent(
+            subject.value
+          )}&body=${encodeURIComponent(
+            `Name: ${name.value}\nEmail: ${email.value}\n\n${message.value}`
+          )}`;
+        } else {
+          // Disable Submit
+          submitBtn.href = "#";
+          submitBtn.classList.remove("bg-blue-600", "cursor-pointer");
+          submitBtn.classList.add(
+            "bg-gray-400",
+            "cursor-not-allowed",
+            "pointer-events-none"
+          );
+        }
+      }
+
+      // Attach validation on input change
       [name, email, subject, message].forEach((input) => {
         input.addEventListener("input", validateForm);
       });
